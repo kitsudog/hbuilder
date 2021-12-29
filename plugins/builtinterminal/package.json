@@ -1,0 +1,12 @@
+{
+  "name": "builtinterminal",
+  "displayName": "%displayName%",
+  "description": "%description%",
+  "__category": "C++插件",
+  "__from": "HBuilderX",
+  "version": "1.0.9.2021100817",
+  "extensionDependencies": [
+    "qtwebengine",
+    "node"
+  ]
+}

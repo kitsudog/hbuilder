@@ -1,0 +1,31 @@
+{
+  "name": "unicloud",
+  "version": "2.0.19-2021122812",
+  "description": "%description%",
+  "main": "./manager/index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "displayName": "%displayName%",
+  "publisher": "DCloud",
+  "engines": {
+    "HBuilderX": "^2.9.12"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "contributes": {},
+  "extensionDependencies": [
+    "plugin-manager"
+  ],
+  "dependencies": {
+    "@alicloud/mpserverless-node-sdk": "1.2.0",
+    "@cloudbase/node-sdk": "2.5.1",
+    "hjson": "3.2.1",
+    "urllib": "2.36.1"
+  },
+  "_dc_signatures": "c9ad993f6e7b62359b626e615d3c392d17c4db97918c2bf498b857cb7d69355b17234ba2115a4b2829ca0169567bde4e"
+}

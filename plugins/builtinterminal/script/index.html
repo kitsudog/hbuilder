@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="node_modules/xterm/css/xterm.css" />
+	<style type="text/css"></style>
+	<script type="text/javascript">
+		function __changestyle_new__(scrollBg, scrollHandle) {
+			var __styles = document.getElementsByTagName("style");
+			for (var i = 0; i < __styles.length; i++) {
+				__styles[i].parentNode.removeChild(__styles[i]);
+			}
+			var __new_style = document.createElement("style");
+			__new_style.setAttribute("type", "text/css");
+			__new_style.innerHTML = `
+					body,
+					html {
+						margin: 0;
+						padding: 0;
+						height: 100%;
+						width: 100%;
+						overflow-x: hidden;
+					}
+					#terminal{
+						height:100%;
+						width:100%;
+						padding:0
+					}
+					::-webkit-scrollbar{
+						width:8px;
+						height:8px;
+						background-color:${scrollBg};
+					}
+					::-webkit-scrollbar-track{
+						background-color:${scrollBg};
+					}
+					::-webkit-scrollbar-thumb{
+						background-color:${scrollHandle};
+					}
+					`;
+			document.getElementsByTagName("head")[0].appendChild(__new_style);
+		}
+	</script>
+</head>
+
+<body>
+	<div id="terminal"></div>
+	<script src="dist/bundle.js"></script>
+	<script type="text/javascript">
+		const xtermEl = document.getElementById("terminal");
+		const xterm = new Terminal();
+	xterm.setOption('cursorBlink', true) //设置光标闪烁
+	xterm.setOption('cursorStyle', 'underline') //设置光标样式
+	xterm.setOption("lineHeight", 1.0); //设置显示文本的行高度
+	var fontsize = getUrlParams("fontSize");
+	if (fontsize != null)
+		xterm.setOption("fontSize", fontsize);
+	var fontFamily = getUrlParams("fontFamily");
+	if (fontFamily != null)
+		xterm.setOption("fontFamily", fontFamily);
+
+	// 此处需要先获取socket连接
+	// 获取部分数据
+	var port = getUrlParams("port");
+	var id = getUrlParams("id");
+	var cwd = getUrlParams("cwd");
+	// fitAddon是xterm.js 的一个插件，可以将终端的尺寸与包含元素相匹配。
+	const fitAddon = new FitAddon();
+	xterm.loadAddon(fitAddon);
+	xterm.open(xtermEl);
+	xterm.focus();
+	setTimeout(function () {
+		const socket = new WebSocket(`ws://127.0.0.1:${port}?id=${id}&cwd=${cwd}`);
+		// AttachAddon是xterm.js的插件，可以附加到 Web 套接字
+		const attachAddon = new AttachAddon(socket, false); //第二个参数false, 表示不自动发送数据	
+		xterm.loadAddon(attachAddon);
+		socket.onopen = () => {
+			xterm.loadAddon(new WebLinksAddon(function (event, uri) {
+				socket.send(txtencoder.encode("\x02" + uri)); //发送uri
+			}, undefined, false));
+			//通过第一个字符的值标识是按键或者resize
+			var txtencoder = new TextEncoder();
+			xterm.onResize(size => {
+				try {
+					// alert("TERM:" +size.cols + ":" + size.rows);
+					socket.send(txtencoder.encode("\x01" + JSON.stringify([size.cols, size.rows])));
+				} catch (error) { }
+			});
+			xterm.onData(d => {
+				try {
+					socket.send(txtencoder.encode("\x00" + d)); //手动发送
+				} catch (error) { }
+			});
+		}
+	}, 0);
+	setTimeout(() => {
+		resize();
+	}, 1000);
+
+
+		function resize() { //重定义大小
+			xtermEl.style.width = document.documentElement.clientWidth + "px";
+			xtermEl.style.height = document.documentElement.clientHeight + "px";
+			// alert("DOC:"+ document.documentElement.clientWidth + ":" + document.documentElement.clientHeight);
+			fitAddon.fit();
+		}
+
+		function setTheme(theme, isfocus) {
+			{
+				var themeObj = JSON.parse(theme);
+				xterm.setOption("theme", {
+					background   : themeObj.background,
+					black        : themeObj.black,
+					blue         : themeObj.blue,
+					brightBlack  : themeObj.brightBlack,
+					brightBlue   : themeObj.brightBlue,
+					brightCyan   : themeObj.brightCyan,
+					brightGreen  : themeObj.brightGreen,
+					brightMagenta: themeObj.brightMagenta,
+					brightRed    : themeObj.brightRed,
+					brightWhite  : themeObj.brightWhite,
+					brightYellow : themeObj.brightYellow,
+					cursor       : themeObj.cursor,
+					cursorAccent : themeObj.cursorAccent,
+					cyan         : themeObj.cyan,
+					foreground   : themeObj.foreground,
+					green        : themeObj.green,
+					magenta      : themeObj.magenta,
+					red          : themeObj.red,
+					selection    : themeObj.selection,
+					white        : themeObj.white,
+					yellow       : themeObj.yellow,
+				});
+				__changestyle_new__(
+					themeObj.background,
+					themeObj.scrollHoverBackground
+				); //修改滚动条样式
+				document.body.bgColor = themeObj.background;
+			}
+
+			if (isfocus) {
+				xterm.focus();
+			} else {
+				xterm.blur();
+			}
+			// xterm.refresh(0,xterm.rows-1)
+			// xterm.fit();
+			// xterm.blur();
+		}
+
+		function writecmd(cmd) {
+			//暴露向终端写入方法，供HX静默调用
+			if (xterm.getSelection().trim() == "") {
+				xterm.emit("data", cmd);
+			} else {
+				return xterm.getSelection();
+			}
+			xterm.focus();
+		}
+
+
+
+
+		var deliverFiles = (function () {
+			let paths = [];
+			document.addEventListener(
+				"dragenter",
+				function (e) {
+					e.preventDefault();
+					e.stopPropagation();
+				},
+				false
+			);
+
+			document.addEventListener(
+				"dragover",
+				function (e) {
+					e.preventDefault();
+					e.stopPropagation();
+				},
+				false
+			);
+
+			document.addEventListener(
+				"dragleave",
+				function (e) {
+					e.preventDefault();
+					e.stopPropagation();
+				},
+				false
+			);
+
+			document.addEventListener(
+				"drop",
+				function (e) {
+					e.preventDefault();
+					e.stopPropagation();
+					if (e.dataTransfer.files.length > 0 && paths.length > 0) {
+						writecmd(paths.join(" "));
+					}
+				},
+				false
+			);
+			return function (files) {
+				let n = files.length;
+				paths = [];
+				for (let i = 0; i < n; i++) {
+					let tmp = decodeURIComponent(files[i]);
+					paths.push(tmp.replace(" ", "\\ "));
+				}
+				console.log(paths.join(" "));
+			};
+		})();
+
+		setTheme(getUrlParams("theme"), true);
+		window.writecmd = writecmd;
+		window.setTheme = setTheme;
+		window.onresize = resize;
+		window.deliverFiles = deliverFiles;
+	</script>
+</body>
+
+</html>

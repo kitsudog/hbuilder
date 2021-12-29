@@ -1,0 +1,10 @@
+{
+  "name": "uni_helpers",
+  "version": "1.0.0-2021091415",
+  "displayName": "%displayName%",
+  "description": "%description%",
+  "main": "dist/index.jsc",
+  "keywords": [],
+  "author": "hbuilderx",
+  "_dc_signatures": "87309b73cfd6959ad394de6156bd02995cac2eba39d6a5699d1fe40d39d50e001a7d1a48400d7741143831c0ef6530d9"
+}
