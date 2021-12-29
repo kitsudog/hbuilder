@@ -1,7 +1,3 @@
-/Dockerfile
-/rebuild.sh
-/.git
-/.gitignore
 /plugins/hbuilder.root
 /plugins/jre
 /plugins/launcher
