@@ -5,5 +5,4 @@
 /plugins/node
 /plugins/nodeserver
 /plugins/npm
-/plugins/uniapp-cli
 /plugins/uniapp-cli-vite/node_modules/esbuild-darwin-64
