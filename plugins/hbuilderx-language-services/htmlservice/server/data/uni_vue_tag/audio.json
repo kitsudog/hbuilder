@@ -1,0 +1,322 @@
+{
+  "name": "audio",
+  "description": {
+    "value": "音频",
+    "kind": "markdown"
+  },
+  "uniPlatform": {
+    "app": {
+      "android": {
+        "osVer": "5.0",
+        "uniVer": "√",
+        "unixVer": "x"
+      },
+      "ios": {
+        "osVer": "9.0",
+        "uniVer": "√",
+        "unixVer": "x"
+      }
+    },
+    "web": {
+      "uniVer": "√",
+      "unixVer": "4.0"
+    }
+  },
+  "attributes": [
+    {
+      "name": "loop",
+      "description": {
+        "value": "是否循环播放",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "x"
+          },
+          "ios": {
+            "osVer": "9.0",
+            "uniVer": "√",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "boolean"
+    },
+    {
+      "name": "src",
+      "description": {
+        "value": "要播放音频的资源地址",
+        "kind": "markdown"
+      },
+      "valueSet": "string.AudioURIString",
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "x"
+          },
+          "ios": {
+            "osVer": "9.0",
+            "uniVer": "√",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "string"
+    },
+    {
+      "name": "controls",
+      "description": {
+        "value": "是否显示默认控件",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "x"
+          },
+          "ios": {
+            "osVer": "9.0",
+            "uniVer": "√",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "boolean"
+    },
+    {
+      "name": "poster",
+      "description": {
+        "value": "默认控件上的音频封面的图片资源地址，如果 controls 属性值为 false 则设置 poster 无效",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "x"
+          },
+          "ios": {
+            "osVer": "9.0",
+            "uniVer": "√",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "string"
+    },
+    {
+      "name": "name",
+      "description": {
+        "value": "默认控件上的音频名字，如果 controls 属性值为 false 则设置 name 无效",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "x"
+          },
+          "ios": {
+            "osVer": "9.0",
+            "uniVer": "√",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "string"
+    },
+    {
+      "name": "author",
+      "description": {
+        "value": "默认控件上的作者名字，如果 controls 属性值为 false 则设置 author 无效",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "x"
+          },
+          "ios": {
+            "osVer": "9.0",
+            "uniVer": "√",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "string"
+    },
+    {
+      "name": "[event]error",
+      "description": {
+        "value": "当发生错误时触发 error 事件，detail = {errMsg: MediaError.code}",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "x"
+          },
+          "ios": {
+            "osVer": "9.0",
+            "uniVer": "√",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "(event: UniEvent) => void"
+    },
+    {
+      "name": "[event]play",
+      "description": {
+        "value": "当开始/继续播放时触发play事件",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "x"
+          },
+          "ios": {
+            "osVer": "9.0",
+            "uniVer": "√",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "(event: UniEvent) => void"
+    },
+    {
+      "name": "[event]pause",
+      "description": {
+        "value": "当暂停播放时触发 pause 事件",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "x"
+          },
+          "ios": {
+            "osVer": "9.0",
+            "uniVer": "√",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "(event: UniEvent) => void"
+    },
+    {
+      "name": "[event]timeupdate",
+      "description": {
+        "value": "当播放进度改变时触发 timeupdate 事件，detail = {currentTime, duration}",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "x"
+          },
+          "ios": {
+            "osVer": "9.0",
+            "uniVer": "√",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "(event: UniEvent) => void"
+    },
+    {
+      "name": "[event]ended",
+      "description": {
+        "value": "当播放到末尾时触发 ended 事件",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "x"
+          },
+          "ios": {
+            "osVer": "9.0",
+            "uniVer": "√",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "(event: UniEvent) => void"
+    }
+  ],
+  "references": [
+    {
+      "url": "https://uniapp.dcloud.io/component/audio",
+      "name": "参见uni-app相关文档"
+    }
+  ],
+  "hasGeneralAttrs": true,
+  "hasGeneralEvents": true
+}

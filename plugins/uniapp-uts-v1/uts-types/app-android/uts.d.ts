@@ -1,0 +1,1 @@
+declare function arrayOf<T>(...args: any[]): androidNative.Array<T>

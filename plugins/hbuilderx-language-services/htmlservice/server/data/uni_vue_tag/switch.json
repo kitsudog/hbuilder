@@ -1,0 +1,238 @@
+{
+  "name": "switch",
+  "type": "UniSwitchElement",
+  "description": {
+    "value": "开关选择器",
+    "kind": "markdown"
+  },
+  "uniPlatform": {
+    "app": {
+      "android": {
+        "osVer": "5.0",
+        "uniVer": "√",
+        "unixVer": "3.9+"
+      },
+      "ios": {
+        "osVer": "12.0",
+        "uniVer": "√",
+        "unixVer": "4.11"
+      }
+    },
+    "web": {
+      "uniVer": "√",
+      "unixVer": "4.0"
+    }
+  },
+  "attributes": [{
+      "name": "name",
+      "description": {
+        "value": "表单的控件名称，作为键值对的一部分与表单(form组件)一同提交",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "string"
+    },
+    {
+      "name": "checked",
+      "description": {
+        "value": "是否选中",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "boolean"
+    },
+    {
+      "name": "type",
+      "description": {
+        "value": "样式，有效值：switch, checkbox",
+        "kind": "markdown"
+      },
+      "values": [{
+          "name": "switch",
+          "uniPlatform": {
+            "app": {
+              "android": {
+                "osVer": "5.0",
+                "uniVer": "√",
+                "unixVer": "x"
+              },
+              "ios": {
+                "osVer": "12.0",
+                "uniVer": "x",
+                "unixVer": "x"
+              }
+            },
+            "web": {
+              "uniVer": "√",
+              "unixVer": "4.0"
+            }
+          }
+        },
+        {
+          "name": "checkbox",
+          "uniPlatform": {
+            "app": {
+              "android": {
+                "osVer": "5.0",
+                "uniVer": "√",
+                "unixVer": "x"
+              },
+              "ios": {
+                "osVer": "12.0",
+                "uniVer": "x",
+                "unixVer": "x"
+              }
+            },
+            "web": {
+              "uniVer": "√",
+              "unixVer": "4.0"
+            }
+          }
+        }
+      ],
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "x"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "x",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "string"
+    },
+    {
+      "name": "color",
+      "description": {
+        "value": "switch 的颜色，同 css 的 color",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "string",
+      "valueSet": "string.ColorString"
+    },
+    {
+      "name": "disabled",
+      "description": {
+        "value": "是否禁用",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "boolean"
+    },
+    {
+      "name": "[event]change",
+      "description": {
+        "value": "checked 改变时触发 change 事件，event.detail={ value:checked}",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "(event: UniSwitchChangeEvent) => void"
+    }
+  ],
+  "references": [{
+      "url": "https://uniapp.dcloud.io/component/switch",
+      "name": "参见uni-app相关文档"
+    },
+    {
+      "url": "https://doc.dcloud.net.cn/uni-app-x/component/switch.html",
+      "name": "参见uni-app x相关文档"
+    }
+  ],
+  "hasGeneralAttrs": true,
+  "hasGeneralEvents": true
+}

@@ -1,7 +1,7 @@
 {
   "__private": true,
   "name": "schema2code_proxy",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "keywords": [],
   "author": "",
@@ -32,7 +32,7 @@
     ],
     "expressions": {
 			"isUniAppSchema2Code": "workspaceFolder.type == 'UniApp_Vue'",
-			"isUniCloudSchemaRootSchema2Code": "workspaceFolderRelativePath =~ /^uniCloud\\-(tcb|aliyun)\\/database/ || workspaceFolderRelativePath =~ /^uni_modules\\/.*\\/uniCloud\\/database/",
+			"isUniCloudSchemaRootSchema2Code": "workspaceFolderRelativePath =~ /^uniCloud\\-(tcb|aliyun|alipay)\\/database/ || workspaceFolderRelativePath =~ /^uni_modules\\/.*\\/uniCloud\\/database/",
 			"isSchemaJson": "expression.isUniAppSchema2Code && expression.isUniCloudSchemaRootSchema2Code && workspaceFolderRelativePath =~ /.*\\.schema\\.json$/",
       "isSchema2CodeExtensionExists": "plugin.isInstalled <- 'uni-schema2code'"
     },

@@ -1,0 +1,134 @@
+{
+  "name": "icon",
+  "description": {
+    "value": "图标",
+    "kind": "markdown"
+  },
+  "attributes": [
+    {
+      "name": "type",
+      "description": {
+        "value": "icon的类型，有效值：success, success_no_circle, info, warn, waiting, cancel, download, search, clear",
+        "kind": "markdown"
+      },
+      "values": [
+        {
+          "name": "success"
+        },
+        {
+          "name": "success_no_circle"
+        },
+        {
+          "name": "warn"
+        },
+        {
+          "name": "waiting"
+        },
+        {
+          "name": "cancel"
+        },
+        {
+          "name": "download"
+        },
+        {
+          "name": "search"
+        },
+        {
+          "name": "clear"
+        }
+      ],
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "x"
+          },
+          "ios": {
+            "osVer": "9.0",
+            "uniVer": "√",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "string"
+    },
+    {
+      "name": "size",
+      "description": {
+        "value": "icon的大小，单位px",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "x"
+          },
+          "ios": {
+            "osVer": "9.0",
+            "uniVer": "√",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "number"
+    },
+    {
+      "name": "color",
+      "description": {
+        "value": "icon的颜色，同css的color",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "x"
+          },
+          "ios": {
+            "osVer": "9.0",
+            "uniVer": "√",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "string",
+      "valueSet": "string.ColorString"
+    }
+  ],
+  "uniPlatform": {
+    "app": {
+      "android": {
+        "osVer": "5.0",
+        "uniVer": "√",
+        "unixVer": "x"
+      },
+      "ios": {
+        "osVer": "9.0",
+        "uniVer": "√",
+        "unixVer": "x"
+      }
+    },
+    "web": {
+      "uniVer": "√",
+      "unixVer": "4.0"
+    }
+  },
+  "hasGeneralAttrs": true,
+  "hasGeneralEvents": true
+}

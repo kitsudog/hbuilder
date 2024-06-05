@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.getScriptIndex=void 0;const independentIndexer_1=require("../../../independentIndexer"),scriptIndexProcessor=new independentIndexer_1.ScriptIndexProcessor;async function getScriptIndex(e,n,r,t){return await scriptIndexProcessor.createIndexData(e,n,r)}exports.getScriptIndex=getScriptIndex;

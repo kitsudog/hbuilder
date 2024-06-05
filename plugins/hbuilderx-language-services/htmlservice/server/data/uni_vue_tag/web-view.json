@@ -1,0 +1,293 @@
+{
+  "name": "web-view",
+  "type": "UniWebViewElement",
+  "description": {
+    "value": "承载网页的容器",
+    "kind": "markdown"
+  },
+  "attributes": [
+    {
+      "name": "src",
+      "description": {
+        "value": "webview 指向网页的链接",
+        "kind": "markdown"
+      },
+      "valueSet": "string.URIString",
+      "type": "string",
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      }
+    },
+    {
+      "name": "webview-styles",
+      "description": {
+        "value": "webview 网络地址页面加载进度条样式",
+        "kind": "markdown"
+      },
+      "type": "WebViewStyles",
+      "defaultValue": {
+        "progress": {
+          "color": "#00FF00"
+        }
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "x",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "x",
+          "unixVer": "x"
+        }
+      }
+    },
+    {
+      "name": "horizontalScrollBarAccess",
+      "description": {
+        "value": "设置是否显示横向滚动条",
+        "kind": "markdown"
+      },
+      "type": "boolean",
+      "defaultValue": true,
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "x",
+            "unixVer": "4.11"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "x",
+            "unixVer": "4.13"
+          }
+        },
+        "web": {
+          "uniVer": "x",
+          "unixVer": "x"
+        }
+      }
+    },
+    {
+      "name": "verticalScrollBarAccess",
+      "description": {
+        "value": "设置是否显示纵向滚动条",
+        "kind": "markdown"
+      },
+      "type": "boolean",
+      "defaultValue": true,
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "x",
+            "unixVer": "4.11"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "x",
+            "unixVer": "4.13"
+          }
+        },
+        "web": {
+          "uniVer": "x",
+          "unixVer": "x"
+        }
+      }
+    },
+    {
+      "name": "[event]message",
+      "description": {
+        "value": "网页向应用 postMessage 时触发。e.detail = { data }",
+        "kind": "markdown"
+      },
+      "type": "(event: UniWebViewMessageEvent) => void",
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "x",
+          "unixVer": "x"
+        }
+      }
+    },
+    {
+      "name": "[event]error",
+      "description": {
+        "value": "网页加载错误时触发。e.detail = { errSubject, errCode, errMsg, url, fullUrl, src }",
+        "kind": "markdown"
+      },
+      "type": "(event: UniWebViewErrorEvent) => void",
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "x",
+          "unixVer": "x"
+        }
+      }
+    },
+    {
+      "name": "[event]load",
+      "description": {
+        "value": "网页加载完成后触发。e.detail = { url, src }",
+        "kind": "markdown"
+      },
+      "type": "(event: UniWebViewLoadEvent) => void",
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "4.0"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "x",
+          "unixVer": "x"
+        }
+      }
+    },
+    {
+      "name": "[event]loaded",
+      "deprecated": true,
+      "description": {
+        "value": "网页加载完成后触发。e.detail = { url, src }。已废弃，请改用load",
+        "kind": "markdown"
+      },
+      "type": "(event: UniWebViewLoadEvent) => void"
+    },
+    {
+      "name": "[event]loading",
+      "description": {
+        "value": "网页加载中触发。e.detail = { url, src }",
+        "kind": "markdown"
+      },
+      "type": "(event: UniWebViewLoadingEvent) => void",
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "x",
+          "unixVer": "x"
+        }
+      }
+    },
+    {
+      "name": "[event]download",
+      "description": {
+        "value": "点击网页中可下载链接时触发。e.detail = { url, userAgent, contentDisposition, mimetype, contentLength }",
+        "kind": "markdown"
+      },
+      "type": "(event: UniWebViewDownloadEvent) => void",
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "x",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "x",
+          "unixVer": "x"
+        }
+      }
+    }
+  ],
+  "references": [{
+      "url": "https://uniapp.dcloud.io/component/web-view",
+      "name": "参见uni-app相关文档"
+    },
+    {
+      "url": "https://doc.dcloud.net.cn/uni-app-x/component/web-view.html",
+      "name": "参见uni-app x相关文档"
+    }
+  ],
+  "uniPlatform": {
+    "app": {
+      "android": {
+        "osVer": "5.0",
+        "uniVer": "√",
+        "unixVer": "3.9+"
+      },
+      "ios": {
+        "osVer": "12.0",
+        "uniVer": "√",
+        "unixVer": "4.11"
+      }
+    },
+    "web": {
+      "uniVer": "√",
+      "unixVer": "4.0"
+    }
+  },
+  "childrenTags": [
+    "!*"
+  ],
+  "hasGeneralAttrs": true,
+  "hasGeneralEvents": true
+}

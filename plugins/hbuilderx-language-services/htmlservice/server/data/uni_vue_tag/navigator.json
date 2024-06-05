@@ -1,0 +1,405 @@
+{
+  "name": "navigator",
+  "type": "UniNavigatorElement",
+  "description": {
+    "value": "页面链接",
+    "kind": "markdown"
+  },
+  "uniPlatform": {
+    "app": {
+      "android": {
+        "osVer": "5.0",
+        "uniVer": "√",
+        "unixVer": "3.9+"
+      },
+      "ios": {
+        "osVer": "12.0",
+        "uniVer": "√",
+        "unixVer": "4.11"
+      }
+    },
+    "web": {
+      "uniVer": "√",
+      "unixVer": "4.0"
+    }
+  },
+  "attributes": [
+    {
+      "name": "target",
+      "description": {
+        "value": "在哪个目标上发生跳转，默认当前应用",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "string"
+    },
+    {
+      "name": "url",
+      "description": {
+        "value": "当前应用内的跳转链接",
+        "kind": "markdown"
+      },
+      "valueSet": "string.PageURIString",
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "string"
+    },
+    {
+      "name": "open-type",
+      "description": {
+        "value": "跳转方式",
+        "kind": "markdown"
+      },
+      "values": [
+        {
+          "name": "navigate",
+          "description": "对应 wx.navigateTo 或 wx.navigateToMiniProgram 的功能"
+        },
+        {
+          "name": "redirect",
+          "description": "对应 wx.redirectTo 的功能"
+        },
+        {
+          "name": "switchTab",
+          "description": "对应 wx.switchTab 的功能"
+        },
+        {
+          "name": "reLaunch",
+          "description": "对应 wx.reLaunch 的功能"
+        },
+        {
+          "name": "navigateBack",
+          "description": "对应 wx.navigateBack 的功能"
+        }
+      ],
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "string",
+      "defaultValue": "navigate"
+    },
+    {
+      "name": "delta",
+      "description": {
+        "value": "当 open-type 为 navigateBack 时有效，表示回退的层数",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "number"
+    },
+    {
+      "name": "app-id",
+      "description": {
+        "value": "当target=\"miniProgram\"时有效，要打开的小程序 appId",
+        "kind": "markdown"
+      },
+      "type": "string"
+    },
+    {
+      "name": "path",
+      "description": {
+        "value": "当target=\"miniProgram\"时有效，打开的页面路径，如果为空则打开首页",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "string"
+    },
+    {
+      "name": "extra-data",
+      "description": {
+        "value": "当target=\"miniProgram\"时有效，需要传递给目标应用的数据，目标应用可在 App.onLaunch()，App.onShow() 中获取到这份数据",
+        "kind": "markdown"
+      },
+      "type": "object"
+    },
+    {
+      "name": "version",
+      "description": {
+        "value": "当target=\"miniProgram\"时有效，要打开的小程序版本，有效值 develop（开发版），trial（体验版），release（正式版），仅在当前小程序为开发版或体验版时此参数有效；如果当前小程序是体验版或正式版，则打开的小程序必定是正式版",
+        "kind": "markdown"
+      },
+      "type": "string"
+    },
+    {
+      "name": "animation-type",
+      "description": {
+        "value": "当 open-type=\"navigateTo\" 或 open-type=\"navigateBack\" 时有效，窗口的显示/关闭的动画类型。",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "x",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "values": [
+        {
+          "name": "auto",
+          "description": "自动选择动画效果"
+        },
+        {
+          "name": "none",
+          "description": "无动画效果"
+        },
+        {
+          "name": "slide-in-right",
+          "description": "从右侧横向滑动效果"
+        },
+        {
+          "name": "slide-in-left",
+          "description": "左侧横向滑动效果"
+        },
+        {
+          "name": "slide-in-top",
+          "description": "从上侧竖向滑动效果"
+        },
+        {
+          "name": "slide-in-bottom",
+          "description": "从下侧竖向滑动效果"
+        },
+        {
+          "name": "fade-in",
+          "description": "从透明到不透明逐渐显示效果"
+        },
+        {
+          "name": "zoom-out",
+          "description": "从小到大逐渐放大显示效果"
+        },
+        {
+          "name": "zoom-fade-out",
+          "description": "从小到大逐渐放大并且从透明到不透明逐渐显示效果"
+        },
+        {
+          "name": "pop-in",
+          "description": "从右侧平移入栈动画效果"
+        },
+        {
+          "name": "slide-out-right",
+          "description": "横向向右侧滑出屏幕动画"
+        },
+        {
+          "name": "slide-out-left",
+          "description": "横向向左侧滑出屏幕动画"
+        },
+        {
+          "name": "slide-out-top",
+          "description": "竖向向上侧滑出屏幕动画"
+        },
+        {
+          "name": "slide-out-bottom",
+          "description": "竖向向下侧滑出屏幕动画"
+        },
+        {
+          "name": "fade-out",
+          "description": "从不透明到透明逐渐隐藏动画"
+        },
+        {
+          "name": "zoom-in",
+          "description": "从大逐渐缩小关闭动画"
+        },
+        {
+          "name": "zoom-fade-in",
+          "description": "从大逐渐缩小并且从不透明到透明逐渐隐藏关闭动画"
+        },
+        {
+          "name": "pop-out",
+          "description": "从右侧平移出栈动画效果"
+        }
+      ],
+      "type": "string",
+      "defaultValue": "pop-in/out"
+    },
+    {
+      "name": "animation-duration",
+      "description": {
+        "value": "当 open-type=\"navigateTo\" 或 open-type=\"navigateBack\" 时有效，窗口的显示/关闭动画的持续时间。",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "x",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "number",
+      "defaultValue": 300
+    },
+    {
+      "name": "hover-class",
+      "description": {
+        "value": "指定按下去的样式类。当 hover-class=\"none\" 时，没有点击态效果",
+        "kind": "markdown"
+      },
+      "type": "string"
+    },
+    {
+      "name": "hover-stop-propagation",
+      "description": {
+        "value": "指定是否阻止本节点的祖先节点出现点击态",
+        "kind": "markdown"
+      },
+      "type": "boolean"
+    },
+    {
+      "name": "hover-start-time",
+      "description": {
+        "value": "按住后多久出现点击态，单位毫秒",
+        "kind": "markdown"
+      },
+      "type": "number"
+    },
+    {
+      "name": "hover-stay-time",
+      "description": {
+        "value": "手指松开后点击态保留时间，单位毫秒",
+        "kind": "markdown"
+      },
+      "type": "number"
+    },
+    {
+      "name": "render-link",
+      "description": {
+        "type": "markdown",
+        "value": "是否给 navigator 组件加一层 a 标签控制 ssr 渲染"
+      },
+      "type": "boolean",
+      "defaultValue": true,
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "x",
+            "uniVer": "3.7.6",
+            "unixVer": "x"
+          },
+          "ios": {
+            "osVer": "x",
+            "uniVer": "3.7.6",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+          "uniVer": "3.7.6",
+          "unixVer": "4.0"
+        }
+      }
+    }
+  ],
+  "references": [
+    {
+      "url": "https://uniapp.dcloud.io/component/navigator",
+      "name": "参见uni-app相关文档"
+    },
+    {
+      "url": "https://doc.dcloud.net.cn/uni-app-x/component/navigator.html",
+      "name": "参见uni-app x相关文档"
+    }
+  ],
+  "hasGeneralAttrs": true,
+  "hasGeneralEvents": true
+}

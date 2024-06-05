@@ -1,0 +1,68 @@
+{
+  "name": "template",
+  "description": {
+    "value": "模板标签根节点",
+    "kind": "markdown"
+  },
+  "uniPlatform": {
+    "app": {
+      "android": {
+        "osVer": "5.0",
+        "uniVer": "√",
+        "unixVer": "3.9"
+      },
+      "ios": {
+        "osVer": "12.0",
+        "uniVer": "√",
+        "unixVer": "4.11"
+      }
+    },
+    "mp": {
+      "weixin": {
+        "hostVer": "√",
+        "uniVer": "√",
+        "unixVer": "x"
+      },
+      "alipay": {
+        "hostVer": "√",
+        "uniVer": "√",
+        "unixVer": "x"
+      },
+      "baidu": {
+        "hostVer": "√",
+        "uniVer": "√",
+        "unixVer": "x"
+      },
+      "toutiao": {
+        "hostVer": "√",
+        "uniVer": "√",
+        "unixVer": "x"
+      },
+      "lark": {
+        "hostVer": "√",
+        "uniVer": "√",
+        "unixVer": "x"
+      },
+      "qq": {
+        "hostVer": "√",
+        "uniVer": "√",
+        "unixVer": "x"
+      },
+      "kuaishou": {
+        "hostVer": "√",
+        "uniVer": "√",
+        "unixVer": "x"
+      },
+      "jd": {
+        "hostVer": "√",
+        "uniVer": "√",
+        "unixVer": "x"
+      }
+    },
+    "web": {
+      "uniVer": "√",
+      "unixVer": "4.0"
+    }
+  },
+  "attributes": []
+}

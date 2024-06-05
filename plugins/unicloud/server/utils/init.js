@@ -1,0 +1,1 @@
+process.on("uncaughtException",(o=>{console.error(o)})),process.on("unhandledRejection",(o=>{console.error(o)}));

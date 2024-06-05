@@ -1,0 +1,1495 @@
+{
+  "name": "input",
+  "type": "UniInputElement",
+  "description": {
+    "value": "输入框",
+    "kind": "markdown"
+  },
+  "attributes": [
+    {
+      "name": "name",
+      "description": {
+        "value": "表单的控件名称，作为键值对的一部分与表单(form组件)一同提交",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "string"
+    },
+    {
+      "name": "disabled",
+      "description": {
+        "value": "是否禁用",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "boolean",
+      "defaultValue": false
+    },
+    {
+      "name": "value",
+      "description": {
+        "value": "输入框的初始内容",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "string",
+      "defaultValue": ""
+    },
+    {
+      "name": "type",
+      "description": {
+        "value": "input的类型",
+        "kind": "markdown"
+      },
+      "values": [
+        {
+          "name": "text",
+          "description": "文本输入键盘",
+          "uniPlatform": {
+            "app": {
+              "android": {
+                "osVer": "5.0",
+                "uniVer": "√",
+                "unixVer": "3.9+"
+              },
+              "ios": {
+                "osVer": "12.0",
+                "uniVer": "√",
+                "unixVer": "4.11"
+              }
+            },
+            "web": {
+              "uniVer": "√",
+              "unixVer": "4.0"
+            }
+          }
+        },
+        {
+          "name": "number",
+          "description": "数字输入键盘",
+          "uniPlatform": {
+            "app": {
+              "android": {
+                "osVer": "5.0",
+                "uniVer": "√",
+                "unixVer": "3.9+"
+              },
+              "ios": {
+                "osVer": "12.0",
+                "uniVer": "√",
+                "unixVer": "4.11"
+              }
+            },
+            "web": {
+              "uniVer": "√",
+              "unixVer": "4.0"
+            }
+          }
+        },
+        {
+          "name": "idcard",
+          "description": "身份证输入键盘",
+          "uniPlatform": {
+            "app": {
+              "android": {
+                "osVer": "x",
+                "uniVer": "x",
+                "unixVer": "x"
+              },
+              "ios": {
+                "osVer": "x",
+                "uniVer": "x",
+                "unixVer": "x"
+              }
+            },
+            "web": {
+              "uniVer": "x",
+              "unixVer": "x"
+            }
+          }
+        },
+        {
+          "name": "digit",
+          "description": "带小数点数字输入键盘",
+          "uniPlatform": {
+            "app": {
+              "android": {
+                "osVer": "5.0",
+                "uniVer": "√",
+                "unixVer": "3.9+"
+              },
+              "ios": {
+                "osVer": "12.0",
+                "uniVer": "√",
+                "unixVer": "4.11"
+              }
+            },
+            "web": {
+              "uniVer": "√",
+              "unixVer": "4.0"
+            }
+          }
+        },
+        {
+          "name": "tel",
+          "description": "电话输入键盘",
+          "uniPlatform": {
+            "app": {
+              "android": {
+                "osVer": "5.0",
+                "uniVer": "√",
+                "unixVer": "3.9+"
+              },
+              "ios": {
+                "osVer": "12.0",
+                "uniVer": "√",
+                "unixVer": "4.11"
+              }
+            },
+            "web": {
+              "uniVer": "x",
+              "unixVer": "x"
+            }
+          }
+        },
+        {
+          "name": "safe-password",
+          "description": "密码安全输入键盘",
+          "uniPlatform": {
+            "app": {
+              "android": {
+                "osVer": "x",
+                "uniVer": "x",
+                "unixVer": "x"
+              },
+              "ios": {
+                "osVer": "x",
+                "uniVer": "x",
+                "unixVer": "x"
+              }
+            },
+            "web": {
+              "uniVer": "x",
+              "unixVer": "x"
+            }
+          }
+        },
+        {
+          "name": "nickname",
+          "description": "昵称输入键盘",
+          "uniPlatform": {
+            "app": {
+              "android": {
+                "osVer": "x",
+                "uniVer": "x",
+                "unixVer": "x"
+              },
+              "ios": {
+                "osVer": "x",
+                "uniVer": "x",
+                "unixVer": "x"
+              }
+            },
+            "web": {
+              "uniVer": "x",
+              "unixVer": "x"
+            }
+          }
+        }
+      ],
+      "type": "text|number|idcard|digit|tel|safe-password|nickname",
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "defaultValue": "text"
+    },
+    {
+      "name": "password",
+      "description": {
+        "value": "是否是密码类型",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "boolean",
+      "defaultValue": false
+    },
+    {
+      "name": "placeholder",
+      "description": {
+        "value": "输入框为空时占位符",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "string",
+      "defaultValue": ""
+    },
+    {
+      "name": "placeholder-style",
+      "description": {
+        "value": "指定 placeholder 的样式",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "string",
+      "defaultValue": ""
+    },
+    {
+      "name": "placeholder-class",
+      "description": {
+        "value": "指定 placeholder 的样式类，目前仅支持color,font-size和font-weight",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "string",
+      "defaultValue": "",
+      "valueSet": "string.ClassString"
+    },
+    {
+      "name": "maxlength",
+      "description": {
+        "value": "最大输入长度，0和正数为合法值，非法值的时候不限制最大长度",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "number",
+      "defaultValue": "不限制长度"
+    },
+    {
+      "name": "cursor-spacing",
+      "description": {
+        "value": "指定光标与键盘的距离，单位 px 。取 input 距离底部的距离和 cursor-spacing 指定的距离的最小值作为光标与键盘的距离",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "x",
+          "unixVer": "x"
+        }
+      },
+      "type": "number",
+      "defaultValue": 0
+    },
+    {
+      "name": "cursor-color",
+      "description": {
+        "value": "指定光标颜色",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "x",
+            "unixVer": "3.99"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "x",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "string",
+      "defaultValue": "",
+      "valueSet": "string.ColorString"
+    },
+    {
+      "name": "auto-focus",
+      "description": {
+        "value": "自动获取焦点",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "boolean",
+      "defaultValue": false
+    },
+    {
+      "name": "focus",
+      "description": {
+        "value": "获取焦点",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "boolean",
+      "defaultValue": false
+    },
+    {
+      "name": "confirm-type",
+      "description": {
+        "value": "设置键盘右下角按钮的文字",
+        "kind": "markdown"
+      },
+      "values": [
+        {
+          "name": "send",
+          "description": "发送",
+          "uniPlatform": {
+            "app": {
+              "android": {
+                "osVer": "5.0",
+                "uniVer": "√",
+                "unixVer": "3.9+"
+              },
+              "ios": {
+                "osVer": "12.0",
+                "uniVer": "√",
+                "unixVer": "4.11"
+              }
+            },
+            "web": {
+              "uniVer": "√",
+              "unixVer": "4.0"
+            }
+          }
+        },
+        {
+          "name": "search",
+          "description": "搜索",
+          "uniPlatform": {
+            "app": {
+              "android": {
+                "osVer": "5.0",
+                "uniVer": "√",
+                "unixVer": "3.9+"
+              },
+              "ios": {
+                "osVer": "12.0",
+                "uniVer": "√",
+                "unixVer": "4.11"
+              }
+            },
+            "web": {
+              "uniVer": "√",
+              "unixVer": "4.0"
+            }
+          }
+        },
+        {
+          "name": "next",
+          "description": "下一个",
+          "uniPlatform": {
+            "app": {
+              "android": {
+                "osVer": "5.0",
+                "uniVer": "√",
+                "unixVer": "3.9+"
+              },
+              "ios": {
+                "osVer": "12.0",
+                "uniVer": "√",
+                "unixVer": "4.11"
+              }
+            },
+            "web": {
+              "uniVer": "√",
+              "unixVer": "4.0"
+            }
+          }
+        },
+        {
+          "name": "go",
+          "description": "前往",
+          "uniPlatform": {
+            "app": {
+              "android": {
+                "osVer": "5.0",
+                "uniVer": "√",
+                "unixVer": "3.9+"
+              },
+              "ios": {
+                "osVer": "12.0",
+                "uniVer": "√",
+                "unixVer": "4.11"
+              }
+            },
+            "web": {
+              "uniVer": "√",
+              "unixVer": "4.0"
+            }
+          }
+        },
+        {
+          "name": "done",
+          "description": "完成",
+          "uniPlatform": {
+            "app": {
+              "android": {
+                "osVer": "5.0",
+                "uniVer": "√",
+                "unixVer": "3.9+"
+              },
+              "ios": {
+                "osVer": "12.0",
+                "uniVer": "√",
+                "unixVer": "4.11"
+              }
+            },
+            "web": {
+              "uniVer": "√",
+              "unixVer": "4.0"
+            }
+          }
+        }
+      ],
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "send|search|next|go|done",
+      "defaultValue": "done"
+    },
+    {
+      "name": "always-embed",
+      "description": {
+        "value": "强制 input 处于同层状态，默认 focus 时 input 会切到非同层状态 (仅在 iOS 下生效)",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "ios": {
+            "osVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+          "uniVer": "x",
+          "unixVer": "x"
+        }
+      },
+      "type": "boolean"
+    },
+    {
+      "name": "confirm-hold",
+      "description": {
+        "value": "点击键盘右下角按钮时是否保持键盘不收起",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "boolean",
+      "defaultValue": false
+    },
+    {
+      "name": "cursor",
+      "description": {
+        "value": "指定focus时的光标位置",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "number",
+      "defaultValue": 0
+    },
+    {
+      "name": "selection-start",
+      "description": {
+        "value": "光标起始位置，自动聚集时有效，需与selection-end搭配使用",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "number",
+      "defaultValue": -1
+    },
+    {
+      "name": "selection-end",
+      "description": {
+        "value": "光标结束位置，自动聚集时有效，需与selection-satrt搭配使用",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "number",
+      "defaultValue": -1
+    },
+    {
+      "name": "adjust-position",
+      "description": {
+        "value": "键盘弹起时，是否自动上推页面",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "x",
+          "unixVer": "x"
+        }
+      },
+      "type": "boolean",
+      "defaultValue": true
+    },
+    {
+      "name": "text-content-type",
+      "description": {
+        "value": "文本区域的语义，根据类型自动填充",
+        "kind": "markdown"
+      },
+      "values": [
+        {
+          "name": "oneTimeCode",
+          "description": "一次性验证码",
+          "uniPlatform": {
+            "app": {
+              "android": {
+                "osVer": "x",
+                "uniVer": "x",
+                "unixVer": "x"
+              },
+              "ios": {
+                "osVer": "x",
+                "uniVer": "x",
+                "unixVer": "x"
+              }
+            },
+            "web": {
+              "uniVer": "x",
+              "unixVer": "x"
+            }
+          }
+        }
+      ],
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "ios": {
+            "osVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+          "uniVer": "x",
+          "unixVer": "x"
+        }
+      },
+      "type": "string"
+    },
+    {
+      "name": "hold-keyboard",
+      "description": {
+        "value": "focus时，点击页面的时候不收起键盘",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "x",
+            "unixVer": "4.0"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "x",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "x",
+          "unixVer": "x"
+        }
+      },
+      "type": "boolean",
+      "defaultValue": false
+    },
+    {
+      "name": "safe-password-cert-path",
+      "description": {
+        "value": "安全键盘加密公钥的路径，只支持包内路径",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "ios": {
+            "osVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+          "uniVer": "x",
+          "unixVer": "x"
+        }
+      },
+      "type": "string"
+    },
+    {
+      "name": "safe-password-length",
+      "description": {
+        "value": "安全键盘输入密码长度",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "ios": {
+            "osVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+          "uniVer": "x",
+          "unixVer": "x"
+        }
+      },
+      "type": "number"
+    },
+    {
+      "name": "safe-password-time-stamp",
+      "description": {
+        "value": "安全键盘加密时间戳",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "ios": {
+            "osVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+          "uniVer": "x",
+          "unixVer": "x"
+        }
+      },
+      "type": "number"
+    },
+    {
+      "name": "safe-password-nonce",
+      "description": {
+        "value": "安全键盘加密盐值",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "ios": {
+            "osVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+          "uniVer": "x",
+          "unixVer": "x"
+        }
+      },
+      "type": "string"
+    },
+    {
+      "name": "safe-password-salt",
+      "description": {
+        "value": "安全键盘计算 hash 盐值，若指定custom-hash 则无效",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "ios": {
+            "osVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+          "uniVer": "x",
+          "unixVer": "x"
+        }
+      },
+      "type": "string"
+    },
+    {
+      "name": "safe-password-custom-hash",
+      "description": {
+        "value": "安全键盘计算 hash 的算法表达式",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "ios": {
+            "osVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+          "uniVer": "x",
+          "unixVer": "x"
+        }
+      },
+      "type": "string"
+    },
+    {
+      "name": "random-number",
+      "description": {
+        "value": "当 type 为 number, digit, idcard 数字键盘是否随机排列",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "ios": {
+            "osVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+          "uniVer": "x",
+          "unixVer": "x"
+        }
+      },
+      "type": "boolean"
+    },
+    {
+      "name": "controlled",
+      "description": {
+        "value": "是否为受控组件。为 true 时，value 内容会完全受 setData 控制",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "ios": {
+            "osVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+          "uniVer": "x",
+          "unixVer": "x"
+        }
+      },
+      "type": "boolean"
+    },
+    {
+      "name": "always-system",
+      "description": {
+        "value": "是否强制使用系统键盘和 Web-view 创建的 input 元素。为 true 时，confirm-type、confirm-hold 可能失效",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "ios": {
+            "osVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+          "uniVer": "x",
+          "unixVer": "x"
+        }
+      },
+      "type": "boolean"
+    },
+    {
+      "name": "inputmode",
+      "description": {
+        "value": "是一个枚举属性，它提供了用户在编辑元素或其内容时可能输入的数据类型的提示。在符合条件的高版本webview里，uni-app的 web 和 app-vue 平台中可使用本属性。",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "x"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+          "uniVer": "3.6.16",
+          "unixVer": "4.0"
+        }
+      },
+      "values": [
+        {
+          "name": "none",
+          "description": "无虚拟键盘。在应用程序或者站点需要实现自己的键盘输入控件时很有用。",
+          "uniPlatform": {
+            "app": {
+              "android": {
+                "osVer": "5.0",
+                "uniVer": "√",
+                "unixVer": "x"
+              },
+              "ios": {
+                "osVer": "12.0",
+                "uniVer": "√",
+                "unixVer": "x"
+              }
+            },
+            "web": {
+              "uniVer": "√",
+              "unixVer": "4.0"
+            }
+          }
+        },
+        {
+          "name": "text",
+          "description": "使用用户本地区域设置的标准文本输入键盘。",
+          "uniPlatform": {
+            "app": {
+              "android": {
+                "osVer": "5.0",
+                "uniVer": "√",
+                "unixVer": "x"
+              },
+              "ios": {
+                "osVer": "12.0",
+                "uniVer": "√",
+                "unixVer": "x"
+              }
+            },
+            "web": {
+              "uniVer": "√",
+              "unixVer": "4.0"
+            }
+          }
+        },
+        {
+          "name": "decimal",
+          "description": "小数输入键盘，包含数字和分隔符（通常是“ . ”或者“ , ”），设备可能也可能不显示减号键。",
+          "uniPlatform": {
+            "app": {
+              "android": {
+                "osVer": "5.0",
+                "uniVer": "√",
+                "unixVer": "x"
+              },
+              "ios": {
+                "osVer": "12.0",
+                "uniVer": "√",
+                "unixVer": "x"
+              }
+            },
+            "web": {
+              "uniVer": "√",
+              "unixVer": "4.0"
+            }
+          }
+        },
+        {
+          "name": "numeric",
+          "description": "数字输入键盘，所需要的就是 0 到 9 的数字，设备可能也可能不显示减号键。",
+          "uniPlatform": {
+            "app": {
+              "android": {
+                "osVer": "5.0",
+                "uniVer": "√",
+                "unixVer": "x"
+              },
+              "ios": {
+                "osVer": "12.0",
+                "uniVer": "√",
+                "unixVer": "x"
+              }
+            },
+            "web": {
+              "uniVer": "√",
+              "unixVer": "4.0"
+            }
+          }
+        },
+        {
+          "name": "tel",
+          "description": "电话输入键盘，包含 0 到 9 的数字、星号（*）和井号（#）键。表单输入里面的电话输入通常应该使用 \\<input type=\"tel\"\\> 。",
+          "uniPlatform": {
+            "app": {
+              "android": {
+                "osVer": "5.0",
+                "uniVer": "√",
+                "unixVer": "x"
+              },
+              "ios": {
+                "osVer": "12.0",
+                "uniVer": "√",
+                "unixVer": "x"
+              }
+            },
+            "web": {
+              "uniVer": "√",
+              "unixVer": "4.0"
+            }
+          }
+        },
+        {
+          "name": "search",
+          "description": "为搜索输入优化的虚拟键盘，比如，返回键可能被重新标记为“搜索”，也可能还有其他的优化。",
+          "uniPlatform": {
+            "app": {
+              "android": {
+                "osVer": "5.0",
+                "uniVer": "√",
+                "unixVer": "x"
+              },
+              "ios": {
+                "osVer": "12.0",
+                "uniVer": "√",
+                "unixVer": "x"
+              }
+            },
+            "web": {
+              "uniVer": "√",
+              "unixVer": "4.0"
+            }
+          }
+        },
+        {
+          "name": "email",
+          "description": "为邮件地址输入优化的虚拟键盘，通常包含\"@\"符号和其他优化。表单里面的邮件地址输入应该使用 \\<input type=\"email\"\\> 。",
+          "uniPlatform": {
+            "app": {
+              "android": {
+                "osVer": "5.0",
+                "uniVer": "√",
+                "unixVer": "x"
+              },
+              "ios": {
+                "osVer": "12.0",
+                "uniVer": "√",
+                "unixVer": "x"
+              }
+            },
+            "web": {
+              "uniVer": "√",
+              "unixVer": "4.0"
+            }
+          }
+        },
+        {
+          "name": "url",
+          "description": "为网址输入优化的虚拟键盘，比如，“/”键会更加明显、历史记录访问等。表单里面的网址输入通常应该使用 \\<input type=\"url\"\\> 。",
+          "uniPlatform": {
+            "app": {
+              "android": {
+                "osVer": "5.0",
+                "uniVer": "√",
+                "unixVer": "x"
+              },
+              "ios": {
+                "osVer": "12.0",
+                "uniVer": "√",
+                "unixVer": "x"
+              }
+            },
+            "web": {
+              "uniVer": "√",
+              "unixVer": "4.0"
+            }
+          }
+        }
+      ],
+      "type": "none|text|decimal|numeric|tel|search|email|url",
+      "defaultValue": "text"
+    },
+    {
+      "name": "[event]input",
+      "description": {
+        "value": "当键盘输入时，触发input事件，event.detail = {value, cursor}，处理函数可以直接 return 一个字符串，将替换输入框的内容。",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "(event: UniInputEvent) => void"
+    },
+    {
+      "name": "[event]focus",
+      "description": {
+        "value": "输入框聚焦时触发，event.detail = { value, height }，height 为键盘高度",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "(event: UniInputFocusEvent) => void"
+    },
+    {
+      "name": "[event]blur",
+      "description": {
+        "value": "输入框失去焦点时触发，event.detail = {value: value}",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "(event: UniInputBlurEvent) => void"
+    },
+    {
+      "name": "[event]keyboardheightchange",
+      "description": {
+        "value": "键盘高度发生变化的时候触发此事件，event.detail = {height: height, duration: duration}",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "x",
+          "unixVer": "x"
+        }
+      },
+      "type": "(event: UniInputKeyboardHeightChangeEvent) => void"
+    },
+    {
+      "name": "[event]confirm",
+      "description": {
+        "value": "点击完成按钮时触发，event.detail = {value: value}",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "(event: UniInputConfirmEvent) => void"
+    }
+  ],
+  "references": [
+    {
+      "url": "https://uniapp.dcloud.io/component/input",
+      "name": "参见uni-app相关文档"
+    },
+    {
+      "url": "https://doc.dcloud.net.cn/uni-app-x/component/input.html",
+      "name": "参见uni-app x相关文档"
+    }
+  ],
+  "childrenTags": ["!*"],
+  "uniPlatform": {
+    "app": {
+      "android": {
+        "osVer": "5.0",
+        "uniVer": "√",
+        "unixVer": "3.9+"
+      },
+      "ios": {
+        "osVer": "12.0",
+        "uniVer": "√",
+        "unixVer": "4.11"
+      }
+    },
+    "web": {
+      "uniVer": "√",
+      "unixVer": "4.0"
+    }
+  },
+  "hasGeneralAttrs": true,
+  "hasGeneralEvents": true
+}

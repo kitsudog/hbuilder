@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.htmlData=void 0;const webCustomData_1=require("../languageFacts/data/webCustomData");Object.defineProperty(exports,"htmlData",{enumerable:!0,get:function(){return webCustomData_1.htmlData}});

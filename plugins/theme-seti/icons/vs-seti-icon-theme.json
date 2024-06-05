@@ -1313,6 +1313,14 @@
 			"fontColor": "#C1A766",
 			"fontId": "hbuilderx"
 		},
+        "_project_uniappx": {
+            "iconPath": "./uniappx.svg",
+			"fontColor": "#BEBEBE"
+		},
+		"_project_uniappx_light": {
+            "iconPath": "./uniappx_light.svg",
+			"fontColor": "#C1A766"
+		},
 		"_project_quickapp": {
 			"fontCharacter": "\\E904",
 			"fontColor": "#BEBEBE",
@@ -1516,7 +1524,8 @@
 		"htaccess": "_config",
 		"key": "_lock",
 		"cert": "_lock",
-		"ds_store": "_ignored"
+		"ds_store": "_ignored",
+        "uts": "_typescript"
 	},
 	"projectType": {
 		"default": "_project_default",
@@ -1613,6 +1622,7 @@
 		"sql": "_db",
 		"swift": "_swift",
 		"typescript": "_typescript",
+        "uts": "_typescript",
 		"typescriptreact": "_react",
 		"xml": "_xml",
 		"yaml": "_yml",
@@ -1819,7 +1829,8 @@
 			"htaccess": "_config_light",
 			"key": "_lock_light",
 			"cert": "_lock_light",
-			"ds_store": "_ignored_light"
+			"ds_store": "_ignored_light",
+            "uts": "_typescript_light"
 		},
 		"languageIds": {
 			"bat": "_windows_light",
@@ -1859,6 +1870,7 @@
 			"sql": "_db_light",
 			"swift": "_swift_light",
 			"typescript": "_typescript_light",
+            "uts": "_typescript_light",
 			"typescriptreact": "_react_light",
 			"xml": "_xml_light",
 			"yaml": "_yml_light",

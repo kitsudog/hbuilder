@@ -1,0 +1,58 @@
+{
+  "name": "list-item",
+  "type": "UniListItemElement",
+  "description": {
+    "value": "list-view组件的唯一合法子组件。每个item是一行",
+    "kind": "markdown"
+  },
+  "attributes": [
+    {
+      "name": "type",
+      "description": {
+        "value": "对应list-item的类型 list-view 将对同类型条目进行复用，所以合理的类型拆分，可以很好地提升 list-view 性能",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "x",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "number",
+      "defaultValue": 0
+    }
+  ],
+  "parentTags": ["list-view", "sticky-section"],
+  "uniPlatform": {
+    "app": {
+      "android": {
+        "osVer": "5.0",
+        "uniVer": "x",
+        "unixVer": "3.9+"
+      },
+      "ios": {
+        "osVer": "12.0",
+        "uniVer": "x",
+        "unixVer": "4.11"
+      }
+    },
+    "web": {
+      "uniVer": "x",
+      "unixVer": "4.02"
+    }
+  },
+  "hasGeneralAttrs": true,
+  "hasGeneralEvents": true
+}

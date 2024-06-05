@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.LessReferenceProcessor=void 0;const baseReferenceProcessor_1=require("./baseReferenceProcessor");class LessReferenceProcessor extends baseReferenceProcessor_1.BaseReferenceProcessor{}exports.LessReferenceProcessor=LessReferenceProcessor;

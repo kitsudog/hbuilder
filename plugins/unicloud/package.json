@@ -1,6 +1,8 @@
 {
+  "id": "unicloud",
   "name": "unicloud",
-  "version": "2.0.19-2021122812",
+  "version": "2.0.68-2024050811",
+  "__from": "HBuilderX",
   "description": "%description%",
   "main": "./manager/index.js",
   "scripts": {},
@@ -15,17 +17,813 @@
     "Other"
   ],
   "activationEvents": [
-    "*"
+    "*",
+    "onUri",
+    "onCommand:unicloud.init.createUniCloud",
+    "onCommand:unicloud.createCloudFunctionObject",
+    "onCommand:unicloud.createCommonModule",
+    "onLaunch:unicloud.launcher.runLocalCloudObject",
+    "onLaunch:unicloud.launcher.debugLocalCloudObject",
+    "onLaunch:unicloud.launcher.runLocalCloudFunction",
+    "onLaunch:unicloud.launcher.debugLocalCloudFunction",
+    "onCommand:unicloud.launcher.uploadAndExec",
+    "onLaunch:unicloud.launcher.uploadAndExecFunction",
+    "onLaunch:unicloud.launcher.uploadAndExecObject",
+    "onLaunch:unicloud.launcher.configureRunTestParam",
+    "onAppService:unicloud.uploadAppBuildPkg",
+    "onCommand:uniCloud.synchronouDependencies",
+    "onCommand:uniCloud.WebHost.Upload"
   ],
-  "contributes": {},
+  "contributes": {
+    "activationEvents": [],
+    "extensionDependencies": [],
+    "commands": [
+      {
+        "command": "unicloud.createCloudFunctionObject",
+        "title": "%createCloudFunction.command.name%"
+      },
+      {
+        "command": "unicloud.createCommonModule",
+        "title": "%createCommonModule.command.name%"
+      },
+      {
+        "command": "unicloud.launcher.uploadAndExec",
+        "title": "%launcher.uploadAndExec.name%"
+      },
+      {
+        "command": "unicloud.relatedServiceSpace",
+        "title": "%unicloud.relatedServiceSpace%"
+      },
+      {
+        "command": "unicloud.cloudFunction.uploadFunction",
+        "title": "%unicloud.cloudFunction.uploadFunction%"
+      },
+      {
+        "command": "unicloud.cloudFunction.downloadFunction",
+        "title": "%unicloud.cloudFunction.downloadFunction%"
+      },
+      {
+        "command": "unicloud.command.uploadCommonFunction",
+        "title": "%unicloud.command.uploadCommonFunction%"
+      },
+      {
+        "command": "unicloud.command.downloadCommonModule",
+        "title": "%unicloud.command.downloadCommonModule%"
+      },
+      {
+        "command": "unicloud.command.uploadUniClientDBAction",
+        "title": "%unicloud.command.uploadUniClientDBAction%"
+      },
+      {
+        "command": "unicloud.command.uploadUniClientDBActions",
+        "title": "%unicloud.command.uploadUniClientDBActions%"
+      },
+      {
+        "command": "unicloud.command.downloadUniClientDBActions",
+        "title": "%unicloud.command.downloadUniClientDBActions%"
+      },
+      {
+        "command": "unicloud.command.uploadAllFunction",
+        "title": "%unicloud.command.uploadAllFunction%"
+      },
+      {
+        "command": "unicloud.command.downloadAllFunction",
+        "title": "%unicloud.command.downloadAllFunction%"
+      },
+      {
+        "command": "unicloud.command.syncCommonModuleList",
+        "title": "%unicloud.command.syncCommonModuleList%"
+      },
+      {
+        "command": "unicloud.command.viewRelatedProjectServiceSpace",
+        "title": "%unicloud.command.viewRelatedProjectServiceSpace%"
+      },
+      {
+        "command": "unicloud.command.unBindRelatedProjectServiceSpace",
+        "title": "%unicloud.command.unBindRelatedProjectServiceSpace%"
+      },
+      {
+        "command": "unicloud.command.moveServiceSpaceToRelatedProject",
+        "title": "%unicloud.command.moveServiceSpaceToRelatedProject%"
+      },
+      {
+        "command": "unicloud.command.openUniCloudWebConsole",
+        "title": "%unicloud.command.openUniCloudWebConsole%"
+      },
+      {
+        "command": "unicloud.command.initUniCloudSpaceWizard",
+        "title": "%unicloud.command.initUniCloudSpaceWizard%"
+      },
+      {
+        "command": "unicloud.command.createCloudCommonDir",
+        "title": "%unicloud.command.createCloudCommonDir%"
+      },
+      {
+        "command": "unicloud-dependency-manager.edit-function",
+        "title": "%editFunctionDependency%"
+      },
+      {
+        "command": "unicloud-dependency-manager.edit-common",
+        "title": "%editCommonDependency%"
+      },
+      {
+        "command": "unicloud-dependency-manager.edit-jql",
+        "title": "%editJqlDependency%"
+      },
+      {
+        "command": "uniCloud.synchronouDependencies",
+        "title": "%synchronouJqlDependencies%"
+      },
+      {
+        "command": "uniCloud.newdbSchemaResource",
+        "title": "%uniCloudDBManager.command.newDBSchemaResource%"
+      },
+      {
+        "command": "uniCloud.updatedbSchemaResource",
+        "title": "%uniCloudDBManager.command.updateDBSchemaResource%"
+      },
+      {
+        "command": "uniCloud.uploadSchemaJS",
+        "title": "%uniCloudDBManager.command.uploadSchemaJS%"
+      },
+      {
+        "command": "uniCloud.downloadSchemaJS",
+        "title": "%uniCloudDBManager.command.downloadSchemaJS%"
+      },
+      {
+        "command": "uniCloud.createSchemaJS",
+        "title": "%uniCloudDBManager.command.createSchemaJS%"
+      },
+      {
+        "command": "uniCloud.initDB",
+        "title": "%uniCloudDBManager.command.initDB%"
+      },
+      {
+        "command": "uniCloud.oldInitDBTransfer",
+        "title": "%uniCloudDBManager.command.initDB%"
+      },
+      {
+        "command": "uniCloud.initDBData",
+        "title": "%uniCloudDBManager.command.initDBData%"
+      },
+      {
+        "command": "uniCloud.initDBIndex",
+        "title": "%uniCloudDBManager.command.initDBIndex%"
+      },
+      {
+        "command": "uniCloud.uploadDBSchemaResource",
+        "title": "%uniCloudDBManager.command.uploadDBSchemaResource%"
+      },
+      {
+        "command": "uniCloud.downloadDBSchemaResource",
+        "title": "%uniCloudDBManager.command.downloadDBSchemaResource%"
+      },
+      {
+        "command": "uniCloud.uploadAllDBSchemaResource",
+        "title": "%uniCloudDBManager.command.uploadAllDBSchemaResource%"
+      },
+      {
+        "command": "uniCloud.downloadAllDBSchemaResource",
+        "title": "%uniCloudDBManager.command.downloadAllDBSchemaResource%"
+      },
+      {
+        "command": "uniCloud.uploadValidateFunction",
+        "title": "%uniCloudDBManager.command.uploadValidateFunction%"
+      },
+      {
+        "command": "uniCloud.uploadAllValidateFunction",
+        "title": "%uniCloudDBManager.command.uploadAllValidateFunction%"
+      },
+      {
+        "command": "uniCloud.downloadValidateFunction",
+        "title": "%uniCloudDBManager.command.downloadValidateFunction%"
+      },
+      {
+        "command": "uniCloud.downloadAllValidateFunction",
+        "title": "%uniCloudDBManager.command.downloadAllValidateFunction%"
+      },
+      {
+        "command": "uniCloud.newValidateFunction",
+        "title": "%uniCloudDBManager.command.newValidateFunction%"
+      },
+      {
+        "command": "uniCloud.createValidateFunctionDir",
+        "title": "%uniCloudDBManager.command.createValidateFunctionDir%"
+      },
+      {
+        "command": "uniCloud.WebHost.Upload",
+        "title": "%uniCloud.WebHost.Upload.Title%"
+      }
+    ],
+    "expressions": {
+      "isCloudDir": "...workspaceFolderRelativePath =~ /^uniCloud\\-(tcb|aliyun|alipay)$/",
+      "isAlipayCloudDir": "...workspaceFolderRelativePath =~ /^uniCloud\\-alipay$/",
+      "isCloudFunctionDir": "...workspaceFolderRelativePath =~ /^uniCloud\\-(tcb|aliyun|alipay)\\/cloudfunctions$/",
+      "isUniModuleCloudFunctionDir": "...workspaceFolderRelativePath =~ /^uni_modules\\/.*\\/uniCloud\\/cloudfunctions$/",
+      "isCliUniModuleCloudFunctionDir": "...workspaceFolderRelativePath =~ /^src\\/uni_modules\\/.*\\/uniCloud\\/cloudfunctions$/",
+      "isCommonDir": "...workspaceFolderRelativePath =~ /^uniCloud\\-(tcb|aliyun|alipay)\\/cloudfunctions\\/common$/",
+      "isUniModuleCommonDir": "...workspaceFolderRelativePath =~ /^uni_modules\\/.*\\/uniCloud\\/cloudfunctions\\/common$/",
+      "isCliUniModuleCommonDir": "...workspaceFolderRelativePath =~ /^src\\/uni_modules\\/.*\\/uniCloud\\/cloudfunctions\\/common$/",
+      "isCommonChildDir": "...workspaceFolderRelativePath =~ /^uniCloud\\-(tcb|aliyun|alipay)\\/cloudfunctions\\/common\\/[a-zA-Z0-9-_]+$/",
+      "isUniModuleCommonChildDir": "...workspaceFolderRelativePath =~ /^uni_modules\\/.*\\/uniCloud\\/cloudfunctions\\/common\\/[a-zA-Z0-9-_]+$/",
+      "isCliUniModuleCommonChildDir": "...workspaceFolderRelativePath =~ /^src\\/uni_modules\\/.*\\/uniCloud\\/cloudfunctions\\/common\\/[a-zA-Z0-9-_]+$/",
+      "isCloudFunctionChildDir": "workspaceFolderRelativePath =~ /^uniCloud\\-(tcb|aliyun|alipay)\\/cloudfunctions\\/[a-zA-Z0-9-_]+$/",
+      "isUniModuleCloudFunctionChildDir": "workspaceFolderRelativePath =~ /^uni_modules\\/.*\\/uniCloud\\/cloudfunctions\\/[a-zA-Z0-9-_]+$/",
+      "isCliUniModuleCloudFunctionChildDir": "workspaceFolderRelativePath =~ /^src\\/uni_modules\\/.*\\/uniCloud\\/cloudfunctions\\/[a-zA-Z0-9-_]+$/",
+      "isCloudFunctionObjectFile": "workspaceFolderRelativePath =~ /^uniCloud\\-(tcb|aliyun|alipay)\\/cloudfunctions\\/.+\\/[a-zA-Z0-9-_]+.[a-zA-Z0-9-_.]+$/",
+      "isUniModuleCloudFunctionObjectFile": "workspaceFolderRelativePath =~ /^uni_modules\\/.*\\/uniCloud\\/cloudfunctions\\/.+\\/[a-zA-Z0-9-_]+.[a-zA-Z0-9-_.]+$/",
+      "isCliUniModuleCloudFunctionObjectFile": "workspaceFolderRelativePath =~ /^src\\/uni_modules\\/.*\\/uniCloud\\/cloudfunctions\\/.+\\/[a-zA-Z0-9-_]+.[a-zA-Z0-9-_.]+$/",
+      "hasCloudObjectEnter": "file.exists <- '${cloudFunctionObjectDir}/index.obj.js'",
+      "hasCloudFunctionEnter": "file.exists <- '${cloudFunctionObjectDir}/index.js'",
+      "hasFunctionOrObjectEnter": "expression.hasCloudObjectEnter || expression.hasCloudFunctionEnter",
+      "cfcd": "expression.isCloudFunctionChildDir || expression.isUniModuleCloudFunctionChildDir || expression.isCliUniModuleCloudFunctionChildDir",
+      "cfof": "expression.isCloudFunctionObjectFile || expression.isUniModuleCloudFunctionObjectFile || expression.isCliUniModuleCloudFunctionObjectFile",
+      "isUniClientDBActionDir": "...workspaceFolderRelativePath =~ /^uniCloud\\-(tcb|aliyun|alipay)\\/cloudfunctions\\/uni-clientDB-actions$/",
+      "isUniModuleUniClientDBActionDir": "...workspaceFolderRelativePath =~ /^uni_modules\\/.*\\/uniCloud\\/cloudfunctions\\/uni-clientDB-actions$/",
+      "isCliUniModuleUniClientDBActionDir": "...workspaceFolderRelativePath =~ /^src\\/uni_modules\\/.*\\/uniCloud\\/cloudfunctions\\/uni-clientDB-actions$/",
+      "isUniClientDBActionChildFile": "workspaceFolderRelativePath =~ /^uniCloud\\-(tcb|aliyun|alipay)\\/cloudfunctions\\/uni-clientDB-actions\\/[a-zA-Z0-9-_]+.[a-zA-Z0-9-_.]+$/",
+      "isUniModuleUniClientDBActionChildFile": "workspaceFolderRelativePath =~ /^uni_modules\\/.*\\/uniCloud\\/cloudfunctions\\/uni-clientDB-actions\\/[a-zA-Z0-9-_]+.[a-zA-Z0-9-_.]+$/",
+      "isCliUniModuleUniClientDBActionChildFile": "workspaceFolderRelativePath =~ /^src\\/uni_modules\\/.*\\/uniCloud\\/cloudfunctions\\/uni-clientDB-actions\\/[a-zA-Z0-9-_]+.[a-zA-Z0-9-_.]+$/",
+      "notCommonMoudleDir": "!expression.isCommonDir && !expression.isUniModuleCommonDir && !expression.isCliUniModuleCommonDir",
+      "notClientDBActionDir": "!expression.isUniClientDBActionDir && !expression.isUniModuleUniClientDBActionDir && !expression.isCliUniModuleUniClientDBActionDir",
+      "isCfChild": "...workspaceFolderRelativePath =~ /uniCloud(-aliyun|-tcb|-alipay|)\\/cloudfunctions\\/[a-zA-Z0-9-_]+$/",
+      "isOtherCfChild": "...workspaceFolderRelativePath =~ /uniCloud(-aliyun|-tcb|-alipay|)\\/cloudfunctions\\/(common|uni-clientDB-actions)$/",
+      "isCloudFunction": "expression.isCfChild && !expression.isOtherCfChild",
+      "isCommonModule": "...workspaceFolderRelativePath =~ /uniCloud(-aliyun|-tcb|-alipay|)\\/cloudfunctions\\/common\\/(.*?)$/",
+      "isRootDatabase": "...workspaceFolderRelativePath =~ /uniCloud(-aliyun|-tcb|-alipay)\\/database$/",
+      "isUploadJql": "workspaceFolderRelativePath =~ /^uniCloud\\-(tcb|aliyun|alipay)\\/database$/",
+      "isDBSchema": "workspaceFolderRelativePath =~ /^uniCloud\\-(tcb|aliyun|alipay)\\/database\\/.*\\.schema\\.json$/ || workspaceFolderRelativePath =~ /^uni_modules\\/.*\\/uniCloud\\/database\\/.*\\.schema\\.json$/ || workspaceFolderRelativePath =~ /^src\\/uni_modules\\/.*\\/uniCloud\\/database\\/.*\\.schema\\.json$/",
+      "isOpendbSchema": "workspaceFolderRelativePath =~ /^uniCloud\\-(tcb|aliyun|alipay)\\/database\\/opendb.*\\.schema\\.json$/ || workspaceFolderRelativePath =~ /^uni_modules\\/.*\\/uniCloud\\/database\\/opendb.*\\.schema\\.json$/ || workspaceFolderRelativePath =~ /^uniCloud\\-(tcb|aliyun|alipay)\\/database\\/uni-.*\\.schema\\.json$/ || workspaceFolderRelativePath =~ /^uni_modules\\/.*\\/uniCloud\\/database\\/uni-.*\\.schema\\.json$/|| workspaceFolderRelativePath =~ /^src\\/uni_modules\\/.*\\/uniCloud\\/database\\/opendb.*\\.schema\\.json$/ || workspaceFolderRelativePath =~ /^src\\/uniCloud\\-(tcb|aliyun|alipay)\\/database\\/uni-.*\\.schema\\.json$/ || workspaceFolderRelativePath =~ /^src\\/uni_modules\\/.*\\/uniCloud\\/database\\/uni-.*\\.schema\\.json$/",
+      "isOpendbSchemaJS": "workspaceFolderRelativePath =~ /^uniCloud\\-(tcb|aliyun|alipay)\\/database\\/*.*\\.schema\\.ext\\.js$/ || workspaceFolderRelativePath =~ /^uni_modules\\/.*\\/uniCloud\\/database\\/*.*\\.schema\\.ext\\.js$/ || workspaceFolderRelativePath =~ /^src\\/uni_modules\\/.*\\/uniCloud\\/database\\/*.*\\.schema\\.ext\\.js$/",
+      "isOpendbData": "workspaceFolderRelativePath =~ /^uniCloud\\-(tcb|aliyun|alipay)\\/database\\/*.*\\.init_data\\.json$/ || workspaceFolderRelativePath =~ /^uni_modules\\/.*\\/uniCloud\\/database\\/*.*\\.init_data\\.json$/ || workspaceFolderRelativePath =~ /^src\\/uni_modules\\/.*\\/uniCloud\\/database\\/*.*\\.init_data\\.json$/",
+      "isOpendbIndex": "workspaceFolderRelativePath =~ /^uniCloud\\-(tcb|aliyun|alipay)\\/database\\/*.*\\.index\\.json$/ || workspaceFolderRelativePath =~ /^uni_modules\\/.*\\/uniCloud\\/database\\/*.*\\.index\\.json$/ || workspaceFolderRelativePath =~ /^src\\/uni_modules\\/.*\\/uniCloud\\/database\\/*.*\\.index\\.json$/",
+      "isDatabaseDir": "workspaceFolderRelativePath =~ /^uniCloud\\-(tcb|aliyun|alipay)\\/database$/ || workspaceFolderRelativePath =~ /^uni_modules\\/.*\\/uniCloud\\/database$/ || workspaceFolderRelativePath =~ /^src\\/uni_modules\\/.*\\/uniCloud\\/database$/",
+      "isDBInitFile": "workspaceFolderRelativePath =~ /^uniCloud\\-(tcb|aliyun|alipay)\\/database\\/db_init\\.json$/ || workspaceFolderRelativePath =~ /^uni_modules\\/.*\\/uniCloud\\/database\\/db_init\\.json$/ || workspaceFolderRelativePath =~ /^src\\/uni_modules\\/.*\\/uniCloud\\/database\\/db_init\\.json$/",
+      "isValidateFunctionFile": "workspaceFolderRelativePath =~ /^uniCloud\\-(tcb|aliyun|alipay)\\/database\\/validateFunction\\/.*.js$/ || workspaceFolderRelativePath =~ /^uni_modules\\/.*\\/uniCloud\\/database\\/validateFunction\\/.*.js$/ || workspaceFolderRelativePath =~ /^src\\/uni_modules\\/.*\\/uniCloud\\/database\\/validateFunction\\/.*.js$/",
+      "isValidateFunctionDir": "workspaceFolderRelativePath =~ /^uniCloud\\-(tcb|aliyun|alipay)\\/database\\/validateFunction$/ || workspaceFolderRelativePath =~ /^uni_modules\\/.*\\/uniCloud\\/database\\/validateFunction$/ || workspaceFolderRelativePath =~ /^src\\/uni_modules\\/.*\\/uniCloud\\/database\\/validateFunction$/",
+      "existsValidateFunctionDir": "file.exists <- '${uniCloudDir}/database/validateFunction'",
+      "webHostIsCloudDir": "...workspaceFolderRelativePath =~ /^uniCloud\\-(tcb|aliyun|alipay)$/"
+    },
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "unicloud.command.initUniCloudSpaceWizard",
+          "group": "_top",
+          "when": "explorerResourceCount == 1 && expression.isAlipayCloudDir"
+        },
+        {
+          "command": "unicloud.command.openUniCloudWebConsole",
+          "when": "explorerResourceCount == 1 && expression.isCloudDir",
+          "group": "_top"
+        },
+        {
+          "command": "unicloud.relatedServiceSpace",
+          "when": "explorerResourceCount == 1 && expression.isCloudDir",
+          "group": "_top"
+        },
+        {
+          "command": "unicloud.cloudFunction.downloadFunction",
+          "when": "explorerResourceCount == 1 && expression.cfcd && expression.notCommonMoudleDir && expression.notClientDBActionDir",
+          "group": "_top"
+        },
+        {
+          "command": "unicloud.cloudFunction.uploadFunction",
+          "when": "explorerResourceCount == 1 && expression.cfcd && expression.notCommonMoudleDir && expression.notClientDBActionDir",
+          "group": "_top"
+        },
+        {
+          "command": "unicloud.createCommonModule",
+          "group": "_top",
+          "when": "explorerResourceCount == 1 && (expression.isCommonDir || expression.isUniModuleCommonDir || expression.isCliUniModuleCommonDir)"
+        },
+        {
+          "id": "workbench.launch2menu.provider",
+          "providerArgs": {
+            "type": "unicloud.launcher.runLocalCloudObject"
+          },
+          "group": "new",
+          "when": "explorerResourceCount == 1 && expression.cfcd && expression.hasCloudObjectEnter",
+          "dynamic": true
+        },
+        {
+          "id": "workbench.launch2menu.provider",
+          "providerArgs": {
+            "type": "unicloud.launcher.debugLocalCloudObject"
+          },
+          "group": "new",
+          "when": "explorerResourceCount == 1 && expression.cfcd && expression.hasCloudObjectEnter",
+          "dynamic": true
+        },
+        {
+          "id": "workbench.launch2menu.provider",
+          "providerArgs": {
+            "type": "unicloud.launcher.runLocalCloudFunction"
+          },
+          "group": "new",
+          "when": "explorerResourceCount == 1 && expression.cfcd && expression.hasCloudFunctionEnter",
+          "dynamic": true
+        },
+        {
+          "id": "workbench.launch2menu.provider",
+          "providerArgs": {
+            "type": "unicloud.launcher.debugLocalCloudFunction"
+          },
+          "group": "new",
+          "when": "explorerResourceCount == 1 && expression.cfcd && expression.hasCloudFunctionEnter",
+          "dynamic": true
+        },
+        {
+          "command": "unicloud.launcher.uploadAndExec",
+          "group": "new",
+          "when": "explorerResourceCount == 1 && expression.cfcd && expression.hasFunctionOrObjectEnter"
+        },
+        {
+          "id": "workbench.launch2menu.provider",
+          "providerArgs": {
+            "type": "unicloud.launcher.configureRunTestParam"
+          },
+          "group": "new",
+          "when": "explorerResourceCount == 1 && expression.cfcd && expression.hasFunctionOrObjectEnter",
+          "dynamic": true
+        },
+        {
+          "group": "new"
+        },
+        {
+          "command": "unicloud.command.downloadCommonModule",
+          "group": "_top",
+          "when": "explorerResourceCount == 1 && (expression.isCommonChildDir || expression.isUniModuleCommonChildDir || expression.isCliUniModuleCommonChildDir)"
+        },
+        {
+          "command": "unicloud.command.uploadCommonFunction",
+          "group": "_top",
+          "when": "explorerResourceCount == 1 && (expression.isCommonChildDir || expression.isUniModuleCommonChildDir || expression.isCliUniModuleCommonChildDir)"
+        },
+        {
+          "command": "unicloud.command.uploadUniClientDBActions",
+          "group": "_top",
+          "when": "explorerResourceCount == 1 && (expression.isUniClientDBActionDir || expression.isUniModuleUniClientDBActionDir || expression.isCliUniModuleUniClientDBActionDir)"
+        },
+        {
+          "command": "unicloud.command.uploadUniClientDBAction",
+          "group": "_top",
+          "when": "explorerResourceCount == 1 && (expression.isUniClientDBActionChildFile || expression.isUniModuleUniClientDBActionChildFile || expression.isCliUniModuleUniClientDBActionChildFile)"
+        },
+        {
+          "command": "unicloud.command.downloadUniClientDBActions",
+          "group": "_top",
+          "when": "explorerResourceCount == 1 && (expression.isUniClientDBActionDir || expression.isUniModuleUniClientDBActionDir || expression.isCliUniModuleUniClientDBActionDir)"
+        },
+        {
+          "command": "unicloud.command.downloadAllFunction",
+          "group": "_top",
+          "when": "explorerResourceCount == 1 && (expression.isCloudFunctionDir || expression.isUniModuleCloudFunctionDir || expression.isCliUniModuleCloudFunctionDir)"
+        },
+        {
+          "command": "unicloud.command.uploadAllFunction",
+          "group": "_top",
+          "when": "explorerResourceCount == 1 && (expression.isCloudFunctionDir || expression.isUniModuleCloudFunctionDir || expression.isCliUniModuleCloudFunctionDir)"
+        },
+        {
+          "command": "unicloud.command.syncCommonModuleList",
+          "group": "_top",
+          "when": "explorerResourceCount == 1 && (expression.isCommonDir || expression.isUniModuleCommonDir || expression.isCliUniModuleCommonDir)"
+        },
+        {
+          "command": "unicloud.createCloudFunctionObject",
+          "group": "_top",
+          "when": "explorerResourceCount == 1 && (expression.isCloudFunctionDir || expression.isUniModuleCloudFunctionDir || expression.isCliUniModuleCloudFunctionDir)"
+        },
+        {
+          "command": "unicloud-dependency-manager.edit-function",
+          "group": "new",
+          "when": "explorerResourceCount== 1 && expression.isCloudFunction"
+        },
+        {
+          "command": "unicloud-dependency-manager.edit-common",
+          "group": "new",
+          "when": "explorerResourceCount== 1 && expression.isCommonModule"
+        },
+        {
+          "separator": true,
+          "group": "new"
+        },
+        {
+          "command": "unicloud-dependency-manager.edit-jql",
+          "group": "new",
+          "when": "explorerResourceCount== 1 && expression.isRootDatabase"
+        },
+        {
+          "command": "uniCloud.synchronouDependencies",
+          "group": "new",
+          "when": "explorerResourceCount == 1 && expression.isUploadJql"
+        },
+        {
+          "separator": true,
+          "group": "new"
+        },
+        {
+          "command": "uniCloud.createValidateFunctionDir",
+          "group": "_top",
+          "when": "explorerResourceCount == 1 && workspaceFolder.type == 'UniApp_Vue' && expression.isDatabaseDir"
+        },
+        {
+          "command": "uniCloud.downloadAllDBSchemaResource",
+          "group": "_top",
+          "when": "explorerResourceCount == 1 && workspaceFolder.type == 'UniApp_Vue' && expression.isDatabaseDir"
+        },
+        {
+          "command": "uniCloud.uploadAllDBSchemaResource",
+          "group": "_top",
+          "when": "explorerResourceCount == 1 && workspaceFolder.type == 'UniApp_Vue' && expression.isDatabaseDir"
+        },
+        {
+          "command": "uniCloud.updatedbSchemaResource",
+          "group": "_top",
+          "when": "explorerResourceCount == 1 && workspaceFolder.type == 'UniApp_Vue' && expression.isOpendbSchema"
+        },
+        {
+          "command": "uniCloud.downloadSchemaJS",
+          "group": "_top",
+          "when": "explorerResourceCount == 1 && workspaceFolder.type == 'UniApp_Vue' && expression.isOpendbSchemaJS"
+        },
+        {
+          "command": "uniCloud.uploadSchemaJS",
+          "group": "_top",
+          "when": "explorerResourceCount == 1 && workspaceFolder.type == 'UniApp_Vue' && expression.isOpendbSchemaJS"
+        },
+        {
+          "command": "uniCloud.initDB",
+          "group": "_top",
+          "when": "explorerResourceCount == 1 && workspaceFolder.type == 'UniApp_Vue' && expression.isDatabaseDir"
+        },
+        {
+          "command": "uniCloud.oldInitDBTransfer",
+          "group": "_top",
+          "when": "explorerResourceCount == 1 && workspaceFolder.type == 'UniApp_Vue' && expression.isDBInitFile"
+        },
+        {
+          "command": "uniCloud.initDBData",
+          "group": "_top",
+          "when": "explorerResourceCount == 1 && workspaceFolder.type == 'UniApp_Vue' && expression.isOpendbData"
+        },
+        {
+          "command": "uniCloud.initDBIndex",
+          "group": "_top",
+          "when": "explorerResourceCount == 1 && workspaceFolder.type == 'UniApp_Vue' && expression.isOpendbIndex"
+        },
+        {
+          "command": "uniCloud.downloadDBSchemaResource",
+          "group": "_top",
+          "when": "explorerResourceCount == 1 && workspaceFolder.type == 'UniApp_Vue' && expression.isDBSchema"
+        },
+        {
+          "command": "uniCloud.uploadDBSchemaResource",
+          "group": "_top",
+          "when": "explorerResourceCount == 1 && workspaceFolder.type == 'UniApp_Vue' && expression.isDBSchema"
+        },
+        {
+          "command": "uniCloud.createSchemaJS",
+          "group": "_top",
+          "when": "explorerResourceCount == 1 && workspaceFolder.type == 'UniApp_Vue' && expression.isDatabaseDir"
+        },
+        {
+          "command": "uniCloud.newdbSchemaResource",
+          "group": "_top",
+          "when": "explorerResourceCount == 1 && workspaceFolder.type == 'UniApp_Vue' && expression.isDatabaseDir"
+        },
+        {
+          "command": "uniCloud.downloadValidateFunction",
+          "group": "_top",
+          "when": "explorerResourceCount == 1 && workspaceFolder.type == 'UniApp_Vue' && expression.isValidateFunctionFile"
+        },
+        {
+          "command": "uniCloud.uploadValidateFunction",
+          "group": "_top",
+          "when": "explorerResourceCount == 1 && workspaceFolder.type == 'UniApp_Vue' && expression.isValidateFunctionFile"
+        },
+        {
+          "command": "uniCloud.downloadAllValidateFunction",
+          "group": "_top",
+          "when": "explorerResourceCount == 1 && workspaceFolder.type == 'UniApp_Vue' && expression.isValidateFunctionDir"
+        },
+        {
+          "command": "uniCloud.uploadAllValidateFunction",
+          "group": "_top",
+          "when": "explorerResourceCount == 1 && workspaceFolder.type == 'UniApp_Vue' && expression.isValidateFunctionDir"
+        },
+        {
+          "command": "uniCloud.newValidateFunction",
+          "group": "_top",
+          "when": "explorerResourceCount == 1 && workspaceFolder.type == 'UniApp_Vue' && expression.isValidateFunctionDir"
+        }
+      ],
+      "explorer/unicloud.related.project": [
+        {
+          "command": "unicloud.command.openUniCloudWebConsole",
+          "group": "_top"
+        },
+        {
+          "command": "unicloud.command.moveServiceSpaceToRelatedProject",
+          "group": "_top"
+        },
+        {
+          "command": "unicloud.command.unBindRelatedProjectServiceSpace",
+          "group": "_top"
+        },
+        {
+          "command": "unicloud.command.viewRelatedProjectServiceSpace",
+          "group": "_top"
+        }
+      ],
+      "editor/context": [
+        {
+          "command": "uniCloud.oldInitDBTransfer",
+          "group": "_top",
+          "when": "workspaceFolder.type == 'UniApp_Vue' && expression.isDBInitFile"
+        }
+      ],
+      "menubar/publish": [
+        {
+          "command": "uniCloud.WebHost.Upload",
+          "group": "unicloud.web.staticDeploy",
+          "when": "workspaceFolder.type == 'Web' || workspaceFolder.type  == 'UniApp_Vue'"
+        }
+      ]
+    },
+    "resourceVariableResolvers": [
+      {
+        "name": "uniCloudFnPath",
+        "resolver": [
+          {
+            "type": "regex",
+            "match": "(${workspaceFolder}/uniCloud-(tcb|aliyun|alipay)/cloudfunctions/([^/]+))/(.*)",
+            "valueReference": 1
+          },
+          {
+            "type": "regex",
+            "match": "(${workspaceFolder}/uni_modules/([^/]+)/uniCloud/cloudfunctions/([^/]+))/(.*)",
+            "valueReference": 1
+          }
+        ]
+      },
+      {
+        "name": "cloudFunctionObjectDir",
+        "resolver": [
+          {
+            "type": "regex",
+            "match": "(${workspaceFolder}/uniCloud-(tcb|aliyun|alipay)/cloudfunctions/([^/]+))",
+            "valueReference": 1
+          },
+          {
+            "type": "regex",
+            "match": "(${workspaceFolder}/uni_modules/([^/]+)/uniCloud/cloudfunctions/([^/]+))",
+            "valueReference": 1
+          },
+          {
+            "type": "regex",
+            "match": "(${workspaceFolder}/src/uni_modules/([^/]+)/uniCloud/cloudfunctions/([^/]+))",
+            "valueReference": 1
+          }
+        ]
+      },
+      {
+        "name": "cloudFunctionName",
+        "resolver": [
+          {
+            "type": "regex",
+            "match": "(${workspaceFolder}/uniCloud-(tcb|aliyun|alipay)/cloudfunctions/([^/]+))(.*)",
+            "valueReference": 3
+          },
+          {
+            "type": "regex",
+            "match": "(${workspaceFolder}/uni_modules/([^/]+)/uniCloud/cloudfunctions/([^/]+))(.*)",
+            "valueReference": 3
+          },
+          {
+            "type": "regex",
+            "match": "(${workspaceFolder}/src/uni_modules/([^/]+)/uniCloud/cloudfunctions/([^/]+))(.*)",
+            "valueReference": 3
+          }
+        ]
+      },
+      {
+        "name": "uniCloudDir",
+        "resolver": [
+          {
+            "type": "regex",
+            "match": "(${workspaceFolder}/uniCloud-(tcb|aliyun|alipay))",
+            "valueReference": 1
+          },
+          {
+            "type": "regex",
+            "match": "(${workspaceFolder}/uni_modules/([^/]+)/uniCloud)",
+            "valueReference": 1
+          },
+          {
+            "type": "regex",
+            "match": "(${workspaceFolder}/src/uniCloud-(tcb|aliyun|alipay))",
+            "valueReference": 1
+          }
+        ]
+      }
+    ],
+    "launchers": [
+      {
+        "type": "unicloud.launcher.runLocalCloudObject",
+        "launcherId": "runOrDebugLocalCloudObject.${uniCloudFnPath}",
+        "label": "%launcher.runLocalCloudObject.name%",
+        "terminateLabel": "%launcher.stopRunLocalCloudObject.name%",
+        "when": "(explorerResourceCount == 1 && expression.cfcd && expression.hasCloudObjectEnter) || (expression.cfof && expression.hasCloudObjectEnter)",
+        "mode": "run",
+        "priority": 100
+      },
+      {
+        "type": "unicloud.launcher.debugLocalCloudObject",
+        "launcherId": "runOrDebugLocalCloudObject.${uniCloudFnPath}",
+        "label": "%launcher.debugLocalCloudObject.name%",
+        "terminateLabel": "%launcher.stopDebugLocalCloudObject.name%",
+        "when": "(explorerResourceCount == 1 && expression.cfcd && expression.hasCloudObjectEnter) || (expression.cfof && expression.hasCloudObjectEnter)",
+        "mode": "debug",
+        "priority": 99
+      },
+      {
+        "type": "unicloud.launcher.runLocalCloudFunction",
+        "launcherId": "runOrDebugLocalCloudFunction.${uniCloudFnPath}",
+        "label": "%launcher.runLocalCloudFunction.name%",
+        "terminateLabel": "%launcher.stopRunLocalCloudFunction.name%",
+        "when": "(explorerResourceCount == 1 && expression.cfcd && expression.hasCloudFunctionEnter) || (expression.cfof && expression.hasCloudFunctionEnter)",
+        "mode": "run",
+        "priority": 98
+      },
+      {
+        "type": "unicloud.launcher.debugLocalCloudFunction",
+        "launcherId": "runOrDebugLocalCloudFunction.${uniCloudFnPath}",
+        "label": "%launcher.debugLocalCloudFunction.name%",
+        "terminateLabel": "%launcher.stopDebugLocalCloudFunction.name%",
+        "when": "(explorerResourceCount == 1 && expression.cfcd && expression.hasCloudFunctionEnter) || (expression.cfof && expression.hasCloudFunctionEnter)",
+        "mode": "debug",
+        "priority": 97
+      },
+      {
+        "type": "unicloud.launcher.uploadAndExecFunction",
+        "launcherId": "uploadAndExecFunction.${uniCloudFnPath}",
+        "label": "%launcher.uploadAndExecFunction.name% - [${cloudFunctionName}](&T)",
+        "terminateLabel": "%launcher.uploadAndExecFunction.name% - [${cloudFunctionName}](&T)",
+        "when": "(explorerResourceCount == 1 && expression.cfcd && expression.hasCloudFunctionEnter) || (expression.cfof && expression.hasCloudFunctionEnter)",
+        "mode": "run",
+        "priority": 96
+      },
+      {
+        "type": "unicloud.launcher.uploadAndExecObject",
+        "launcherId": "uploadAndExecObject.${uniCloudFnPath}",
+        "label": "%launcher.uploadAndExecObject.name% - [${cloudFunctionName}](&T)",
+        "terminateLabel": "%launcher.uploadAndExecObject.name% - [${cloudFunctionName}](&T)",
+        "when": "(explorerResourceCount == 1 && expression.cfcd && expression.hasCloudObjectEnter) || (expression.cfof && expression.hasCloudObjectEnter)",
+        "mode": "run",
+        "priority": 95
+      },
+      {
+        "type": "unicloud.launcher.configureRunTestParam",
+        "launcherId": "configureRunTestParam.${uniCloudFnPath}",
+        "label": "%launcher.configureRunTestParam.name%",
+        "terminateLabel": "%launcher.configureRunTestParam.name%",
+        "when": "(explorerResourceCount == 1 && expression.cfcd && expression.hasFunctionOrObjectEnter) || (expression.cfof && expression.hasFunctionOrObjectEnter)",
+        "mode": "run",
+        "priority": 94
+      }
+    ],
+    "app-services": [
+      {
+        "handler": "unicloud.uploadAppBuildPkg",
+        "title": "%uniCloud.appService.uploadAppBuildPkg%"
+      }
+    ],
+    "customEditors": [],
+    "clicommands": [
+      {
+        "name": "uniCloud.synchronouDependencies",
+        "descption": "上传Schema扩展Js的配置",
+        "args": [
+          {
+            "name": "path",
+            "descption": "项目的绝对路径"
+          },
+          {
+            "name": "provider",
+            "descption": "云服务提供商代号，可选aliyun、tcb、alipay"
+          },
+          {
+            "name": "spaceId",
+            "descption": "云空间的序号或id"
+          },
+          {
+            "name": "appId",
+            "descption": "项目的appId"
+          },
+          {
+            "name": "prj",
+            "descption": "项目名"
+          }
+        ]
+      },
+      {
+        "name": "hosting deploy",
+        "description": "前端网页托管",
+        "args": [
+          {
+            "name": "prj",
+            "description": "项目名称或序号，可使用project list获得",
+            "type": "string"
+          },
+          {
+            "name": "space",
+            "description": "空间名称或id",
+            "type": "string",
+            "usage": "require"
+          },
+          {
+            "name": "provider",
+            "description": "云服务商名称,tcb|aliyun|alipay",
+            "type": "enum",
+            "enum": "tcb|aliyun|alipay",
+            "usage": "require"
+          },
+          {
+            "name": "source",
+            "description": "以项目路径为基础的相对目录，如果没有这个参数则以项目根目录上传",
+            "type": "string"
+          },
+          {
+            "name": "prefix",
+            "description": "云端路径前缀，如果没有这个参数则上传目标为云空间根目录",
+            "type": "string"
+          }
+        ]
+      },
+      {
+        "name": "hosting list",
+        "description": "获取云空间文件列表",
+        "args": [
+          {
+            "name": "space",
+            "description": "空间名称或id",
+            "type": "string",
+            "usage": "require"
+          },
+          {
+            "name": "provider",
+            "description": "云服务商名称,tcb|aliyun|alipay",
+            "type": "enum",
+            "enum": "tcb|aliyun|alipay",
+            "usage": "require"
+          },
+          {
+            "name": "prefix",
+            "description": "云端路径前缀，如果没有这个参数则目标为云空间根目录",
+            "type": "string"
+          }
+        ]
+      },
+      {
+        "name": "hosting delete",
+        "description": "删除云空间文件或文件夹",
+        "args": [
+          {
+            "name": "space",
+            "description": "空间名称或id",
+            "type": "string",
+            "usage": "require"
+          },
+          {
+            "name": "provider",
+            "description": "云服务商名称,tcb|aliyun|alipay",
+            "type": "enum",
+            "enum": "tcb|aliyun|alipay",
+            "usage": "require"
+          },
+          {
+            "name": "path",
+            "description": "云空间文件名或目录名，目录以/结尾",
+            "type": "string",
+            "usage": "require"
+          }
+        ]
+      }
+    ]
+  },
   "extensionDependencies": [
-    "plugin-manager"
+    "plugin-manager",
+    "uni_modules"
   ],
   "dependencies": {
-    "@alicloud/mpserverless-node-sdk": "1.2.0",
+    "@alicloud/mpserverless-node-sdk": "1.2.5",
+    "@alipay/faas-server-sdk": "1.1.18",
     "@cloudbase/node-sdk": "2.5.1",
+    "chokidar": "3.5.3",
+    "cos-nodejs-sdk-v5": "2.11.10",
     "hjson": "3.2.1",
     "urllib": "2.36.1"
   },
-  "_dc_signatures": "c9ad993f6e7b62359b626e615d3c392d17c4db97918c2bf498b857cb7d69355b17234ba2115a4b2829ca0169567bde4e"
+  "_dc_signatures": "7cd16b7790fc3597d5b56a4e9adfe30e54f675c8b794876ebb24fd008b0f21a5bd0a2e7bf9b11bf92dd51260cc7a2c14"
 }

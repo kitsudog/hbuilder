@@ -4,7 +4,7 @@
   "description": "%description%",
   "__category": "C++插件",
   "__from": "HBuilderX",
-  "version": "1.0.9.2021100817",
+  "version": "1.2.1.2024032816",
   "extensionDependencies": [
     "qtwebengine",
     "node"

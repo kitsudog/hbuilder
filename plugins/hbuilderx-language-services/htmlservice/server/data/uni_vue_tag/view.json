@@ -1,0 +1,147 @@
+{
+  "name": "view",
+  "type": "UniViewElement",
+  "description": {
+    "value": "基本视图容器",
+    "kind": "markdown"
+  },
+  "attributes": [{
+      "name": "hover-class",
+      "description": {
+        "value": "指定按下去的样式类。当 hover-class=\"none\" 时，没有点击态效果",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "string",
+      "defaultValue": "none",
+      "valueSet": "string.ClassString"
+    },
+    {
+      "name": "hover-stop-propagation",
+      "description": {
+        "value": "指定是否阻止本节点的祖先节点出现点击态(祖先节点：指根节点到该节点路径上的所有节点都是这个节点的祖先节点)",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "boolean",
+      "defaultValue": false
+    },
+    {
+      "name": "hover-start-time",
+      "description": {
+        "value": "按住后多久出现点击态，单位毫秒",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "number",
+      "defaultValue": 50
+    },
+    {
+      "name": "hover-stay-time",
+      "description": {
+        "value": "手指松开后点击态保留时间，单位毫秒",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "number",
+      "defaultValue": 400
+    }
+  ],
+  "references": [{
+      "url": "https://uniapp.dcloud.io/component/view",
+      "name": "参见uni-app相关文档"
+    },
+    {
+      "url": "https://doc.dcloud.net.cn/uni-app-x/component/view.html",
+      "name": "参见uni-app x相关文档"
+    }
+  ],
+  "uniPlatform": {
+    "app": {
+      "android": {
+        "osVer": "5.0",
+        "uniVer": "√",
+        "unixVer": "3.9+"
+      },
+      "ios": {
+        "osVer": "12.0",
+        "uniVer": "√",
+        "unixVer": "4.11"
+      }
+    },
+    "web": {
+      "uniVer": "√",
+      "unixVer": "4.0"
+    }
+  },
+  "hasGeneralAttrs": true,
+  "hasGeneralEvents": true
+}

@@ -1,0 +1,1150 @@
+{
+  "name": "scroll-view",
+  "type": "UniScrollViewElement",
+  "description": {
+    "value": "可滚动视图容器",
+    "kind": "markdown"
+  },
+  "attributes": [
+    {
+      "name": "type",
+      "description": {
+        "value": "渲染模式，可取值 nested",
+        "kind": "markdown"
+      },
+      "values": [
+        {
+          "name": "nested",
+          "description": "嵌套模式。用于处理父子 scroll-view 间的嵌套滚动，子节点只能是 nested-scroll-header nested-scroll-body 组件或自定义 refresher",
+          "uniPlatform": {
+            "app": {
+              "android": {
+                "osVer": "5.0",
+                "uniVer": "x",
+                "unixVer": "4.11"
+              },
+              "ios": {
+                "osVer": "12.0",
+                "uniVer": "x",
+                "unixVer": "4.11"
+              }
+            },
+            "web": {
+              "uniVer": "x",
+              "unixVer": "x"
+            }
+          }
+        }
+      ],
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "x",
+            "unixVer": "4.11"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "x",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "x",
+          "unixVer": "x"
+        }
+      },
+      "type": "string"
+    },
+    {
+      "name": "direction",
+      "description": {
+        "value": "滚动方向，可取值 none、all、horizontal、vertical，默认值vertical",
+        "kind": "markdown"
+      },
+      "values": [
+        {
+          "name": "none",
+          "description": "禁止滚动",
+          "uniPlatform": {
+            "app": {
+              "android": {
+                "osVer": "5.0",
+                "uniVer": "x",
+                "unixVer": "4.0"
+              },
+              "ios": {
+                "osVer": "12.0",
+                "uniVer": "x",
+                "unixVer": "4.11"
+              }
+            },
+            "web": {
+              "uniVer": "√",
+              "unixVer": "4.0"
+            }
+          }
+        },
+        {
+          "name": "all",
+          "description": "横向竖向都可滚动 app端不支持",
+          "uniPlatform": {
+            "app": {
+              "android": {
+                "osVer": "5.0",
+                "uniVer": "x",
+                "unixVer": "x"
+              },
+              "ios": {
+                "osVer": "12.0",
+                "uniVer": "x",
+                "unixVer": "x"
+              }
+            },
+            "web": {
+              "uniVer": "√",
+              "unixVer": "4.0"
+            }
+          }
+        },
+        {
+          "name": "horizontal",
+          "description": "横向滚动",
+          "uniPlatform": {
+            "app": {
+              "android": {
+                "osVer": "5.0",
+                "uniVer": "x",
+                "unixVer": "4.0"
+              },
+              "ios": {
+                "osVer": "12.0",
+                "uniVer": "x",
+                "unixVer": "4.11"
+              }
+            },
+            "web": {
+              "uniVer": "√",
+              "unixVer": "4.0"
+            }
+          }
+        },
+        {
+          "name": "vertical",
+          "description": "竖向滚动",
+          "uniPlatform": {
+            "app": {
+              "android": {
+                "osVer": "5.0",
+                "uniVer": "x",
+                "unixVer": "4.0"
+              },
+              "ios": {
+                "osVer": "12.0",
+                "uniVer": "x",
+                "unixVer": "4.11"
+              }
+            },
+            "web": {
+              "uniVer": "√",
+              "unixVer": "4.0"
+            }
+          }
+        }
+      ],
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "x",
+            "unixVer": "4.0"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "x",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "string",
+      "defaultValue": "vertical"
+    },
+    {
+      "name": "scroll-x",
+      "deprecated": true,
+      "description": {
+        "value": "允许横向滚动，不支持同时设置scroll-y属性为true，同时设置true时scroll-y生效。已废弃，请改用direction",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "boolean",
+      "defaultValue": false
+    },
+    {
+      "name": "scroll-y",
+      "deprecated": true,
+      "description": {
+        "value": "允许纵向滚动，不支持同时设置scroll-x属性为true，同时设置true时scroll-y生效。已废弃，请改用direction",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "boolean",
+      "defaultValue": true
+    },
+    {
+      "name": "rebound",
+      "deprecated": true,
+      "description": {
+        "value": "控制是否回弹效果。已废弃，请改用bounces",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "x",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "x",
+            "unixVer": "x"
+          }
+        }
+      },
+      "type": "boolean",
+      "defaultValue": true
+    },
+    {
+      "name": "associative-container",
+      "description": {
+        "value": "关联的滚动容器",
+        "kind": "markdown"
+      },
+      "values": [
+        {
+          "name": "nested-scroll-view",
+          "description": "嵌套滚动",
+          "uniPlatform": {
+            "app": {
+              "android": {
+                "osVer": "5.0",
+                "uniVer": "x",
+                "unixVer": "4.11"
+              },
+              "ios": {
+                "osVer": "12.0",
+                "uniVer": "x",
+                "unixVer": "4.11"
+              }
+            },
+            "web": {
+              "uniVer": "x",
+              "unixVer": "x"
+            }
+          }
+        }
+      ],
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "x",
+            "unixVer": "4.11"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "x",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "x",
+          "unixVer": "x"
+        }
+      },
+      "type": "string",
+      "defaultValue": ""
+    },
+    {
+      "name": "enable-back-to-top",
+      "description": {
+        "value": "iOS点击顶部状态栏滚动条返回顶部，只支持竖向",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "x",
+          "unixVer": "x"
+        }
+      },
+      "type": "boolean",
+      "defaultValue": false
+    },
+    {
+      "name": "bounces",
+      "description": {
+        "value": "控制是否回弹效果 优先级高于rebound",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "x",
+            "unixVer": "4.0"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "x",
+          "unixVer": "x"
+        }
+      },
+      "type": "boolean",
+      "defaultValue": true
+    },
+    {
+      "name": "upper-threshold",
+      "description": {
+        "value": "距顶部/左边多远时（单位px），触发 scrolltoupper 事件",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "number",
+      "defaultValue": 50
+    },
+    {
+      "name": "lower-threshold",
+      "description": {
+        "value": "距底部/右边多远时（单位px），触发 scrolltolower 事件",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "number",
+      "defaultValue": 50
+    },
+    {
+      "name": "scroll-top",
+      "description": {
+        "value": "设置竖向滚动条位置",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "number",
+      "defaultValue": 0
+    },
+    {
+      "name": "scroll-left",
+      "description": {
+        "value": "设置横向滚动条位置",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "number",
+      "defaultValue": 0
+    },
+    {
+      "name": "scroll-into-view",
+      "description": {
+        "value": "值应为某子元素id（id不能以数字开头）。设置哪个方向可滚动，则在哪个方向滚动到该元素起始位置",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "string",
+      "valueSet": "string.IDString"
+    },
+    {
+      "name": "scroll-with-animation",
+      "description": {
+        "value": "是否在设置滚动条位置时使用滚动动画，设置false没有滚动动画",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "boolean",
+      "defaultValue": false
+    },
+    {
+      "name": "refresher-enabled",
+      "description": {
+        "value": "开启下拉刷新，暂时不支持scroll-x = true横向刷新",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "x"
+        }
+      },
+      "type": "boolean",
+      "defaultValue": false
+    },
+    {
+      "name": "refresher-threshold",
+      "description": {
+        "value": "设置下拉刷新阈值",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "x"
+        }
+      },
+      "type": "number",
+      "defaultValue": 45
+    },
+    {
+      "name": "refresher-max-drag-distance",
+      "description": {
+        "value": "设置下拉最大拖拽距离（单位px），默认是下拉刷新控件高度的2.5倍",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "x",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "x",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "x",
+          "unixVer": "x"
+        }
+      },
+      "type": "number"
+    },
+    {
+      "name": "refresher-default-style",
+      "description": {
+        "value": "设置下拉刷新默认样式，支持设置 black | white | none， none 表示不使用默认样式",
+        "kind": "markdown"
+      },
+      "values": [
+        {
+          "name": "black",
+          "description": "深颜色雪花样式",
+          "uniPlatform": {
+            "app": {
+              "android": {
+                "osVer": "5.0",
+                "uniVer": "x",
+                "unixVer": "3.9+"
+              },
+              "ios": {
+                "osVer": "12.0",
+                "uniVer": "x",
+                "unixVer": "4.11"
+              }
+            }
+          }
+        },
+        {
+          "name": "white",
+          "description": "浅白色雪花样式",
+          "uniPlatform": {
+            "app": {
+              "android": {
+                "osVer": "5.0",
+                "uniVer": "x",
+                "unixVer": "3.9+"
+              },
+              "ios": {
+                "osVer": "12.0",
+                "uniVer": "x",
+                "unixVer": "4.11"
+              }
+            }
+          }
+        },
+        {
+          "name": "none",
+          "description": "不使用默认样式",
+          "uniPlatform": {
+            "app": {
+              "android": {
+                "osVer": "5.0",
+                "uniVer": "x",
+                "unixVer": "3.9+"
+              },
+              "ios": {
+                "osVer": "12.0",
+                "uniVer": "x",
+                "unixVer": "4.11"
+              }
+            }
+          }
+        }
+      ],
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "x"
+        }
+      },
+      "type": "string",
+      "defaultValue": "black"
+    },
+    {
+      "name": "refresher-background",
+      "description": {
+        "value": "设置下拉刷新区域背景颜色，默认透明",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "x"
+        }
+      },
+      "type": "string",
+      "defaultValue": "transparent",
+      "valueSet": "string.ColorString"
+    },
+    {
+      "name": "refresher-triggered",
+      "description": {
+        "value": "设置当前下拉刷新状态，true 表示下拉刷新已经被触发，false 表示下拉刷新未被触发",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "x"
+        }
+      },
+      "type": "boolean",
+      "defaultValue": false
+    },
+    {
+      "name": "show-scrollbar",
+      "description": {
+        "value": "控制是否出现滚动条",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "4.0",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "boolean",
+      "defaultValue": true
+    },
+    {
+      "name": "custom-nested-scroll",
+      "description": {
+        "value": "子元素是否开启嵌套滚动 将滚动事件与父元素协商处理",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "x",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "x",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+          "uniVer": "x",
+          "unixVer": "x"
+        }
+      },
+      "type": "boolean",
+      "defaultValue": false
+    },
+    {
+      "name": "nested-scroll-child",
+      "description": {
+        "value": "嵌套滚动子元素的id属性，不支持ref，scroll-view惯性滚动时会让对应id元素视图进行滚动，子元素滚动时会触发scroll-view的nestedprescroll事件，嵌套子元素需要设置custom-nested-scroll = true",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "x",
+            "unixVer": "3.97"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "x",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+          "uniVer": "x",
+          "unixVer": "x"
+        }
+      },
+      "type": "string",
+      "defaultValue": "",
+      "valueSet": "string.IDString"
+    },
+    {
+      "name": "[event]refresherpulling",
+      "description": {
+        "value": "下拉刷新控件被下拉",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "x"
+        }
+      },
+      "type": "(event: UniRefresherEvent) => void"
+    },
+    {
+      "name": "[event]refresherrefresh",
+      "description": {
+        "value": "下拉刷新被触发",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "x"
+        }
+      },
+      "type": "(event: UniRefresherEvent) => void"
+    },
+    {
+      "name": "[event]refresherrestore",
+      "description": {
+        "value": "下拉刷新被复位",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "x"
+        }
+      },
+      "type": "(event: UniRefresherEvent) => void"
+    },
+    {
+      "name": "[event]refresherabort",
+      "description": {
+        "value": "下拉刷新被中止",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "x"
+        }
+      },
+      "type": "(event: UniRefresherEvent) => void"
+    },
+    {
+      "name": "[event]scrolltoupper",
+      "description": {
+        "value": "滚动到顶部/左边，会触发 scrolltoupper 事件",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "(event: UniScrollToUpperEvent) => void"
+    },
+    {
+      "name": "[event]scrolltolower",
+      "description": {
+        "value": "滚动到底部/右边，会触发 scrolltolower 事件",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "(event: UniScrollToLowerEvent) => void"
+    },
+    {
+      "name": "[event]scroll",
+      "description": {
+        "value": "滚动时触发，event.detail = {scrollLeft, scrollTop, scrollHeight, scrollWidth, deltaX, deltaY}",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "(event: UniScrollEvent) => void"
+    },
+    {
+      "name": "[event]scrollend",
+      "description": {
+        "value": "滚动结束时触发，event.detail = {scrollLeft, scrollTop, scrollHeight, scrollWidth, deltaX, deltaY}",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "(event: UniScrollEvent) => void"
+    },
+    {
+      "name": "[event]startnestedscroll",
+      "description": {
+        "value": "子元素开始滚动时触发, return ture表示与子元素开启滚动协商 默认return false! event = {node}",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "x",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "x",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+          "uniVer": "x",
+          "unixVer": "x"
+        }
+      },
+      "type": "(event: UniStartNestedScrollEvent) => Boolean"
+    },
+    {
+      "name": "[event]nestedprescroll",
+      "description": {
+        "value": "子元素滚动时触发，可执行event.consumed(x,y)告知子元素deltaX、deltaY各消耗多少。子元素将执行差值后的deltaX、deltaY滚动距离。不执行consumed(x,y)则表示父元素不消耗deltaX、deltaY。event = {deltaX, deltaY}",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "x",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "x",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+          "uniVer": "x",
+          "unixVer": "x"
+        }
+      },
+      "type": "(event: UniNestedPreScrollEvent) => void"
+    },
+    {
+      "name": "[event]stopnestedscroll",
+      "description": {
+        "value": "子元素滚动结束或意外终止时触发",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "x",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "x",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+          "uniVer": "x",
+          "unixVer": "x"
+        }
+      },
+      "type": "(event: UniStopNestedScrollEvent) => void"
+    }
+  ],
+  "references": [
+    {
+      "url": "https://uniapp.dcloud.io/component/scroll-view",
+      "name": "参见uni-app相关文档"
+    },
+    {
+      "url": "https://doc.dcloud.net.cn/uni-app-x/component/scroll-view.html",
+      "name": "参见uni-app x相关文档"
+    }
+  ],
+  "uniPlatform": {
+    "app": {
+      "android": {
+        "osVer": "5.0",
+        "uniVer": "√",
+        "unixVer": "3.9+"
+      },
+      "ios": {
+        "osVer": "12.0",
+        "uniVer": "√",
+        "unixVer": "4.11"
+      }
+    },
+    "web": {
+      "uniVer": "√",
+      "unixVer": "4.0"
+    }
+  },
+  "childrenTags": [
+    {
+      "name": "nested-scroll-body",
+      "url": "https://doc.dcloud.net.cn/uni-app-x/component/nested-scroll-body.html"
+    },
+    {
+      "name": "nested-scroll-header",
+      "url": "https://doc.dcloud.net.cn/uni-app-x/component/nested-scroll-header.html"
+    }
+  ],
+  "hasGeneralAttrs": true,
+  "hasGeneralEvents": true
+}

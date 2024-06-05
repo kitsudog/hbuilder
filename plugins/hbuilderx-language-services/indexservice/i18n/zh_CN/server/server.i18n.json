@@ -1,0 +1,4 @@
+{
+    "indexservice.onRequest.rebuild.pathMismatch.error": "项目路径不匹配! 路径: [{0}]",
+    "indexservice.onRequest.rebuild.doRebuild.error": "重建索引出错! 错误: [{0}]"
+}

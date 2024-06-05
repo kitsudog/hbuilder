@@ -1,7 +1,7 @@
 {
 	"name": "sass",
 	"id": "compile-node-sass",
-	"version": "0.0.7",
+	"version": "0.0.9",
 	"displayName": "%displayName%",
 	"description": "%description%",
 	"engines": {

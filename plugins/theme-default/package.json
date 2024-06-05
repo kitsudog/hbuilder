@@ -3,7 +3,7 @@
 	"displayName": "%displayName%",
 	"description": "%description%",
 	"categories": [ "Themes" ],
-	"version": "1.0.1.2021112917",
+	"version": "1.0.1.2024040918",
 	"publisher": "vscode",
 	"engines": { "vscode": "*" },
     "__private":true,

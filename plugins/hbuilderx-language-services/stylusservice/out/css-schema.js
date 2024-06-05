@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.cssData=void 0;var webCustomData_1=require("../../packages/vscode-css-languageservice/out/data/webCustomData");Object.defineProperty(exports,"cssData",{enumerable:!0,get:function(){return webCustomData_1.cssData}});

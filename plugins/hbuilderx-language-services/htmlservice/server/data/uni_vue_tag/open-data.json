@@ -1,0 +1,118 @@
+{
+  "name": "open-data",
+  "description": {
+    "value": "用于展示微信开放的数据",
+    "kind": "markdown"
+  },
+  "uniPlatform": {
+    "app": {
+      "android": {
+        "osVer": "5.0",
+        "uniVer": "x",
+        "unixVer": "x"
+      },
+      "ios": {
+        "osVer": "9.0",
+        "uniVer": "x",
+        "unixVer": "x"
+      }
+    },
+    "web": {
+      "uniVer": "x",
+      "unixVer": "x"
+    }
+  },
+  "attributes": [
+    {
+      "name": "type",
+      "description": {
+        "value": "开放数据类型",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "ios": {
+            "osVer": "9.0",
+            "uniVer": "x",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+          "uniVer": "x",
+          "unixVer": "x"
+        }
+      },
+      "type": "string"
+    },
+    {
+      "name": "open-gid",
+      "description": {
+        "value": "当 type=\"groupName\" 时生效, 群id",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "ios": {
+            "osVer": "9.0",
+            "uniVer": "x",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+          "uniVer": "x",
+          "unixVer": "x"
+        }
+      },
+      "type": "string"
+    },
+    {
+      "name": "lang",
+      "description": {
+        "value": "当 type=\"user*\" 时生效，以哪种语言展示 userInfo，有效值有：en, zh_CN, zh_TW",
+        "kind": "markdown"
+      },
+      "values": [
+        {
+          "name": "en"
+        },
+        {
+          "name": "zh_CN"
+        },
+        {
+          "name": "zh_TW"
+        }
+      ],
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "ios": {
+            "osVer": "9.0",
+            "uniVer": "x",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+          "uniVer": "x",
+          "unixVer": "x"
+        }
+      },
+      "type": "string"
+    }
+  ],
+  "hasGeneralAttrs": true,
+  "hasGeneralEvents": true
+}

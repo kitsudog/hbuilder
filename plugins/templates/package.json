@@ -1,6 +1,7 @@
 {
   "name": "templates",
-  "version": "1.0.8.2021122415",
+  "version": "1.1.0.2024043010",
   "__private":true,
-  "__from": "HBuilderX"
+  "__from": "HBuilderX",
+  "description": "templates"
 }

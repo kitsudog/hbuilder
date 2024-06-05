@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.getVueRouterParamsCompletions=void 0;const vscode_uri_1=require("vscode-uri");function getVueRouterParamsCompletions(e){vscode_uri_1.URI.file(e).toString();return[]}exports.getVueRouterParamsCompletions=getVueRouterParamsCompletions;

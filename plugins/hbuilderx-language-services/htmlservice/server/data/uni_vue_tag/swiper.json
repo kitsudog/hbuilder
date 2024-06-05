@@ -1,0 +1,744 @@
+{
+  "name": "swiper",
+  "type": "UniSwiperElement",
+  "description": {
+    "value": "滑块视图容器",
+    "kind": "markdown"
+  },
+  "uniPlatform": {
+    "app": {
+      "android": {
+        "osVer": "5.0",
+        "uniVer": "√",
+        "unixVer": "3.9+"
+      },
+      "ios": {
+        "osVer": "12.0",
+        "uniVer": "√",
+        "unixVer": "4.11"
+      }
+    },
+    "web": {
+      "uniVer": "√",
+      "unixVer": "4.0"
+    }
+  },
+  "attributes": [
+    {
+      "name": "indicator-dots",
+      "description": {
+        "value": "是否显示面板指示点",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "boolean",
+      "defaultValue": false
+    },
+    {
+      "name": "indicator-color",
+      "description": {
+        "value": "指示点颜色",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "string",
+      "defaultValue": "rgba(0, 0, 0, .3)",
+      "valueSet": "string.ColorString"
+    },
+    {
+      "name": "indicator-active-color",
+      "description": {
+        "value": "当前选中的指示点颜色",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "string",
+      "defaultValue": "#000000",
+      "valueSet": "string.ColorString"
+    },
+    {
+      "name": "active-class",
+      "description": {
+        "value": "swiper-item 可见时的 class",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "ios": {
+            "osVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          }
+        }
+      },
+      "type": "string"
+    },
+    {
+      "name": "changing-class",
+      "description": {
+        "value": "acceleration 设置为 {{true}} 时且处于滑动过程中，中间若干屏处于可见时的class",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "ios": {
+            "osVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          }
+        }
+      },
+      "type": "boolean"
+    },
+    {
+      "name": "acceleration",
+      "description": {
+        "value": "当开启时，会根据滑动速度，连续滑动多屏",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "ios": {
+            "osVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          }
+        }
+      },
+      "type": "boolean"
+    },
+    {
+      "name": "disable-programmatic-animation",
+      "description": {
+        "value": "是否禁用代码变动触发 swiper 切换时使用动画。",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "ios": {
+            "osVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          }
+        }
+      },
+      "type": "boolean"
+    },
+    {
+      "name": "disable-touch",
+      "description": {
+        "value": "是否禁止用户 touch 操作",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        }
+      },
+      "type": "boolean",
+      "defaultValue": false
+    },
+    {
+      "name": "touchable",
+      "description": {
+        "value": "是否监听用户的触摸事件",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "ios": {
+            "osVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          }
+        }
+      },
+      "type": "boolean"
+    },
+    {
+      "name": "easing-function",
+      "description": {
+        "value": "指定 swiper 切换缓动动画类型，有效值：default、linear、easeInCubic、easeOutCubic、easeInOutCubic",
+        "kind": "markdown"
+      },
+      "values": [
+        {
+          "name": "default",
+          "uniPlatform": {
+            "app": {
+              "android": {
+                "osVer": "x",
+                "uniVer": "x",
+                "unixVer": "x"
+              },
+              "ios": {
+                "osVer": "x",
+                "uniVer": "x",
+                "unixVer": "x"
+              }
+            }
+          }
+        },
+        {
+          "name": "linear",
+          "uniPlatform": {
+            "app": {
+              "android": {
+                "osVer": "x",
+                "uniVer": "x",
+                "unixVer": "x"
+              },
+              "ios": {
+                "osVer": "x",
+                "uniVer": "x",
+                "unixVer": "x"
+              }
+            }
+          }
+        },
+        {
+          "name": "easeInCubic",
+          "uniPlatform": {
+            "app": {
+              "android": {
+                "osVer": "x",
+                "uniVer": "x",
+                "unixVer": "x"
+              },
+              "ios": {
+                "osVer": "x",
+                "uniVer": "x",
+                "unixVer": "x"
+              }
+            }
+          }
+        },
+        {
+          "name": "easeOutCubic",
+          "uniPlatform": {
+            "app": {
+              "android": {
+                "osVer": "x",
+                "uniVer": "x",
+                "unixVer": "x"
+              },
+              "ios": {
+                "osVer": "x",
+                "uniVer": "x",
+                "unixVer": "x"
+              }
+            }
+          }
+        },
+        {
+          "name": "easeInOutCubic",
+          "uniPlatform": {
+            "app": {
+              "android": {
+                "osVer": "x",
+                "uniVer": "x",
+                "unixVer": "x"
+              },
+              "ios": {
+                "osVer": "x",
+                "uniVer": "x",
+                "unixVer": "x"
+              }
+            }
+          }
+        }
+      ],
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "ios": {
+            "osVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          }
+        }
+      },
+      "type": "string"
+    },
+    {
+      "name": "autoplay",
+      "description": {
+        "value": "是否自动切换",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "boolean",
+      "defaultValue": false
+    },
+    {
+      "name": "current",
+      "description": {
+        "value": "当前所在滑块的 index",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "number",
+      "defaultValue": 0
+    },
+    {
+      "name": "current-item-id",
+      "description": {
+        "value": "当前所在滑块的 item-id ，不能与 current 被同时指定",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "string"
+    },
+    {
+      "name": "interval",
+      "description": {
+        "value": "自动切换时间间隔",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "number",
+      "defaultValue": 3000
+    },
+    {
+      "name": "duration",
+      "description": {
+        "value": "滑动动画时长",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "ios": {
+            "osVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "number"
+    },
+    {
+      "name": "circular",
+      "description": {
+        "value": "是否采用衔接滑动",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "boolean",
+      "defaultValue": false
+    },
+    {
+      "name": "vertical",
+      "description": {
+        "value": "滑动方向是否为纵向",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "boolean",
+      "defaultValue": false
+    },
+    {
+      "name": "rebound",
+      "description": {
+        "value": "控制是否回弹效果",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "x",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        }
+      },
+      "type": "boolean",
+      "defaultValue": true
+    },
+    {
+      "name": "previous-margin",
+      "description": {
+        "value": "前边距，可用于露出前一项的一小部分，接受 px 和 rpx 值",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "ios": {
+            "osVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          }
+        }
+      },
+      "type": "string"
+    },
+    {
+      "name": "next-margin",
+      "description": {
+        "value": "后边距，可用于露出后一项的一小部分，接受 px 和 rpx 值",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "ios": {
+            "osVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          }
+        }
+      },
+      "type": "string"
+    },
+    {
+      "name": "display-multiple-items",
+      "description": {
+        "value": "同时显示的滑块数量",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "ios": {
+            "osVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          }
+        }
+      },
+      "type": "number"
+    },
+    {
+      "name": "skip-hidden-item-layout",
+      "description": {
+        "value": "是否跳过未显示的滑块布局，设为 true 可优化复杂情况下的滑动性能，但会丢失隐藏状态滑块的布局信息",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "ios": {
+            "osVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          }
+        }
+      },
+      "type": "boolean"
+    },
+    {
+      "name": "[event]change",
+      "description": {
+        "value": "current 改变时会触发 change 事件，event.detail = {current: current, source: source}",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "(event: UniSwiperChangeEvent) => void"
+    },
+    {
+      "name": "[event]transition",
+      "description": {
+        "value": "swiper-item 的位置发生改变时会触发 transition 事件，event.detail = {dx: dx, dy: dy}",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "(event: UniSwiperTransitionEvent) => void"
+    },
+    {
+      "name": "[event]animationfinish",
+      "description": {
+        "value": "动画结束时会触发 animationfinish 事件，event.detail = {current: current, source: source}",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "(event: UniSwiperAnimationFinishEvent) => void"
+    }
+  ],
+  "references": [
+    {
+      "url": "https://uniapp.dcloud.io/component/swiper",
+      "name": "参见uni-app相关文档"
+    },
+    {
+      "url": "https://doc.dcloud.net.cn/uni-app-x/component/swiper.html",
+      "name": "参见uni-app x相关文档"
+    }
+  ],
+  "childrenTags": [
+    "swiper-item"
+  ],
+  "hasGeneralAttrs": true,
+  "hasGeneralEvents": true
+}

@@ -1,0 +1,157 @@
+{
+  "name": "camera",
+  "description": {
+    "value": "相机组件",
+    "kind": "markdown"
+  },
+  "uniPlatform": {
+    "app": {
+      "android": {
+        "osVer": "5.0",
+        "uniVer": "x",
+        "unixVer": "x"
+      },
+      "ios": {
+        "osVer": "9.0",
+        "uniVer": "x",
+        "unixVer": "x"
+      }
+    },
+    "web": {
+      "uniVer": "x",
+      "unixVer": "x"
+    }
+  },
+  "attributes": [
+    {
+      "name": "flash",
+      "description": {
+        "value": "闪光灯，值为auto, on, off",
+        "kind": "markdown"
+      },
+      "values": [
+        {
+          "name": "auto",
+          "description": "自动"
+        },
+        {
+          "name": "on",
+          "description": "开"
+        },
+        {
+          "name": "off",
+          "description": "关"
+        }
+      ],
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "ios": {
+            "osVer": "9.0",
+            "uniVer": "x",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+          "uniVer": "x",
+          "unixVer": "x"
+        }
+      },
+      "type": "string"
+    },
+    {
+      "name": "device-position",
+      "description": {
+        "value": "前置或后置，值为front, back",
+        "kind": "markdown"
+      },
+      "values": [
+        {
+          "name": "back",
+          "description": "后置"
+        },
+        {
+          "name": "front",
+          "description": "前置"
+        }
+      ],
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "ios": {
+            "osVer": "9.0",
+            "uniVer": "x",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+          "uniVer": "x",
+          "unixVer": "x"
+        }
+      },
+      "type": "string"
+    },
+    {
+      "name": "[event]stop",
+      "description": {
+        "value": "摄像头在非正常终止时触发，如退出后台等情况",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "ios": {
+            "osVer": "9.0",
+            "uniVer": "x",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+          "uniVer": "x",
+          "unixVer": "x"
+        }
+      },
+      "type": "(event: UniEvent) => void"
+    },
+    {
+      "name": "[event]error",
+      "description": {
+        "value": "用户不允许使用摄像头时触发",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "ios": {
+            "osVer": "9.0",
+            "uniVer": "x",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+          "uniVer": "x",
+          "unixVer": "x"
+        }
+      },
+      "type": "(event: UniEvent) => void"
+    }
+  ],
+  "hasGeneralAttrs": true,
+  "hasGeneralEvents": true
+}

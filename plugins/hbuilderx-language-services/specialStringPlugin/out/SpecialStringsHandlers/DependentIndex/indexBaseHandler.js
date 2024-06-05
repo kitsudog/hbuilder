@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.IndexBaseHandler=void 0;class IndexBaseHandler{async doCompleteAsync(e,n,s,r,d){return[]}doCompleteResolve(e,n,s,r,d){return e}async doHoverAsync(e,n,s,r){}async doDefinitionAsync(e,n,s,r,d){return d}async doReferenceAsync(e,n,s,r){return[]}}exports.IndexBaseHandler=IndexBaseHandler;

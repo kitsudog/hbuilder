@@ -1,0 +1,177 @@
+{
+  "name": "checkbox-group",
+  "type": "UniCheckboxGroupElement",
+  "description": {
+    "value": "多项组，内部由多个checkbox组成",
+    "kind": "markdown"
+  },
+  "childrenTags": [
+    "checkbox"
+  ],
+  "attributes": [{
+      "name": "name",
+      "description": {
+        "value": "表单的控件名称，作为键值对的一部分与表单(form组件)一同提交",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "string"
+    },
+    {
+      "name": "[event]change",
+      "description": {
+        "value": "checkbox-group中选中项发生改变是触发 change 事件，detail = {value:[选中的checkbox的value的数组]}",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "mp": {
+          "weixin": {
+            "hostVer": "√",
+            "uniVer": "√",
+            "unixVer": "x"
+          },
+          "alipay": {
+            "hostVer": "√",
+            "uniVer": "√",
+            "unixVer": "x"
+          },
+          "baidu": {
+            "hostVer": "√",
+            "uniVer": "√",
+            "unixVer": "x"
+          },
+          "toutiao": {
+            "hostVer": "√",
+            "uniVer": "√",
+            "unixVer": "x"
+          },
+          "lark": {
+            "hostVer": "√",
+            "uniVer": "√",
+            "unixVer": "x"
+          },
+          "qq": {
+            "hostVer": "√",
+            "uniVer": "√",
+            "unixVer": "x"
+          },
+          "kuaishou": {
+            "hostVer": "√",
+            "uniVer": "√",
+            "unixVer": "x"
+          },
+          "jd": {
+            "hostVer": "√",
+            "uniVer": "√",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "(event: UniCheckboxGroupChangeEvent) => void"
+    }
+  ],
+  "references": [{
+      "url": "https://uniapp.dcloud.io/component/checkbox",
+      "name": "参见uni-app相关文档"
+    },
+    {
+      "url": "https://doc.dcloud.net.cn/uni-app-x/component/checkbox-group.html",
+      "name": "参见uni-app x相关文档"
+    }
+  ],
+  "uniPlatform": {
+    "app": {
+      "android": {
+        "osVer": "5.0",
+        "uniVer": "√",
+        "unixVer": "3.9"
+      },
+      "ios": {
+        "osVer": "12.0",
+        "uniVer": "√",
+        "unixVer": "4.11"
+      }
+    },
+    "mp": {
+      "weixin": {
+        "hostVer": "√",
+        "uniVer": "√",
+        "unixVer": "x"
+      },
+      "alipay": {
+        "hostVer": "√",
+        "uniVer": "√",
+        "unixVer": "x"
+      },
+      "baidu": {
+        "hostVer": "√",
+        "uniVer": "√",
+        "unixVer": "x"
+      },
+      "toutiao": {
+        "hostVer": "√",
+        "uniVer": "√",
+        "unixVer": "x"
+      },
+      "lark": {
+        "hostVer": "√",
+        "uniVer": "√",
+        "unixVer": "x"
+      },
+      "qq": {
+        "hostVer": "√",
+        "uniVer": "√",
+        "unixVer": "x"
+      },
+      "kuaishou": {
+        "hostVer": "√",
+        "uniVer": "√",
+        "unixVer": "x"
+      },
+      "jd": {
+        "hostVer": "√",
+        "uniVer": "√",
+        "unixVer": "x"
+      }
+    },
+    "web": {
+      "uniVer": "√",
+      "unixVer": "4.0"
+    }
+  },
+  "hasGeneralAttrs": true,
+  "hasGeneralEvents": true
+}

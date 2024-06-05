@@ -1,0 +1,18 @@
+diff --git a/node_modules/@achrinza/node-ipc/entities/Defaults.js b/node_modules/@achrinza/node-ipc/entities/Defaults.js
+index dc63381..7f29644 100644
+--- a/node_modules/@achrinza/node-ipc/entities/Defaults.js
++++ b/node_modules/@achrinza/node-ipc/entities/Defaults.js
+@@ -23,7 +23,12 @@ class Defaults{
+ 
+         this.appspace='app.';
+         this.socketRoot='/tmp/';
+-        this.id=os.hostname();
++        try {
++          this.id=os.hostname();
++        } catch (error) {
++          // win7
++          this.id='localhost';
++        }
+ 
+         this.encoding='utf8';
+         this.rawBuffer=false;

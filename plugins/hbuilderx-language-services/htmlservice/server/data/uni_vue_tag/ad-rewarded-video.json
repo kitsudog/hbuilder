@@ -1,0 +1,57 @@
+{
+  "name": "ad-rewarded-video",
+  "description": {
+    "value": "激励视频广告",
+    "kind": "markdown"
+  },
+  "attributes": [
+    {
+      "name": "adpid",
+      "description": {
+        "value": "广告位id，在uniAD官网申请广告位",
+        "kind": "markdown"
+      },
+      "type": "string"
+    },
+    {
+      "name": "preload",
+      "description": {
+        "value": "是否在页面就绪后加载广告数据",
+        "kind": "markdown"
+      },
+      "type": "boolean"
+    },
+    {
+      "name": "loadnext",
+      "description": {
+        "value": "自动加载下一条广告数据",
+        "kind": "markdown"
+      },
+      "type": "boolean"
+    },
+    {
+      "name": "url-callback",
+      "description": {
+        "value": "服务器回调透传参数",
+        "kind": "markdown"
+      },
+      "type": "string"
+    },
+    {
+      "name": "[event]load"
+    },
+    {
+      "name": "[event]close"
+    },
+    {
+      "name": "[event]error"
+    }
+  ],
+  "references": [
+    {
+      "url": "https://uniapp.dcloud.io/component/ad-rewarded-video",
+      "name": "参见uni-app相关文档"
+    }
+  ],
+  "hasGeneralAttrs": true
+}

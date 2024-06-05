@@ -1,0 +1,19 @@
+{
+    "method_signature_is_incompatible": "函数签名不兼容。",
+    "direct_declaration_of_object_literal_type_is_not_supported": "不支持直接声明对象字面类型。",
+    "union_types_other_than_null_are_not_supported": "不支持除了 null 以及 字面量 之外的联合类型。",
+    "empty_elements_are_not_supported_in_arrays": "数组中不支持空元素。",
+    "utsjsonobject_type_can_not_convert_to_type_0": "'UTSJSONObject' 转换为类型 '${0}' 失败。",
+    "only_identical_literal_union_types_are_supported": "只支持相同类型的字面量联合类型。",
+    "type_0_cannot_be_assigned_to_type_1": "类型 '{0}' 无法赋值给类型 '{1}'。",
+    "named_type_assigned_to_named_type_must_be_same": "有名类型只能赋值给同名的有名类型。",
+    "return_type_0_can_not_assign_to_return_type_1": "返回值类型 '{0}' 无法赋值给返回值类型 '{1}'。",
+    "expected_0_parameters_type_but_got_1_parameters_type": "期望的函数有 {0} 个参数, 但是匹配到了有 {1} 个参数的函数。",
+    "paramter_type_0_can_not_assign_to_paramter_type_1": "参数类型 '{0}' 无法赋值给参数类型 '{1}'。",
+    "convert_0_to_native_platform_type": "使用 '{0}' 转换为原生平台类型。",
+    "convert_0_to_number_type": "使用 '{0}' 转换为 'number' 类型",
+    "signature_0_cannot_assign_to_signature_1": "函数签名 '{0}' 无法兼容函数签名 '{1}'。",
+    "the_parameter_list_of_signature_0_is_not_compatible_with_the_parameter_list_of_signature_1": "函数签名 '{0}' 的参数列表无法兼容函数签名 '{1}' 的参数列表。",
+    "target_select_auto_fix": "语法提示和校验平台选择...",
+    "try_to_use_swift_devlopment_environment_outside_uts_ios_plugin": "可能在访问iOS原生开发环境，请到UTS插件中的iOS平台进行此操作。"
+}

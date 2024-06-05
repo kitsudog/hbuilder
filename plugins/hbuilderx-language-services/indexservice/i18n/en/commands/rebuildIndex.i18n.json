@@ -1,0 +1,8 @@
+{
+    "indexservice.command.rebuild.missParameter.error": "Index build failed: Project parameter not found",
+    "indexservice.command.rebuild.notWorkspaceFolder.error": "Index build failed: Path not found",
+    "indexservice.command.rebuild.notProjectUri.error": "Index build failed: Invalid project",
+    "indexservice.command.rebuild.processing.info": "Building index for project [{0}]...",
+    "indexservice.command.rebuild.success.info": "Index build for project [{0}] succeeded",
+    "indexservice.command.rebuild.failure.error": "Index build for project [{0}] failed"
+}

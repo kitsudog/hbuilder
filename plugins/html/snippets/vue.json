@@ -18,7 +18,8 @@
 			"",
 			"</style>"
 		],
-		"description": "Base for Vue File"
+		"description": "Base for Vue File",
+		"scope": "text.html.vue ! expression"
 	},
 	"view_class": {
 		"prefix": "viewclass",
@@ -27,13 +28,13 @@
 			"<view class=\"$1\">",
 			"\t$0",
 			"</view>"
-		]
+		],
+		"scope": "text.html.vue ! expression"
 	},
 	"view for": {
 		"prefix": "viewfor",
 		"body": ["<view v-for=\"(item,index) in ${1:data}\" :key=\"index\">", "\t$0", "</view>"],
-		"project": "uni-app",
-		"scope": "source.vue.html",
+		"scope": "text.html.vue ! expression",
 		"description": "view带for循环"
 	},
   "v-for": {
@@ -42,6 +43,6 @@
     ],
     "triggerAssist": false,
     "prefix": "v-for",
-    "scope": "HTML_ATTRIBUTE"
+    "scope": "(text.html.vue meta.tag,text.html.vue punctuation.definition.tag.end)! expression"
   }
 }

@@ -1,0 +1,283 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "基础配置",
+  "description": "<a style='color:#298bdb' href='https://doc.dcloud.net.cn/uni-app-x/collocation/manifest'>配置指南</a>",
+  "markdownDescription": "[配置指南](https://doc.dcloud.net.cn/uni-app-x/collocation/manifest)",
+  "properties": {
+    "appid": {
+      "type": "string",
+      "title": "uni-app应用标识(AppID)",
+      "readOnly": false,
+      "description": "<a style='color:#298bdb' href='https://ask.dcloud.net.cn/article/35907'>DCloud AppID 使用说明</a>",
+      "markdownDescription": "[DCloud AppID 使用说明](https://ask.dcloud.net.cn/article/35907)"
+    },
+    "name": {
+      "type": "string",
+      "title": "应用名称"
+    },
+    "description": {
+      "type": "string",
+      "title": "应用描述"
+    },
+    "versionName": {
+      "type": "string",
+      "title": "应用版本名称"
+    },
+    "versionCode": {
+      "type": "integer",
+      "title": "应用版本号",
+      "description": "应用版本号，必须是整数，取值范围1~2147483647；升级时必须高于上一次设置的值。"
+    },
+    "locale": {
+      "type": "string",
+      "title": "默认语言",
+      "enum": [
+        ""
+      ]
+    },
+    "fallbackLocale": {
+      "type": "string",
+      "title": "默认回退语言",
+      "enum": [
+        ""
+      ]
+    },
+    "uni-app-x": {
+      "type": "object",
+      "title": "UNI-APP-X配置",
+      "description": "存在uni-app-x节点则表示为uni-app x项目",
+      "properties": {
+        "flex-direction": {
+          "type": "string",
+          "title": "uvue页面默认flex排列方向",
+          "defaultValue": "column",
+          "enum": [
+            "row",
+            "row-reverse",
+            "column",
+            "column-reverse"
+          ],
+          "enumMetadatas": {
+            "row": {
+              "description": "从左到右"
+            },
+            "row-reverse": {
+              "description": "从右到左"
+            },
+            "column": {
+              "description": "从上到下"
+            },
+            "column-reverse": {
+              "description": "与 column 相反"
+            }
+          }
+        }
+      }
+    },
+    "app": {
+      "type": "object",
+      "title": "APP配置",
+      "description": "App端（原生App）配置",
+      "properties": {
+        "distribute": {
+          "type": "object",
+          "title": "DISTRIBUTE配置",
+          "description": "App端发布配置",
+          "properties": {
+            "syncDebug": {
+              "type": "boolean",
+              "title": "是否为自定义调试基座"
+            },
+            "icons": {
+              "type": "object",
+              "title": "App端图标配置",
+              "description": "Android、iOS平台应用图标配置。云打包后生效，建议在HBuilderX中 manifest.json 的可视化界面操作，不推荐手动在源码视图中修改。",
+              "properties": {
+                "android": {
+                  "type": "object",
+                  "title": "Android图标配置",
+                  "properties": {
+                    "hdpi": {
+                      "type": "string",
+                      "title": "72x72图标",
+                      "description": "高分屏设备程序图标，分辨率要求72x72"
+                    },
+                    "xhdpi": {
+                      "type": "string",
+                      "title": "96x96图标",
+                      "description": "720P高分屏设备程序图标，分辨率要求96x96"
+                    },
+                    "xxhdpi": {
+                      "type": "string",
+                      "title": "144x144图标",
+                      "description": "1080P高分屏设备程序图标，分辨率要求144x144"
+                    },
+                    "xxxhdpi": {
+                      "type": "string",
+                      "title": "192x192图标",
+                      "description": "2K屏设备程序图标，分辨率要求192x192"
+                    }
+                  }
+                },
+                "ios": {
+                  "type": "object",
+                  "title": "iOS图标配置",
+                  "properties": {
+                    "appstore": {
+                      "type": "string",
+                      "title": "iPhone/iPad设备应用图标，分辨率要求 1024x1024"
+                    }
+                  }
+                }
+              }
+            },
+            "splashScreens": {
+              "type": "object",
+              "title": "App端启动界面配置",
+              "description": "Android、iOS平台应用启动界面配置。云端打包后生效，建议在HBuilderX中 manifest.json 的可视化界面操作。",
+              "properties": {
+                "android": {
+                  "type": "object",
+                  "title": "Android平台启动图配置",
+                  "properties": {
+                    "ldpi": {
+                      "type": "string",
+                      "title": "ldpi密度屏幕启动图",
+                      "description": "适用于（mdpi）密度屏幕（~120dpi），建议分辨率 240x320。此类设备不常见，通常可以不用配置此项。"
+                    },
+                    "mdpi": {
+                      "type": "string",
+                      "title": "mdpi密度屏幕启动图",
+                      "description": "适用于（mdpi）密度屏幕（~160dpi），建议分辨率 320x480。此类设备不常见，通常可以不用配置此项。"
+                    },
+                    "hdpi": {
+                      "type": "string",
+                      "title": "hdpi密度屏幕启动图",
+                      "description": "适用于（hdpi）密度屏幕（~240dpi），建议分辨率 480x800。此类设备不常见，通常可以不用配置此项。"
+                    },
+                    "xhdpi": {
+                      "type": "string",
+                      "title": "xhdpi密度屏幕启动图",
+                      "description": "适用于（xhdpi）密度屏幕（~320dpi），建议分辨率 720x1280"
+                    },
+                    "xxhdpi": {
+                      "type": "string",
+                      "title": "xxhdpi密度屏幕启动图",
+                      "description": "适用于（xxhdpi）密度屏幕（~480dpi），建议分辨率 1080x1920"
+                    },
+                    "xxxhdpi": {
+                      "type": "string",
+                      "title": "xxxhdpi密度屏幕启动图",
+                      "description": "适用于（xxxhdpi）密度屏幕（~640dpi），建议分辨率 2160x3840"
+                    }
+                  }
+                },
+                "android12": {
+                  "type": "object",
+                  "title": "Android12启动界面配置",
+                  "description": "适配支持Android12启动界面。无此配置项表示不适配支持Android12启动界面。",
+                  "properties": {
+                    "background": {
+                      "type": "string",
+                      "title": "Android12启动界面背景颜色",
+                      "description": "仅在Android12及以上设备生效，默认值为白色"
+                    },
+                    "icon": {
+                      "type": "object",
+                      "title": "Android12启动界面中部Logo图标",
+                      "properties": {
+                        "xhdpi": {
+                          "type": "string",
+                          "title": "xhdpi密度屏幕启动界面Logo图标",
+                          "description": "适用于（xhdpi）密度屏幕（~320dpi），建议分辨率 480x480"
+                        },
+                        "xxhdpi": {
+                          "type": "string",
+                          "title": "xxhdpi密度屏幕启动界面Logo图标",
+                          "description": "适用于（xxhdpi）密度屏幕（~480dpi），建议分辨率 720x720"
+                        },
+                        "xxxhdpi": {
+                          "type": "string",
+                          "title": "xxxhdpi密度屏幕启动界面Logo图标",
+                          "description": "适用于（xxxhdpi）密度屏幕（~640dpi），建议分辨率 960x960"
+                        }
+                      }
+                    },
+                    "brand": {
+                      "type": "object",
+                      "title": "Android12启动界面底部品牌图标",
+                      "properties": {
+                        "xhdpi": {
+                          "type": "string",
+                          "title": "xhdpi密度屏幕启动界面品牌图标",
+                          "description": "适用于（xhdpi）密度屏幕（~320dpi），建议分辨率 400x160"
+                        },
+                        "xxhdpi": {
+                          "type": "string",
+                          "title": "xxhdpi密度屏幕启动界面品牌图标",
+                          "description": "适用于（xxhdpi）密度屏幕（~480dpi），建议分辨率 600x240"
+                        },
+                        "xxxhdpi": {
+                          "type": "string",
+                          "title": "xxxhdpi密度屏幕启动界面品牌图标",
+                          "description": "适用于（xxxhdpi）密度屏幕（~640dpi），建议分辨率 800x320"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "android": {
+              "type": "object",
+              "title": "ANDROID配置",
+              "description": "App-Android端发布配置",
+              "properties": {
+                "minSdkVersion": {
+                  "type": "integer",
+                  "title": "minSdkVersion",
+                  "description": "应用兼容的最低Android版本（API等级）；<a style='color:#298bdb' href='https://uniapp.dcloud.io/tutorial/app-android-minsdkversion'>参考文档</a>",
+                  "markdownDescription": "应用兼容的最低Android版本（API等级）；[参考文档](https://uniapp.dcloud.io/tutorial/app-android-minsdkversion)",
+                  "defaultValue": 21
+                },
+                "targetSdkVersion": {
+                  "type": "integer",
+                  "title": "targetSdkVersion",
+                  "description": "应用适配的目标Android版本（API等级），部分应用市场要求设置较高的targetSdkVersion才能提交审核；<a style='color:#298bdb' href='https://uniapp.dcloud.io/tutorial/app-android-targetsdkversion'>参考文档</a>",
+                  "markdownDescription": "应用适配的目标Android版本（API等级），部分应用市场要求设置较高的targetSdkVersion才能提交审核；[参考文档](https://uniapp.dcloud.io/tutorial/app-android-targetsdkversion)",
+                  "defaultValue": 30
+                },
+                "abiFilters": {
+                  "type": "array",
+                  "title": "应用支持的CPU类型",
+                  "description": "<a style='color:#298bdb' href='https://uniapp.dcloud.io/tutorial/app-android-abifilters'>参考文档</a>",
+                  "markdownDescription": "[参考文档](https://uniapp.dcloud.io/tutorial/app-android-abifilters)",
+                  "defaultValue": ["arm64-v8a"],
+                  "items": {
+                    "type": "string",
+                    "enum": [
+                      "armeabi-v7a",
+                      "arm64-v8a",
+                      "x86",
+                      "x86_64"
+                    ]
+                  }
+                }
+              }
+            },
+            "ios": {
+              "type": "object",
+              "title": "IOS配置",
+              "properties": {
+                "appid": {
+                  "type": "string",
+                  "description": "iOS Bundle ID"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

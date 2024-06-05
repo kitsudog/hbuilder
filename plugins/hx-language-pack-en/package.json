@@ -2,7 +2,8 @@
     "name": "hx-language-pack-en",
     "displayName": "HBuilderX English language pack",
     "description": "HBuilderX English language pack",
-    "version": "0.1.0.2021122221",
+    "version": "0.1.1.2024042310",
+    "__from": "HBuilderX",
     "publisher": "HBuilderX",
     "license": "SEE LICENSE IN LICENSE.md",
     "engines": {

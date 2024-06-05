@@ -1,0 +1,40 @@
+{
+    "#ifdef": {
+        "body": [
+            "// #ifdef ${1:APP/APP-ANDROID/APP-IOS/APP-VUE/VUE2/VUE3/MP-ALIPAY/MP-BAIDU/MP-WEIXIN/MP-QQ/MP-TOUTIAO/MP-360/MP-KUAISHOU/MP-LARK/MP-JD/MP/WEB/QUICKAPP-WEBVIEW-HUAWEI/QUICKAPP-WEBVIEW-UNION/QUICKAPP-WEBVIEW/UNI-APP-X/uniVersion}",
+            "$SELECTION$0",
+            "// #endif"
+        ],
+        "prefix": "ifdef",
+        "scope": "(source$)|(meta.type.function.return & meta.object.type$)|(source ! meta.import & meta.block$)|(source !meta.definition.variable & meta.var$)|(text.html.vue meta.export.default meta.object.member$)|(text.html.vue meta.export.default meta.objectliteral$)|(text.html.basic meta.objectliteral$)|(text.html.basic meta.object.member$)"
+    },
+    "#ifndef": {
+        "body": [
+            "// #ifndef ${1:APP/APP-ANDROID/APP-IOS/APP-VUE/VUE2/VUE3/MP-ALIPAY/MP-BAIDU/MP-WEIXIN/MP-QQ/MP-TOUTIAO/MP-360/MP-KUAISHOU/MP-LARK/MP-JD/MP/WEB/QUICKAPP-WEBVIEW-HUAWEI/QUICKAPP-WEBVIEW-UNION/QUICKAPP-WEBVIEW/UNI-APP-X/uniVersion}",
+            "$SELECTION$0",
+            "// #endif"
+        ],
+        "prefix": "ifndef",
+        "scope": "(source$)|(meta.type.function.return & meta.object.type$)|(source ! meta.import & meta.block$)|(source !meta.definition.variable & meta.var$)|(text.html.vue meta.export.default meta.object.member$)|(text.html.vue meta.export.default meta.objectliteral$)|(text.html.basic meta.objectliteral$)|(text.html.basic meta.object.member$)"
+    },
+    "#ifdef ": {
+        "body": [
+            "// #ifdef ${1:APP/APP-ANDROID/APP-IOS/APP-VUE/VUE2/VUE3/MP-ALIPAY/MP-BAIDU/MP-WEIXIN/MP-QQ/MP-TOUTIAO/MP-360/MP-KUAISHOU/MP-LARK/MP-JD/MP/WEB/QUICKAPP-WEBVIEW-HUAWEI/QUICKAPP-WEBVIEW-UNION/QUICKAPP-WEBVIEW/UNI-APP-X/uniVersion}",
+            "$0",
+            "// #endif"
+        ],
+        "prefix": "ifdef",
+        "scope": "object.property.js",
+        "hidden": true
+    },
+    "#ifndef ": {
+        "body": [
+            "// #ifndef ${1:APP/APP-ANDROID/APP-IOS/APP-VUE/VUE2/VUE3/MP-ALIPAY/MP-BAIDU/MP-WEIXIN/MP-QQ/MP-TOUTIAO/MP-360/MP-KUAISHOU/MP-LARK/MP-JD/MP/WEB/QUICKAPP-WEBVIEW-HUAWEI/QUICKAPP-WEBVIEW-UNION/QUICKAPP-WEBVIEW/UNI-APP-X/uniVersion}",
+            "$0",
+            "// #endif"
+        ],
+        "prefix": "ifndef",
+        "scope": "object.property.js",
+        "hidden": true
+    }
+}

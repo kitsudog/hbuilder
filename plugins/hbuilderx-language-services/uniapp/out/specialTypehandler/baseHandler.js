@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.UniBaseHandler=void 0;class UniBaseHandler{doCompleteResolve(e,n,s,r,o){return e}async doHoverAsync(e,n,s,r){}async doDefinitionAsync(e,n,s,r,o){return o}async doReferenceAsync(e,n,s,r){return[]}}exports.UniBaseHandler=UniBaseHandler;

@@ -1,0 +1,34 @@
+{
+  "name": "movable-area",
+  "description": {
+    "value": "movable-view 的可移动区域",
+    "kind": "markdown"
+  },
+  "uniPlatform": {
+    "app": {
+      "android": {
+        "osVer": "5.0",
+        "uniVer": "√",
+        "unixVer": "x"
+      },
+      "ios": {
+        "osVer": "9.0",
+        "uniVer": "√",
+        "unixVer": "x"
+      }
+    },
+    "web": {
+      "uniVer": "√",
+      "unixVer": "4.0"
+    }
+  },
+  "attributes": [],
+  "references": [
+    {
+      "url": "https://uniapp.dcloud.io/component/movable-view?id=movable-area",
+      "name": "参见uni-app相关文档"
+    }
+  ],
+  "hasGeneralAttrs": true,
+  "hasGeneralEvents": true
+}

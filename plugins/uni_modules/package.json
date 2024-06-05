@@ -1,18 +1,23 @@
 {
   "name": "uni_modules",
   "displayName": "%displayName%",
-  "version": "1.0.0-2021092618",
+  "version": "1.0.1-2024043009",
+  "__from": "HBuilderX",
   "description": "%description%",
   "main": "extension.js",
   "keywords": [],
   "author": "DCloud",
-  "_dc_signatures": "afc4cae3d6fd845487e6b2caf90816b7a6ce1ee9bd97cdda05d0777280d65d7a27a190690d96720c39e988abee6eb808",
+  "_dc_signatures": "af0221db029cde1525a2ec8190a03a4cd3aad951321606d125ab087940eac604c5179e77769702e0b14ecc8a2175ba40",
   "publisher": "DCloud",
   "engines": {
     "HBuilderX": "^2.9.9"
   },
   "categories": [
     "Other"
+  ],
+  "activationEvents": [
+    "onUri",
+    "*"
   ],
   "contributes": {
     "commands": [

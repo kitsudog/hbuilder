@@ -226,7 +226,56 @@
             "$0"
         ],
         "prefix": "cdb",
-        "project": "uni-app",
-        "scope": "source.js"
-    }
+        "project": "uni-app"
+    },
+    "uniCloud.importObject": {
+        "prefix": "cco",
+        "body": [
+            "const $1 = uniCloud.importObject('$2')"
+        ],
+        "triggerAssist": false,
+        "description": "uniCloud.importObject('ObjectName')"
+    },
+    "return uniError": {
+        "body": [
+            "return {",
+            "\terrSubject: '$1',",
+            "\terrCode: ${2:0},",
+            "\terrMsg: '$3'",
+            "}"
+        ],
+        "description": "return uni error object",
+        "prefix": "returnu"
+    },
+    "const $1 =  uniCloud.importObject": {
+        "prefix": "constco",
+        "body": [
+            "const $1 = uniCloud.importObject(\"$2\")"
+        ],
+        "triggerAssist": false
+    },
+    "uniCloud.database": {
+        "prefix": "constdb",
+        "body": [
+            "const db = uniCloud.database()"
+        ],
+        "triggerAssist": false
+    },
+    "db.collection": {
+        "prefix": "dbc",
+        "body": [
+            "db.collection(\"$1\")"
+        ],
+        "triggerAssist": false
+    },
+    "uniCloud http request": {
+		"prefix": "uhttp",
+		"body": [
+			"const $1 = await uniCloud.httpclient.request('$2', {",
+			"\tdataType: 'json'",
+			"})"
+		],
+		"triggerAssist": false,
+		"description": "uniCloud http request with json decode"
+	}
 }

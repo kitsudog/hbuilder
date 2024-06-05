@@ -7,7 +7,8 @@
     "version": "1.0.0",
     "contents": {
         "file/vue-page/config": {
-            "default.name"                         : "Default Template",
+            "default.name"                         : "Blank Page Template(options)",
+            "default.combine.name"                 : "Blank Page Template(composition)",
             "less.name"                            : "Pages using less",
             "scss.name"                            : "Pages using scss",
             "stylus.name"                          : "Pages using stylus",
@@ -34,12 +35,25 @@
             "uni.palaceGridProductList.name"       : "Palace grid layout | Uni-Cloud commodities list",
             "uni.productList.name"                 : "Uni-Cloud commodities list",
             "uni.rightPicture.newsList.name"       : "Left text and right picture | Uni-Cloud news list",
-            "uni.stickyList.name": "NVUE滚动吸顶效果",
-            "uni.stickyList.description": "NVUE滚动吸顶效果",
-            "uni.nvueSwiper.name": "NVUE多页签滑动效果",
-            "uni.nvueSwiper.description": "NVUE多页签滑动效果",
-            "uni.swiperSticky.name": "NVUE多页签滑动吸顶效果",
-            "uni.swiperSticky.description": "NVUE多页签滑动吸顶效果"
+            "uni.stickyList.name"                  : "NVUE Rolling ceiling",
+            "uni.stickyList.description"            : "NVUE Rolling ceiling",
+            "uni.nvueSwiper.name"                   : "NVUE Multi tab sliding",
+            "uni.nvueSwiper.description"            : "NVUE Multi tab sliding",
+            "uni.swiperSticky.name"                 : "NVUE Multi tab sliding ceiling",
+            "uni.swiperSticky.description"          : "NVUE Multi tab sliding ceiling"
+        },
+        "file/uvue-page/config": {
+            "default.name"                         : "Blank Page Template(options)",
+            "default.combine.name"                 : "Blank Page Template(composition)",
+            "less.name"                            : "Pages using less",
+            "scss.name"                            : "Pages using scss",
+            "stylus.name"                          : "Pages using stylus",
+            "uni.stickyList.name"                  : "NVUE Rolling ceiling",
+            "uni.stickyList.description"            : "NVUE Rolling ceiling",
+            "uni.nvueSwiper.name"                   : "NVUE Multi tab sliding",
+            "uni.nvueSwiper.description"            : "NVUE Multi tab sliding",
+            "uni.swiperSticky.name"                 : "NVUE Multi tab sliding ceiling",
+            "uni.swiperSticky.description"          : "NVUE Multi tab sliding ceiling"
         }
     }
 }

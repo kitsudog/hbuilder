@@ -1,0 +1,2994 @@
+{
+    "tags": [
+        {
+            "name": "a",
+            "description": {
+                "kind": "markdown",
+                "value": "用于实现页面间的跳转。\n\t\t\t\t\t<br />\n\t\t\t\t\t<b>参考：</b>\n\t\t\t\t\t<br />\n\t\t\t\t\t<a href=\"http://weex.apache.org/cn/references/components/a.html\">http://weex.apache.org/cn/references/components/a.html</a>\n\t\t\t\t\n\t\t\t"
+            },
+            "attributes": [
+                {
+                    "name": "id",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "元素ID\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "class",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "元素类名\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "style",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "内联样式\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "href",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "待跳转的页面URL，待跳转页面需要是一个Weex页面。如果待跳转页面是一个普通HTML，这会是一个未定义行为。\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]click",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "当组件上发生点击手势时被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]longpress",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "如果一个组件被绑定了 longpress 事件，那么当用户长按这个组件时，该事件将会被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]appear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "如果一个位于某个可滚动区域内的组件被绑定了 appear 事件，那么当这个组件的状态变为在屏幕上可见时，该事件将被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]disappear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "如果一个位于某个可滚动区域内的组件被绑定了 disappear 事件，那么当这个组件被滑出屏幕变为不可见状态时，该事件将被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]viewappear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "viewappear 事件会在页面就要显示或配置的任何页面动画被执行前触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]viewdisappear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "viewdisappear 事件会在页面就要关闭时被触发。"
+                    },
+                    "type": "string"
+                }
+            ],
+            "type": "string"
+        },
+        {
+            "name": "barcode",
+            "description": {
+                "kind": "markdown",
+                "value": "app端nvue专用的扫码组件\n\t\t\t\t<br/>\n\t\t\t\t<b>参考</b>\n\t\t\t\t<br/>\n\t\t\t\t<a href=\"https://uniapp.dcloud.io/component/barcode\">https://uniapp.dcloud.io/component/barcode</a>\n\t\t\t\t\n\t\t\t"
+            },
+            "attributes": [
+                {
+                    "name": "id",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "元素ID\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "style",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "内联样式\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "class",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "元素类名\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "autostart",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "配置是否自动扫描\n\t\t\t\t\n\t\t\t"
+                    },
+                    "valueSet": "b",
+                    "type": "string"
+                },
+                {
+                    "name": "background",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "条码识别控件背景颜色,颜色值支持(参考CSS颜色规范)：颜色名称(参考CSS Color Names)/十六进制值/rgb值，默认值为黑色。\n\t\t\t\t\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "frameColor",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "扫码框颜色,颜色值支持(参考CSS颜色规范)：颜色名称(参考CSS Color Names)/十六进制值/rgb值/rgba值，默认值为红色。\n\t\t\t\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "scanbarColor",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "扫码条颜色,颜色值支持(参考CSS颜色规范)：颜色名称(参考CSS Color Names)/十六进制值/rgb值/rgba值，默认值为红色。\n\t\t\t\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "filters",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "条码类型过滤器，条码类型常量数组，默认情况支持QR、EAN13、EAN8类型。 通过此参数可设置扫码识别支持的条码类型（注意：设置支持的条码类型越多，扫描识别速度可能将会降低）。\n\t\t\t\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]marked",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "条码识别成功事件，event = {type, message, code, file}\n\t\t\t\t\t\n\t\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]error",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "条码识别错误事件，event = {type, message, code}\n\t\t\t\t\t\n\t\t\t\t"
+                    },
+                    "type": "string"
+                }
+            ],
+            "type": "string"
+        },
+        {
+            "name": "div",
+            "description": {
+                "kind": "markdown",
+                "value": "div组件是用于包装其它组件的最基本容器。\n支持所有的通用样式、特性、flexbox 布局。\n其类似于HTML的div容器，但不能直接在里面添加文本（字符串），如果要展示文本，应该使用text组件。\n历史版本中，div的别名是container，目前已经弃用。\n<br />\n<b>参考：</b>\n<br />\n<a href=\"http://weex.apache.org/cn/references/components/div.html\">http://weex.apache.org/cn/references/components/div.html</a>\n\t\t\t\t\n\t\t\t"
+            },
+            "attributes": [
+                {
+                    "name": "id",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "元素ID\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "class",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "元素类名\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "style",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "内联样式\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]click",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "当组件上发生点击手势时被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]longpress",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "如果一个组件被绑定了 longpress 事件，那么当用户长按这个组件时，该事件将会被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]appear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "如果一个位于某个可滚动区域内的组件被绑定了 appear 事件，那么当这个组件的状态变为在屏幕上可见时，该事件将被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]disappear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "如果一个位于某个可滚动区域内的组件被绑定了 disappear 事件，那么当这个组件被滑出屏幕变为不可见状态时，该事件将被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]viewappear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "viewappear 事件会在页面就要显示或配置的任何页面动画被执行前触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]viewdisappear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "viewdisappear 事件会在页面就要关闭时被触发。"
+                    },
+                    "type": "string"
+                }
+            ],
+            "type": "string"
+        },
+        {
+            "name": "image",
+            "description": {
+                "kind": "markdown",
+                "value": "image用于在界面中显示单个图片。\n<br />\n<b>参考：</b>\n<br />\n<a href=\"http://weex.apache.org/cn/references/components/image.html\">http://weex.apache.org/cn/references/components/image.html</a>\n\t\t\t\t\n\t\t\t"
+            },
+            "attributes": [
+                {
+                    "name": "id",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "元素ID\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "class",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "元素类名\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "style",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "内联样式\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "placeholder",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "当作为image的属性时表示:<br />\n\t\t\t\t\t占位图的 URL，当由 src 表示的图片下载完成并展示后将被删除。\n\t\t\t\t\t<a href=\"http://dotwe.org/vue/712ef102fc5e073b6c7e3b701545681c\">示例</a>\n\t\t\t\t<br />\n\t\t\t\t当作为input的属性时表示:<br />\n\t\t\t\t提示用户可以输入什么。 提示文本不能有回车或换行。\n\t\t\t\t\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "resize",
+                    "values": [
+                        {
+                            "name": "contain",
+                            "description": "缩放图片以完全装入<image>区域，可能背景区部分空白。"
+                        },
+                        {
+                            "name": "cover",
+                            "description": "缩放图片以完全覆盖<image>区域，可能图片部分看不见。"
+                        },
+                        {
+                            "name": "stretch",
+                            "description": "<b>默认值</b>. 按照<image>区域的宽高比例缩放图片。"
+                        }
+                    ]
+                },
+                {
+                    "name": "src",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "要显示图片的 URL，该属性是 &lt;image&gt; 组件的强制属性。\n\t\t\t\t\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]click",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "当组件上发生点击手势时被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]longpress",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "如果一个组件被绑定了 longpress 事件，那么当用户长按这个组件时，该事件将会被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]appear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "如果一个位于某个可滚动区域内的组件被绑定了 appear 事件，那么当这个组件的状态变为在屏幕上可见时，该事件将被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]disappear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "如果一个位于某个可滚动区域内的组件被绑定了 disappear 事件，那么当这个组件被滑出屏幕变为不可见状态时，该事件将被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]viewappear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "viewappear 事件会在页面就要显示或配置的任何页面动画被执行前触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]viewdisappear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "viewdisappear 事件会在页面就要关闭时被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]load",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "当加载完成 src 指定的图片时，load事件将被触发。\n\t\t\t\t \n\t\t\t "
+                    },
+                    "type": "string"
+                }
+            ],
+            "type": "string"
+        },
+        {
+            "name": "indicator",
+            "description": {
+                "kind": "markdown",
+                "value": "indicator组件通常用于显示轮播图指示器效果，必须充当 slider 组件的子组件使用。\n\t\t\t\t\n\t\t\t"
+            },
+            "attributes": [
+                {
+                    "name": "id",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "元素ID\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "class",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "元素类名\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "style",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "内联样式\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]click",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "当组件上发生点击手势时被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]longpress",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "如果一个组件被绑定了 longpress 事件，那么当用户长按这个组件时，该事件将会被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]appear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "如果一个位于某个可滚动区域内的组件被绑定了 appear 事件，那么当这个组件的状态变为在屏幕上可见时，该事件将被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]disappear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "如果一个位于某个可滚动区域内的组件被绑定了 disappear 事件，那么当这个组件被滑出屏幕变为不可见状态时，该事件将被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]viewappear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "viewappear 事件会在页面就要显示或配置的任何页面动画被执行前触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]viewdisappear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "viewdisappear 事件会在页面就要关闭时被触发。"
+                    },
+                    "type": "string"
+                }
+            ],
+            "type": "string"
+        },
+        {
+            "name": "input",
+            "description": {
+                "kind": "markdown",
+                "value": "Weex 内置的 input 组件用来创建接收用户输入字符的输入组件。 input 组件的工作方式因 type 属性的值而异，比如 text， password，url，email，tel 等。\n<br />\n<b>参考：</b>\n<br />\n<a href=\"http://weex.apache.org/cn/references/components/input.html\">http://weex.apache.org/cn/references/components/input.html</a>\n\t\t\t\t\n\t\t\t"
+            },
+            "attributes": [
+                {
+                    "name": "id",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "元素ID\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "class",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "元素类名\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "style",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "内联样式\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "type"
+                },
+                {
+                    "name": "value",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "组件的默认内容。\n\t\t\t\t\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "placeholder",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "当作为image的属性时表示:<br />\n\t\t\t\t\t占位图的 URL，当由 src 表示的图片下载完成并展示后将被删除。\n\t\t\t\t\t<a href=\"http://dotwe.org/vue/712ef102fc5e073b6c7e3b701545681c\">示例</a>\n\t\t\t\t<br />\n\t\t\t\t当作为input的属性时表示:<br />\n\t\t\t\t提示用户可以输入什么。 提示文本不能有回车或换行。\n\t\t\t\t\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "disabled",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "布尔类型的数据，表示是否支持输入。通常 click 事件在 disabled 控件上是失效的。\n\t\t\t\t\n\t\t\t"
+                    },
+                    "valueSet": "b",
+                    "type": "string"
+                },
+                {
+                    "name": "autofocus",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "布尔类型的数据，表示是否在页面加载时控件自动获得输入焦点。\n\t\t\t\t\n\t\t\t"
+                    },
+                    "valueSet": "b",
+                    "type": "string"
+                },
+                {
+                    "name": "maxlength",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "一个数值类型的值，表示输入的最大长度。\n\t\t\t\t\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "return-key-type",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "键盘返回键的类型,支持 defalut;go;next;search;send,done。\n\t\t\t\t\n\t\t\t"
+                    },
+                    "values": [
+                        {
+                            "name": "defalut"
+                        },
+                        {
+                            "name": "go"
+                        },
+                        {
+                            "name": "next"
+                        },
+                        {
+                            "name": "search"
+                        },
+                        {
+                            "name": "send"
+                        },
+                        {
+                            "name": "done"
+                        }
+                    ],
+                    "type": "string"
+                },
+                {
+                    "name": "singleline",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "控制内容是否只允许单行\n\t\t\t\t\n\t\t\t"
+                    },
+                    "valueSet": "b",
+                    "type": "string"
+                },
+                {
+                    "name": "max-length",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "控制输入内容的最大长度\n\t\t\t\t\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "lines",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "控制输入内容的最大行数\n\t\t\t\t\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "max",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "控制当type属性为date时选择日期的最大时间，格式为yyyy-MM-dd\n\t\t\t\t\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "min",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "控制当type属性为date时选择日期的最小时间，格式为yyyy-MM-dd\n\t\t\t\t\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]longpress",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "如果一个组件被绑定了 longpress 事件，那么当用户长按这个组件时，该事件将会被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]appear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "如果一个位于某个可滚动区域内的组件被绑定了 appear 事件，那么当这个组件的状态变为在屏幕上可见时，该事件将被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]disappear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "如果一个位于某个可滚动区域内的组件被绑定了 disappear 事件，那么当这个组件被滑出屏幕变为不可见状态时，该事件将被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]viewappear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "viewappear 事件会在页面就要显示或配置的任何页面动画被执行前触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]viewdisappear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "viewdisappear 事件会在页面就要关闭时被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]input",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "输入字符的值更改。\n\t\t\t\t \n\t\t\t "
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]change",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "当用户输入完成时触发。通常在 blur 事件之后。\n\t\t\t\t \n\t\t\t "
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]focus",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "组件获得输入焦点。\n\t\t\t\t \n\t\t\t "
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]blur",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "组件失去输入焦点。\n\t\t\t\t \n\t\t\t "
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]return",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "键盘点击返回键。\n\t\t\t\t \n\t\t\t "
+                    },
+                    "type": "string"
+                }
+            ],
+            "type": "string"
+        },
+        {
+            "name": "list",
+            "description": {
+                "kind": "markdown",
+                "value": "list组件是提供垂直列表功能的核心组件，拥有平滑的滚动和高效的内存管理，非常适合用于长列表的展示。最简单的使用方法是在 list 标签内使用一组由简单数组 repeat 生成的 cell 标签填充。\n<br />\n<b>参考：</b>\n<br />\n<a href=\"http://weex.apache.org/cn/references/components/list.html\">http://weex.apache.org/cn/references/components/list.html</a>\n\t\t\t\t\n\t\t\t"
+            },
+            "attributes": [
+                {
+                    "name": "id",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "元素ID\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "class",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "元素类名\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "style",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "内联样式\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "show-scrollbar",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "可选值为 true/ false，默认值为 true。控制是否出现滚动条。\n\t\t\t\t\n\t\t\t"
+                    },
+                    "values": [
+                        {
+                            "name": "true",
+                            "description": "出现滚动条"
+                        },
+                        {
+                            "name": "false",
+                            "description": "不出现滚动条"
+                        }
+                    ],
+                    "type": "string"
+                },
+                {
+                    "name": "loadmoreoffset",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "默认值为 0，触发 loadmore 事件所需要的垂直偏移距离（设备屏幕底部与 list 底部之间的距离）。当 list 的滚动条滚动到足够接近 list 底部时将会触发 loadmore 这个事件。\n\t\t\t\t\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "offset-accuracy",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "控制onscroll事件触发的频率，默认值为10，表示两次onscroll事件之间列表至少滚动了10px。注意，将该值设置为较小的数值会提高滚动事件采样的精度，但同时也会降低页面的性能。\n\t\t\t\t\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]click",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "当组件上发生点击手势时被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]longpress",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "如果一个组件被绑定了 longpress 事件，那么当用户长按这个组件时，该事件将会被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]appear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "如果一个位于某个可滚动区域内的组件被绑定了 appear 事件，那么当这个组件的状态变为在屏幕上可见时，该事件将被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]disappear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "如果一个位于某个可滚动区域内的组件被绑定了 disappear 事件，那么当这个组件被滑出屏幕变为不可见状态时，该事件将被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]viewappear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "viewappear 事件会在页面就要显示或配置的任何页面动画被执行前触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]viewdisappear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "viewdisappear 事件会在页面就要关闭时被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]loadmore",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "如果列表滚动到底部将会立即触发这个事件，你可以在这个事件的处理函数中加载下一页的列表项。\n\t\t\t\t \n\t\t\t "
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]scroll",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "列表发生滚动时将会触发该事件，事件的默认抽样率为10px，即列表每滚动10px触发一次，可通过属性offset-accuracy设置抽样率。\n\t\t\t\t \n\t\t\t "
+                    },
+                    "type": "string"
+                }
+            ],
+            "type": "string"
+        },
+        {
+            "name": "cell",
+            "description": {
+                "kind": "markdown",
+                "value": "用于定义列表中的子列表项，类似于 HTML 中的 ul 之于 li。Weex 会对 cell 进行高效的内存回收以达到更好的性能，该组件必须作为list recycler waterfall组件的子组件, 这是为了优化滚动时的性能。\n<br />\n<b>参考：</b>\n<br />\n<a href=\"http://weex.apache.org/cn/references/components/cell.html\">http://weex.apache.org/cn/references/components/cell.html</a>\n\t\t\t\t\n\t\t\t"
+            },
+            "attributes": [
+                {
+                    "name": "id",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "元素ID\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "class",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "元素类名\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "style",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "内联样式\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "keep-scroll-position",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "List 插入数据后是否保持上次滚动的位置\n\t\t\t\t\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]click",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "当组件上发生点击手势时被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]longpress",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "如果一个组件被绑定了 longpress 事件，那么当用户长按这个组件时，该事件将会被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]appear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "如果一个位于某个可滚动区域内的组件被绑定了 appear 事件，那么当这个组件的状态变为在屏幕上可见时，该事件将被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]disappear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "如果一个位于某个可滚动区域内的组件被绑定了 disappear 事件，那么当这个组件被滑出屏幕变为不可见状态时，该事件将被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]viewappear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "viewappear 事件会在页面就要显示或配置的任何页面动画被执行前触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]viewdisappear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "viewdisappear 事件会在页面就要关闭时被触发。"
+                    },
+                    "type": "string"
+                }
+            ],
+            "type": "string"
+        },
+        {
+            "name": "recycle-list",
+            "description": {
+                "kind": "markdown",
+                "value": "recycle-list是一个新的列表容器，具有回收和复用的能力，可以大幅优化内存占用和渲染性能。只能使用 cell-slot 作为其直接子节点，使用其他节点无效。\n<br />\n<b>参考：</b>\n<br />\n<a href=\"http://weex.apache.org/cn/references/components/recycle-list.html\">http://weex.apache.org/cn/references/components/recycle-list.html</a>\n\t\t\t\t\n\t\t\t"
+            },
+            "attributes": [
+                {
+                    "name": "id",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "元素ID\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "class",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "元素类名\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "style",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "内联样式\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "for",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "<pre>\n在 recycle-list 添加 for 属性即可描述如何循环展开列表的数据，\n语法和 Vue 的 v-for 指令类似，但是它循环的是自己内部的子节点，并不是当前节点。\n\nfor 属性支持如下两种写法：\n\nalias in expression\n(alias, index) in expression\n</pre>\n\t\t\t\t\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "switch",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "<p>\n在 recycle-list 添加 switch 属性可以用来指定数据中用于区分子模板类型的字段名，语义和编程语言里的 switch 一致，配合 cell-slot 中的 case 和 default 属性一起使用。\n</p>\n<p>\n\t如果省略了 switch 属性，则只会将第一个 cell-slot 视为模板，多余的模板将会被忽略。\n</p>\n\t\t\t\t\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]click",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "当组件上发生点击手势时被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]longpress",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "如果一个组件被绑定了 longpress 事件，那么当用户长按这个组件时，该事件将会被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]appear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "如果一个位于某个可滚动区域内的组件被绑定了 appear 事件，那么当这个组件的状态变为在屏幕上可见时，该事件将被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]disappear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "如果一个位于某个可滚动区域内的组件被绑定了 disappear 事件，那么当这个组件被滑出屏幕变为不可见状态时，该事件将被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]viewappear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "viewappear 事件会在页面就要显示或配置的任何页面动画被执行前触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]viewdisappear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "viewdisappear 事件会在页面就要关闭时被触发。"
+                    },
+                    "type": "string"
+                }
+            ],
+            "type": "string"
+        },
+        {
+            "name": "cell-slot",
+            "description": {
+                "kind": "markdown",
+                "value": "cell-slot 代表的是列表每一项的模板，它只用来描述模板的结构，并不对应实际的节点。cell-slot 的个数只表示模板的种类数，真实列表项的个数是由数据决定的。\n\t\t\t\t\n\t\t\t"
+            },
+            "attributes": [
+                {
+                    "name": "id",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "元素ID\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "class",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "元素类名\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "style",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "内联样式\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "case",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "<p>\n声明了当前模板的类型，只有和数据中的类型与当前类型匹配时才会渲染，语义和编程语言里的 case 一致。\n</p>\n<p>\n所有模板中最多只会匹配到一项，按照模板的顺序从上到下匹配，一旦匹配成功就不在继续匹配下一个。\n</p>\n\t\t\t\t\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "default",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "表示当前模板为默认模板类型，不需要指定值。如果数据项没有匹配到任何 case 类型，则渲染带有 default 模板。如果存在多个 default，则只会使用第一个默认模板。\n\t\t\t\t\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "key",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "可选属性，用于指定列表数据中可以作为唯一标识的键值，可以优化渲染性能。\n\t\t\t\t\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]click",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "当组件上发生点击手势时被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]longpress",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "如果一个组件被绑定了 longpress 事件，那么当用户长按这个组件时，该事件将会被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]appear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "如果一个位于某个可滚动区域内的组件被绑定了 appear 事件，那么当这个组件的状态变为在屏幕上可见时，该事件将被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]disappear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "如果一个位于某个可滚动区域内的组件被绑定了 disappear 事件，那么当这个组件被滑出屏幕变为不可见状态时，该事件将被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]viewappear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "viewappear 事件会在页面就要显示或配置的任何页面动画被执行前触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]viewdisappear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "viewdisappear 事件会在页面就要关闭时被触发。"
+                    },
+                    "type": "string"
+                }
+            ],
+            "type": "string"
+        },
+        {
+            "name": "loading",
+            "description": {
+                "kind": "markdown",
+                "value": "loading 为容器提供上拉加载功能，用法和属性与 refresh 类似。\n<br />\n<b>参考：</b>\n<br />\n<a href=\"http://weex.apache.org/cn/references/components/loading.html\">http://weex.apache.org/cn/references/components/loading.html</a>\n\t\t\t\t\n\t\t\t"
+            },
+            "attributes": [
+                {
+                    "name": "id",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "元素ID\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "class",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "元素类名\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "style",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "内联样式\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "display",
+                    "values": [
+                        {
+                            "name": "show"
+                        },
+                        {
+                            "name": "hide"
+                        }
+                    ]
+                },
+                {
+                    "name": "[event]click",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "当组件上发生点击手势时被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]longpress",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "如果一个组件被绑定了 longpress 事件，那么当用户长按这个组件时，该事件将会被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]appear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "如果一个位于某个可滚动区域内的组件被绑定了 appear 事件，那么当这个组件的状态变为在屏幕上可见时，该事件将被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]disappear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "如果一个位于某个可滚动区域内的组件被绑定了 disappear 事件，那么当这个组件被滑出屏幕变为不可见状态时，该事件将被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]viewappear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "viewappear 事件会在页面就要显示或配置的任何页面动画被执行前触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]viewdisappear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "viewdisappear 事件会在页面就要关闭时被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]loading",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "被上拉时触发。\n\t\t\t\t \n\t\t\t "
+                    },
+                    "type": "string"
+                }
+            ],
+            "type": "string"
+        },
+        {
+            "name": "refresh",
+            "description": {
+                "kind": "markdown",
+                "value": "refresh 为容器提供下拉刷新功能，用法和属性与 loading 类似。\n<br />\n<b>参考：</b>\n<br />\n<a href=\"http://weex.apache.org/cn/references/components/refresh.html\">http://weex.apache.org/cn/references/components/refresh.html</a>\n\t\t\t\t\n\t\t\t"
+            },
+            "attributes": [
+                {
+                    "name": "id",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "元素ID\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "class",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "元素类名\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "style",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "内联样式\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "display",
+                    "values": [
+                        {
+                            "name": "show"
+                        },
+                        {
+                            "name": "hide"
+                        }
+                    ]
+                },
+                {
+                    "name": "[event]click",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "当组件上发生点击手势时被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]longpress",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "如果一个组件被绑定了 longpress 事件，那么当用户长按这个组件时，该事件将会被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]appear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "如果一个位于某个可滚动区域内的组件被绑定了 appear 事件，那么当这个组件的状态变为在屏幕上可见时，该事件将被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]disappear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "如果一个位于某个可滚动区域内的组件被绑定了 disappear 事件，那么当这个组件被滑出屏幕变为不可见状态时，该事件将被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]viewappear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "viewappear 事件会在页面就要显示或配置的任何页面动画被执行前触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]viewdisappear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "viewdisappear 事件会在页面就要关闭时被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]refresh",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "被下拉时触发。\n\t\t\t\t \n\t\t\t "
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]pullingdown",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "被下拉时触发，可以从 event 参数对象中获取 dy, pullingDistance, viewHeight, type\n<pre>\ndy: 前后两次回调滑动距离的差值\npullingDistance: 下拉的距离\nviewHeight: refresh 组件高度\ntype: “pullingdown” 常数字符串\n</pre>\n\t\t\t\t \n\t\t\t "
+                    },
+                    "type": "string"
+                }
+            ],
+            "type": "string"
+        },
+        {
+            "name": "scroller",
+            "description": {
+                "kind": "markdown",
+                "value": "scroller 是一个竖直的，可以容纳多个排成一列的子组件的滚动器。如果子组件的总高度高于其本身，那么所有的子组件都可滚动。\n<br />\n<b>参考：</b>\n<br />\n<a href=\"http://weex.apache.org/cn/references/components/scroller.html\">http://weex.apache.org/cn/references/components/scroller.html</a>\n\t\t\t\t\n\t\t\t"
+            },
+            "attributes": [
+                {
+                    "name": "id",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "元素ID\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "class",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "元素类名\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "style",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "内联样式\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "show-scrollbar",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "可选值为 true/ false，默认值为 true。控制是否出现滚动条。\n\t\t\t\t\n\t\t\t"
+                    },
+                    "values": [
+                        {
+                            "name": "true",
+                            "description": "出现滚动条"
+                        },
+                        {
+                            "name": "false",
+                            "description": "不出现滚动条"
+                        }
+                    ],
+                    "type": "string"
+                },
+                {
+                    "name": "scroll-direction",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "可选为 horizontal 或者 vertical，默认值为 vertical 。定义滚动的方向。\n\t\t\t\t\n\t\t\t"
+                    },
+                    "values": [
+                        {
+                            "name": "horizontal",
+                            "description": "横向滚动条"
+                        },
+                        {
+                            "name": "vertical",
+                            "description": "竖向滚动条"
+                        }
+                    ],
+                    "type": "string"
+                },
+                {
+                    "name": "loadmoreoffset",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "默认值为 0，触发 loadmore 事件所需要的垂直偏移距离（设备屏幕底部与 list 底部之间的距离）。当 list 的滚动条滚动到足够接近 list 底部时将会触发 loadmore 这个事件。\n\t\t\t\t\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "offset-accuracy",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "控制onscroll事件触发的频率，默认值为10，表示两次onscroll事件之间列表至少滚动了10px。注意，将该值设置为较小的数值会提高滚动事件采样的精度，但同时也会降低页面的性能。\n\t\t\t\t\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]click",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "当组件上发生点击手势时被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]longpress",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "如果一个组件被绑定了 longpress 事件，那么当用户长按这个组件时，该事件将会被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]appear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "如果一个位于某个可滚动区域内的组件被绑定了 appear 事件，那么当这个组件的状态变为在屏幕上可见时，该事件将被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]disappear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "如果一个位于某个可滚动区域内的组件被绑定了 disappear 事件，那么当这个组件被滑出屏幕变为不可见状态时，该事件将被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]viewappear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "viewappear 事件会在页面就要显示或配置的任何页面动画被执行前触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]viewdisappear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "viewdisappear 事件会在页面就要关闭时被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]loadmore",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "如果列表滚动到底部将会立即触发这个事件，你可以在这个事件的处理函数中加载下一页的列表项。\n\t\t\t\t \n\t\t\t "
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]scroll",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "列表发生滚动时将会触发该事件，事件的默认抽样率为10px，即列表每滚动10px触发一次，可通过属性offset-accuracy设置抽样率。\n\t\t\t\t \n\t\t\t "
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]scrollstart",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "当列表开始滚动的时候触发.\n\t\t\t\t \n\t\t\t "
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]scrollend",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "当列表结束滚动的时候触发.\n\t\t\t\t \n\t\t\t "
+                    },
+                    "type": "string"
+                }
+            ],
+            "type": "string"
+        },
+        {
+            "name": "slider",
+            "description": {
+                "kind": "markdown",
+                "value": "slider 组件用于在一个页面中展示多个图片，在前端，这种效果被称为 轮播图。\n<br />\n<b>参考：</b>\n<br />\n<a href=\"http://weex.apache.org/cn/references/components/slider.html\">http://weex.apache.org/cn/references/components/slider.html</a>\n\t\t\t\t\n\t\t\t"
+            },
+            "attributes": [
+                {
+                    "name": "id",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "元素ID\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "class",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "元素类名\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "style",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "内联样式\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "auto-play",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "可选值为 true/false，默认的是 false。该值决定是否自动播放轮播。重置 loadmore 相关的 UI，值不一样就会重置。\n\t\t\t\t\n\t\t\t"
+                    },
+                    "values": [
+                        {
+                            "name": "true"
+                        },
+                        {
+                            "name": "false"
+                        }
+                    ],
+                    "type": "string"
+                },
+                {
+                    "name": "interval",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "值为毫秒数，此值设定 slider 切换时间间隔。当 auto-play 值为 true 时生效。\n\t\t\t\t\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "infinite",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "循环播放，可选值为 true/false，默认的是 true。\n\t\t\t\t\n\t\t\t"
+                    },
+                    "values": [
+                        {
+                            "name": "true"
+                        },
+                        {
+                            "name": "false"
+                        }
+                    ],
+                    "type": "string"
+                },
+                {
+                    "name": "offset-x-accuracy",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "控制onscroll事件触发的频率，默认值为10，表示两次onscroll事件之间Slider Page至少滚动了10px。注意，将该值设置为较小的数值会提高滚动事件采样的精度，但同时也会降低页面的性能。\n\t\t\t\t\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "show-indicators",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "设置是否显示indicator\n\t\t\t\t\n\t\t\t"
+                    },
+                    "values": [
+                        {
+                            "name": "true"
+                        },
+                        {
+                            "name": "false"
+                        }
+                    ],
+                    "type": "string"
+                },
+                {
+                    "name": "index",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "设置显示slider的第几个页面\n\t\t\t\t\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "scrollable",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "设置是否可以通过滑动手势来切换slider页面\n\t\t\t\t\n\t\t\t"
+                    },
+                    "values": [
+                        {
+                            "name": "true"
+                        },
+                        {
+                            "name": "false"
+                        }
+                    ],
+                    "type": "string"
+                },
+                {
+                    "name": "keep-index",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "设置slider中的数据发生变化后是否保持变化前的页面index\n\t\t\t\t\n\t\t\t"
+                    },
+                    "values": [
+                        {
+                            "name": "true"
+                        },
+                        {
+                            "name": "false"
+                        }
+                    ],
+                    "type": "string"
+                },
+                {
+                    "name": "[event]click",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "当组件上发生点击手势时被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]longpress",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "如果一个组件被绑定了 longpress 事件，那么当用户长按这个组件时，该事件将会被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]appear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "如果一个位于某个可滚动区域内的组件被绑定了 appear 事件，那么当这个组件的状态变为在屏幕上可见时，该事件将被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]disappear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "如果一个位于某个可滚动区域内的组件被绑定了 disappear 事件，那么当这个组件被滑出屏幕变为不可见状态时，该事件将被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]viewappear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "viewappear 事件会在页面就要显示或配置的任何页面动画被执行前触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]viewdisappear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "viewdisappear 事件会在页面就要关闭时被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]change",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "当用户输入完成时触发。通常在 blur 事件之后。\n\t\t\t\t \n\t\t\t "
+                    },
+                    "type": "string"
+                }
+            ],
+            "type": "string"
+        },
+        {
+            "name": "text",
+            "description": {
+                "kind": "markdown",
+                "value": "text是 Weex 内置的组件，用来将文本按照指定的样式渲染出来。text 只能包含文本值，你可以使用 {{}} 标记插入变量值作为文本内容。\n<br />\n<b>参考：</b>\n<br />\n<a href=\"http://weex.apache.org/cn/references/components/text.html\">http://weex.apache.org/cn/references/components/text.html</a>\n\t\t\t\t\n\t\t\t"
+            },
+            "attributes": [
+                {
+                    "name": "id",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "元素ID\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "class",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "元素类名\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "style",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "内联样式\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "value",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "组件的默认内容。\n\t\t\t\t\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]click",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "当组件上发生点击手势时被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]longpress",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "如果一个组件被绑定了 longpress 事件，那么当用户长按这个组件时，该事件将会被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]appear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "如果一个位于某个可滚动区域内的组件被绑定了 appear 事件，那么当这个组件的状态变为在屏幕上可见时，该事件将被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]disappear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "如果一个位于某个可滚动区域内的组件被绑定了 disappear 事件，那么当这个组件被滑出屏幕变为不可见状态时，该事件将被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]viewappear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "viewappear 事件会在页面就要显示或配置的任何页面动画被执行前触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]viewdisappear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "viewdisappear 事件会在页面就要关闭时被触发。"
+                    },
+                    "type": "string"
+                }
+            ],
+            "type": "string"
+        },
+        {
+            "name": "textarea",
+            "description": {
+                "kind": "markdown",
+                "value": "textarea 是 Weex 内置的一个组件，用于用户交互，接受用户输入数据。 可以认为是允许多行的 input\n<br />\n<b>参考：</b>\n<br />\n<a href=\"http://weex.apache.org/cn/references/components/textarea.html\">http://weex.apache.org/cn/references/components/textarea.html</a>\n\t\t\t\t\n\t\t\t"
+            },
+            "attributes": [
+                {
+                    "name": "id",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "元素ID\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "class",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "元素类名\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "style",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "内联样式\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "value",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "组件的默认内容。\n\t\t\t\t\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "rows",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "接收 number 类型的数据，指定组件的高度，默认值是 2\n\t\t\t\t\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]longpress",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "如果一个组件被绑定了 longpress 事件，那么当用户长按这个组件时，该事件将会被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]appear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "如果一个位于某个可滚动区域内的组件被绑定了 appear 事件，那么当这个组件的状态变为在屏幕上可见时，该事件将被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]disappear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "如果一个位于某个可滚动区域内的组件被绑定了 disappear 事件，那么当这个组件被滑出屏幕变为不可见状态时，该事件将被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]viewappear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "viewappear 事件会在页面就要显示或配置的任何页面动画被执行前触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]viewdisappear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "viewdisappear 事件会在页面就要关闭时被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]input",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "输入字符的值更改。\n\t\t\t\t \n\t\t\t "
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]change",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "当用户输入完成时触发。通常在 blur 事件之后。\n\t\t\t\t \n\t\t\t "
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]focus",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "组件获得输入焦点。\n\t\t\t\t \n\t\t\t "
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]blur",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "组件失去输入焦点。\n\t\t\t\t \n\t\t\t "
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]return",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "键盘点击返回键。\n\t\t\t\t \n\t\t\t "
+                    },
+                    "type": "string"
+                }
+            ],
+            "type": "string"
+        },
+        {
+            "name": "video",
+            "description": {
+                "kind": "markdown",
+                "value": "video 组件可以让我们在 Weex 页面中嵌入视频内容。\n<br />\n<b>参考：</b>\n<br />\n<a href=\"http://weex.apache.org/cn/references/components/video.html\">http://weex.apache.org/cn/references/components/video.html</a>\n\t\t\t\t\n\t\t\t"
+            },
+            "attributes": [
+                {
+                    "name": "id",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "元素ID\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "class",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "元素类名\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "style",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "内联样式\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "src",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "要显示图片的 URL，该属性是 &lt;image&gt; 组件的强制属性。\n\t\t\t\t\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "play-status",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "可选值为 play | pause，用来控制视频的播放状态，play 或者 pause，默认值是 pause。\n\t\t\t\t\n\t\t\t"
+                    },
+                    "values": [
+                        {
+                            "name": "play"
+                        },
+                        {
+                            "name": "pause"
+                        }
+                    ],
+                    "type": "string"
+                },
+                {
+                    "name": "auto-play",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "可选值为 true/false，默认的是 false。该值决定是否自动播放轮播。重置 loadmore 相关的 UI，值不一样就会重置。\n\t\t\t\t\n\t\t\t"
+                    },
+                    "values": [
+                        {
+                            "name": "true"
+                        },
+                        {
+                            "name": "false"
+                        }
+                    ],
+                    "type": "string"
+                },
+                {
+                    "name": "[event]click",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "当组件上发生点击手势时被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]longpress",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "如果一个组件被绑定了 longpress 事件，那么当用户长按这个组件时，该事件将会被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]appear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "如果一个位于某个可滚动区域内的组件被绑定了 appear 事件，那么当这个组件的状态变为在屏幕上可见时，该事件将被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]disappear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "如果一个位于某个可滚动区域内的组件被绑定了 disappear 事件，那么当这个组件被滑出屏幕变为不可见状态时，该事件将被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]viewappear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "viewappear 事件会在页面就要显示或配置的任何页面动画被执行前触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]viewdisappear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "viewdisappear 事件会在页面就要关闭时被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]start",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "当 playback 的状态是 Playing 时触发\n\t\t\t\t \n\t\t\t "
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]pause",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "当 playback 的状态是 Paused 时触发\n\t\t\t\t \n\t\t\t "
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]finish",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "当 playback 的状态是 Finished 时触发\n\t\t\t\t \n\t\t\t "
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]fail",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "当 playback 状态是 Failed 时触发\n\t\t\t\t \n\t\t\t "
+                    },
+                    "type": "string"
+                }
+            ],
+            "type": "string"
+        },
+        {
+            "name": "waterfall",
+            "description": {
+                "kind": "markdown",
+                "value": "提供瀑布流布局的组件\n<br />\n<b>参考：</b>\n<br />\n<a href=\"http://weex.apache.org/cn/references/components/waterfall.html\">http://weex.apache.org/cn/references/components/waterfall.html</a>\n\t\t\t\t\n\t\t\t"
+            },
+            "attributes": [
+                {
+                    "name": "id",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "元素ID\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "class",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "元素类名\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "style",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "内联样式\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "show-scrollbar",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "可选值为 true/ false，默认值为 true。控制是否出现滚动条。\n\t\t\t\t\n\t\t\t"
+                    },
+                    "values": [
+                        {
+                            "name": "true",
+                            "description": "出现滚动条"
+                        },
+                        {
+                            "name": "false",
+                            "description": "不出现滚动条"
+                        }
+                    ],
+                    "type": "string"
+                },
+                {
+                    "name": "column-width",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "描述瀑布流每一列的列宽\n\t\t\t\t\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "column-count",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "描述瀑布流的列数\n\t\t\t\t\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "column-gap",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "列与列的间隙. 如果指定了 normal ，则对应 32.\n\t\t\t\t\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "left-gap",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "左边cell和列表的间隙. 如果未指定 ，则对应 0\n\t\t\t\t\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "right-gap",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "右边cell和列表的间隙. 如果未指定，则对应 0\n\t\t\t\t\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "loadmoreoffset",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "默认值为 0，触发 loadmore 事件所需要的垂直偏移距离（设备屏幕底部与 list 底部之间的距离）。当 list 的滚动条滚动到足够接近 list 底部时将会触发 loadmore 这个事件。\n\t\t\t\t\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "offset-accuracy",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "控制onscroll事件触发的频率，默认值为10，表示两次onscroll事件之间列表至少滚动了10px。注意，将该值设置为较小的数值会提高滚动事件采样的精度，但同时也会降低页面的性能。\n\t\t\t\t\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]click",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "当组件上发生点击手势时被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]longpress",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "如果一个组件被绑定了 longpress 事件，那么当用户长按这个组件时，该事件将会被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]appear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "如果一个位于某个可滚动区域内的组件被绑定了 appear 事件，那么当这个组件的状态变为在屏幕上可见时，该事件将被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]disappear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "如果一个位于某个可滚动区域内的组件被绑定了 disappear 事件，那么当这个组件被滑出屏幕变为不可见状态时，该事件将被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]viewappear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "viewappear 事件会在页面就要显示或配置的任何页面动画被执行前触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]viewdisappear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "viewdisappear 事件会在页面就要关闭时被触发。"
+                    },
+                    "type": "string"
+                }
+            ],
+            "type": "string"
+        },
+        {
+            "name": "web",
+            "description": {
+                "kind": "markdown",
+                "value": "web 用于在 weex 页面中显示由 src 属性指定的页面内容。您还可以使用 webview 模块来控制 WebView 的行为，例如回退、前进和重新加载，更多信息请参见 webview module。\n<br />\n<b>参考：</b>\n<br />\n<a href=\"http://weex.apache.org/cn/references/components/web.html\">http://weex.apache.org/cn/references/components/web.html</a>\n\t\t\t\t\n\t\t\t"
+            },
+            "attributes": [
+                {
+                    "name": "id",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "元素ID\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "class",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "元素类名\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "style",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "内联样式\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "src",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "要显示图片的 URL，该属性是 &lt;image&gt; 组件的强制属性。\n\t\t\t\t\n\t\t\t"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]appear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "如果一个位于某个可滚动区域内的组件被绑定了 appear 事件，那么当这个组件的状态变为在屏幕上可见时，该事件将被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]disappear",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "如果一个位于某个可滚动区域内的组件被绑定了 disappear 事件，那么当这个组件被滑出屏幕变为不可见状态时，该事件将被触发。"
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]pagestart",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "pagestart 事件，会在 Web 页面开始加载时调用。\n\t\t\t\t \n\t\t\t "
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]pagefinish",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "pagefinish 事件，会在 Web 页面完成加载时调用。\n\t\t\t\t \n\t\t\t "
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]error",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "error 事件，会在 Web 页面加载失败时调用。\n\t\t\t\t \n\t\t\t "
+                    },
+                    "type": "string"
+                },
+                {
+                    "name": "[event]receivedtitle",
+                    "description": {
+                        "kind": "markdown",
+                        "value": "receivedtitle 事件，会在 Web 页面的标题发生改变时调用（仅限 Android 平台）。\n\t\t\t\t \n\t\t\t "
+                    },
+                    "type": "string"
+                }
+            ],
+            "type": "string"
+        }
+    ],
+    "globalAttributes": [
+        {
+            "name": "href",
+            "description": {
+                "kind": "markdown",
+                "value": "待跳转的页面URL，待跳转页面需要是一个Weex页面。如果待跳转页面是一个普通HTML，这会是一个未定义行为。\n\t\t\t"
+            },
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "description": {
+                "kind": "markdown",
+                "value": "元素ID\n\t\t\t"
+            },
+            "type": "string"
+        },
+        {
+            "name": "class",
+            "description": {
+                "kind": "markdown",
+                "value": "元素类名\n\t\t\t"
+            },
+            "type": "string"
+        },
+        {
+            "name": "style",
+            "description": {
+                "kind": "markdown",
+                "value": "内联样式\n\t\t\t"
+            },
+            "type": "string"
+        },
+        {
+            "name": "placeholder",
+            "description": {
+                "kind": "markdown",
+                "value": "当作为image的属性时表示:<br />\n\t\t\t\t\t占位图的 URL，当由 src 表示的图片下载完成并展示后将被删除。\n\t\t\t\t\t<a href=\"http://dotwe.org/vue/712ef102fc5e073b6c7e3b701545681c\">示例</a>\n\t\t\t\t<br />\n\t\t\t\t当作为input的属性时表示:<br />\n\t\t\t\t提示用户可以输入什么。 提示文本不能有回车或换行。\n\t\t\t\t\n\t\t\t"
+            },
+            "type": "string"
+        },
+        {
+            "name": "resize",
+            "values": [
+                {
+                    "name": "contain",
+                    "description": "缩放图片以完全装入<image>区域，可能背景区部分空白。"
+                },
+                {
+                    "name": "cover",
+                    "description": "缩放图片以完全覆盖<image>区域，可能图片部分看不见。"
+                },
+                {
+                    "name": "stretch",
+                    "description": "<b>默认值</b>. 按照<image>区域的宽高比例缩放图片。"
+                }
+            ]
+        },
+        {
+            "name": "src",
+            "description": {
+                "kind": "markdown",
+                "value": "要显示图片的 URL，该属性是 &lt;image&gt; 组件的强制属性。\n\t\t\t\t\n\t\t\t"
+            },
+            "type": "string"
+        },
+        {
+            "name": "value",
+            "description": {
+                "kind": "markdown",
+                "value": "组件的默认内容。\n\t\t\t\t\n\t\t\t"
+            },
+            "type": "string"
+        },
+        {
+            "name": "rows",
+            "description": {
+                "kind": "markdown",
+                "value": "接收 number 类型的数据，指定组件的高度，默认值是 2\n\t\t\t\t\n\t\t\t"
+            },
+            "type": "string"
+        },
+        {
+            "name": "disabled",
+            "description": {
+                "kind": "markdown",
+                "value": "布尔类型的数据，表示是否支持输入。通常 click 事件在 disabled 控件上是失效的。\n\t\t\t\t\n\t\t\t"
+            },
+            "valueSet": "b",
+            "type": "string"
+        },
+        {
+            "name": "autofocus",
+            "description": {
+                "kind": "markdown",
+                "value": "布尔类型的数据，表示是否在页面加载时控件自动获得输入焦点。\n\t\t\t\t\n\t\t\t"
+            },
+            "valueSet": "b",
+            "type": "string"
+        },
+        {
+            "name": "maxlength",
+            "description": {
+                "kind": "markdown",
+                "value": "一个数值类型的值，表示输入的最大长度。\n\t\t\t\t\n\t\t\t"
+            },
+            "type": "string"
+        },
+        {
+            "name": "return-key-type",
+            "description": {
+                "kind": "markdown",
+                "value": "键盘返回键的类型,支持 defalut;go;next;search;send,done。\n\t\t\t\t\n\t\t\t"
+            },
+            "values": [
+                {
+                    "name": "defalut"
+                },
+                {
+                    "name": "go"
+                },
+                {
+                    "name": "next"
+                },
+                {
+                    "name": "search"
+                },
+                {
+                    "name": "send"
+                },
+                {
+                    "name": "done"
+                }
+            ],
+            "type": "string"
+        },
+        {
+            "name": "singleline",
+            "description": {
+                "kind": "markdown",
+                "value": "控制内容是否只允许单行\n\t\t\t\t\n\t\t\t"
+            },
+            "valueSet": "b",
+            "type": "string"
+        },
+        {
+            "name": "max-length",
+            "description": {
+                "kind": "markdown",
+                "value": "控制输入内容的最大长度\n\t\t\t\t\n\t\t\t"
+            },
+            "type": "string"
+        },
+        {
+            "name": "lines",
+            "description": {
+                "kind": "markdown",
+                "value": "控制输入内容的最大行数\n\t\t\t\t\n\t\t\t"
+            },
+            "type": "string"
+        },
+        {
+            "name": "max",
+            "description": {
+                "kind": "markdown",
+                "value": "控制当type属性为date时选择日期的最大时间，格式为yyyy-MM-dd\n\t\t\t\t\n\t\t\t"
+            },
+            "type": "string"
+        },
+        {
+            "name": "min",
+            "description": {
+                "kind": "markdown",
+                "value": "控制当type属性为date时选择日期的最小时间，格式为yyyy-MM-dd\n\t\t\t\t\n\t\t\t"
+            },
+            "type": "string"
+        },
+        {
+            "name": "show-scrollbar",
+            "description": {
+                "kind": "markdown",
+                "value": "可选值为 true/ false，默认值为 true。控制是否出现滚动条。\n\t\t\t\t\n\t\t\t"
+            },
+            "values": [
+                {
+                    "name": "true",
+                    "description": "出现滚动条"
+                },
+                {
+                    "name": "false",
+                    "description": "不出现滚动条"
+                }
+            ],
+            "type": "string"
+        },
+        {
+            "name": "column-width",
+            "description": {
+                "kind": "markdown",
+                "value": "描述瀑布流每一列的列宽\n\t\t\t\t\n\t\t\t"
+            },
+            "type": "string"
+        },
+        {
+            "name": "column-count",
+            "description": {
+                "kind": "markdown",
+                "value": "描述瀑布流的列数\n\t\t\t\t\n\t\t\t"
+            },
+            "type": "string"
+        },
+        {
+            "name": "column-gap",
+            "description": {
+                "kind": "markdown",
+                "value": "列与列的间隙. 如果指定了 normal ，则对应 32.\n\t\t\t\t\n\t\t\t"
+            },
+            "type": "string"
+        },
+        {
+            "name": "left-gap",
+            "description": {
+                "kind": "markdown",
+                "value": "左边cell和列表的间隙. 如果未指定 ，则对应 0\n\t\t\t\t\n\t\t\t"
+            },
+            "type": "string"
+        },
+        {
+            "name": "right-gap",
+            "description": {
+                "kind": "markdown",
+                "value": "右边cell和列表的间隙. 如果未指定，则对应 0\n\t\t\t\t\n\t\t\t"
+            },
+            "type": "string"
+        },
+        {
+            "name": "scroll-direction",
+            "description": {
+                "kind": "markdown",
+                "value": "可选为 horizontal 或者 vertical，默认值为 vertical 。定义滚动的方向。\n\t\t\t\t\n\t\t\t"
+            },
+            "values": [
+                {
+                    "name": "horizontal",
+                    "description": "横向滚动条"
+                },
+                {
+                    "name": "vertical",
+                    "description": "竖向滚动条"
+                }
+            ],
+            "type": "string"
+        },
+        {
+            "name": "loadmoreoffset",
+            "description": {
+                "kind": "markdown",
+                "value": "默认值为 0，触发 loadmore 事件所需要的垂直偏移距离（设备屏幕底部与 list 底部之间的距离）。当 list 的滚动条滚动到足够接近 list 底部时将会触发 loadmore 这个事件。\n\t\t\t\t\n\t\t\t"
+            },
+            "type": "string"
+        },
+        {
+            "name": "offset-accuracy",
+            "description": {
+                "kind": "markdown",
+                "value": "控制onscroll事件触发的频率，默认值为10，表示两次onscroll事件之间列表至少滚动了10px。注意，将该值设置为较小的数值会提高滚动事件采样的精度，但同时也会降低页面的性能。\n\t\t\t\t\n\t\t\t"
+            },
+            "type": "string"
+        },
+        {
+            "name": "keep-scroll-position",
+            "description": {
+                "kind": "markdown",
+                "value": "List 插入数据后是否保持上次滚动的位置\n\t\t\t\t\n\t\t\t"
+            },
+            "type": "string"
+        },
+        {
+            "name": "for",
+            "description": {
+                "kind": "markdown",
+                "value": "<pre>\n在 recycle-list 添加 for 属性即可描述如何循环展开列表的数据，\n语法和 Vue 的 v-for 指令类似，但是它循环的是自己内部的子节点，并不是当前节点。\n\nfor 属性支持如下两种写法：\n\nalias in expression\n(alias, index) in expression\n</pre>\n\t\t\t\t\n\t\t\t"
+            },
+            "type": "string"
+        },
+        {
+            "name": "switch",
+            "description": {
+                "kind": "markdown",
+                "value": "<p>\n在 recycle-list 添加 switch 属性可以用来指定数据中用于区分子模板类型的字段名，语义和编程语言里的 switch 一致，配合 cell-slot 中的 case 和 default 属性一起使用。\n</p>\n<p>\n\t如果省略了 switch 属性，则只会将第一个 cell-slot 视为模板，多余的模板将会被忽略。\n</p>\n\t\t\t\t\n\t\t\t"
+            },
+            "type": "string"
+        },
+        {
+            "name": "case",
+            "description": {
+                "kind": "markdown",
+                "value": "<p>\n声明了当前模板的类型，只有和数据中的类型与当前类型匹配时才会渲染，语义和编程语言里的 case 一致。\n</p>\n<p>\n所有模板中最多只会匹配到一项，按照模板的顺序从上到下匹配，一旦匹配成功就不在继续匹配下一个。\n</p>\n\t\t\t\t\n\t\t\t"
+            },
+            "type": "string"
+        },
+        {
+            "name": "default",
+            "description": {
+                "kind": "markdown",
+                "value": "表示当前模板为默认模板类型，不需要指定值。如果数据项没有匹配到任何 case 类型，则渲染带有 default 模板。如果存在多个 default，则只会使用第一个默认模板。\n\t\t\t\t\n\t\t\t"
+            },
+            "type": "string"
+        },
+        {
+            "name": "key",
+            "description": {
+                "kind": "markdown",
+                "value": "可选属性，用于指定列表数据中可以作为唯一标识的键值，可以优化渲染性能。\n\t\t\t\t\n\t\t\t"
+            },
+            "type": "string"
+        },
+        {
+            "name": "display",
+            "values": [
+                {
+                    "name": "show"
+                },
+                {
+                    "name": "hide"
+                }
+            ]
+        },
+        {
+            "name": "auto-play",
+            "description": {
+                "kind": "markdown",
+                "value": "可选值为 true/false，默认的是 false。该值决定是否自动播放轮播。重置 loadmore 相关的 UI，值不一样就会重置。\n\t\t\t\t\n\t\t\t"
+            },
+            "values": [
+                {
+                    "name": "true"
+                },
+                {
+                    "name": "false"
+                }
+            ],
+            "type": "string"
+        },
+        {
+            "name": "interval",
+            "description": {
+                "kind": "markdown",
+                "value": "值为毫秒数，此值设定 slider 切换时间间隔。当 auto-play 值为 true 时生效。\n\t\t\t\t\n\t\t\t"
+            },
+            "type": "string"
+        },
+        {
+            "name": "infinite",
+            "description": {
+                "kind": "markdown",
+                "value": "循环播放，可选值为 true/false，默认的是 true。\n\t\t\t\t\n\t\t\t"
+            },
+            "values": [
+                {
+                    "name": "true"
+                },
+                {
+                    "name": "false"
+                }
+            ],
+            "type": "string"
+        },
+        {
+            "name": "show-indicators",
+            "description": {
+                "kind": "markdown",
+                "value": "设置是否显示indicator\n\t\t\t\t\n\t\t\t"
+            },
+            "values": [
+                {
+                    "name": "true"
+                },
+                {
+                    "name": "false"
+                }
+            ],
+            "type": "string"
+        },
+        {
+            "name": "scrollable",
+            "description": {
+                "kind": "markdown",
+                "value": "设置是否可以通过滑动手势来切换slider页面\n\t\t\t\t\n\t\t\t"
+            },
+            "values": [
+                {
+                    "name": "true"
+                },
+                {
+                    "name": "false"
+                }
+            ],
+            "type": "string"
+        },
+        {
+            "name": "keep-index",
+            "description": {
+                "kind": "markdown",
+                "value": "设置slider中的数据发生变化后是否保持变化前的页面index\n\t\t\t\t\n\t\t\t"
+            },
+            "values": [
+                {
+                    "name": "true"
+                },
+                {
+                    "name": "false"
+                }
+            ],
+            "type": "string"
+        },
+        {
+            "name": "offset-x-accuracy",
+            "description": {
+                "kind": "markdown",
+                "value": "控制onscroll事件触发的频率，默认值为10，表示两次onscroll事件之间Slider Page至少滚动了10px。注意，将该值设置为较小的数值会提高滚动事件采样的精度，但同时也会降低页面的性能。\n\t\t\t\t\n\t\t\t"
+            },
+            "type": "string"
+        },
+        {
+            "name": "index",
+            "description": {
+                "kind": "markdown",
+                "value": "设置显示slider的第几个页面\n\t\t\t\t\n\t\t\t"
+            },
+            "type": "string"
+        },
+        {
+            "name": "play-status",
+            "description": {
+                "kind": "markdown",
+                "value": "可选值为 play | pause，用来控制视频的播放状态，play 或者 pause，默认值是 pause。\n\t\t\t\t\n\t\t\t"
+            },
+            "values": [
+                {
+                    "name": "play"
+                },
+                {
+                    "name": "pause"
+                }
+            ],
+            "type": "string"
+        },
+        {
+            "name": "[event]click",
+            "description": {
+                "kind": "markdown",
+                "value": "当组件上发生点击手势时被触发。"
+            },
+            "type": "string"
+        },
+        {
+            "name": "[event]longpress",
+            "description": {
+                "kind": "markdown",
+                "value": "如果一个组件被绑定了 longpress 事件，那么当用户长按这个组件时，该事件将会被触发。"
+            },
+            "type": "string"
+        },
+        {
+            "name": "[event]appear",
+            "description": {
+                "kind": "markdown",
+                "value": "如果一个位于某个可滚动区域内的组件被绑定了 appear 事件，那么当这个组件的状态变为在屏幕上可见时，该事件将被触发。"
+            },
+            "type": "string"
+        },
+        {
+            "name": "[event]disappear",
+            "description": {
+                "kind": "markdown",
+                "value": "如果一个位于某个可滚动区域内的组件被绑定了 disappear 事件，那么当这个组件被滑出屏幕变为不可见状态时，该事件将被触发。"
+            },
+            "type": "string"
+        },
+        {
+            "name": "[event]viewappear",
+            "description": {
+                "kind": "markdown",
+                "value": "viewappear 事件会在页面就要显示或配置的任何页面动画被执行前触发。"
+            },
+            "type": "string"
+        },
+        {
+            "name": "[event]viewdisappear",
+            "description": {
+                "kind": "markdown",
+                "value": "viewdisappear 事件会在页面就要关闭时被触发。"
+            },
+            "type": "string"
+        },
+        {
+            "name": "[event]load",
+            "description": {
+                "kind": "markdown",
+                "value": "当加载完成 src 指定的图片时，load事件将被触发。\n\t\t\t\t \n\t\t\t "
+            },
+            "type": "string"
+        },
+        {
+            "name": "[event]input",
+            "description": {
+                "kind": "markdown",
+                "value": "输入字符的值更改。\n\t\t\t\t \n\t\t\t "
+            },
+            "type": "string"
+        },
+        {
+            "name": "[event]change",
+            "description": {
+                "kind": "markdown",
+                "value": "当用户输入完成时触发。通常在 blur 事件之后。\n\t\t\t\t \n\t\t\t "
+            },
+            "type": "string"
+        },
+        {
+            "name": "[event]focus",
+            "description": {
+                "kind": "markdown",
+                "value": "组件获得输入焦点。\n\t\t\t\t \n\t\t\t "
+            },
+            "type": "string"
+        },
+        {
+            "name": "[event]blur",
+            "description": {
+                "kind": "markdown",
+                "value": "组件失去输入焦点。\n\t\t\t\t \n\t\t\t "
+            },
+            "type": "string"
+        },
+        {
+            "name": "[event]return",
+            "description": {
+                "kind": "markdown",
+                "value": "键盘点击返回键。\n\t\t\t\t \n\t\t\t "
+            },
+            "type": "string"
+        },
+        {
+            "name": "[event]start",
+            "description": {
+                "kind": "markdown",
+                "value": "当 playback 的状态是 Playing 时触发\n\t\t\t\t \n\t\t\t "
+            },
+            "type": "string"
+        },
+        {
+            "name": "[event]pause",
+            "description": {
+                "kind": "markdown",
+                "value": "当 playback 的状态是 Paused 时触发\n\t\t\t\t \n\t\t\t "
+            },
+            "type": "string"
+        },
+        {
+            "name": "[event]finish",
+            "description": {
+                "kind": "markdown",
+                "value": "当 playback 的状态是 Finished 时触发\n\t\t\t\t \n\t\t\t "
+            },
+            "type": "string"
+        },
+        {
+            "name": "[event]fail",
+            "description": {
+                "kind": "markdown",
+                "value": "当 playback 状态是 Failed 时触发\n\t\t\t\t \n\t\t\t "
+            },
+            "type": "string"
+        },
+        {
+            "name": "[event]loadmore",
+            "description": {
+                "kind": "markdown",
+                "value": "如果列表滚动到底部将会立即触发这个事件，你可以在这个事件的处理函数中加载下一页的列表项。\n\t\t\t\t \n\t\t\t "
+            },
+            "type": "string"
+        },
+        {
+            "name": "[event]scroll",
+            "description": {
+                "kind": "markdown",
+                "value": "列表发生滚动时将会触发该事件，事件的默认抽样率为10px，即列表每滚动10px触发一次，可通过属性offset-accuracy设置抽样率。\n\t\t\t\t \n\t\t\t "
+            },
+            "type": "string"
+        },
+        {
+            "name": "[event]scrollstart",
+            "description": {
+                "kind": "markdown",
+                "value": "当列表开始滚动的时候触发.\n\t\t\t\t \n\t\t\t "
+            },
+            "type": "string"
+        },
+        {
+            "name": "[event]scrollend",
+            "description": {
+                "kind": "markdown",
+                "value": "当列表结束滚动的时候触发.\n\t\t\t\t \n\t\t\t "
+            },
+            "type": "string"
+        },
+        {
+            "name": "[event]loading",
+            "description": {
+                "kind": "markdown",
+                "value": "被上拉时触发。\n\t\t\t\t \n\t\t\t "
+            },
+            "type": "string"
+        },
+        {
+            "name": "[event]refresh",
+            "description": {
+                "kind": "markdown",
+                "value": "被下拉时触发。\n\t\t\t\t \n\t\t\t "
+            },
+            "type": "string"
+        },
+        {
+            "name": "[event]pagestart",
+            "description": {
+                "kind": "markdown",
+                "value": "pagestart 事件，会在 Web 页面开始加载时调用。\n\t\t\t\t \n\t\t\t "
+            },
+            "type": "string"
+        },
+        {
+            "name": "[event]pagefinish",
+            "description": {
+                "kind": "markdown",
+                "value": "pagefinish 事件，会在 Web 页面完成加载时调用。\n\t\t\t\t \n\t\t\t "
+            },
+            "type": "string"
+        },
+        {
+            "name": "[event]error",
+            "description": {
+                "kind": "markdown",
+                "value": "error 事件，会在 Web 页面加载失败时调用。\n\t\t\t\t \n\t\t\t "
+            },
+            "type": "string"
+        },
+        {
+            "name": "[event]receivedtitle",
+            "description": {
+                "kind": "markdown",
+                "value": "receivedtitle 事件，会在 Web 页面的标题发生改变时调用（仅限 Android 平台）。\n\t\t\t\t \n\t\t\t "
+            },
+            "type": "string"
+        },
+        {
+            "name": "[event]pullingdown",
+            "description": {
+                "kind": "markdown",
+                "value": "被下拉时触发，可以从 event 参数对象中获取 dy, pullingDistance, viewHeight, type\n<pre>\ndy: 前后两次回调滑动距离的差值\npullingDistance: 下拉的距离\nviewHeight: refresh 组件高度\ntype: “pullingdown” 常数字符串\n</pre>\n\t\t\t\t \n\t\t\t "
+            },
+            "type": "string"
+        }
+    ],
+    "valueSets": [
+        {
+            "name": "b",
+            "values": [
+                {
+                    "name": "true"
+                },
+                {
+                    "name": "false"
+                }
+            ]
+        }
+    ]
+}

@@ -19,6 +19,7 @@
         "searchbar.notfinded.foreground"           : "#6B7FE3",
         "editor.selection"                         : "#515C6A",
         "editor.selectRegion"                      : "#474b3d",
+        "editorGhostText.foreground"               : "#7C8088",
         "editor.whitespace"                        : "#282C35",
         "editor.unactive_selection.background"     : "#3f3d3d",
         "widget.background"                        : "#352C28",
@@ -59,7 +60,7 @@
         "editorGroupHeader.tabsBackground"         : "#282C35",
         "editorSuggestWidget.background"           : "#21252B",
         "editorSuggestWidget.border"               : "#181A1F",
-        "editorSuggestWidget.link"                 : "#6870ed",
+        "editorSuggestWidget.link"                 : "#298bdb",
         "editorSuggestWidget.selectedBackground"   : "#2C313A",
         "editor.foldMarker.expanded.background"    : "#282C35",
         "editor.foldMarker.expanded.foreground"    : "#4b5364",
@@ -97,16 +98,16 @@
         "input.searchbar.foreground.notfinded"     : "#E37F6B",
         "input.searchbar.foreground"               : "#ECECEC",
         "inputList.border"                         : "#21252B",
-        "inputList.hoverBackground"                : "#2C313A66",
+        "inputList.hoverBackground"                : "#2c3240",
         "inputList.messageColor"                   : "#b6b4b3",
         "inputOption.activeBorder"                 : "#528BFF",
         "inputValidation.errorBackground"          : "#333842",
         "inputValidation.infoBackground"           : "#2C313A",
-        "list.activeSelectionBackground"           : "#2c2f37",
+        "list.activeSelectionBackground"           : "#3c3f47",
         "list.activeSelectionForeground"           : "#EEF1F8",
         "list.foreground"                          : "#B3BCCC",
         "list.highlightForeground"                 : "#EEF1F8",
-        "list.hoverBackground"                     : "#2a2d35",
+        "list.hoverBackground"                     : "#3a3d45",
         "list.inactiveSelectionBackground"         : "#2C313A",
         "list.inactiveSelectionForeground"         : "#B3BCCC",
         "localhistoryview.headerview.background"   : "#24282f",
@@ -233,7 +234,18 @@
         "debugger.view.breakpoint.icon.color": "#4285F4",
         "debugger.view.breakpoint.icon.disable.color": "#969696",
         "debugger.editor.activatedLine.background": "#4285F4",
-        "debugger.editor.activatedLine.border": "#4285F4"
+        "debugger.editor.activatedLine.border": "#4285F4",
+        "gotoref.tree.item.element"         :"#203369",
+	    "searchlist.hoverBackground"                     : "#4f4f4f",
+        "search.replacezone.background"             : "#2C2F37",
+        "search.replacezone.text.color"             : "#A1A9B6",
+        "search.button.bg"                          : "transparent",
+        "search.button.fg"                          : "#D2D2D2",
+        "search.config.button.fg"                   : "#bebebe",
+        "search.config.element.border.focus"        : "#518BFE",
+        "search.config.element.background.focus"    : "#22262F",
+        "search.file.name"                          : "#f2727f",
+        "search.file.path"                          : "#d17959"
     },
     "tokenColors": [
         {
@@ -259,6 +271,20 @@
             "settings": {
                 "foreground": "#E06963",
                 "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "Conditional Comment VersionOperator",
+            "scope": "comment.conditional.version.operator",
+            "settings": {
+                "foreground": "#C678DD"
+            }
+        },
+        {
+            "name": "Conditional Comment VersionNumber",
+            "scope": "comment.conditional.version.number",
+            "settings": {
+                "foreground": "#D19A66"
             }
         },
         {
@@ -366,6 +392,15 @@
             "name": "Constant",
             "scope": [
                 "constant"
+            ],
+            "settings": {
+                "foreground": "#D19A66"
+            }
+        },
+        {
+            "name": "Boolean",
+            "scope": [
+                "constant.language.boolean"
             ],
             "settings": {
                 "foreground": "#D19A66"

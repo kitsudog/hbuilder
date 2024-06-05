@@ -7,7 +7,8 @@
     "version": "1.0.0",
     "contents": {
         "file/vue-page/config": {
-            "default.name"                         : "默认模板",
+            "default.name"                         : "空页面模板(选项式)",
+            "default.combine.name"         : "空页面模板(组合式)",
             "less.name"                            : "使用less的页面",
             "scss.name"                            : "使用scss的页面",
             "stylus.name"                          : "使用stylus的页面",
@@ -34,6 +35,19 @@
             "uni.palaceGridProductList.name"       : "宫格模式 | 云端一体商品列表",
             "uni.productList.name"                 : "云端一体商品列表",
             "uni.rightPicture.newsList.name"       : "左文右图 | 云端一体新闻列表",
+            "uni.stickyList.name": "NVUE滚动吸顶效果",
+            "uni.stickyList.description": "NVUE滚动吸顶效果",
+            "uni.nvueSwiper.name": "NVUE多页签滑动效果",
+            "uni.nvueSwiper.description": "NVUE多页签滑动效果",
+            "uni.swiperSticky.name": "NVUE多页签滑动吸顶效果",
+            "uni.swiperSticky.description": "NVUE多页签滑动吸顶效果"
+        },
+        "file/uvue-page/config": {
+            "default.name"                         : "空页面模板(选项式)",
+            "default.combine.name"                 : "空页面模板(组合式)",
+            "less.name"                            : "使用less的页面",
+            "scss.name"                            : "使用scss的页面",
+            "stylus.name"                          : "使用stylus的页面",
             "uni.stickyList.name": "NVUE滚动吸顶效果",
             "uni.stickyList.description": "NVUE滚动吸顶效果",
             "uni.nvueSwiper.name": "NVUE多页签滑动效果",

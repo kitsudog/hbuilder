@@ -252,6 +252,32 @@
 		"_file_jql_light":{
 			"fontCharacter": "\\E91F",
 			"fontColor": "#C1A766"
+		},
+        "_lang_uts": {
+            "iconPath": "./uts.svg",
+            "fontCharacter": "\\E920",
+            "fontColor": "#BEBEBE"
+        },
+        "_lang_uts_light": {
+            "iconPath": "./uts_light.svg",
+            "fontCharacter": "\\E920",
+            "fontColor": "#C1A766"
+        },
+        "_project_uniappx": {
+            "iconPath": "./uniappx.svg",
+			"fontColor": "#BEBEBE"
+		},
+		"_project_uniappx_light": {
+            "iconPath": "./uniappx_light.svg",
+			"fontColor": "#C1A766"
+		},
+        "_lang_uvue": {
+            "iconPath": "./uvue.svg",
+			"fontColor": "#BEBEBE"
+		},
+		"_lang_uvue_light": {
+            "iconPath": "./uvue_light.svg",
+			"fontColor": "#C1A766"
 		}
 	},
 	"file": "_file",
@@ -282,7 +308,9 @@
 		"docx": "_file_word",
 		"xls": "_file_excel",
 		"xlsx": "_file_excel",
-		"jql":"_file_jql"
+		"jql":"_file_jql",
+        "uts": "_lang_uts",
+        "uvue": "_lang_uvue"
 	},
 	"fileNames": {
 		"manifest.json": "_file_manifest"
@@ -301,6 +329,7 @@
 		"css": "_lang_css",
 		"javascript": "_lang_js",
 		"json": "_lang_json",
+        "json_tm": "_lang_json",
 		"markdown": "_lang_md",
 		"vue": "_lang_vue",
 		"html": "_lang_html",
@@ -313,6 +342,7 @@
 		"scss": "_lang_scss",
 		"stylus": "_lang_stylus",
 		"typescript": "_lang_typescript",
+        "uts": "_lang_uts",
 		"xml": "_lang_xml"
 	},
 	"light": {
@@ -344,7 +374,9 @@
 			"docx": "_file_word_light",
 			"xls": "_file_excel_light",
 			"xlsx": "_file_excel_light",
-			"jql":"_file_jql_light"
+			"jql":"_file_jql_light",
+            "uts": "_lang_uts_light",
+            "uvue": "_lang_uvue_light"
 		},
 		"fileNames": {
 			"manifest.json": "_file_manifest_light"
@@ -363,6 +395,7 @@
 			"css": "_lang_css_light",
 			"javascript": "_lang_js_light",
 			"json": "_lang_json_light",
+            "json_tm": "_lang_json_light",
 			"markdown": "_lang_md_light",
 			"vue": "_lang_vue_light",
 			"html": "_lang_html_light",
@@ -375,6 +408,7 @@
 			"scss": "_lang_scss_light",
 			"stylus": "_lang_stylus_light",
 			"typescript": "_lang_typescript_light",
+            "uts": "_lang_uts_light",
 			"xml": "_lang_xml_light"
 		}
 	}

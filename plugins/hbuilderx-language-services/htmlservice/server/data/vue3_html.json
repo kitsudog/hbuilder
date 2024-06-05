@@ -1,0 +1,1562 @@
+{
+  "tags": [
+    {
+      "name": "template",
+      "attributes": [
+        {
+          "name": "lang",
+          "type": "string",
+          "values": [
+            {
+              "name": "html",
+              "description": "html"
+            },
+            {
+              "name": "pug",
+              "description": "仅 Web 端支持"
+            }
+          ],
+          "uniPlatform": {
+            "app": {
+              "android": {
+                "osVer": "5.0",
+                "uniVer": "√",
+                "unixVer": "3.9"
+              },
+              "ios": {
+                "osVer": "10.0",
+                "uniVer": "√",
+                "unixVer": "x"
+              }
+            },
+            "mp": {
+              "weixin": {
+                "hostVer": "8.0",
+                "uniVer": "√",
+                "unixVer": "x"
+              }
+            },
+            "web": {
+              "uniVer": "√",
+              "unixVer": "4.0"
+            }
+          }
+        }
+      ],
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9"
+          },
+          "ios": {
+            "osVer": "10.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "mp": {
+          "weixin": {
+            "hostVer": "8.0",
+            "uniVer": "√",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+            "uniVer": "√",
+            "unixVer": "4.0"
+        }
+      }
+    },
+    {
+      "name": "slot",
+      "description": {
+        "kind": "markdown",
+        "value": "<slot> 元素作为组件模板之中的内容分发插槽。<slot> 元素自身将被替换。"
+      },
+      "attributes": [
+        {
+          "name": "name",
+          "description": {
+            "kind": "markdown",
+            "value": "用于命名插槽。"
+          },
+          "type": "string"
+        }
+      ],
+      "references": [
+        {
+          "url": "https://v3.cn.vuejs.org/api/built-in-components.html#slot",
+          "name": "Reference"
+        }
+      ],
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9"
+          },
+          "ios": {
+            "osVer": "10.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "mp": {
+          "weixin": {
+            "hostVer": "8.0",
+            "uniVer": "√",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+            "uniVer": "√",
+            "unixVer": "4.0"
+        }
+      },
+      "type": "string"
+    },
+    {
+      "name": "script",
+      "attributes": [
+        {
+          "name": "setup",
+          "valueSet": "v",
+          "uniPlatform": {
+            "app": {
+              "android": {
+                "osVer": "5.0",
+                "uniVer": "√",
+                "unixVer": "4.0"
+              },
+              "ios": {
+                "osVer": "10.0",
+                "uniVer": "√",
+                "unixVer": "4.11"
+              }
+            },
+            "mp": {
+              "weixin": {
+                "hostVer": "8.0",
+                "uniVer": "√",
+                "unixVer": "x"
+              }
+            },
+            "web": {
+                "uniVer": "√",
+                "unixVer": "4.0"
+            }
+          }
+        },
+        {
+          "name": "lang",
+          "values": [
+            {
+              "name": "ts",
+              "description": "typescript",
+              "uniPlatform": {
+                "app": {
+                  "android": {
+                    "osVer": "5.0",
+                    "uniVer": "√",
+                    "unixVer": "x"
+                  },
+                  "ios": {
+                    "osVer": "10.0",
+                    "uniVer": "√",
+                    "unixVer": "x"
+                  }
+                },
+                "mp": {
+                  "weixin": {
+                    "hostVer": "8.0",
+                    "uniVer": "√",
+                    "unixVer": "x"
+                  }
+                },
+                "web": {
+                  "uniVer": "√",
+                  "unixVer": "x"
+                }
+              }
+            },
+            {
+              "name": "uts",
+              "description": "uts",
+              "uniPlatform": {
+                "app": {
+                  "android": {
+                    "osVer": "5.0",
+                    "uniVer": "√",
+                    "unixVer": "4.0"
+                  },
+                  "ios": {
+                    "osVer": "10.0",
+                    "uniVer": "√",
+                    "unixVer": "4.11"
+                  }
+                },
+                "mp": {
+                  "weixin": {
+                    "hostVer": "8.0",
+                    "uniVer": "√",
+                    "unixVer": "x"
+                  }
+                },
+                "web": {
+                    "uniVer": "√",
+                    "unixVer": "4.0"
+                }
+              }
+            }
+          ],
+          "uniPlatform": {
+            "app": {
+              "android": {
+                "osVer": "5.0",
+                "uniVer": "√",
+                "unixVer": "4.0"
+              },
+              "ios": {
+                "osVer": "10.0",
+                "uniVer": "√",
+                "unixVer": "4.11"
+              }
+            },
+            "mp": {
+              "weixin": {
+                "hostVer": "8.0",
+                "uniVer": "√",
+                "unixVer": "x"
+              }
+            },
+            "web": {
+                "uniVer": "√",
+                "unixVer": "4.0"
+            }
+          }
+        }
+      ],
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9"
+          },
+          "ios": {
+            "osVer": "10.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "mp": {
+          "weixin": {
+            "hostVer": "8.0",
+            "uniVer": "√",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+            "uniVer": "√",
+            "unixVer": "4.0"
+        }
+      }
+    },
+    {
+      "name": "style",
+      "attributes": [
+        {
+          "name": "lang",
+          "values": [
+            {
+              "name": "scss"
+            },
+            {
+              "name": "less"
+            },
+            {
+              "name": "stylus"
+            }
+          ],
+          "uniPlatform": {
+            "app": {
+              "android": {
+                "osVer": "5.0",
+                "uniVer": "√",
+                "unixVer": "3.9"
+              },
+              "ios": {
+                "osVer": "10.0",
+                "uniVer": "√",
+                "unixVer": "4.11"
+              }
+            },
+            "mp": {
+              "weixin": {
+                "hostVer": "8.0",
+                "uniVer": "√",
+                "unixVer": "x"
+              }
+            },
+            "web": {
+              "uniVer": "√",
+              "unixVer": "4.0"
+            }
+          }
+        },
+        {
+          "name": "scoped",
+          "uniPlatform": {
+            "app": {
+              "android": {
+                "osVer": "5.0",
+                "uniVer": "√",
+                "unixVer": "x"
+              },
+              "ios": {
+                "osVer": "10.0",
+                "uniVer": "√",
+                "unixVer": "x"
+              }
+            },
+            "mp": {
+              "weixin": {
+                "hostVer": "8.0",
+                "uniVer": "√",
+                "unixVer": "x"
+              }
+            },
+            "web": {
+              "uniVer": "√",
+              "unixVer": "4.0"
+            }
+          }
+        },
+        {
+          "name": "module",
+          "uniPlatform": {
+            "app": {
+              "android": {
+                "osVer": "5.0",
+                "uniVer": "√",
+                "unixVer": "x"
+              },
+              "ios": {
+                "osVer": "10.0",
+                "uniVer": "√",
+                "unixVer": "x"
+              }
+            },
+            "mp": {
+              "weixin": {
+                "hostVer": "8.0",
+                "uniVer": "√",
+                "unixVer": "x"
+              }
+            },
+            "web": {
+              "uniVer": "√",
+              "unixVer": "4.0"
+            }
+          }
+        }
+      ],
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9"
+          },
+          "ios": {
+            "osVer": "10.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "mp": {
+          "weixin": {
+            "hostVer": "8.0",
+            "uniVer": "√",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+            "uniVer": "√",
+            "unixVer": "4.0"
+        }
+      }
+    },
+    {
+      "name": "keep-alive",
+      "description": {
+        "kind": "markdown",
+        "value": "<keep-alive> 包裹动态组件时，会缓存不活动的组件实例，而不是销毁它们。和 <transition> 相似，<keep-alive> 是一个抽象组件：它自身不会渲染一个 DOM 元素，也不会出现在父组件链中。"
+      },
+      "attributes": [
+        {
+          "name": "include",
+          "description": {
+            "kind": "markdown",
+            "value": "字符串或正则表达式。只有名称匹配的组件会被缓存。"
+          },
+          "type": "string"
+        },
+        {
+          "name": "exclude",
+          "description": {
+            "kind": "markdown",
+            "value": "字符串或正则表达式。任何名称匹配的组件都不会被缓存。"
+          },
+          "type": "string"
+        },
+        {
+          "name": "max",
+          "description": {
+            "kind": "markdown",
+            "value": "最多可以缓存多少组件实例。"
+          },
+          "type": "string"
+        }
+      ],
+      "references": [
+        {
+          "url": "https://v3.cn.vuejs.org/api/built-in-components.html#keep-alive",
+          "name": "Reference"
+        }
+      ],
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "x",
+            "unixVer": "4.0"
+          },
+          "ios": {
+            "osVer": "10.0",
+            "uniVer": "x",
+            "unixVer": "4.11"
+          }
+        },
+        "mp": {
+          "weixin": {
+            "hostVer": "8.0",
+            "uniVer": "x",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+            "uniVer": "√",
+            "unixVer": "4.0"
+        }
+      },
+      "type": "string"
+    },
+    {
+      "name": "component",
+      "description": {
+        "kind": "markdown",
+        "value": "渲染一个“元组件”为动态组件。依 is 的值，来决定哪个组件被渲染。"
+      },
+      "attributes": [
+        {
+          "name": "is"
+        },
+        {
+          "name": "inline-template"
+        }
+      ],
+      "references": [
+        {
+          "url": "https://v3.cn.vuejs.org/api/built-in-components.html#component",
+          "name": "Reference"
+        }
+      ],
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.99"
+          },
+          "ios": {
+            "osVer": "10.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "mp": {
+          "weixin": {
+            "hostVer": "8.0",
+            "uniVer": "x",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+            "uniVer": "√",
+            "unixVer": "4.0"
+        }
+      },
+      "type": "string"
+    },
+    {
+      "name": "transition",
+      "description": {
+        "kind": "markdown",
+        "value": "<transition> 元素作为单个元素/组件的过渡效果。<transition> 只会把过渡效果应用到其包裹的内容上，而不会额外渲染 DOM 元素，也不会出现在检测过的组件层级中。"
+      },
+      "attributes": [
+        {
+          "name": "name",
+          "description": {
+            "kind": "markdown",
+            "value": "用于自动生成 CSS 过渡类名。例如：name: 'fade' 将自动拓展为.fade-enter，.fade-enter-active等。默认类名为 \"v\""
+          },
+          "type": "string"
+        },
+        {
+          "name": "appear",
+          "description": {
+            "kind": "markdown",
+            "value": "是否在初始渲染时使用过渡。默认为 false。"
+          },
+          "valueSet": "b",
+          "type": "string"
+        },
+        {
+          "name": "css",
+          "description": {
+            "kind": "markdown",
+            "value": "是否使用 CSS 过渡类。默认为 true。如果设置为 false，将只通过组件事件触发注册的 JavaScript 钩子。"
+          },
+          "valueSet": "b",
+          "type": "string"
+        },
+        {
+          "name": "type",
+          "description": {
+            "kind": "markdown",
+            "value": "指定过渡事件类型，侦听过渡何时结束。有效值为 \"transition\" 和 \"animation\"。默认 Vue.js 将自动检测出持续时间长的为过渡事件类型。"
+          },
+          "values": [
+            {
+              "name": "transition"
+            },
+            {
+              "name": "animation"
+            }
+          ],
+          "type": "string"
+        },
+        {
+          "name": "mode",
+          "description": {
+            "kind": "markdown",
+            "value": "控制离开/进入的过渡时间序列。有效的模式有 \"out-in\" 和 \"in-out\"；默认同时生效。"
+          },
+          "values": [
+            {
+              "name": "out-in"
+            },
+            {
+              "name": "in-out"
+            }
+          ],
+          "type": "string"
+        },
+        {
+          "name": "duration",
+          "description": {
+            "kind": "markdown",
+            "value": "指定过渡的持续时间。默认情况下，Vue 会等待过渡所在根元素的第一个 transitionend 或 animationend 事件。"
+          },
+          "type": "string"
+        },
+        {
+          "name": "enter-class"
+        },
+        {
+          "name": "leave-class"
+        },
+        {
+          "name": "appear-class"
+        },
+        {
+          "name": "enter-to-class"
+        },
+        {
+          "name": "leave-to-class"
+        },
+        {
+          "name": "appear-to-class"
+        },
+        {
+          "name": "enter-active-class"
+        },
+        {
+          "name": "leave-active-class"
+        },
+        {
+          "name": "appear-active-class"
+        },
+        {
+          "name": "[event]before-enter"
+        },
+        {
+          "name": "[event]before-leave"
+        },
+        {
+          "name": "[event]before-appear"
+        },
+        {
+          "name": "[event]enter"
+        },
+        {
+          "name": "[event]leave"
+        },
+        {
+          "name": "[event]appear"
+        },
+        {
+          "name": "[event]after-enter"
+        },
+        {
+          "name": "[event]after-leave"
+        },
+        {
+          "name": "[event]after-appear"
+        },
+        {
+          "name": "[event]enter-cancelled"
+        },
+        {
+          "name": "[event]leave-cancelled",
+          "description": {
+            "kind": "markdown",
+            "value": "v-show only"
+          },
+          "type": "string"
+        },
+        {
+          "name": "[event]appear-cancelled"
+        }
+      ],
+      "references": [
+        {
+          "url": "https://v3.cn.vuejs.org/api/built-in-components.html#transition",
+          "name": "Reference"
+        }
+      ],
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "ios": {
+            "osVer": "10.0",
+            "uniVer": "x",
+            "unixVer": "x"
+          }
+        },
+        "mp": {
+          "weixin": {
+            "hostVer": "8.0",
+            "uniVer": "x",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+            "uniVer": "√",
+            "unixVer": "4.0"
+        }
+      },
+      "type": "string"
+    },
+    {
+      "name": "transition-group",
+      "description": {
+        "kind": "markdown",
+        "value": "<transition-group> 元素作为多个元素/组件的过渡效果。<transition-group> 渲染一个真实的 DOM 元素。默认渲染 <span>，可以通过 tag 属性配置哪个元素应该被渲染。"
+      },
+      "attributes": [
+        {
+          "name": "tag",
+          "description": {
+            "kind": "markdown",
+            "value": "默认为 span。"
+          },
+          "type": "string"
+        },
+        {
+          "name": "move-class",
+          "description": {
+            "kind": "markdown",
+            "value": "覆盖移动过渡期间应用的 CSS 类。"
+          },
+          "type": "string"
+        },
+        {
+          "name": "name",
+          "description": {
+            "kind": "markdown",
+            "value": "用于自动生成 CSS 过渡类名。例如：name: 'fade' 将自动拓展为.fade-enter，.fade-enter-active等。默认类名为 \"v\""
+          },
+          "type": "string"
+        },
+        {
+          "name": "appear",
+          "description": {
+            "kind": "markdown",
+            "value": "是否在初始渲染时使用过渡。默认为 false。"
+          },
+          "valueSet": "b",
+          "type": "string"
+        },
+        {
+          "name": "css",
+          "description": {
+            "kind": "markdown",
+            "value": "是否使用 CSS 过渡类。默认为 true。如果设置为 false，将只通过组件事件触发注册的 JavaScript 钩子。"
+          },
+          "valueSet": "b",
+          "type": "string"
+        },
+        {
+          "name": "type",
+          "description": {
+            "kind": "markdown",
+            "value": "指定过渡事件类型，侦听过渡何时结束。有效值为 \"transition\" 和 \"animation\"。默认 Vue.js 将自动检测出持续时间长的为过渡事件类型。"
+          },
+          "values": [
+            {
+              "name": "transition"
+            },
+            {
+              "name": "animation"
+            }
+          ],
+          "type": "string"
+        },
+        {
+          "name": "mode"
+        },
+        {
+          "name": "duration",
+          "description": {
+            "kind": "markdown",
+            "value": "指定过渡的持续时间。默认情况下，Vue 会等待过渡所在根元素的第一个 transitionend 或 animationend 事件。"
+          },
+          "type": "string"
+        },
+        {
+          "name": "enter-class"
+        },
+        {
+          "name": "leave-class"
+        },
+        {
+          "name": "appear-class"
+        },
+        {
+          "name": "enter-to-class"
+        },
+        {
+          "name": "leave-to-class"
+        },
+        {
+          "name": "appear-to-class"
+        },
+        {
+          "name": "enter-active-class"
+        },
+        {
+          "name": "leave-active-class"
+        },
+        {
+          "name": "appear-active-class"
+        },
+        {
+          "name": "[event]before-enter"
+        },
+        {
+          "name": "[event]before-leave"
+        },
+        {
+          "name": "[event]before-appear"
+        },
+        {
+          "name": "[event]enter"
+        },
+        {
+          "name": "[event]leave"
+        },
+        {
+          "name": "[event]appear"
+        },
+        {
+          "name": "[event]after-enter"
+        },
+        {
+          "name": "[event]after-leave"
+        },
+        {
+          "name": "[event]after-appear"
+        },
+        {
+          "name": "[event]enter-cancelled"
+        },
+        {
+          "name": "[event]leave-cancelled",
+          "description": {
+            "kind": "markdown",
+            "value": "v-show only"
+          },
+          "type": "string"
+        },
+        {
+          "name": "[event]appear-cancelled"
+        }
+      ],
+      "references": [
+        {
+          "url": "https://v3.cn.vuejs.org/api/built-in-components.html#transition-group",
+          "name": "Reference"
+        }
+      ],
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "ios": {
+            "osVer": "10.0",
+            "uniVer": "x",
+            "unixVer": "x"
+          }
+        },
+        "mp": {
+          "weixin": {
+            "hostVer": "8.0",
+            "uniVer": "x",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+            "uniVer": "√",
+            "unixVer": "4.0"
+        }
+      },
+      "type": "string"
+    },
+    {
+      "name": "teleport",
+      "description": {
+        "kind": "markdown",
+        "value": "Teleport 提供了一种干净的方法，允许我们控制在 DOM 中哪个父节点下呈现 HTML，而不必求助于全局状态或将其拆分为两个组件。"
+      },
+      "attributes": [
+        {
+          "name": "to",
+          "description": {
+            "kind": "markdown",
+            "value": "必须是有效的查询选择器或 HTMLElement (如果在浏览器环境中使用)。指定将在其中移动 <teleport> 内容的目标元素"
+          },
+          "type": "string"
+        },
+        {
+          "name": "disabled",
+          "description": {
+            "kind": "markdown",
+            "value": "此可选属性可用于禁用 <teleport> 的功能，这意味着其插槽内容将不会移动到任何位置，而是在您在周围父组件中指定了 <teleport> 的位置渲染。"
+          },
+          "type": "boolean"
+        }
+      ],
+      "references": [
+        {
+          "url": "https://v3.vuejs.org/api/built-in-components.html#teleport",
+          "name": "Reference"
+        }
+      ],
+      "uniPlatform": {
+        "app": {
+          "android": {
+              "osVer": "5.0",
+              "uniVer": "x",
+              "unixVer": "4.0"
+          },
+          "ios": {
+            "osVer": "10.0",
+            "uniVer": "x",
+            "unixVer": "4.11"
+          }
+        },
+        "mp": {
+          "weixin": {
+            "hostVer": "8.0",
+            "uniVer": "x",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+            "uniVer": "√",
+            "unixVer": "4.0"
+        }
+      },
+      "type": "string"
+    }
+  ],
+  "globalAttributes": [
+    {
+      "name": "v-text",
+      "description": {
+        "kind": "markdown",
+        "value": "更新元素的 textContent。如果要更新部分的 textContent ，需要使用 {{ Mustache }} 插值。\n\t\t\t\t\t<b>参考：</b>\n\t\t\t\t\t<br />\n\t\t\t\t\t<a href=\"https://v3.cn.vuejs.org/api/directives.html#v-text\">https://v3.cn.vuejs.org/api/directives.html#v-text</a>"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "x"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "x"
+          }
+        },
+        "mp": {
+          "weixin": {
+            "hostVer": "8.0",
+            "uniVer": "x",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+            "uniVer": "√",
+            "unixVer": "4.0"
+        }
+      },
+      "type": "string"
+    },
+    {
+      "name": "v-html",
+      "description": {
+        "kind": "markdown",
+        "value": "更新元素的 innerHTML 。注意：内容按普通 HTML 插入 - 不会作为 Vue 模板进行编译 。如果试图使用 v-html 组合模板，可以重新考虑是否通过使用组件来替代。\n\t\t\t\t\t<br />\n\t\t\t\t\t<b>参考：</b>\n\t\t\t\t\t<br />\n\t\t\t\t\t<a href=\"https://v3.cn.vuejs.org/api/directives.html#v-html\">https://v3.cn.vuejs.org/api/directives.html#v-html</a>"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.99"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "x"
+          }
+        },
+        "mp": {
+          "weixin": {
+            "hostVer": "8.0",
+            "uniVer": "√",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+            "uniVer": "√",
+            "unixVer": "4.0"
+        }
+      },
+      "type": "string"
+    },
+    {
+      "name": "v-show",
+      "description": {
+        "kind": "markdown",
+        "value": "根据表达式之真假值，切换元素的 display CSS 属性。\n\t\t\t\t\t当条件变化时该指令触发过渡效果。\n\t\t\t\t\t<br />\n                \t<b>参考：</b>\n                \t<br />\n                \t<a href=\"https://v3.cn.vuejs.org/api/directives.html#v-show\">https://v3.cn.vuejs.org/api/directives.html#v-show</a>"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9"
+          },
+          "ios": {
+            "osVer": "10.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "mp": {
+          "weixin": {
+            "hostVer": "8.0",
+            "uniVer": "√",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+            "uniVer": "√",
+            "unixVer": "4.0"
+        }
+      },
+      "type": "string"
+    },
+    {
+      "name": "v-if",
+      "description": {
+        "kind": "markdown",
+        "value": "根据表达式的值的真假条件渲染元素。在切换时元素及它的数据绑定 / 组件被销毁并重建。如果元素是 `<template>` ，将提出它的内容作为条件块。\n\t\t\t\t\t当条件变化时该指令触发过渡效果。\n\t\t\t\t\t<br />\n                \t<b>参考：</b>\n                \t<br />\n                \t<a href=\"https://v3.cn.vuejs.org/api/directives.html#v-if\">https://v3.cn.vuejs.org/api/directives.html#v-if</a>"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9"
+          },
+          "ios": {
+            "osVer": "10.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "mp": {
+          "weixin": {
+            "hostVer": "8.0",
+            "uniVer": "√",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+            "uniVer": "√",
+            "unixVer": "4.0"
+        }
+      },
+      "type": "string"
+    },
+    {
+      "name": "v-else",
+      "description": {
+        "kind": "markdown",
+        "value": "不需要表达式，前一兄弟元素必须有 v-if 或 v-else-if。\n\t\t\t\t\t<br />\n                    <b>参考：</b>\n                    <br />\n                    <a href=\"https://v3.cn.vuejs.org/api/directives.html#v-else\">https://v3.cn.vuejs.org/api/directives.html#v-elsehttps://v3.cn.vuejs.org/api/directives.html#v-else</a>"
+      },
+      "valueSet": "v",
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9"
+          },
+          "ios": {
+            "osVer": "10.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "mp": {
+          "weixin": {
+            "hostVer": "8.0",
+            "uniVer": "√",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+            "uniVer": "√",
+            "unixVer": "4.0"
+        }
+      },
+      "type": "string"
+    },
+    {
+      "name": "v-else-if",
+      "description": {
+        "kind": "markdown",
+        "value": "前一兄弟元素必须有 v-if 或 v-else-if。\n\t\t\t\t\t<br />\n                    <b>参考：</b>\n                    <br />\n                    <a href=\"https://v3.cn.vuejs.org/api/directives.html#v-else-if\">https://v3.cn.vuejs.org/api/directives.html#v-else-if</a>"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9"
+          },
+          "ios": {
+            "osVer": "10.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "mp": {
+          "weixin": {
+            "hostVer": "8.0",
+            "uniVer": "√",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+            "uniVer": "√",
+            "unixVer": "4.0"
+        }
+      },
+      "type": "string"
+    },
+    {
+      "name": "v-for",
+      "description": {
+        "kind": "markdown",
+        "value": "基于源数据多次渲染元素或模板块。\n\t\t\t\t\t<br />\n\t\t\t\t\t<b>参考：</b>\n\t\t\t\t\t<br />\n\t\t\t\t\t<a href=\"https://v3.cn.vuejs.org/guide/list.html#%E7%94%A8-v-for-%E6%8A%8A%E4%B8%80%E4%B8%AA%E6%95%B0%E7%BB%84%E5%AF%B9%E5%BA%94%E4%B8%BA%E4%B8%80%E7%BB%84%E5%85%83%E7%B4%A0\">列表渲染</a>\n\t\t\t\t\t<br />\n\t\t\t\t\t<b>参考：</b>\n\t\t\t\t\t<br />\n\t\t\t\t\t<a href=\"https://v3.cn.vuejs.org/api/directives.html#v-for\">https://v3.cn.vuejs.org/api/directives.html#v-for</a>"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9"
+          },
+          "ios": {
+            "osVer": "10.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "mp": {
+          "weixin": {
+            "hostVer": "8.0",
+            "uniVer": "√",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+            "uniVer": "√",
+            "unixVer": "4.0"
+        }
+      },
+      "type": "string"
+    },
+    {
+      "name": "v-on",
+      "description": {
+        "kind": "markdown",
+        "value": "绑定事件监听器。事件类型由参数指定。表达式可以是一个方法的名字或一个内联语句，如果没有修饰符也可以省略。\n\t\t\t\t\t\t\t<br />\n\t\t\t\t\t\t\t用在普通元素上时，只能监听原生 DOM 事件。用在自定义元素组件上时，也可以监听子组件触发的自定义事件。\n\t\t\t\t\t\t\t<br />\n\t\t\t\t\t\t\t在监听原生 DOM 事件时，方法以事件为唯一的参数。如果使用内联语句，语句可以访问一个 $event 属性：v-on:click=\"handle('ok', $event)\"。\n\t\t\t\t\t\t\t<br />\n\t\t\t\t\t\t\t<b>参考：</b>\n\t\t\t\t\t\t\t<br />\n\t\t\t\t\t\t\t<a href=\"https://v3.cn.vuejs.org/api/directives.html#v-on\">https://v3.cn.vuejs.org/api/directives.html#v-on</a>"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9"
+          },
+          "ios": {
+            "osVer": "10.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "mp": {
+          "weixin": {
+            "hostVer": "8.0",
+            "uniVer": "√",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+            "uniVer": "√",
+            "unixVer": "4.0"
+        }
+      },
+      "type": "string"
+    },
+    {
+      "name": "v-bind",
+      "description": {
+        "kind": "markdown",
+        "value": "动态地绑定一个或多个特性，或一个组件 prop 到表达式。\n\t\t\t\t\t\t\t<br />\n\t\t\t\t\t\t\t在绑定 class 或 style 特性时，支持其它类型的值，如数组或对象。可以通过下面的教程链接查看详情。\n\t\t\t\t\t\t\t<br />\n\t\t\t\t\t\t\t在绑定 prop 时，prop 必须在子组件中声明。可以用修饰符指定不同的绑定类型。\n\t\t\t\t\t\t\t<br />\n\t\t\t\t\t\t\t没有参数时，可以绑定到一个包含键值对的对象。注意此时 class 和 style 绑定不支持数组和对象。\n\t\t\t\t\t\t\t<br />\n                    \t\t<b>参考：</b>\n                    \t\t<br />\n                    \t\t<a href=\"https://v3.cn.vuejs.org/api/directives.html#v-bind\">https://v3.cn.vuejs.org/api/directives.html#v-bind</a>"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9"
+          },
+          "ios": {
+            "osVer": "10.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "mp": {
+          "weixin": {
+            "hostVer": "8.0",
+            "uniVer": "√",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+            "uniVer": "√",
+            "unixVer": "4.0"
+        }
+      },
+      "type": "string"
+    },
+    {
+      "name": "v-model",
+      "description": {
+        "kind": "markdown",
+        "value": "在表单控件或者组件上创建双向绑定。细节请看下面的教程链接。\n\t\t\t\t\t\t\t<br />\n\t\t\t\t\t\t\t<b>参考：</b>\n\t\t\t\t\t\t\t<br />\n                    \t\t<a href=\"https://v3.cn.vuejs.org/api/directives.html#v-model\">https://v3.cn.vuejs.org/api/directives.html#v-model</a>\n\t\t\t\t\t\t\t<br />\n\t\t\t\t\t\t\t<b>参考：</b>\n\t\t\t\t\t\t\t<br />\n\t\t\t\t\t\t\t<a href=\"https://v3.cn.vuejs.org/guide/forms.html#%E5%9F%BA%E7%A1%80%E7%94%A8%E6%B3%95\">表单控件绑定</a>\n\t\t\t\t\t\t\t<br />\n\t\t\t\t\t\t\t<b>参考：</b>\n\t\t\t\t\t\t\t<br />\n\t\t\t\t\t\t\t<a href=\"https://v3.cn.vuejs.org/guide/component-custom-events.html#v-model-%E5%8F%82%E6%95%B0\">组件 - 在输入组件上使用自定义事件</a>"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9"
+          },
+          "ios": {
+            "osVer": "10.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "mp": {
+          "weixin": {
+            "hostVer": "8.0",
+            "uniVer": "√",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+            "uniVer": "√",
+            "unixVer": "4.0"
+        }
+      },
+      "type": "string"
+    },
+    {
+      "name": "v-slot",
+      "description": {
+        "kind": "markdown",
+        "value": "提供具名插槽或需要接收 prop 的插槽。\n\t\t\t\t\t\t\t<br />\n                    \t\t<b>参考：</b>\n                    \t\t<br />\n                    \t\t<a href=\"https://v3.cn.vuejs.org/api/directives.html#v-slot\">https://v3.cn.vuejs.org/api/directives.html#v-slot</a>\n\t\t\t\t\t\t]\n\t\t\t\t\t"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9"
+          },
+          "ios": {
+            "osVer": "10.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "mp": {
+          "weixin": {
+            "hostVer": "8.0",
+            "uniVer": "√",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+            "uniVer": "√",
+            "unixVer": "4.0"
+        }
+      },
+      "type": "string"
+    },
+    {
+      "name": "v-pre",
+      "description": {
+        "kind": "markdown",
+        "value": "跳过这个元素和它的子元素的编译过程。可以用来显示原始 Mustache 标签。跳过大量没有指令的节点会加快编译。\n\t\t\t\t\t\t    <br />\n                    \t\t<b>参考：</b>\n                    \t\t<br />\n                    \t\t<a href=\"https://v3.cn.vuejs.org/api/directives.html#v-pre\">https://v3.cn.vuejs.org/api/directives.html#v-pre</a>"
+      },
+      "valueSet": "v",
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.99"
+          },
+          "ios": {
+            "osVer": "10.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "mp": {
+          "weixin": {
+            "hostVer": "8.0",
+            "uniVer": "x",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+            "uniVer": "√",
+            "unixVer": "4.0"
+        }
+      },
+      "type": "string"
+    },
+    {
+      "name": "v-cloak",
+      "description": {
+        "kind": "markdown",
+        "value": "这个指令保持在元素上直到关联实例结束编译。和 CSS 规则如 [v-cloak] { display: none } 一起用时，这个指令可以隐藏未编译的 Mustache 标签直到实例准备完毕。\n\t\t\t\t\t\t    <br />\n                    \t\t<b>参考：</b>\n                    \t\t<br />\n                    \t\t<a href=\"https://v3.cn.vuejs.org/api/directives.html#v-cloak\">https://v3.cn.vuejs.org/api/directives.html#v-cloak</a>"
+      },
+      "valueSet": "v",
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "ios": {
+            "osVer": "10.0",
+            "uniVer": "x",
+            "unixVer": "x"
+          }
+        },
+        "mp": {
+          "weixin": {
+            "hostVer": "8.0",
+            "uniVer": "x",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+            "uniVer": "√",
+            "unixVer": "4.0"
+        }
+      },
+      "type": "string"
+    },
+    {
+      "name": "v-once",
+      "description": {
+        "kind": "markdown",
+        "value": "只渲染元素和组件一次。随后的重新渲染，元素/组件及其所有的子节点将被视为静态内容并跳过。这可以用于优化更新性能。\n\t\t\t\t\t\t\t<br />\n\t\t\t\t\t\t\t<b>参考：</b>\n\t\t\t\t\t\t\t<br />\n\t\t\t\t\t\t\t<a href=\"https://v3.cn.vuejs.org/api/directives.html#v-once\">https://v3.cn.vuejs.org/api/directives.html#v-once</a>"
+      },
+      "valueSet": "v",
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.99"
+          },
+          "ios": {
+            "osVer": "10.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "mp": {
+          "weixin": {
+            "hostVer": "8.0",
+            "uniVer": "x",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+            "uniVer": "x",
+            "unixVer": "x"
+        }
+      },
+      "type": "string"
+    },
+    {
+      "name": "v-memo",
+      "description": {
+        "kind": "markdown",
+        "value": "记住一个模板的子树。元素和组件上都可以使用。该指令接收一个固定长度的数组作为依赖值进行记忆比对。如果数组中的每个值都和上次渲染的时候相同，则整个该子树的更新会被跳过。\n        \t<br />\n\t\t\t\t\t<b>参考：</b>\n\t\t\t\t\t<br />\n        \t<a href=\"https://v3.cn.vuejs.org/api/directives.html#v-memo\">https://v3.cn.vuejs.org/api/directives.html#v-memo</a>\n\t\t\t\t\t\n\t\t\t"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "x",
+            "unixVer": "3.99"
+          },
+          "ios": {
+            "osVer": "10.0",
+            "uniVer": "x",
+            "unixVer": "4.11"
+          }
+        },
+        "mp": {
+          "weixin": {
+            "hostVer": "8.0",
+            "uniVer": "x",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+            "uniVer": "x",
+            "unixVer": "x"
+        }
+      },
+      "type": "string"
+    },
+    {
+      "name": "v-is",
+      "description": {
+        "kind": "markdown",
+        "value": "在DOM模板中使用时，模板受本机HTML解析规则的约束。\n\t\t\t\t\t\t<br />\n\t\t\t\t\t<b>参考：</b>\n\t\t\t\t\t<br />\n\t\t\t\t\t<a href=\"https://vue3js.cn/docs/zh/guide/migration/custom-elements-interop.html#v-is-%E7%94%A8%E4%BA%8E-dom-%E5%86%85%E6%A8%A1%E6%9D%BF%E8%A7%A3%E6%9E%90%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88\">参考</a>\t\n\t\t\t\t\t\t\n\t\t\t\t"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "ios": {
+            "osVer": "10.0",
+            "uniVer": "x",
+            "unixVer": "x"
+          }
+        },
+        "mp": {
+          "weixin": {
+            "hostVer": "8.0",
+            "uniVer": "x",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+            "uniVer": "√",
+            "unixVer": "4.0"
+        }
+      },
+      "type": "string"
+    },
+    {
+      "name": "key",
+      "description": {
+        "kind": "markdown",
+        "value": "主要用做 Vue 的虚拟 DOM 算法的提示，以在比对新旧节点组时辨识 VNodes。如果不使用 key，Vue 会使用一种算法来最小化元素的移动并且尽可能尝试就地修改/复用相同类型元素。而使用 key 时，它会基于 key 的顺序变化重新排列元素，并且那些使用了已经不存在的 key 的元素将会被移除/销毁。\n<br /><b>参考：</b><br /><a href=\"https://v3.cn.vuejs.org/api/special-attributes.html#ref\">https://v3.cn.vuejs.org/api/special-attributes.html#key</a>"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9"
+          },
+          "ios": {
+            "osVer": "10.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "mp": {
+          "weixin": {
+            "hostVer": "8.0",
+            "uniVer": "√",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+            "uniVer": "√",
+            "unixVer": "4.0"
+        }
+      },
+      "type": "string"
+    },
+    {
+      "name": "ref",
+      "description": {
+        "kind": "markdown",
+        "value": "ref 被用来给元素或子组件注册引用信息。引用信息将会被注册在父组件的 $refs 对象上。如果在普通的 DOM 元素上使用，引用指向的就是那个 DOM 元素；如果用在子组件上，引用就指向组件实例;\n<br /><b>参考：</b><br /><a href=\"https://v3.cn.vuejs.org/api/special-attributes.html#ref\">https://v3.cn.vuejs.org/api/special-attributes.html#ref</a>"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9"
+          },
+          "ios": {
+            "osVer": "10.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "mp": {
+          "weixin": {
+            "hostVer": "8.0",
+            "uniVer": "√",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+            "uniVer": "√",
+            "unixVer": "4.0"
+        }
+      },
+      "type": "string"
+    },
+    {
+      "name": "is",
+      "description": {
+        "kind": "markdown",
+        "value": "使用动态组件。\n<br /><b>参考：</b><br /><a href=\"https://v3.cn.vuejs.org/api/special-attributes.html#is\">https://v3.cn.vuejs.org/api/special-attributes.html#is</a>"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.99"
+          },
+          "ios": {
+            "osVer": "10.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "mp": {
+          "weixin": {
+            "hostVer": "8.0",
+            "uniVer": "x",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+            "uniVer": "√",
+            "unixVer": "4.0"
+        }
+      },
+      "type": "string"
+    }
+  ],
+  "valueSets": [
+    {
+      "name": "b",
+      "values": [
+        {
+          "name": "true"
+        },
+        {
+          "name": "false"
+        }
+      ]
+    }
+  ]
+}

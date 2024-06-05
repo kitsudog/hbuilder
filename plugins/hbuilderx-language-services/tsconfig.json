@@ -1,0 +1,73 @@
+{
+    "extends": "./shared.tsconfig.json",
+    "compilerOptions": {
+        "outDir": "./out"
+    },
+    "include": ["src/**/*"],
+    "_comment": "以下引用的项目顺序不能改变！！！",
+    "references": [
+        {
+            "path": "./core"
+        },
+        {
+            "path": "./packages"
+        },
+        {
+            "path": "./specialStringPlugin"
+        },
+        {
+            "path": "./utils"
+        },
+        {
+            "path": "./utils/client"
+        },
+        {
+            "path": "./serverinterface"
+        },
+        {
+            "path": "./htmlservice/entry"
+        },
+        {
+            "path": "./independentIndexer"
+        },
+        {
+            "path": "./stylusservice"
+        },
+        {
+            "path": "./stylusservice/server"
+        },
+        {
+            "path": "./styleservice/"
+        },
+        {
+            "path": "./htmlservice"
+        },
+        {
+            "path": "./markdownservice/"
+        },
+        {
+            "path": "./stylusservice"
+        },
+        {
+            "path": "./stylusservice/server"
+        },
+        {
+            "path": "./jsservice"
+        },
+        {
+            "path": "./vueservice"
+        },
+        {
+            "path": "./uniapp"
+        },
+        {
+            "path": "./jsservice/src/tsplugins/node_modules/dcloudio"
+        },
+        {
+            "path": "./indexservice"
+        },
+        {
+            "path": "./emmet"
+        }
+    ]
+}

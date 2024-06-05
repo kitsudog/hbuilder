@@ -1,49 +1,82 @@
 {
-    "name": "jsbeautify",
-    "version": "1.0.1-2021102011",
-    "__private": true,
-    "external": {
-        "type": "node"
-    },
-    "engines": {
-        "HBuilderX": "^3.2.6"
-    },
-    "contributes": {
-        "formator": {
-            "name": "jsbeautify",
-            "class": "js_beautify.js",
-            "filetypes": [
-                "json",
-                "js",
-                "njs",
-                "html",
-                "css",
-                "vue",
-                "nvue",
-                "ux",
-                "nml",
-                "nss",
-                "wxml",
-                "qml",
-                "qss",
-                "wxss",
-                "sjs",
-                "ttml",
-                "ttss",
-                "acss",
-                "swan"
-            ]
-        }
-    },
-    "configurationFiles": [
-        "jsbeautifyrc.js"
+  "id": "format",
+  "name": "format",
+  "description": "%format.description%",
+  "displayName": "%format.displayName%",
+  "version": "1.5.8-2024022816",
+  "publisher": "dcloud",
+  "engines": {
+    "HBuilderX": "^3.6.9"
+  },
+  "__from": "HBuilderX",
+  "__private": true,
+  "categories": [
+    "Other"
+  ],
+  "main": "./out/index",
+  "scripts": {},
+  "contributes": {
+    "languages": [
+      {
+        "id": "json",
+        "aliases": [
+          "JSON"
+        ],
+        "extensions": [
+          ".jsbeautifyrc"
+        ]
+      }
     ],
-    "configurationFileInfos": {
-        "jsbeautifyrc.js": {
-            "description": "%configurationFileInfos.jsbeautifyrc.js.description%"
-        }
+    "_formator": {
+      "name": "%format.displayName%",
+      "class": "out/main.js",
+      "filetypes": [
+        "json",
+        "js",
+        "ts",
+        "uts",
+        "njs",
+        "html",
+        "css",
+        "vue",
+        "nvue",
+        "ux",
+        "nml",
+        "nss",
+        "wxml",
+        "qml",
+        "qss",
+        "wxss",
+        "sjs",
+        "ttml",
+        "ttss",
+        "acss",
+        "swan"
+      ]
     },
-    "dependencies": {
-        "js-beautify": "^1.13.5"
+    "configuration": {
+      "type": "object",
+      "title": "Beautify Formator",
+      "properties": {
+        "beautify.useProjectConfigFile": {
+          "type": "boolean",
+          "default": true,
+          "description": "%properties.beautify.useProjectConfigFile.description%"
+        }
+      }
     }
+  },
+  "configurationFiles": [
+    "jsbeautifyrc.js"
+  ],
+  "configurationFileInfos": {
+    "jsbeautifyrc.js": {
+      "description": "%configurationFileInfos.jsbeautifyrc.js.description%"
+    }
+  },
+  "extensionDependencies": [
+    "plugin-manager"
+  ],
+  "dependencies": {},
+  "devDependencies": {}
 }

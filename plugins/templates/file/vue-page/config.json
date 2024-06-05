@@ -3,8 +3,13 @@
     "description": "vue页面模板",
     "sortgroup": ["base", "custom", ""],
     "templates": [{
-            "file": "默认模板.vue",
+            "file": "default.vue",
             "name": "%default.name%"
+        },
+        {
+            "file": "setup.vue",
+            "name": "%default.combine.name%",
+            "skipvuever":[2]
         },
         {
             "file": "使用less的页面.vue",
@@ -22,6 +27,20 @@
             "file": "使用typescript的页面.vue",
             "name": "%typescript.name%"
         },
+        {
+			"file": "https://ext.dcloud.net.cn/hbuilder/download?pluginId=uni-id-pages",
+			"author": "DCloud前端团队",
+			"name": "uni-id-pages",
+			"description": "uni-id-pages",
+			"support": [
+				"tcb",
+				"aliyun"
+			],
+			"url": "https://ext.dcloud.net.cn/plugin?name=uni-id-pages",
+			"preview": "https://img-cdn-aliyun.dcloud.net.cn/hbuilderx/5f5372e0-e9a1-11ea-8ffb-a91ad2d78303_0.png",
+			"type":"uni_modules",
+			"style":false
+	},
         {
             "file": "https://ext.dcloud.net.cn/hbuilder/download?pluginId=2588",
             "author": "DCloud",

@@ -2,7 +2,7 @@
 	"if": {
 		"body": [
 			"if ($1) {",
-			"\t$0",
+			"\t$SELECTION$0",
 			"}"
 		],
 		"triggerAssist": false,
@@ -11,7 +11,7 @@
 	"if ... else": {
 		"body": [
 			"if ($1) {",
-			"\t$0",
+			"\t$SELECTION$0",
 			"} else{",
 			"\t",
 			"}"
@@ -37,7 +37,7 @@
 			"}"
 		],
 		"triggerAssist": false,
-		"project": "uni-app",
+		"project": "uni-app,uni-app-x",
 		"prefix": "ifios"
 	},
 	"ifAndroid": {
@@ -47,8 +47,9 @@
 			"}"
 		],
 		"triggerAssist": false,
-		"project": "uni-app",
-		"prefix": "ifandroid"
+		"project": "uni-app,uni-app-x",
+		"prefix": "ifandroid",
+        "scope": "source$|(source ! meta.import & meta.block$)|(source !meta.definition.variable & meta.var$)&(!text.html.vue source.js.embedded.html source.js)"
 	},
 	"clog": {
 		"prefix": "clog",
@@ -60,7 +61,7 @@
 	"clogvar": {
 		"prefix": "clogvar",
 		"body": [
-			"console.log(\"$1: \",$1);"
+			"console.log('${0:$nearestVar}: ',${0:$nearestVar});"
 		],
 		"description": "%clogvar.description%"
 	},
@@ -81,7 +82,7 @@
 	"function": {
 		"body": [
 			"function ${1:function_name} ($2) {",
-			"\t$0",
+			"\t$SELECTION$0",
 			"}"
 		],
 		"triggerAssist": false,
@@ -123,10 +124,19 @@
 		"triggerAssist": false,
 		"prefix": "funcl"
 	},
+	"async method_name(){}": {
+		"prefix": "asyncm",
+		"scope": "source.js meta.objectliteral.js",
+		"body": [
+			"async ${1:method_name}($2){",
+			"\t$0",
+			"}"
+		]
+	},
 	"for (...) {...}": {
 		"body": [
 			"for ($1) {",
-			"\t$0",
+			"\t$SELECTION$0",
 			"}"
 		],
 		"triggerAssist": false,
@@ -183,7 +193,7 @@
 	"try{}catch(e)": {
 		"body": [
 			"try{",
-			"\t$0",
+			"\t$SELECTION$0",
 			"}catch(e){",
 			"\t//TODO handle the exception",
 			"}"
@@ -196,13 +206,13 @@
 			"${1:key} : ${2:value},"
 		],
 		"triggerAssist": false,
-		"scope": "object.property.js",
+		"scope": "source meta.var.expr meta.objectliteral",
 		"prefix": "kv"
 	},
 	"while": {
 		"body": [
 			"while (${1:condition}){",
-			"\t$0",
+			"\t$SELECTION$0",
 			"}"
 		],
 		"triggerAssist": false,
@@ -271,7 +281,7 @@
 			"import ${1:foo} from \"${2:bar}\""
 		],
 		"triggerAssist": false,
-		"prefix": "imfrom"
+		"prefix": "importfrom"
 	},
 	"typeof!": {
 		"body": [
@@ -283,7 +293,7 @@
 	"with": {
 		"body": [
 			"with ($1){",
-			"\t$0",
+			"\t$SELECTION$0",
 			"}"
 		],
 		"triggerAssist": false,
@@ -441,7 +451,7 @@
 			"@return {${1:type}}"
 		],
 		"triggerAssist": false,
-		"scope": "comment.block.js",
+		"scope": "source.js comment.block.documentation.js | text.html.vue source.js.embedded.html comment.block.js",
 		"prefix": "@return"
 	},
 	"@description": {
@@ -449,7 +459,7 @@
 			"@description $0"
 		],
 		"triggerAssist": false,
-		"scope": "comment.block.js",
+		"scope": "source.js comment.block.documentation.js | text.html.vue source.js.embedded.html comment.block.js",
 		"prefix": "@description"
 	},
 	"@example": {
@@ -457,7 +467,7 @@
 			"@example $0"
 		],
 		"triggerAssist": false,
-		"scope": "comment.block.js",
+		"scope": "source.js comment.block.documentation.js | text.html.vue source.js.embedded.html comment.block.js",
 		"prefix": "@example"
 	},
 	"@alias": {
@@ -465,7 +475,7 @@
 			"@alias $0"
 		],
 		"triggerAssist": false,
-		"scope": "comment.block.js",
+		"scope": "source.js comment.block.documentation.js | text.html.vue source.js.embedded.html comment.block.js",
 		"prefix": "@alias"
 	},
 	"@tutorial": {
@@ -473,7 +483,7 @@
 			"@tutorial ${1:url}"
 		],
 		"triggerAssist": false,
-		"scope": "comment.block.js",
+		"scope": "source.js comment.block.documentation.js | text.html.vue source.js.embedded.html comment.block.js",
 		"prefix": "@tutorial"
 	},
 	"@property": {
@@ -481,7 +491,7 @@
 			"@property {${1:type}} ${2:prop_name} $0"
 		],
 		"triggerAssist": false,
-		"scope": "comment.block.js",
+		"scope": "source.js comment.block.documentation.js | text.html.vue source.js.embedded.html comment.block.js",
 		"prefix": "@property"
 	},
 	"@property with values": {
@@ -489,7 +499,7 @@
 			"@property {${1:type}} ${2:prop_name} = [${3:value}] $0"
 		],
 		"triggerAssist": false,
-		"scope": "comment.block.js",
+		"scope": "source.js comment.block.documentation.js | text.html.vue source.js.embedded.html comment.block.js",
 		"prefix": "@propertyvalues"
 	},
 	"@event": {
@@ -497,7 +507,7 @@
 			"@event {Function(${1})} ${2:name} $0"
 		],
 		"triggerAssist": false,
-		"scope": "comment.block.js",
+		"scope": "source.js comment.block.documentation.js | text.html.vue source.js.embedded.html comment.block.js",
 		"prefix": "@event"
 	},
 	"@param": {
@@ -505,7 +515,7 @@
 			"@param {${1:type}} ${2:$FN_PARAMS} $0"
 		],
 		"triggerAssist": false,
-		"scope": "comment.block.js",
+		"scope": "source.js comment.block.documentation.js | text.html.vue source.js.embedded.html comment.block.js",
 		"prefix": "@param"
 	},
 	"@param with values": {
@@ -513,7 +523,7 @@
 			"@param {${1:type}} ${2:$FN_PARAMS} = [${3:value}] $0"
 		],
 		"triggerAssist": false,
-		"scope": "comment.block.js",
+		"scope": "source.js comment.block.documentation.js | text.html.vue source.js.embedded.html comment.block.js",
 		"prefix": "@paramvalues"
 	},
 	"@extends": {
@@ -521,7 +531,7 @@
 			"@extends {${1:parent_type}}"
 		],
 		"triggerAssist": false,
-		"scope": "comment.block.js",
+		"scope": "source.js comment.block.documentation.js | text.html.vue source.js.embedded.html comment.block.js",
 		"prefix": "@extends"
 	},
 	"@type": {
@@ -619,64 +629,60 @@
 	},
 	"dbget": {
 		"body": [
-		  "db.collection('$1')",
-		  "\t.get()",
-		  "\t.then((res) => {",
-		  "\t\t$2",
-		  "\t})",
-		  "\t.catch((err) => {",
-		  "\t\t$3",
-		  "\t})"
+			"db.collection('$1')",
+			"\t.get()",
+			"\t.then((res) => {",
+			"\t\t$2",
+			"\t})",
+			"\t.catch((err) => {",
+			"\t\t$3",
+			"\t})"
 		],
 		"description": "%dbget.description%",
-		"prefix": "dbget",
-		"scope": "source.js"
-	  },
-	  "dbadd": {
+		"prefix": "dbget"
+	},
+	"dbadd": {
 		"body": [
-		  "db.collection('$1')",
-		  "\t.add($2)",
-		  "\t.then((res) => {",
-		  "\t\t$3",
-		  "\t})",
-		  "\t.catch((err) => {",
-		  "\t\t$4",
-		  "\t})"
+			"db.collection('$1')",
+			"\t.add($2)",
+			"\t.then((res) => {",
+			"\t\t$3",
+			"\t})",
+			"\t.catch((err) => {",
+			"\t\t$4",
+			"\t})"
 		],
 		"description": "%dbadd.description%",
-		"prefix": "dbadd",
-		"scope": "source.js"
-	  },
-	  "dbupdate": {
+		"prefix": "dbadd"
+	},
+	"dbupdate": {
 		"body": [
-		  "db.collection('$1')",
-		  "\t.where($2)",
-		  "\t.update($3)",
-		  "\t.then((res) => {",
-		  "\t\t$4",
-		  "\t})",
-		  "\t.catch((err) => {",
-		  "\t\t$5",
-		  "\t})"
+			"db.collection('$1')",
+			"\t.where($2)",
+			"\t.update($3)",
+			"\t.then((res) => {",
+			"\t\t$4",
+			"\t})",
+			"\t.catch((err) => {",
+			"\t\t$5",
+			"\t})"
 		],
 		"description": "%dbupdate.description%",
-		"prefix": "dbupdate",
-		"scope": "source.js"
-	  },
-	  "dbremove": {
+		"prefix": "dbupdate"
+	},
+	"dbremove": {
 		"body": [
-		  "db.collection('$1')",
-		  "\t.where($2)",
-		  "\t.remove($3)",
-		  "\t.then((res) => {",
-		  "\t\t$4",
-		  "\t})",
-		  "\t.catch((err) => {",
-		  "\t\t$5",
-		  "\t})"
+			"db.collection('$1')",
+			"\t.where($2)",
+			"\t.remove($3)",
+			"\t.then((res) => {",
+			"\t\t$4",
+			"\t})",
+			"\t.catch((err) => {",
+			"\t\t$5",
+			"\t})"
 		],
 		"description": "%dbremove.description%",
-		"prefix": "dbremove",
-		"scope": "source.js"
-	  }
+		"prefix": "dbremove"
+	}
 }

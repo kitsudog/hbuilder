@@ -1,4 +1,4 @@
-// 开发文档：https://uniapp.dcloud.io/uniCloud/clientdb?id=action
+// 开发文档：https://uniapp.dcloud.io/uniCloud/jql.html#action
 module.exports = {
 	before: async (state, event) => {
 		

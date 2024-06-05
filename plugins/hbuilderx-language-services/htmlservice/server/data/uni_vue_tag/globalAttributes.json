@@ -1,0 +1,473 @@
+[
+  {
+    "name": "id",
+    "description": {
+      "value": "组件的唯一标识，一般用于获取组件上下文对象",
+      "kind": "markdown"
+    },
+    "uniPlatform": {
+      "app": {
+        "android": {
+          "osVer": "5.0",
+          "uniVer": "√",
+          "unixVer": "3.9+"
+        },
+        "ios": {
+          "osVer": "12.0",
+          "uniVer": "√",
+          "unixVer": "4.11"
+        }
+      },
+      "web": {
+        "uniVer": "√",
+        "unixVer": "4.0"
+      }
+    },
+    "type": "string",
+    "valueSet": "string.IDString"
+  },
+  {
+    "name": "style",
+    "description": {
+      "value": "组件的内联样式，可以动态设置的内联样式",
+      "kind": "markdown"
+    },
+    "uniPlatform": {
+      "app": {
+        "android": {
+          "osVer": "5.0",
+          "uniVer": "√",
+          "unixVer": "3.9+"
+        },
+        "ios": {
+          "osVer": "12.0",
+          "uniVer": "√",
+          "unixVer": "4.11"
+        }
+      },
+      "web": {
+        "uniVer": "√",
+        "unixVer": "4.0"
+      }
+    },
+    "type": "string"
+  },
+  {
+    "name": "class",
+    "description": {
+      "value": "组件的样式类，在对应的 css 中定义的样式类",
+      "kind": "markdown"
+    },
+    "uniPlatform": {
+      "app": {
+        "android": {
+          "osVer": "5.0",
+          "uniVer": "√",
+          "unixVer": "3.9+"
+        },
+        "ios": {
+          "osVer": "12.0",
+          "uniVer": "√",
+          "unixVer": "4.11"
+        }
+      },
+      "web": {
+        "uniVer": "√",
+        "unixVer": "4.0"
+      }
+    },
+    "type": "string",
+    "valueSet": "string.ClassString"
+  },
+  {
+    "name": "ref",
+    "type": "string",
+    "description": {
+      "value": "vue中组件的唯一标识，用来给子组件注册引用信息",
+      "kind": "markdown"
+    },
+    "uniPlatform": {
+      "app": {
+        "android": {
+          "osVer": "5.0",
+          "uniVer": "√",
+          "unixVer": "3.9+"
+        },
+        "ios": {
+          "osVer": "12.0",
+          "uniVer": "√",
+          "unixVer": "4.11"
+        }
+      },
+      "web": {
+        "uniVer": "√",
+        "unixVer": "4.0"
+      }
+    }
+  },
+  {
+    "name": "data-*",
+    "type": "any",
+    "description": {
+      "value": "自定义属性，组件上触发的事件时，会发送给事件处理函数",
+      "kind": "markdown"
+    },
+    "uniPlatform": {
+      "app": {
+        "android": {
+          "osVer": "5.0",
+          "uniVer": "√",
+          "unixVer": "3.9+"
+        },
+        "ios": {
+          "osVer": "12.0",
+          "uniVer": "√",
+          "unixVer": "4.11"
+        }
+      },
+      "web": {
+        "uniVer": "√",
+        "unixVer": "4.0"
+      }
+    }
+  },
+  {
+    "name": "android-*",
+    "type": "any",
+    "description": {
+      "value": "App-Android平台专有属性，详见[App-Android平台专有属性](https://doc.dcloud.net.cn/uni-app-x/component/common.html#attribute-android)章节",
+      "kind": "markdown"
+    },
+    "uniPlatform": {
+      "app": {
+        "android": {
+          "osVer": "5.0",
+          "uniVer": "x",
+          "unixVer": "3.9+"
+        },
+        "ios": {
+          "osVer": "12.0",
+          "uniVer": "x",
+          "unixVer": "x"
+        }
+      },
+      "web": {
+        "uniVer": "√",
+        "unixVer": "4.0"
+      }
+    }
+  },
+  {
+    "name": "[event]click",
+    "description": {
+      "value": "手指触摸后马上离开。与tap相同，（推荐使用tap事件代替），冒泡事件",
+      "kind": "markdown"
+    },
+    "uniPlatform": {
+      "app": {
+        "android": {
+          "osVer": "5.0",
+          "uniVer": "√",
+          "unixVer": "3.9+"
+        },
+        "ios": {
+          "osVer": "12.0",
+          "uniVer": "√",
+          "unixVer": "4.11"
+        }
+      },
+      "web": {
+        "uniVer": "√",
+        "unixVer": "4.0"
+      }
+    },
+    "type": "(event: UniPointerEvent) => void"
+  },
+  {
+    "name": "[event]mousedown",
+    "description": {
+      "value": "鼠标在元素上点击后触发",
+      "kind": "markdown"
+    },
+    "uniPlatform": {
+      "app": {
+        "android": {
+          "osVer": "5.0",
+          "uniVer": "√",
+          "unixVer": "x"
+        },
+        "ios": {
+          "osVer": "12.0",
+          "uniVer": "√",
+          "unixVer": "x"
+        }
+      },
+      "web": {
+        "uniVer": "√",
+        "unixVer": "4.0"
+      }
+    },
+    "type": "(event: UniMouseEvent) => void"
+  },
+  {
+    "name": "[event]mousemove",
+    "description": {
+      "value": "鼠标在元素上移动时触发",
+      "kind": "markdown"
+    },
+    "uniPlatform": {
+      "app": {
+        "android": {
+          "osVer": "5.0",
+          "uniVer": "√",
+          "unixVer": "x"
+        },
+        "ios": {
+          "osVer": "12.0",
+          "uniVer": "√",
+          "unixVer": "x"
+        }
+      },
+      "web": {
+        "uniVer": "√",
+        "unixVer": "4.0"
+      }
+    },
+    "type": "(event: UniMouseEvent) => void"
+  },
+  {
+    "name": "[event]mouseup",
+    "description": {
+      "value": "鼠标主按钮在元素上松开时触发",
+      "kind": "markdown"
+    },
+    "uniPlatform": {
+      "app": {
+        "android": {
+          "osVer": "5.0",
+          "uniVer": "√",
+          "unixVer": "x"
+        },
+        "ios": {
+          "osVer": "12.0",
+          "uniVer": "√",
+          "unixVer": "x"
+        }
+      },
+      "web": {
+        "uniVer": "√",
+        "unixVer": "4.0"
+      }
+    },
+    "type": "(event: UniMouseEvent) => void"
+  },
+  {
+    "name": "[event]touchstart",
+    "description": {
+      "value": "手指触摸动作开始，冒泡事件，event.type 值为 touchstart",
+      "kind": "markdown"
+    },
+    "uniPlatform": {
+      "app": {
+        "android": {
+          "osVer": "5.0",
+          "uniVer": "√",
+          "unixVer": "3.9+"
+        },
+        "ios": {
+          "osVer": "12.0",
+          "uniVer": "√",
+          "unixVer": "4.11"
+        }
+      },
+      "web": {
+        "uniVer": "√",
+        "unixVer": "4.0"
+      }
+    },
+    "type": "(event: UniTouchEvent) => void"
+  },
+  {
+    "name": "[event]touchmove",
+    "description": {
+      "value": "手指触摸后移动，冒泡事件，event.type 值为 touchmove",
+      "kind": "markdown"
+    },
+    "uniPlatform": {
+      "app": {
+        "android": {
+          "osVer": "5.0",
+          "uniVer": "√",
+          "unixVer": "3.9+"
+        },
+        "ios": {
+          "osVer": "12.0",
+          "uniVer": "√",
+          "unixVer": "4.11"
+        }
+      },
+      "web": {
+        "uniVer": "√",
+        "unixVer": "4.0"
+      }
+    },
+    "type": "(event: UniTouchEvent) => void"
+  },
+  {
+    "name": "[event]touchcancel",
+    "description": {
+      "value": "手指触摸动作被打断，如来电提醒，弹窗，冒泡事件，event.type 值为 touchcancel",
+      "kind": "markdown"
+    },
+    "uniPlatform": {
+      "app": {
+        "android": {
+          "osVer": "5.0",
+          "uniVer": "√",
+          "unixVer": "3.9+"
+        },
+        "ios": {
+          "osVer": "12.0",
+          "uniVer": "√",
+          "unixVer": "4.11"
+        }
+      },
+      "web": {
+        "uniVer": "√",
+        "unixVer": "4.0"
+      }
+    },
+    "type": "(event: UniTouchEvent) => void"
+  },
+  {
+    "name": "[event]touchend",
+    "description": {
+      "value": "手指触摸动作结束，冒泡事件，event.type 值为 touchend",
+      "kind": "markdown"
+    },
+    "uniPlatform": {
+      "app": {
+        "android": {
+          "osVer": "5.0",
+          "uniVer": "√",
+          "unixVer": "3.9+"
+        },
+        "ios": {
+          "osVer": "12.0",
+          "uniVer": "√",
+          "unixVer": "4.11"
+        }
+      },
+      "web": {
+        "uniVer": "√",
+        "unixVer": "4.0"
+      }
+    },
+    "type": "(event: UniTouchEvent) => void"
+  },
+  {
+    "name": "[event]tap",
+    "description": {
+      "value": "手指触摸后马上离开，冒泡事件",
+      "kind": "markdown"
+    },
+    "uniPlatform": {
+      "app": {
+        "android": {
+          "osVer": "5.0",
+          "uniVer": "√",
+          "unixVer": "3.9+"
+        },
+        "ios": {
+          "osVer": "12.0",
+          "uniVer": "√",
+          "unixVer": "4.11"
+        }
+      },
+      "web": {
+        "uniVer": "√",
+        "unixVer": "4.0"
+      }
+    },
+    "type": "(event: UniPointerEvent) => void"
+  },
+  {
+    "name": "[event]longpress",
+    "description": {
+      "value": "如果一个组件被绑定了 longpress 事件，那么当用户手指触摸后，超过350ms再离开会触发，冒泡事件",
+      "kind": "markdown"
+    },
+    "uniPlatform": {
+      "app": {
+        "android": {
+          "osVer": "5.0",
+          "uniVer": "√",
+          "unixVer": "3.9+"
+        },
+        "ios": {
+          "osVer": "12.0",
+          "uniVer": "√",
+          "unixVer": "4.11"
+        }
+      },
+      "web": {
+        "uniVer": "√",
+        "unixVer": "4.0"
+      }
+    },
+    "type": "(event: UniTouchEvent) => void"
+  },
+  {
+    "name": "[event]longtap",
+    "description": {
+      "value": "手指触摸后，超过350ms再离开（推荐使用 longpress 事件代替）",
+      "kind": "markdown"
+    },
+    "uniPlatform": {
+      "app": {
+        "android": {
+          "osVer": "5.0",
+          "uniVer": "√",
+          "unixVer": "3.9+"
+        },
+        "ios": {
+          "osVer": "12.0",
+          "uniVer": "√",
+          "unixVer": "4.11"
+        }
+      },
+      "web": {
+        "uniVer": "√",
+        "unixVer": "4.0"
+      }
+    },
+    "type": "(event: UniTouchEvent) => void"
+  },
+  {
+    "name": "[event]transitionend",
+    "description": {
+      "value": "transition 效果结束时触发",
+      "kind": "markdown"
+    },
+    "uniPlatform": {
+      "app": {
+        "android": {
+          "osVer": "5.0",
+          "uniVer": "√",
+          "unixVer": "3.93+"
+        },
+        "ios": {
+          "osVer": "12.0",
+          "uniVer": "√",
+          "unixVer": "4.11"
+        }
+      },
+      "web": {
+        "uniVer": "√",
+        "unixVer": "4.0"
+      }
+    },
+    "type": "(event: UniEvent) => void"
+  }
+
+]

@@ -1,7 +1,8 @@
+const webpack = require('webpack')
 const plugins = []
 
 if (process.env.UNI_OPT_TREESHAKINGNG) {
-    plugins.push(require('@dcloudio/vue-cli-plugin-uni-optimize/packages/babel-plugin-uni-api/index.js'))
+  plugins.push(require('@dcloudio/vue-cli-plugin-uni-optimize/packages/babel-plugin-uni-api/index.js'))
 }
 
 if (
@@ -34,7 +35,7 @@ if (
         }
       }
     ])
-  } catch (e) {}
+  } catch (e) { }
 }
 
 process.UNI_LIBRARIES = process.UNI_LIBRARIES || ['@dcloudio/uni-ui']
@@ -49,17 +50,32 @@ process.UNI_LIBRARIES.forEach(libraryName => {
     }
   ])
 })
-module.exports = {
-  retainLines: process.env.NODE_ENV !== 'production',
+
+if (process.env.UNI_PLATFORM !== 'h5') {
+  plugins.push('@babel/plugin-transform-runtime')
+}
+
+const config = {
   presets: [
     [
       '@vue/app',
       {
-        modules: 'commonjs',//可支持 module.exports 与 import 混搭使用
-        useBuiltIns: process.env.UNI_PLATFORM === 'h5' ? 'usage' : 'entry',
-        exclude: ['transform-typeof-symbol']
+        modules: webpack.version[0] > 4 ? 'auto' : 'commonjs',
+        useBuiltIns: process.env.UNI_PLATFORM === 'h5' ? 'usage' : 'entry'
       }
     ]
   ],
   plugins
 }
+
+const UNI_H5_TEST = '**/@dcloudio/uni-h5/dist/index.umd.min.js'
+if (process.env.NODE_ENV === 'production') {
+  config.overrides = [{
+    test: UNI_H5_TEST,
+    compact: true,
+  }]
+} else {
+  config.ignore = [UNI_H5_TEST]
+}
+
+module.exports = config

@@ -6,7 +6,6 @@
       "})"
     ],
     "triggerAssist": false,
-    "scope": "source.js",
     "prefix": "mmeach"
   },
   "plus.camera": {
@@ -14,7 +13,6 @@
       "plus.camera."
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "pcamera"
   },
   "plus.contacts": {
@@ -22,7 +20,6 @@
       "plus.contacts."
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "pcontacts"
   },
   "mui.confirm()": {
@@ -32,7 +29,6 @@
       "}${6:,\u0027div\u0027})"
     ],
     "triggerAssist": false,
-    "scope": "source.js",
     "prefix": "mdconfirm"
   },
   "plus.statistic": {
@@ -40,7 +36,6 @@
       "plus.statistic."
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "pstatistic"
   },
   "plus.key": {
@@ -48,7 +43,6 @@
       "plus.key."
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "pkey"
   },
   "plus.storage": {
@@ -56,7 +50,6 @@
       "plus.storage."
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "pstorage"
   },
   "plus.payment": {
@@ -64,7 +57,6 @@
       "plus.payment."
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "ppayment"
   },
   "mui.getJSON()": {
@@ -75,7 +67,6 @@
       ");$0"
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "mjson"
   },
   "plus.net": {
@@ -83,7 +74,6 @@
       "plus.net."
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "pnet"
   },
   "plus.runtime": {
@@ -91,7 +81,6 @@
       "plus.runtime."
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "pruntime"
   },
   "mui.scrollTo()": {
@@ -101,7 +90,6 @@
       "}}$0"
     ],
     "triggerAssist": false,
-    "scope": "source.js",
     "prefix": "mscrollto"
   },
   "plus.uploader": {
@@ -109,7 +97,6 @@
       "plus.uploader."
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "puploader"
   },
   "mui.backTask(双击进入后台)": {
@@ -134,7 +121,6 @@
       "};"
     ],
     "triggerAssist": false,
-    "scope": "source.js",
     "prefix": "mbackMoveTaskToBack"
   },
   "mui.plusReady()": {
@@ -144,7 +130,6 @@
       "})$0"
     ],
     "triggerAssist": false,
-    "scope": "source.js",
     "prefix": "mplusready"
   },
   "plus.io": {
@@ -152,7 +137,6 @@
       "plus.io."
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "pio"
   },
   "querySelector": {
@@ -160,7 +144,6 @@
       "document.querySelector(\u0027$1\u0027).$0"
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "ds"
   },
   "mui.init({刷新组件})": {
@@ -178,7 +161,6 @@
       "});$0"
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "minpullRefresh"
   },
   "mui.init({按键绑定})": {
@@ -191,7 +173,6 @@
       "})"
     ],
     "triggerAssist": false,
-    "scope": "source.js",
     "prefix": "minkeyevent"
   },
   "mui(\u0027\u0027).slider": {
@@ -199,7 +180,6 @@
       "mui(\u0027.${1:mui-slider}\u0027).slider({$2})$0"
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "mmslider"
   },
   "mui.backDouble(双击退出应用)": {
@@ -223,7 +203,6 @@
       "};"
     ],
     "triggerAssist": false,
-    "scope": "source.js",
     "prefix": "mbackDouble"
   },
   "mui(\u0027\u0027).scroll": {
@@ -231,7 +210,6 @@
       "mui(\u0027.${1:mui-scroll-wrapper}\u0027).scroll({$2})$0"
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "mmscroll"
   },
   "mui.preload()": {
@@ -244,7 +222,6 @@
       "})$0"
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "mpreload"
   },
   "mui.open": {
@@ -252,7 +229,6 @@
       "mui.openWindow(\u0027${1:url}\u0027,\u0027${2:id}\u0027,{$3})"
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "mopen"
   },
   "plus.push": {
@@ -260,7 +236,6 @@
       "plus.push."
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "ppush"
   },
   "plus.gallery": {
@@ -268,7 +243,6 @@
       "plus.gallery."
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "pgallery"
   },
   "return false;": {
@@ -276,7 +250,6 @@
       "return false;"
     ],
     "triggerAssist": false,
-    "scope": "source.js",
     "prefix": "rfalse"
   },
   "mui.init({重写窗口关闭逻辑})": {
@@ -288,7 +261,6 @@
       "})"
     ],
     "triggerAssist": false,
-    "scope": "source.js",
     "prefix": "minbeforeback"
   },
   "mui.init({预加载数量})": {
@@ -296,7 +268,6 @@
       "preloadLimit:${1:5}"
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "minprelimit"
   },
   "mui.back()(返回上级页面)": {
@@ -304,7 +275,6 @@
       "mui.back()$0"
     ],
     "triggerAssist": false,
-    "scope": "source.js",
     "prefix": "mback"
   },
   "querySelectoraddEventListener": {
@@ -314,7 +284,6 @@
       "})"
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "dsa"
   },
   "documentaddEventListener": {
@@ -324,7 +293,6 @@
       "})"
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "dad"
   },
   "mui.fire()": {
@@ -332,7 +300,6 @@
       "mui.fire(${1:targetWebviewObj},\u0027${2:event}\u0027,{${3:data}})"
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "mfire"
   },
   "plus.messaging": {
@@ -340,7 +307,6 @@
       "plus.messaging."
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "pmessaging"
   },
   "mui.alert()": {
@@ -350,7 +316,6 @@
       "}${5:,\u0027div\u0027})"
     ],
     "triggerAssist": false,
-    "scope": "source.js",
     "prefix": "mdalert"
   },
   "mui.ajax()": {
@@ -371,7 +336,6 @@
       "});$0"
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "majax"
   },
   "plus.networkinfo": {
@@ -379,7 +343,6 @@
       "plus.networkinfo."
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "pnetworkinfo"
   },
   "mui.off": {
@@ -389,7 +352,6 @@
       "}) "
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "mmoff"
   },
   "plus.device": {
@@ -397,7 +359,6 @@
       "plus.device."
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "pdevice"
   },
   "mui(\u0027\u0027).pullRefresh": {
@@ -405,7 +366,6 @@
       "mui(\u0027#${1:refreshContainer}\u0027).pullRefresh().$2"
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "mmpullrefresh"
   },
   "plus.nativeUI": {
@@ -413,7 +373,6 @@
       "plus.nativeUI."
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "pnativeUI"
   },
   "plus.android": {
@@ -421,7 +380,6 @@
       "plus.android."
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "pandroid"
   },
   "plus.share": {
@@ -429,7 +387,6 @@
       "plus.share."
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "pshare"
   },
   "mui.init({手势事件})": {
@@ -447,7 +404,6 @@
       "});$0"
     ],
     "triggerAssist": false,
-    "scope": "source.js",
     "prefix": "mingesture"
   },
   "plus.ios": {
@@ -455,7 +411,6 @@
       "plus.ios."
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "pios"
   },
   "plus.speech": {
@@ -463,7 +418,6 @@
       "plus.speech.$0"
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "pspeech"
   },
   "plus.display": {
@@ -471,7 +425,6 @@
       "plus.display."
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "pdisplay"
   },
   "mui.get()": {
@@ -484,7 +437,6 @@
       ");"
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "mget"
   },
   "mui.init({预加载})": {
@@ -501,7 +453,6 @@
       "})$0"
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "minpreload"
   },
   "plus.nativeObj": {
@@ -509,7 +460,6 @@
       "plus.nativeObj."
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "pnativeObj"
   },
   "mui.post()": {
@@ -522,7 +472,6 @@
       ");"
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "mpost"
   },
   "mui.closePopup()": {
@@ -530,7 +479,6 @@
       "mui.closePopup()$0"
     ],
     "triggerAssist": false,
-    "scope": "source.js",
     "prefix": "mdclosePopup"
   },
   "plus.navigator": {
@@ -538,7 +486,6 @@
       "plus.navigatorsc."
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "pnavigator"
   },
   "mui.trigger()": {
@@ -546,7 +493,6 @@
       "mui.trigger(${1:dom},\u0027${3:tap}\u0027${4:,{a:\u0027as\u0027}})"
     ],
     "triggerAssist": false,
-    "scope": "source.js",
     "prefix": "mtrigger"
   },
   "plus.downloader": {
@@ -554,7 +500,6 @@
       "plus.downloader."
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "pdown"
   },
   "plusReady": {
@@ -569,7 +514,6 @@
       "}"
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "pready"
   },
   "mui.backFunction(重写返回逻辑)": {
@@ -579,7 +523,6 @@
       "}"
     ],
     "triggerAssist": false,
-    "scope": "source.js",
     "prefix": "mbackfunction"
   },
   "mui.mask": {
@@ -590,7 +533,6 @@
       "${1:mask}.show()"
     ],
     "triggerAssist": false,
-    "scope": "source.js",
     "prefix": "mmask"
   },
   "plus.geolocation": {
@@ -598,7 +540,6 @@
       "plus.geolocation."
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "pgeolocation"
   },
   "mui.init({设置状态栏颜色})": {
@@ -608,7 +549,6 @@
       "})"
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "minstatusbar"
   },
   "plus.oauth": {
@@ -616,7 +556,6 @@
       "plus.oauth."
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "poauth"
   },
   "mui.prompt()": {
@@ -626,7 +565,6 @@
       "}${7:,\u0027div\u0027})"
     ],
     "triggerAssist": false,
-    "scope": "source.js",
     "prefix": "mdprompt"
   },
   "plus.zip": {
@@ -634,7 +572,6 @@
       "plus.zip."
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "pzip"
   },
   "mui.ready": {
@@ -644,7 +581,6 @@
       "})"
     ],
     "triggerAssist": false,
-    "scope": "source.js",
     "prefix": "mready"
   },
   "mui.init": {
@@ -652,7 +588,6 @@
       "mui.init({$0})"
     ],
     "triggerAssist": false,
-    "scope": "source.js",
     "prefix": "minit"
   },
   "plus.audio": {
@@ -660,7 +595,6 @@
       "plus.audio."
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "paudio"
   },
   "console.log();": {
@@ -668,7 +602,6 @@
       "console.log($1);"
     ],
     "triggerAssist": false,
-    "scope": "source.js",
     "prefix": "clog"
   },
   "plus.proximity": {
@@ -676,7 +609,6 @@
       "plus.proximity."
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "pproximity"
   },
   "plus.orientation": {
@@ -684,7 +616,6 @@
       "plus.orientation."
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "porientation"
   },
   "mui.init({子页面})": {
@@ -701,7 +632,6 @@
       "})$0"
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "minsubpage"
   },
   "plus.os": {
@@ -709,7 +639,6 @@
       "plus.os."
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "pos"
   },
   "mui.later()": {
@@ -719,7 +648,6 @@
       "},${1:500/1000/1500/2000})"
     ],
     "triggerAssist": false,
-    "scope": "source.js",
     "prefix": "mlater"
   },
   "mui.extend()": {
@@ -727,7 +655,6 @@
       "mui.extend(${1:\u0027target\u0027},${2:\u0027source\u0027},${3:\u0027deep\u0027/true/false})"
     ],
     "triggerAssist": false,
-    "scope": "source.js",
     "prefix": "mextend"
   },
   "mui": {
@@ -735,7 +662,6 @@
       "mui."
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "mui"
   },
   "mui.os": {
@@ -743,7 +669,6 @@
       "mui.os."
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "mos"
   },
   "plus.accelerometer": {
@@ -751,7 +676,6 @@
       "plus.accelerometer."
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "pacce"
   },
   "mui.init({侧滑返回})": {
@@ -761,7 +685,6 @@
       ");$0"
     ],
     "triggerAssist": false,
-    "scope": "source.js",
     "prefix": "minswipeback"
   },
   "clogios": {
@@ -770,7 +693,6 @@
       "console.log(\u0027${2:e}\u0027);"
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "cloios"
   },
   "mui.toast()": {
@@ -778,7 +700,6 @@
       "mui.toast(\u0027${1:message}\u0027)$0"
     ],
     "triggerAssist": false,
-    "scope": "source.js",
     "prefix": "mdtoast"
   },
   "return true;": {
@@ -786,7 +707,6 @@
       "return true;"
     ],
     "triggerAssist": false,
-    "scope": "source.js",
     "prefix": "rtrue"
   },
   "mui.on": {
@@ -796,7 +716,6 @@
       "}) "
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "mmon"
   },
   "mui()": {
@@ -804,7 +723,6 @@
       "mui(\u0027$1\u0027)"
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "mmui"
   },
   "plus.barcode": {
@@ -812,7 +730,6 @@
       "plus.barcode."
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "pbarcode"
   },
   "mui.each()": {
@@ -822,7 +739,6 @@
       "})"
     ],
     "triggerAssist": false,
-    "scope": "source.js",
     "prefix": "meach"
   },
   "getElementByIdaddEventListener": {
@@ -832,7 +748,6 @@
       "})"
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "dga"
   },
   "plus.Screen": {
@@ -840,7 +755,6 @@
       "plus.Screen."
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "pScreen"
   },
   "mui.closePopups()": {
@@ -848,7 +762,6 @@
       "mui.closePopups()$0"
     ],
     "triggerAssist": false,
-    "scope": "source.js",
     "prefix": "mdclosePopups"
   },
   "mui.currentWebview": {
@@ -856,7 +769,6 @@
       "mui.currentWebview."
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "mcurrent"
   },
   "plus.maps": {
@@ -864,7 +776,6 @@
       "plus.maps."
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "pmaps"
   },
   "windowaddEventListener": {
@@ -874,7 +785,6 @@
       "})"
     ],
     "triggerAssist": true,
-    "scope": "source.js",
     "prefix": "wad"
   }
 }

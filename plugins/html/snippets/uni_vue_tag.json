@@ -21,7 +21,8 @@
             "</uni-grid>"
         ],
         "triggerAssist": false,
-        "prefix": "ugrid"
+        "prefix": "ugrid",
+        "project": "uni-app"
     },
     "uList": {
         "body": [
@@ -31,7 +32,8 @@
             "</uni-list>"
         ],
         "triggerAssist": false,
-        "prefix": "ulist"
+        "prefix": "ulist",
+        "project": "uni-app"
     },
     "uListFor": {
         "body": [
@@ -40,7 +42,8 @@
             "</uni-list>"
         ],
         "triggerAssist": false,
-        "prefix": "ulistfor"
+        "prefix": "ulistfor",
+        "project": "uni-app"
     },
     "uCheckbox": {
         "body": [
@@ -82,9 +85,7 @@
             "\t</label>",
             "</radio-group>"
         ],
-        "prefix": "uradiogroup",
-        "project": "uni-app",
-        "scope": "source.vue.html"
+        "prefix": "uradiogroup"
     },
     "uSwitch": {
         "body": [
@@ -171,8 +172,7 @@
             "</uni-forms>"
         ],
         "prefix": "uforms",
-        "project": "uni-app",
-        "scope": "source.vue.html"
+        "project": "uni-app"
     },
     "uFormsItem": {
         "body": [
@@ -181,8 +181,7 @@
             "</uni-forms-item>"
         ],
         "prefix": "uformsItem",
-        "project": "uni-app",
-        "scope": "source.vue.html"
+        "project": "uni-app"
     },
     "uText": {
         "body": [
@@ -202,17 +201,14 @@
         "body": [
             "<progress percent=\"$1\" show-info$0 />"
         ],
-        "prefix": "uprogress",
-        "project": "uni-app",
-        "scope": "source.vue.html"
+        "prefix": "uprogress"
     },
     "uDateformat": {
         "body": [
             "<uni-dateformat date=\"$1\" />"
         ],
         "prefix": "udateformat",
-        "project": "uni-app",
-        "scope": "source.vue.html"
+        "project": "uni-app"
     },
     "uPickerView": {
         "body": [
@@ -278,56 +274,64 @@
             "<uni-badge text=\"$1\" type=\"$2\"></uni-badge>"
         ],
         "triggerAssist": false,
-        "prefix": "ubadge"
+        "prefix": "ubadge",
+        "project": "uni-app"
     },
     "uTag": {
         "body": [
             "<uni-tag text=\"$1\" type=\"$2\"></uni-tag>"
         ],
         "triggerAssist": false,
-        "prefix": "utag"
+        "prefix": "utag",
+        "project": "uni-app"
     },
     "uNumberBox": {
         "body": [
             "<uni-number-box @change=\"$1\"></uni-number-box>"
         ],
         "triggerAssist": false,
-        "prefix": "unumberbox"
+        "prefix": "unumberbox",
+        "project": "uni-app"
     },
     "uIcons": {
         "body": [
             "<uni-icons type=\"$1\"></uni-icons>"
         ],
         "triggerAssist": false,
-        "prefix": "uicons"
+        "prefix": "uicons",
+        "project": "uni-app"
     },
     "uIndexedList": {
         "body": [
             "<uni-indexed-list :options=\"$1\" :showSelect=\"$1\" @click=\"$1\"></uni-indexed-list>"
         ],
         "triggerAssist": false,
-        "prefix": "uindexedlist"
+        "prefix": "uindexedlist",
+        "project": "uni-app"
     },
     "uLoadMore": {
         "body": [
             "<uni-load-more :status=\"$1\"></uni-load-more>"
         ],
         "triggerAssist": false,
-        "prefix": "uloadmore"
+        "prefix": "uloadmore",
+        "project": "uni-app"
     },
     "uNavBar": {
         "body": [
             "<uni-nav-bar left-icon=\"back\" left-text=\"%uNavBar.body.text1%\" right-text=\"%uNavBar.body.text2%\" title=\"%uNavBar.body.text3%$1\"></uni-nav-bar>"
         ],
         "triggerAssist": false,
-        "prefix": "unavbar"
+        "prefix": "unavbar",
+        "project": "uni-app"
     },
     "uPopup": {
         "body": [
             "<uni-popup ref=\"popup\" type=\"top$1\"></uni-popup>"
         ],
         "triggerAssist": false,
-        "prefix": "upopup"
+        "prefix": "upopup",
+        "project": "uni-app"
     },
     "uDrawer": {
         "body": [
@@ -338,28 +342,32 @@
             "</uni-drawer>"
         ],
         "triggerAssist": false,
-        "prefix": "udrawer"
+        "prefix": "udrawer",
+        "project": "uni-app"
     },
     "uFab": {
         "body": [
             "<uni-fab @fabClick=\"$6\"></uni-fab>"
         ],
         "triggerAssist": false,
-        "prefix": "ufab"
+        "prefix": "ufab",
+        "project": "uni-app"
     },
     "uFav": {
         "body": [
             "<uni-fav :checked=\"$1\" @click=\"$2\"></uni-fav>"
         ],
         "triggerAssist": false,
-        "prefix": "ufav"
+        "prefix": "ufav",
+        "project": "uni-app"
     },
     "uGoodsNav": {
         "body": [
             "<uni-goods-nav :fill=\"$1\" :options=\"$2\" :button-group=\"$3\" @click=\"$4\" @buttonClick=\"$5\" />"
         ],
         "triggerAssist": false,
-        "prefix": "ugoodsnav"
+        "prefix": "ugoodsnav",
+        "project": "uni-app"
     },
     "uSegmentedControl": {
         "body": [
@@ -377,14 +385,16 @@
             "</view>"
         ],
         "triggerAssist": false,
-        "prefix": "usegmentedcontrol"
+        "prefix": "usegmentedcontrol",
+        "project": "uni-app"
     },
     "uCountDown": {
         "body": [
             "<uni-countdown color=\"$1\" background-color=\"$2\" :day=\"$3\" :hour=\"$4\" :minute=\"$5\" :second=\"$6\"></uni-countdown>"
         ],
         "triggerAssist": false,
-        "prefix": "ucountdown"
+        "prefix": "ucountdown",
+        "project": "uni-app"
     },
     "uCard": {
         "body": [
@@ -393,21 +403,24 @@
             "</uni-card>"
         ],
         "triggerAssist": false,
-        "prefix": "ucard"
+        "prefix": "ucard",
+        "project": "uni-app"
     },
     "uSteps": {
         "body": [
             "<uni-steps :options=\"$1\" :active=\"0$2\"></uni-steps>"
         ],
         "triggerAssist": false,
-        "prefix": "usteps"
+        "prefix": "usteps",
+        "project": "uni-app"
     },
     "uCalendar": {
         "body": [
             "<uni-calendar lunar=\"\" @change=\"$1\"></uni-calendar>"
         ],
         "triggerAssist": false,
-        "prefix": "ucalendar"
+        "prefix": "ucalendar",
+        "project": "uni-app"
     },
     "uCollapse": {
         "body": [
@@ -418,35 +431,40 @@
             "</uni-collapse>"
         ],
         "triggerAssist": false,
-        "prefix": "ucollapse"
+        "prefix": "ucollapse",
+        "project": "uni-app"
     },
     "uNoticeBar": {
         "body": [
             "<uni-notice-bar single=\"$1\" text=\"$2\"></uni-notice-bar>"
         ],
         "triggerAssist": false,
-        "prefix": "unoticebar"
+        "prefix": "unoticebar",
+        "project": "uni-app"
     },
     "uPagination": {
         "body": [
             "<uni-pagination title=\"$1\" show-icon=\"$2\" total=\"$3\" current=\"$4\"></uni-pagination>"
         ],
         "triggerAssist": false,
-        "prefix": "upagination"
+        "prefix": "upagination",
+        "project": "uni-app"
     },
     "uRate": {
         "body": [
             "<uni-rate value=\"$1\"></uni-rate>"
         ],
         "triggerAssist": false,
-        "prefix": "uRate"
+        "prefix": "uRate",
+        "project": "uni-app"
     },
     "uSearchBar": {
         "body": [
             "<uni-search-bar @confirm=\"$1\" @input=\"$2\" />"
         ],
         "triggerAssist": false,
-        "prefix": "usearchbar"
+        "prefix": "usearchbar",
+        "project": "uni-app"
     },
     "uSwipeAction": {
         "body": [
@@ -455,43 +473,47 @@
             "</uni-swipe-action>"
         ],
         "triggerAssist": false,
-        "prefix": "uswipeaction"
+        "prefix": "uswipeaction",
+        "project": "uni-app"
     },
     "uSwiperDot": {
         "body": [
             "<uni-swiper-dot :info=\"$1\" :current=\"$2\" field=\"$3\" :mode=\"$4\"></uni-swiper-dot>"
         ],
         "triggerAssist": false,
-        "prefix": "uswiperdot"
+        "prefix": "uswiperdot",
+        "project": "uni-app"
     },
     "uCombox": {
         "body": [
             "<uni-combox label=\"$1\" :candidates=\"$2\" placeholder=\"$3\" v-model=\"$4\"></uni-combox>"
         ],
         "triggerAssist": false,
-        "prefix": "ucombox"
+        "prefix": "ucombox",
+        "project": "uni-app"
     },
     "uTitle": {
         "body": [
             "<uni-title title=\"$1\"></uni-title>"
         ],
         "triggerAssist": false,
-        "prefix": "utitle"
+        "prefix": "utitle",
+        "project": "uni-app"
     },
     "uTransition": {
         "body": [
             "<uni-transition :mode-class=\"$1\" :show=\"$2\" />"
         ],
         "triggerAssist": false,
-        "prefix": "utransition"
+        "prefix": "utransition",
+        "project": "uni-app"
     },
     "uField": {
         "body": [
             "<uni-field label=\"$1\" name=\"$2\" v-model=\"$3\" placeholder=\"$4\" />"
         ],
         "prefix": "ufield",
-        "project": "uni-app",
-        "scope": "source.vue.html"
+        "project": "uni-app"
     },
     "uGroup": {
         "body": [
@@ -500,8 +522,7 @@
             "</uni-group>"
         ],
         "prefix": "ugroup",
-        "project": "uni-app",
-        "scope": "source.vue.html"
+        "project": "uni-app"
     },
     "uSection": {
         "body": [
@@ -510,16 +531,14 @@
             "</uni-section>"
         ],
         "prefix": "usection",
-        "project": "uni-app",
-        "scope": "source.vue.html"
+        "project": "uni-app"
     },
     "uLink": {
         "body": [
             "<uni-link href=\"$1\" text=\"$2\">$3</uni-link>"
         ],
         "prefix": "ulink",
-        "project": "uni-app",
-        "scope": "source.vue.html"
+        "project": "uni-app"
     },
     "uniClouddb": {
         "body": [
@@ -532,15 +551,13 @@
         ],
         "prefix": "udb",
         "project": "uni-app",
-        "scope": "source.vue.html",
         "triggerAssist": true
     },
     "uNavigationBar": {
         "body": [
             "<navigation-bar :title=\"$0\"/>"
         ],
-        "prefix": "navigationbar",
-        "scope": "source.vue.html",
+        "prefix": "navigationbar",        
         "triggerAssist": true
     },
     "uPageMeta": {
@@ -550,7 +567,6 @@
             "</page-meta>"
         ],
         "prefix": "pagemeta",
-        "scope": "source.vue.html",
         "triggerAssist": true
     },
     "uCustomTabBar": {
@@ -558,7 +574,6 @@
             "<custom-tab-bar direction=\"$1\" :show-icon=\"$2\" :selected=\"$3\" @onTabItemTap=\"$4\" />"
         ],
         "prefix": "customtabbar",
-        "scope": "source.vue.html",
         "triggerAssist": true
     },
     "uEasyinput": {
@@ -566,16 +581,14 @@
             "<uni-easyinput  v-model=\"$1\" placeholder=\"$2\" />"
         ],
         "prefix": "uEasyinput",
-        "project": "uni-app",
-        "scope": "source.vue.html"
+        "project": "uni-app"
     },
     "uDataCheckbox": {
         "body": [
             "<uni-data-checkbox  v-model=\"$1\" :multiple=\"$2\" :localdata=\"$3\" />"
         ],
         "prefix": "uDataCheckbox",
-        "project": "uni-app",
-        "scope": "source.vue.html"
+        "project": "uni-app"
     },
     "uTable": {
         "body": [
@@ -589,8 +602,7 @@
             "</uni-table>"
         ],
         "prefix": "uTable",
-        "project": "uni-app",
-        "scope": "source.vue.html"
+        "project": "uni-app"
     },
     "uRow": {
         "body": [
@@ -599,23 +611,20 @@
             "</uni-row>"
         ],
         "prefix": "urow",
-        "project": "uni-app",
-        "scope": "source.vue.html"
+        "project": "uni-app"
      },
      "uCol": {
         "body": [
             "<uni-col$1>$2</uni-col>"
         ],
         "prefix": "ucol",
-        "project": "uni-app",
-        "scope": "source.vue.html"
+        "project": "uni-app"
      },
      "uFilePicker": {
         "body": [
             "<uni-file-picker v-model=\"$1\" title=\"$2\" limit=\"$3\" file-mediatype=\"$4\"></uni-file-picker>"
         ],
         "prefix": "uFilePicker",
-        "project": "uni-app",
-        "scope": "source.vue.html"
+        "project": "uni-app"
     }
 }

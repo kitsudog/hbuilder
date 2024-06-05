@@ -1,0 +1,266 @@
+{
+  "UniversalSelectors": {
+    "name": "通配选择器",
+    "example": "* {}",
+    "uniPlatform": {
+      "app": {
+        "android": {
+          "osVer": "5.0",
+          "uniVer": "√",
+          "unixVer": "x"
+        },
+        "ios": {
+          "osVer": "9.0",
+          "uniVer": "√",
+          "unixVer": "x"
+        }
+      },
+      "web": {
+        "uniVer": "√",
+        "unixVer": "4.0"
+      }
+    }
+  },
+  "ClassSelector": {
+    "name": "类选择器",
+    "example": ".class {}",
+    "uniPlatform": {
+      "app": {
+        "android": {
+          "osVer": "5.0",
+          "uniVer": "√",
+          "unixVer": "3.9"
+        },
+        "ios": {
+          "osVer": "9.0",
+          "uniVer": "√",
+          "unixVer": "4.11"
+        }
+      },
+      "web": {
+        "uniVer": "√",
+        "unixVer": "4.0"
+      }
+    }
+  },
+  "ElementNameSelector": {
+    "name": "元素选择器",
+    "example": "[tag] {}",
+    "uniPlatform": {
+      "app": {
+        "android": {
+          "osVer": "5.0",
+          "uniVer": "√",
+          "unixVer": "x"
+        },
+        "ios": {
+          "osVer": "9.0",
+          "uniVer": "√",
+          "unixVer": "x"
+        }
+      },
+      "web": {
+        "uniVer": "√",
+        "unixVer": "4.0"
+      }
+    }
+  },
+  "IdentifierSelector": {
+    "name": "ID 选择器",
+    "example": "#[id] {}",
+    "uniPlatform": {
+      "app": {
+        "android": {
+          "osVer": "5.0",
+          "uniVer": "√",
+          "unixVer": "x"
+        },
+        "ios": {
+          "osVer": "9.0",
+          "uniVer": "√",
+          "unixVer": "x"
+        }
+      },
+      "web": {
+        "uniVer": "√",
+        "unixVer": "4.0"
+      }
+    }
+  },
+  "AttributeSelector": {
+    "name": "属性选择器",
+    "example": "[attr] {}",
+    "uniPlatform": {
+      "app": {
+        "android": {
+          "osVer": "5.0",
+          "uniVer": "√",
+          "unixVer": "x"
+        },
+        "ios": {
+          "osVer": "9.0",
+          "uniVer": "√",
+          "unixVer": "x"
+        }
+      },
+      "web": {
+        "uniVer": "√",
+        "unixVer": "4.0"
+      }
+    }
+  },
+  "CombinatorGroupSelector": {
+    "name": "分组选择器",
+    "example": ".a, .b {}",
+    "uniPlatform": {
+      "app": {
+        "android": {
+          "osVer": "5.0",
+          "uniVer": "√",
+          "unixVer": "3.9"
+        },
+        "ios": {
+          "osVer": "9.0",
+          "uniVer": "√",
+          "unixVer": "4.11"
+        }
+      },
+      "web": {
+        "uniVer": "√",
+        "unixVer": "4.0"
+      }
+    }
+  },
+  "CombinatorShadowPiercingDescendantSelector": {
+    "name": "直接子代选择器",
+    "example": ".a > .b {}",
+    "uniPlatform": {
+      "app": {
+        "android": {
+          "osVer": "5.0",
+          "uniVer": "√",
+          "unixVer": "3.9"
+        },
+        "ios": {
+          "osVer": "9.0",
+          "uniVer": "√",
+          "unixVer": "4.11"
+        }
+      },
+      "web": {
+        "uniVer": "√",
+        "unixVer": "4.0"
+      }
+    }
+  },
+  "CombinatorChildrenSelector": {
+    "name": "后代选择器",
+    "example": ".a .b {}",
+    "uniPlatform": {
+      "app": {
+        "android": {
+          "osVer": "5.0",
+          "uniVer": "√",
+          "unixVer": "3.9"
+        },
+        "ios": {
+          "osVer": "9.0",
+          "uniVer": "√",
+          "unixVer": "4.11"
+        }
+      },
+      "web": {
+        "uniVer": "√",
+        "unixVer": "4.0"
+      }
+    }
+  },
+  "CombinatorAllSiblingsSelector": {
+    "name": "一般兄弟选择器",
+    "example": ".a ~ .b {}",
+    "uniPlatform": {
+      "app": {
+        "android": {
+          "osVer": "5.0",
+          "uniVer": "√",
+          "unixVer": "3.9"
+        },
+        "ios": {
+          "osVer": "9.0",
+          "uniVer": "√",
+          "unixVer": "4.11"
+        }
+      },
+      "web": {
+        "uniVer": "√",
+        "unixVer": "4.0"
+      }
+    }
+  },
+  "CombinatorSiblingSelector": {
+    "name": "紧邻兄弟选择器",
+    "example": ".a + .b {}",
+    "uniPlatform": {
+      "app": {
+        "android": {
+          "osVer": "5.0",
+          "uniVer": "√",
+          "unixVer": "3.9"
+        },
+        "ios": {
+          "osVer": "9.0",
+          "uniVer": "√",
+          "unixVer": "4.11"
+        }
+      },
+      "web": {
+        "uniVer": "√",
+        "unixVer": "4.0"
+      }
+    }
+  },
+  "PseudoClassSelector": {
+    "name": "伪类选择器",
+    "example": ":active {}",
+    "uniPlatform": {
+      "app": {
+        "android": {
+          "osVer": "5.0",
+          "uniVer": "√",
+          "unixVer": "x"
+        },
+        "ios": {
+          "osVer": "9.0",
+          "uniVer": "√",
+          "unixVer": "x"
+        }
+      },
+      "web": {
+        "uniVer": "√",
+        "unixVer": "4.0"
+      }
+    }
+  },
+  "PseudoElementSelector": {
+    "name": "伪元素选择器",
+    "example": "::before {}",
+    "uniPlatform": {
+      "app": {
+        "android": {
+          "osVer": "5.0",
+          "uniVer": "√",
+          "unixVer": "x"
+        },
+        "ios": {
+          "osVer": "9.0",
+          "uniVer": "√",
+          "unixVer": "x"
+        }
+      },
+      "web": {
+        "uniVer": "√",
+        "unixVer": "4.0"
+      }
+    }
+  }
+}

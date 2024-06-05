@@ -1,0 +1,24 @@
+{
+    "name": "independentindexer",
+    "version": "1.0.0",
+    "description": "",
+    "main": "./out/index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "contributes": {
+        "indexProcessors": [
+            {
+                "language": "json",
+                "url": "./out/jsonIndexProcessor.js"
+            },
+            {
+                "language": "script",
+                "url": "./out/scriptIndexProcessor.js"
+            }
+        ]
+    }
+}

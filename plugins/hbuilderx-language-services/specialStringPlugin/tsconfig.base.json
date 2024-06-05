@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "target": "es2019",
+        "lib": ["es2019"],
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "strict": true,
+        "composite": true,
+        "sourceMap": true,
+        "skipLibCheck": true,
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "noUnusedLocals": false,
+        "noImplicitReturns": true,
+        "resolveJsonModule": true,
+        "noImplicitOverride": true,
+        "noUnusedParameters": false,
+        "noFallthroughCasesInSwitch": true
+    },
+    "exclude": ["node_modules"]
+}

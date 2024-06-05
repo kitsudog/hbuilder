@@ -1,0 +1,9 @@
+{
+    "Vue Computed": {
+        "prefix": "vcomputed",
+        "body": ["computed: {", "\t${1:name}(): ${3:any} {", "\t\treturn this.${2:data} ${0}", "\t}", "},"],
+        "scope": "(text.html.vue meta.export.default meta.object.member$)|(text.html.vue meta.export.default meta.objectliteral$)|(text.html.basic meta.objectliteral$)|(text.html.basic meta.object.member$)",
+        "description": "computed value",
+        "project": "uni-app-x"
+    }
+}

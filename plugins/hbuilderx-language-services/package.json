@@ -1,0 +1,168 @@
+{
+    "name": "hbuilderx-language-services",
+    "displayName": "内置语言服务",
+    "description": "内置语言服务，包含js、ts、vue、html、css、less、scss、stylus、json",
+    "version": "1.1.0-2024050714",
+    "__from": "HBuilderX",
+    "__private": true,
+    "author": "dcloudio",
+    "publisher": "dcloudio",
+    "engines": {
+        "HBuilderX": "^3.2.12",
+        "vscode": "^1.22.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "activationEvents": [
+        "*"
+    ],
+    "main": "./out/extension.js",
+    "contributes": {
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "./snippets/javascript/undisplay.json"
+            }
+        ],
+        "commands": [
+            {
+                "command": "typescript.openTsServerLog2",
+                "title": "查看TsService运行日志",
+                "category": "TypeScript"
+            },
+            {
+                "command": "emmet.expandAbbreviation",
+                "title": "Expand Emmet",
+                "category": "TypeScript"
+            },
+            {
+                "command": "indexService.rebuildIndex",
+                "title": "%menu.rebuidindex.name%"
+            },
+            {
+                "command": "references.findAllFileReferences",
+                "title": "%menu.references.findAllFileReferences.name%"
+            },
+            {
+                "command": "utsJsonToType.toType",
+                "title": "%menu.utsJsonToType.toType.name%"
+            },
+            {
+                "command": "select.target",
+                "title": "%select.target%"
+            }
+        ],
+        "menus": {
+            "editor/context": [
+                {
+                    "command": "utsJsonToType.toType",
+                    "group": "z_commands",
+                    "when": "editorHasSelection && langId == 'json' && (plugin.isInstalled <- 'uts-development-android' || plugin.isInstalled <- 'uts-development-ios' || plugin.isInstalled <- 'uts-debug-ios' || plugin.isInstalled <- 'uts-android-debug')"
+                }
+            ],
+            "explorer/context": [
+                {
+                    "command": "references.findAllFileReferences",
+                    "group": "cutcopy",
+                    "when": "explorerResourceCount == 1 && !explorerResourceIsFolder && workspaceFolderRelativePath =~ /\\.([Jj][Ss]|[Tt][Ss]|[Uu][Tt][Ss]|[Vv][Uu][Ee]|[Nn][Vv][Uu][Ee]|[Hh][Tt][Mm][Ll]|[Cc][Ss][Ss]|[Ll][Ee][Ss][Ss]|[Ss][Cc][Ss][Ss]|[Jj][Ss][Oo][Nn]|[Aa][Pp][Nn][Gg]|[Aa][Vv][Ii][Ff]|[Gg][Ii][Ff]|[Jj][Pp][Gg]|[Jj][Pp][Ee][Gg]|[Jj][Ff][Ii][Ff]|[Pp][Jj][Pp][Ee][Gg]|[Pp][Jj][Pp]|[Jj][Pp][Ee]|[Pp][Nn][Gg]|[Ss][Vv][Gg]|[Ww][Ee][Bb][Pp]|[Bb][Mm][Pp]|[Ii][Cc][Oo]|[Cc][Uu][Rr]|[Tt][Ii][Ff]|[Tt][Ii][Ff][Ff]|[Xx][Bb][Mm]|[3][Gg][Pp]|[Aa][Aa][Cc]|[Ff][Ll][Aa][Cc]|[Mm][Pp][Gg]|[Mm][Pp][Ee][Gg]|[Mm][Pp][3]|[Mm][Pp][4]|[Mm][4][Aa]|[Oo][Gg][Aa]|[Ww][Aa][Vv]|[Ww][Ee][Bb][Mm]|[Mm][4][Vv]|[Mm][4][Pp]|[Oo][Gg][Vv]|[Oo][Gg][Gg]|[Mm][Oo][Vv]|[Vv][Tt][Tt]|[Tt][Tt][Mm][Ll]|[Ww][Bb][Mm][Pp]|[Ii][Cc][Nn][Ss]|[Oo][Tt][Ff]|[Tt][Tt][Ff]|[Ww][Oo][Ff][Ff]|[Ww][Oo][Ff][Ff][2]|[Ee][Oo][Tt])$/"
+                },
+                {
+                    "group": "cutcopy"
+                },
+                {
+                    "command": "indexService.rebuildIndex",
+                    "group": "refresh",
+                    "when": "explorerResourceIsWorkspaceFolder"
+                },
+                {
+                    "command": "select.target",
+                    "group": "nature",
+                    "when": "explorerResourceCount == 1 && workspaceFolderRelativePath == '' && workspaceFolder.type == 'UniApp_Vue' && JSON.matches <- '${workspaceFolder}/manifest.json?query={\"uni-app-x\" : {}}'"
+                },
+                {
+                    "group": "nature"
+                }
+            ]
+        }
+    },
+    "scripts": {
+        "build": "node scripts/build.js",
+        "clean": "node scripts/clean.js",
+        "release": "node scripts/release.js",
+        "watch": "node scripts/watch.js",
+        "check": "node scripts/check.js"
+    },
+    "dependencies": {
+        "@babel/types": "7.22.10",
+        "@dcloudio/uni-preprocess": "3.0.0-alpha-4000020240117003",
+        "@emmetio/abbreviation": "2.3.3",
+        "@emmetio/css-abbreviation": "2.1.8",
+        "@emmetio/html-matcher": "0.3.3",
+        "@emmetio/math-expression": "1.0.5",
+        "@emmetio/scanner": "1.0.4",
+        "@emmetio/stream-reader": "2.2.0",
+        "@emmetio/stream-reader-utils": "0.1.0",
+        "@jridgewell/sourcemap-codec": "1.4.15",
+        "@volar/code-gen": "0.39.5",
+        "@volar/vue-code-gen": "0.39.5",
+        "@vscode/emmet-helper": "2.8.4",
+        "@vscode/l10n": "0.0.18",
+        "@vue/compiler-core": "3.2.47",
+        "@vue/compiler-dom": "3.2.47",
+        "@vue/compiler-sfc": "3.2.47",
+        "@vue/compiler-ssr": "3.2.47",
+        "@vue/reactivity": "3.2.47",
+        "@vue/reactivity-transform": "3.2.47",
+        "@vue/shared": "3.2.47",
+        "chardet": "1.4.0",
+        "chokidar": "3.5.3",
+        "css-parser2": "0.4.0",
+        "element-helper-json": "2.0.6",
+        "emmet": "2.4.4",
+        "es-abstract": "1.21.1",
+        "fs-extra": "10.1.0",
+        "gridsome-helper-json": "1.0.3",
+        "image-size": "1.0.2",
+        "js-beautify": "1.14.9",
+        "jsonc": "2.0.0",
+        "jsonc-parser": "2.3.1",
+        "md5": "2.3.0",
+        "rimraf": "2.7.1",
+        "save-dev": "^0.0.1-security",
+        "semver": "5.5.1",
+        "source-map-js": "1.0.2",
+        "string.prototype.matchall": "4.0.8",
+        "stylus": "0.55.0",
+        "typescript": "5.2.2",
+        "typescript-vscode-sh-plugin": "0.6.14",
+        "volar": "0.0.0",
+        "vscode-languageclient": "7.0.0-next.5.1",
+        "vscode-languageserver": "7.0.0-next.3",
+        "vscode-languageserver-protocol": "3.16.0-next.4",
+        "vscode-languageserver-textdocument": "1.0.1",
+        "vscode-languageserver-types": "3.17.5",
+        "vscode-nls": "4.1.2",
+        "vscode-uri": "3.0.7",
+        "vue-onsenui-helper-json": "1.0.2"
+    },
+    "devDependencies": {
+        "@types/fs-extra": "^9.0.13",
+        "@types/glob": "^7.1.4",
+        "@types/md5": "^2.3.2",
+        "@types/minimist": "^1.2.2",
+        "@types/node": "12.x",
+        "@types/rimraf": "2.0.2",
+        "@types/semver": "^5.5.0",
+        "@types/string.prototype.matchall": "^4.0.1",
+        "chalk": "^4.1.2",
+        "execa": "^5.1.1",
+        "glob": "7.2.0",
+        "gulp": "^4.0.2",
+        "gulp-uglify-es": "^3.0.0",
+        "merge-options": "^3.0.4",
+        "minimist": "^1.2.5",
+        "mocha-junit-reporter": "^1.17.0",
+        "mocha-multi-reporters": "^1.1.7"
+    }
+}

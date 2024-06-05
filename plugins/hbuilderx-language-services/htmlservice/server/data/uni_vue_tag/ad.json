@@ -1,0 +1,30 @@
+{
+  "name": "ad",
+  "description": {
+    "value": "广告",
+    "kind": "markdown"
+  },
+  "attributes": [
+    {
+      "name": "adpid",
+      "description": {
+        "value": "广告位id，在uniAD官网申请广告位",
+        "kind": "markdown"
+      },
+      "type": "string"
+    },
+    {
+      "name": "[event]load"
+    },
+    {
+      "name": "[event]error"
+    }
+  ],
+  "references": [
+    {
+      "url": "https://uniapp.dcloud.io/component/ad",
+      "name": "参见uni-app相关文档"
+    }
+  ],
+  "hasGeneralAttrs": true
+}

@@ -1,11 +1,35 @@
 {
     "name": "css",
-    "version": "0.1.0.2021110317",
+    "version": "0.1.1.2024012320",
     "__private": true,
     "contributes": {
-        "snippets": [{
+        "snippets": [
+            {
                 "language": "css",
                 "path": "./snippets/css.json"
+            },
+            {
+                "language": "less",
+                "path": "./snippets/css.json"
+            },
+            {
+                "language": "scss",
+                "path": "./snippets/css.json"
+            },
+            {
+                "project": "uni-app-x",
+                "language": "css",
+                "path": "./snippets/css_uniappx.json"
+            },
+            {
+                "project": "uni-app-x",
+                "language": "less",
+                "path": "./snippets/css_uniappx.json"
+            },
+            {
+                "project": "uni-app-x",
+                "language": "scss",
+                "path": "./snippets/css_uniappx.json"
             },
             {
                 "language": "nss",
@@ -34,6 +58,26 @@
             {
                 "language": "stylus",
                 "path": "./snippets/stylus.json"
+            },
+            {
+                "project": "uni-app-x",
+                "language": "css",
+                "path": "./snippets/condition_comment_uniappx.json"
+            },
+            {
+                "project": "uni-app-x",
+                "language": "less",
+                "path": "./snippets/condition_comment_uniappx.json"
+            },
+            {
+                "project": "uni-app-x",
+                "language": "scss",
+                "path": "./snippets/condition_comment_uniappx.json"
+            },
+            {
+                "project": "uni-app-x",
+                "language": "stylus",
+                "path": "./snippets/condition_comment_uniappx.json"
             }
         ]
     },

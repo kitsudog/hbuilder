@@ -1,0 +1,69 @@
+{
+  "name": "swiper-item",
+  "type": "UniSwiperItemElement",
+  "description": {
+    "value": "swiper的唯一合法子组件。每个swiper-item代表一个滑块。宽高自动设置为100%",
+    "kind": "markdown"
+  },
+  "attributes": [
+    {
+      "name": "item-id",
+      "description": {
+        "value": "该 swiper-item 的标识符",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "string"
+    }
+  ],
+  "uniPlatform": {
+    "app": {
+      "android": {
+        "osVer": "5.0",
+        "uniVer": "√",
+        "unixVer": "3.9+"
+      },
+      "ios": {
+        "osVer": "12.0",
+        "uniVer": "√",
+        "unixVer": "4.11"
+      }
+    },
+    "web": {
+      "uniVer": "√",
+      "unixVer": "4.0"
+    }
+  },
+  "references": [
+    {
+      "url": "https://uniapp.dcloud.net.cn/component/swiper.html#swiper-item",
+      "name": "参见uni-app相关文档"
+    },
+    {
+      "url": "https://doc.dcloud.net.cn/uni-app-x/component/swiper.html",
+      "name": "参见uni-app x相关文档"
+    }
+  ],
+  "parentTags": [
+    "swiper"
+  ],
+  "hasGeneralAttrs": true,
+  "hasGeneralEvents": true
+}

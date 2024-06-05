@@ -1,23 +1,25 @@
 {
 	"#ifdef":{
         "body":[
-            "// #ifdef ${1:APP-PLUS/APP/APP-VUE/APP-NVUE/MP/VUE2/VUE3/MP-ALIPAY/MP-BAIDU/MP-WEIXIN/MP-QQ/MP-TOUTIAO/MP-360/MP-KUAISHOU/MP-LARK/H5/QUICKAPP-WEBVIEW-HUAWEI/QUICKAPP-WEBVIEW-UNION/QUICKAPP-WEBVIEW}",
-            "$0",
+            "// #ifdef ${1:APP/APP-PLUS/APP-VUE/APP-NVUE/VUE2/VUE3/MP-ALIPAY/MP-BAIDU/MP-WEIXIN/MP-QQ/MP-TOUTIAO/MP-360/MP-KUAISHOU/MP-LARK/MP-JD/MP/H5/QUICKAPP-WEBVIEW-HUAWEI/QUICKAPP-WEBVIEW-UNION/QUICKAPP-WEBVIEW/UNI-APP-X}",
+            "$SELECTION$0",
             "// #endif"
         ],
-        "prefix":"ifdef"
+        "prefix":"ifdef",
+        "scope": "(!source.uts&source$)|(source ! meta.import & meta.block$)|(source !meta.definition.variable & meta.var$)|(text.html.vue meta.export.default meta.object.member$)|(text.html.vue meta.export.default meta.objectliteral$)|(text.html.basic meta.objectliteral$)|(text.html.basic meta.object.member$)"
     },
     "#ifndef":{
         "body":[
-            "// #ifndef ${1:APP-PLUS/APP/APP-VUE/APP-NVUE/MP/VUE2/VUE3/MP-ALIPAY/MP-BAIDU/MP-WEIXIN/MP-QQ/MP-TOUTIAO/MP-360/MP-KUAISHOU/MP-LARK/H5/QUICKAPP-WEBVIEW-HUAWEI/QUICKAPP-WEBVIEW-UNION/QUICKAPP-WEBVIEW}",
-            "$0",
+            "// #ifndef ${1:APP/APP-PLUS/APP-VUE/APP-NVUE/VUE2/VUE3/MP-ALIPAY/MP-BAIDU/MP-WEIXIN/MP-QQ/MP-TOUTIAO/MP-360/MP-KUAISHOU/MP-LARK/MP-JD/MP/H5/QUICKAPP-WEBVIEW-HUAWEI/QUICKAPP-WEBVIEW-UNION/QUICKAPP-WEBVIEW/UNI-APP-X}",
+            "$SELECTION$0",
             "// #endif"
         ],
-        "prefix":"ifndef"
+        "prefix":"ifndef",
+        "scope": "(!source.uts&source$)|(source ! meta.import & meta.block$)|(source !meta.definition.variable & meta.var$)|(text.html.vue meta.export.default meta.object.member$)|(text.html.vue meta.export.default meta.objectliteral$)|(text.html.basic meta.objectliteral$)|(text.html.basic meta.object.member$)"
     },
     "#ifdef ":{
         "body":[
-            "// #ifdef ${1:APP-PLUS/APP/APP-VUE/APP-NVUE/MP/VUE2/VUE3/MP-ALIPAY/MP-BAIDU/MP-WEIXIN/MP-QQ/MP-TOUTIAO/MP-360/MP-KUAISHOU/MP-LARK/H5/QUICKAPP-WEBVIEW-HUAWEI/QUICKAPP-WEBVIEW-UNION/QUICKAPP-WEBVIEW}",
+            "// #ifdef ${1:APP/APP-PLUS/APP-VUE/APP-NVUE/VUE2/VUE3/MP-ALIPAY/MP-BAIDU/MP-WEIXIN/MP-QQ/MP-TOUTIAO/MP-360/MP-KUAISHOU/MP-LARK/MP-JD/MP/H5/QUICKAPP-WEBVIEW-HUAWEI/QUICKAPP-WEBVIEW-UNION/QUICKAPP-WEBVIEW/UNI-APP-X}",
             "$0",
             "// #endif"
         ],
@@ -27,7 +29,7 @@
     },
     "#ifndef ":{
         "body":[
-            "// #ifndef ${1:APP-PLUS/APP/APP-VUE/APP-NVUE/MP/VUE2/VUE3/MP-ALIPAY/MP-BAIDU/MP-WEIXIN/MP-QQ/MP-TOUTIAO/MP-360/MP-KUAISHOU/MP-LARK/H5/QUICKAPP-WEBVIEW-HUAWEI/QUICKAPP-WEBVIEW-UNION/QUICKAPP-WEBVIEW}",
+            "// #ifndef ${1:APP/APP-PLUS/APP-VUE/APP-NVUE/VUE2/VUE3/MP-ALIPAY/MP-BAIDU/MP-WEIXIN/MP-QQ/MP-TOUTIAO/MP-360/MP-KUAISHOU/MP-LARK/MP-JD/MP/H5/QUICKAPP-WEBVIEW-HUAWEI/QUICKAPP-WEBVIEW-UNION/QUICKAPP-WEBVIEW/UNI-APP-X}",
             "$0",
             "// #endif"
         ],

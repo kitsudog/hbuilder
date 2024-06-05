@@ -1,0 +1,58 @@
+{
+  "name": "sticky-header",
+  "type": "UniStickyHeaderElement",
+  "description": {
+    "value": "吸顶布局容器 \n\n 注意：暂时仅支持作为list-view、sticky-section的子节点, sticky-header不支持css样式！当一个容器视图设置多个sticky-header时，后一个sticky-header会停靠在前一个sticky-header的末尾处。",
+    "kind": "markdown"
+  },
+  "attributes": [
+    {
+      "name": "padding",
+      "description": {
+        "value": "长度为 4 的数组，按 top、right、bottom、left 顺序指定内边距 ",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "x",
+            "unixVer": "3.98"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "x",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "x",
+          "unixVer": "4.02"
+        }
+      },
+      "type": "array<number>",
+      "defaultValue": [0, 0, 0, 0]
+    }
+  ],
+  "parentTags": ["list-view", "sticky-section"],
+  "uniPlatform": {
+    "app": {
+      "android": {
+        "osVer": "5.0",
+        "uniVer": "x",
+        "unixVer": "3.93"
+      },
+      "ios": {
+        "osVer": "12.0",
+        "uniVer": "x",
+        "unixVer": "4.11"
+      }
+    },
+    "web": {
+      "uniVer": "x",
+      "unixVer": "4.02"
+    }
+  },
+  "hasGeneralAttrs": true,
+  "hasGeneralEvents": true
+}

@@ -1,0 +1,224 @@
+{
+  "name": "animation-view",
+  "description": {
+    "value": "Lottie 动画",
+    "kind": "markdown"
+  },
+  "uniPlatform": {
+    "app": {
+      "android": {
+        "osVer": "5.0",
+        "uniVer": "√",
+        "unixVer": "3.9+"
+      },
+      "ios": {
+        "osVer": "12.0",
+        "uniVer": "√",
+        "unixVer": "4.11"
+      }
+    }
+  },
+  "attributes": [{
+      "name": "path",
+      "description": {
+        "value": "动画资源地址，目前只支持绝对路径",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        }
+      },
+      "type": "string",
+      "defaultValue": ""
+    },
+    {
+      "name": "loop",
+      "description": {
+        "value": "动画是否循环播放",
+        "kind": "markdown"
+      },
+      "type": "boolean",
+      "defaultValue": false,
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        }
+      }
+    },
+    {
+      "name": "autoplay",
+      "description": {
+        "value": "动画是否自动播放",
+        "kind": "markdown"
+      },
+      "type": "boolean",
+      "defaultValue": false,
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        }
+      }
+    },
+    {
+      "name": "action",
+      "description": {
+        "value": "动画操作，可取值 play、pause、stop",
+        "kind": "markdown"
+      },
+      "values": [{
+          "name": "play",
+          "description": "播放",
+          "uniPlatform": {
+            "app": {
+              "android": {
+                "osVer": "5.0",
+                "uniVer": "√",
+                "unixVer": "3.9+"
+              },
+              "ios": {
+                "osVer": "12.0",
+                "uniVer": "√",
+                "unixVer": "4.11"
+              }
+            }
+          }
+        },
+        {
+          "name": "pause",
+          "description": "暂停",
+          "uniPlatform": {
+            "app": {
+              "android": {
+                "osVer": "5.0",
+                "uniVer": "√",
+                "unixVer": "3.9+"
+              },
+              "ios": {
+                "osVer": "12.0",
+                "uniVer": "√",
+                "unixVer": "4.11"
+              }
+            }
+          }
+        },
+        {
+          "name": "stop",
+          "description": "停止",
+          "uniPlatform": {
+            "app": {
+              "android": {
+                "osVer": "5.0",
+                "uniVer": "√",
+                "unixVer": "3.9+"
+              },
+              "ios": {
+                "osVer": "12.0",
+                "uniVer": "√",
+                "unixVer": "4.11"
+              }
+            }
+          }
+        }
+      ],
+      "type": "string",
+      "defaultValue": "stop",
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        }
+      }
+    },
+    {
+      "name": "hidden",
+      "description": {
+        "value": "是否隐藏动画",
+        "kind": "markdown"
+      },
+      "type": "boolean",
+      "defaultValue": false,
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        }
+      }
+    },
+    {
+      "name": "[event]ended",
+      "type": "(event: UniEvent) => void",
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        }
+      }
+    }
+  ],
+  "references": [{
+      "url": "https://uniapp.dcloud.io/component/animation-view",
+      "name": "参见uni-app相关文档"
+    },
+    {
+      "url": "https://ext.dcloud.net.cn/plugin?id=10674",
+      "name": "插件市场"
+    },
+    {
+      "url": "https://doc.dcloud.net.cn/uni-app-x/component/animation-view.html",
+      "name": "参见uni-app x相关文档"
+    }
+  ],
+  "hasGeneralAttrs": true
+}

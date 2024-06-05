@@ -1,0 +1,55 @@
+{
+  "id": "hbuilderx-issue-reporter",
+  "name": "hbuilderx-issue-reporter",
+  "description": "%template.description%",
+  "displayName": "%template.displayName%",
+  "version": "1.1.33-2024041707",
+  "publisher": "dcloud",
+  "__private": true,
+  "engines": {
+    "HBuilderX": "^3.6.9"
+  },
+  "__from": "HBuilderX",
+  "categories": [
+    "Other"
+  ],
+  "main": "./out/index.js",
+  "scripts": {},
+  "activationEvents": [
+    "*"
+  ],
+  "contributes": {
+    "keybindings": [
+      {
+        "command": "extension.issueReporter",
+        "key": "ctrl+alt+b",
+        "win": "ctrl+alt+b",
+        "linux": "ctrl+alt+b"
+      }
+    ],
+    "commands": [
+      {
+        "command": "extension.issueReporter",
+        "title": "%extension.issueReporter%"
+      }
+    ],
+    "menus": {
+      "menubar/help": [
+        {
+          "command": "extension.issueReporter",
+          "group": "feedback"
+        }
+      ]
+    }
+  },
+  "extensionDependencies": [
+    "plugin-manager"
+  ],
+  "dependencies": {},
+  "devDependencies": {},
+  "vetur": {
+    "tags": "./qt_tags.json",
+    "attributes": "./qt_attributes.json"
+  },
+  "_dc_signatures": "a5d62613d84f48090f0e2b30df88e39fd1c13975d4f480afba621bfb0b2b1a708e0d5f8c26f268d5f21a036d5b50043f"
+}

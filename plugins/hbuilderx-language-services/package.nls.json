@@ -1,0 +1,9 @@
+{
+    "menu.rebuidindex.name": "Rebuild Project Index",
+    "menu.references.findAllFileReferences.name": "Find File References",
+    "configuration.languagefeatures.title": "Builtin Language Features",
+	"typescript.validate.enable.desc":"Enable TypeScript Validation.",
+	"javascript.validate.enable.desc":"Enable JavaScript Validation.",
+    "menu.utsJsonToType.toType.name":"Convert JSON to Type",
+    "select.target": "Syntax Completion and Type Check Seletion..."
+}

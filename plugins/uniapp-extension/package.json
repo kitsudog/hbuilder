@@ -1,0 +1,270 @@
+{
+  "id": "uniapp-extension",
+  "name": "uniapp-extension",
+  "description": "uniapp运行",
+  "displayName": "uniapp运行",
+  "version": "1.2.1-2024050620",
+  "publisher": "HBuilderX",
+  "__private": true,
+  "engines": {
+    "HBuilderX": "^3.6.10"
+  },
+  "categories": [
+    "Other"
+  ],
+  "main": "./out/index.js",
+  "scripts": {},
+  "activationEvents": [
+    "*"
+  ],
+  "contributes": {
+    "previewUrls": [
+      {
+        "provider": "uniAppPreviewUrl",
+        "loadingPage": "static/loading.html",
+        "when": "workspaceFolder.type == 'UniApp_Vue'",
+        "priority": 9999
+      }
+    ],
+    "launchers": [
+      {
+        "type": "uni-app:h5-Chrome",
+        "launcherId": "uni-app:h5-Chrome-${workspaceFolder}:[${workbenchWindowId}]",
+        "mode": "custom",
+        "label": "${menuIndex}%launhcer.uni-app.h5-Chrome.label%",
+        "terminateLabel": "${menuIndex}%launhcer.uni-app.h5-Chrome.terminateLabel%",
+        "when": "workspaceFolder.type == 'UniApp_Vue'",
+        "args": {
+          "platform": "h5",
+          "browser": "Chrome"
+        },
+        "version": 2
+      },
+      {
+        "type": "uni-app:h5-Chrome-page",
+        "providerId": "launcher:uni-app:h5-Chrome:page",
+        "launcherId": "uni-app:h5-Chrome-page-${workspaceFolder}:[${workbenchWindowId}]",
+        "mode": "custom",
+        "label": "${menuIndex}%launhcer.uni-app.h5-Chrome-page.label%",
+        "when": "workspaceFolder.type == 'UniApp_Vue'",
+        "version": 2
+      },
+      {
+        "type": "uni-app:h5-Built",
+        "launcherId": "uni-app:h5-Built-${workspaceFolder}:[${workbenchWindowId}]",
+        "mode": "custom",
+        "label": "${menuIndex}%launhcer.uni-app.h5-Built.label%",
+        "terminateLabel": "${menuIndex}%launhcer.uni-app.h5-Built.terminateLabel%",
+        "when": "workspaceFolder.type == 'UniApp_Vue'",
+        "args": {
+          "platform": "h5",
+          "browser": "Built"
+        },
+        "version": 2
+      },
+      {
+        "type": "uni-app:mp-xhs",
+        "launcherId": "uni-app:mp-xhs",
+        "mode": "run",
+        "when": "workspaceFolder.type == 'UniApp_Vue'",
+        "version": 2
+      },
+      {
+        "type": "uni-app:publish.mp-xhs",
+        "launcherId": "uni-app:publish.mp-xhs",
+        "mode": "custom",
+        "when": "workspaceFolder.type == 'UniApp_Vue'",
+        "version": 2
+      },
+      {
+        "type": "uni-cloud",
+        "launcherId": "${workspaceFolder}-uni-cloud",
+        "mode": "custom",
+        "when": "workspaceFolder.type == 'UniApp_Vue'",
+        "version": 2
+      },
+      {
+        "type": "uni-app:app-menu",
+        "mode": "run",
+        "when": "workspaceFolder.type == 'UniApp_Vue'"
+      },
+      {
+        "type": "uni-app:publish.app",
+        "when": "workspaceFolder.type == 'UniApp_Vue'",
+        "mode": "run"
+      },
+      {
+        "type": "uni-app:app-android",
+        "when": "workspaceFolder.type == 'UniApp_Vue'",
+        "mode": "run"
+      },
+      {
+        "type": "uni-app-x:app-android",
+        "when": "workspaceFolder.type == 'UniApp_Vue'",
+        "mode": "run",
+        "version": 2
+      },
+      {
+        "type": "uni-app:app-ios",
+        "when": "workspaceFolder.type == 'UniApp_Vue'",
+        "mode": "run"
+      },
+      {
+        "type": "uni-app-x:app-ios",
+        "when": "workspaceFolder.type == 'UniApp_Vue'",
+        "mode": "run",
+        "version": 2
+      },
+      {
+        "type": "uni-app:mp-weixin",
+        "when": "workspaceFolder.type == 'UniApp_Vue'",
+        "mode": "run"
+      },
+      {
+        "type": "uni-app:mp-baidu",
+        "when": "workspaceFolder.type == 'UniApp_Vue'",
+        "mode": "run"
+      },
+      {
+        "type": "uni-app:mp-alipay",
+        "when": "workspaceFolder.type == 'UniApp_Vue'",
+        "mode": "run"
+      },
+      {
+        "type": "uni-app:mp-toutiao",
+        "when": "workspaceFolder.type == 'UniApp_Vue'",
+        "mode": "run"
+      },
+      {
+        "type": "uni-app:mp-qq",
+        "when": "workspaceFolder.type == 'UniApp_Vue'",
+        "mode": "run"
+      },
+      {
+        "type": "uni-app:mp-360",
+        "when": "workspaceFolder.type == 'UniApp_Vue'",
+        "mode": "run"
+      },
+      {
+        "type": "uni-app:quickapp-webview-huawei",
+        "when": "workspaceFolder.type == 'UniApp_Vue'",
+        "mode": "run"
+      },
+      {
+        "type": "uni-app:quickapp-webview-union",
+        "when": "workspaceFolder.type == 'UniApp_Vue'",
+        "mode": "run"
+      },
+      {
+        "type": "uni-app:mp-kuaishou",
+        "when": "workspaceFolder.type == 'UniApp_Vue'",
+        "mode": "run"
+      },
+      {
+        "type": "uni-app:mp-lark",
+        "when": "workspaceFolder.type == 'UniApp_Vue'",
+        "mode": "run"
+      },
+      {
+        "type": "uni-app:mp-jd",
+        "when": "workspaceFolder.type == 'UniApp_Vue'",
+        "mode": "run"
+      }
+    ],
+    "customEditors": [],
+    "commands": [
+      {
+        "command": "extension.uni-app:h5-Chrome",
+        "title": "Chrome"
+      },
+      {
+        "command": "extension.uni-app:h5-Firefox",
+        "title": "Firefox"
+      },
+      {
+        "command": "extension.uni-app:h5-Ie",
+        "title": "Ie"
+      },
+      {
+        "command": "extension.uni-app:h5-Safari",
+        "title": "Safari"
+      },
+      {
+        "command": "extension.uni-app:h5-Edge",
+        "title": "Edge"
+      },
+      {
+        "command": "extension.uni-app:h5-openVueDevtools",
+        "title": "%command.extension.uni-app:h5-openVueDevtools%"
+      }
+    ],
+    "menus": {
+      "menubar/run": [
+        {
+          "id": "workbench.launch2menu.provider",
+          "providerArgs": {
+            "type": "uni-app:h5-Built"
+          },
+          "dynamic": true,
+          "overrideId": "old_builtin_browser_action",
+          "group": "_top",
+          "when": "workspaceFolder.type == 'UniApp_Vue'"
+        },
+        {
+          "id": "runInBrowser",
+          "title": "%menubar.run.browser.title%",
+          "group": "_top",
+          "overrideId": "old_builtin_browser_menu",
+          "when": "workspaceFolder.type == 'UniApp_Vue'"
+        },
+        {
+          "id": "workbench.launch2menu.provider",
+          "command": "extension.uni-app:h5-Chrome",
+          "when": "workspaceFolder.type == 'UniApp_Vue'",
+          "group": "runInBrowser@1"
+        },
+        {
+          "id": "workbench.launch2menu.provider",
+          "command": "extension.uni-app:h5-Firefox",
+          "when": "workspaceFolder.type == 'UniApp_Vue'",
+          "group": "runInBrowser@2"
+        },
+        {
+          "id": "workbench.launch2menu.provider",
+          "command": "extension.uni-app:h5-Ie",
+          "when": "workspaceFolder.type == 'UniApp_Vue' && !isMac",
+          "group": "runInBrowser@3"
+        },
+        {
+          "id": "workbench.launch2menu.provider",
+          "command": "extension.uni-app:h5-Safari",
+          "when": "workspaceFolder.type == 'UniApp_Vue' && isMac",
+          "group": "runInBrowser@4"
+        },
+        {
+          "id": "workbench.launch2menu.provider",
+          "command": "extension.uni-app:h5-Edge",
+          "when": "workspaceFolder.type == 'UniApp_Vue' && !isMac",
+          "group": "runInBrowser@5"
+        },
+        {
+          "group": "runInBrowser@6",
+          "when": "workspaceFolder.type == 'UniApp_Vue'"
+        },
+        {
+          "id": "workbench.launch2menu.provider",
+          "command": "extension.uni-app:h5-openVueDevtools",
+          "when": "workspaceFolder.type == 'UniApp_Vue'",
+          "checked": "JSON.matches <- '${workspaceFolder}/.hbuilderx/launch.json?query={\"configurations\":[ { \"openVueDevtools\":true,\"type\":\"uni-app:h5\" } ]}'",
+          "group": "runInBrowser@7"
+        }
+      ]
+    }
+  },
+  "extensionDependencies": [
+    "plugin-manager"
+  ],
+  "dependencies": {},
+  "devDependencies": {},
+  "_dc_signatures": "4ba3d6eaee0d67270d176d2ef81eb6621f77b78b5489a35b941d079508ef1a45cdaa100b1a86e7f198d1aec9f5a8761c"
+}

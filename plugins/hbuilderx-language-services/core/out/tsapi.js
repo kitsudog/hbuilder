@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.ts=void 0;const ts=require("typescript/lib/tsserverlibrary");exports.ts=ts;

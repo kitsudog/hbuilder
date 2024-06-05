@@ -5,7 +5,41 @@
             "name": "默认模板",
             "description": "默认模板",
             "file": "default.zip",
+            "uni-app-x": "default-x.zip",
             "imageUrl": "https://img-cdn-aliyun.dcloud.net.cn/hbuilderx/uni_default.jpeg"
+        },
+        {
+            "id": "hello-uniapp-x",
+            "name": "Hello uni-app x",
+            "description": "演示uni-app x框架的组件、接口、模板，<a href=\"https://ext.dcloud.net.cn/plugin?id=14798\">详情</a>",
+            "provider": [
+                "aliyun",
+                "tcb",
+                "alipay"
+            ],
+            "file": "https://ext.liuyingyong.cn/hbuilder/download?pluginId=14798",
+            "uni-app-x": "https://ext.liuyingyong.cn/hbuilder/download?pluginId=14798",
+            "only_support_uniappx": true,
+            "nocache": true,
+            "imageResources": "https://ext.liuyingyong.cn/hbuilder/plugin-info?pluginId=14798",
+            "author": "DCloud",
+            "vueVersion": [
+                "3"
+            ]
+        },
+        {
+            "id": "hello-uvue",
+            "name": "hello uvue",
+            "description": "uvue的vue语法示例工程，<a href=\"https://ext.dcloud.net.cn/plugin?id=15021\">详情</a>",
+            "file": "https://ext.liuyingyong.cn/hbuilder/download?pluginId=15021",
+            "uni-app-x": "https://ext.liuyingyong.cn/hbuilder/download?pluginId=15021",
+            "only_support_uniappx": true,
+            "nocache": true,
+            "imageResources": "https://ext.liuyingyong.cn/hbuilder/plugin-info?pluginId=15021",
+            "author": "DCloud",
+            "vueVersion": [
+                "3"
+            ]
         },
         {
             "id": "hello-uniapp",
@@ -20,10 +54,11 @@
         {
             "id": "hello-unicloud",
             "name": "Hello uniCloud",
-            "description": "演示uniCloud的基本操作，<a href=\"https://ext.dcloud.net.cn/plugin?id=4082\">详情</a>",
+            "description": "js全栈开发前后端示例，<a href=\"https://ext.dcloud.net.cn/plugin?id=4082\">详情</a>",
             "provider": [
                 "aliyun",
-                "tcb"
+                "tcb",
+                "alipay"
             ],
             "file": "https://ext.liuyingyong.cn/hbuilder/download?pluginId=4082",
             "nocache": true,
@@ -32,12 +67,21 @@
             "qrcodeUrl": "https://img-cdn-aliyun.dcloud.net.cn/hbuilderx/project-icon/hello_uniCloud_new.png"
         },
         {
+            "id": "hello-uts",
+            "name": "Hello uts",
+            "description": "uts语法开发原生示例，<a href=\"https://ext.dcloud.net.cn/plugin?id=9892\">详情</a>",
+            "file": "https://ext.liuyingyong.cn/hbuilder/download?pluginId=9892",
+            "nocache": true,
+            "author": "DCloud"
+        },
+        {
             "id": "uniStarter",
             "name": "uni-starter",
             "description": "云端一体应用快速开发基本项目模版，<a href=\"https://ext.dcloud.net.cn/plugin?id=5057\">详情</a>",
             "provider": [
                 "aliyun",
-                "tcb"
+                "tcb",
+                "alipay"
             ],
             "file": "https://ext.liuyingyong.cn/hbuilder/download?pluginId=5057",
             "nocache": true,
@@ -52,7 +96,8 @@
             "file": "https://ext.liuyingyong.cn/hbuilder/download?pluginId=3268",
             "provider": [
                 "aliyun",
-                "tcb"
+                "tcb",
+                "alipay"
             ],
             "nocache": true,
             "imageResources": "https://ext.liuyingyong.cn/hbuilder/plugin-info?pluginId=3268",
@@ -105,7 +150,8 @@
             "nocache": true,
             "provider": [
                 "aliyun",
-                "tcb"
+                "tcb",
+                "alipay"
             ],
             "imageResources": "https://ext.liuyingyong.cn/hbuilder/plugin-info?pluginId=4095",
             "author": "DCloud",
@@ -119,26 +165,12 @@
             "nocache": true,
             "provider": [
                 "aliyun",
-                "tcb"
+                "tcb",
+                "alipay"
             ],
             "imageResources": "https://ext.liuyingyong.cn/hbuilder/plugin-info?pluginId=4826",
             "author": "DCloud",
             "qrcodeUrl": "https://img-cdn-aliyun.dcloud.net.cn/hbuilderx/project-icon/uni-songgame.png"
-        },
-        {
-            "id": "cqsort-tiantianmall",
-            "name": "天天商城",
-            "description": "支持分销和激励视频的购物商城，<a href=\"https://ext.dcloud.net.cn/plugin?id=4763\">详情</a>",
-            "file": "https://ext.liuyingyong.cn/hbuilder/download?pluginId=4763",
-            "provider": [
-                "tcb"
-            ],
-            "nocache": true,
-            "license": true,
-            "imageUrl": "https://vkceyugu.cdn.bspapp.com/VKCEYUGU-f184e7c3-1912-41b2-b81f-435d1b37c7b4/b697d400-95ba-4c44-8f07-2f46fd6835a1.jpg",
-            "imageResources": "https://ext.liuyingyong.cn/hbuilder/plugin-info?pluginId=4763",
-            "author": "重庆柔然科技",
-            "qrcodeUrl": "https://img-cdn-aliyun.dcloud.net.cn/hbuilderx/project-icon/cqsort-tiantianmall.png"
         },
         {
             "id": "mix-mall",
@@ -150,10 +182,28 @@
             ],
             "nocache": true,
             "license": true,
-            "imageUrl": "https://vkceyugu.cdn.bspapp.com/VKCEYUGU-f184e7c3-1912-41b2-b81f-435d1b37c7b4/86af6d70-f98d-4924-844d-9c3f3b0beace.jpg",
+            "imageUrl": "https://img-cdn-aliyun.dcloud.net.cn/hbuilderx/project-cover/mix-mall.jpeg",
             "imageResources": "https://ext.liuyingyong.cn/hbuilder/plugin-info?pluginId=2413",
             "author": "MixR",
-            "qrcodeUrl": "https://img-cdn-aliyun.dcloud.net.cn/hbuilderx/project-icon/mix-guoyunshop.png"
+            "qrcodeUrl": "https://img-cdn-aliyun.dcloud.net.cn/hbuilderx/project-icon/mix-guoyunshop.png",
+            "vueVersion": [
+                "2"
+            ]
+        },
+        {
+            "id": "Usecloud-usemall",
+            "name": "用云电商",
+            "description": "基于uni-starter和uni-admin的购物商城，<a href=\"https://ext.dcloud.net.cn/plugin?id=5211\">详情</a>",
+            "file": "https://ext.liuyingyong.cn/hbuilder/download?pluginId=5211",
+            "provider": [
+                "tcb"
+            ],
+            "nocache": true,
+            "license": true,
+            "imageUrl": "https://img-cdn-aliyun.dcloud.net.cn/hbuilderx/project-cover/Usecloud-usemall.png",
+            "imageResources": "https://ext.liuyingyong.cn/hbuilder/plugin-info?pluginId=5211",
+            "author": "用云",
+            "qrcodeUrl": "https://img-cdn-aliyun.dcloud.net.cn/hbuilderx/project-icon/Usecloud-usemall.png"
         },
         {
             "id": "junjun-cloudmarket",
@@ -165,7 +215,7 @@
             ],
             "nocache": true,
             "license": true,
-            "imageUrl": "https://vkceyugu.cdn.bspapp.com/VKCEYUGU-f184e7c3-1912-41b2-b81f-435d1b37c7b4/0bcd3fb7-3a77-4e5b-9b6e-53e8fc6fff85.jpg",
+            "imageUrl": "https://img-cdn-aliyun.dcloud.net.cn/hbuilderx/project-cover/junjun-cloudmarket.jpeg",
             "imageResources": "https://ext.liuyingyong.cn/hbuilder/plugin-info?pluginId=1989",
             "author": "重庆柔然科技",
             "qrcodeUrl": "https://img-cdn-aliyun.dcloud.net.cn/hbuilderx/project-icon/junjun-cloudmarket.png"
@@ -180,25 +230,25 @@
             ],
             "nocache": true,
             "license": true,
-            "imageUrl": "https://vkceyugu.cdn.bspapp.com/VKCEYUGU-f184e7c3-1912-41b2-b81f-435d1b37c7b4/63dffe74-9e2c-4608-b1c6-6d37e8478bc6.jpg",
+            "imageUrl": "https://img-cdn-aliyun.dcloud.net.cn/hbuilderx/project-cover/junjun-cloudmarket.jpeg",
             "imageResources": "https://ext.liuyingyong.cn/hbuilder/plugin-info?pluginId=4566",
             "author": "重庆柔然科技",
             "qrcodeUrl": "https://img-cdn-aliyun.dcloud.net.cn/hbuilderx/project-icon/cloud-marketinternational.png"
         },
         {
-            "id": "Usecloud-usemall",
-            "name": "用云电商",
-            "description": "基于uni-starter和uni-admin的购物商城，<a href=\"https://ext.dcloud.net.cn/plugin?id=5211\">详情</a>",
-            "file": "https://ext.liuyingyong.cn/hbuilder/download?pluginId=5211",
+            "id": "cqsort-tiantianmall",
+            "name": "天天商城",
+            "description": "支持分销和激励视频的购物商城，<a href=\"https://ext.dcloud.net.cn/plugin?id=4763\">详情</a>",
+            "file": "https://ext.liuyingyong.cn/hbuilder/download?pluginId=4763",
             "provider": [
                 "tcb"
             ],
             "nocache": true,
             "license": true,
-            "imageUrl": "https://vkceyugu.cdn.bspapp.com/VKCEYUGU-f184e7c3-1912-41b2-b81f-435d1b37c7b4/d1ee8439-b233-42eb-975d-dd0d2ddc32c3.png",
-            "imageResources": "https://ext.liuyingyong.cn/hbuilder/plugin-info?pluginId=5211",
-            "author": "用云",
-            "qrcodeUrl": "https://img-cdn-aliyun.dcloud.net.cn/hbuilderx/project-icon/Usecloud-usemall.png"
+            "imageUrl": "https://img-cdn-aliyun.dcloud.net.cn/hbuilderx/project-cover/cqsort-tiantianmall.jpeg",
+            "imageResources": "https://ext.liuyingyong.cn/hbuilder/plugin-info?pluginId=4763",
+            "author": "重庆柔然科技",
+            "qrcodeUrl": "https://img-cdn-aliyun.dcloud.net.cn/hbuilderx/project-icon/cqsort-tiantianmall.png"
         },
         {
             "id": "baker-app",
@@ -207,13 +257,17 @@
             "file": "https://ext.liuyingyong.cn/hbuilder/download?pluginId=5187",
             "provider": [
                 "aliyun",
-                "tcb"
+                "tcb",
+                "alipay"
             ],
             "nocache": true,
             "license": true,
             "imageResources": "https://ext.liuyingyong.cn/hbuilder/plugin-info?pluginId=5187",
             "author": "BaseCloud",
-            "qrcodeUrl": "https://img-cdn-aliyun.dcloud.net.cn/hbuilderx/project-icon/baker-app.png"
+            "qrcodeUrl": "https://img-cdn-aliyun.dcloud.net.cn/hbuilderx/project-icon/baker-app.png",
+            "vueVersion": [
+                "2"
+            ]
         },
         {
             "id": "guobin-shiwan",
@@ -222,7 +276,8 @@
             "file": "https://ext.liuyingyong.cn/hbuilder/download?pluginId=5653",
             "provider": [
                 "aliyun",
-                "tcb"
+                "tcb",
+                "alipay"
             ],
             "nocache": true,
             "license": true,
@@ -231,13 +286,79 @@
             "qrcodeUrl": "https://img-cdn-aliyun.dcloud.net.cn/hbuilderx/project-icon/guobin-shiwan.png"
         },
         {
+            "id": "monkey-free-display",
+            "name": "猿由·智能建站系统",
+            "description": "带后台、多行业适用、支持多端的微官网系统，<a href=\"https://ext.dcloud.net.cn/plugin?id=7188\">详情</a>",
+            "file": "https://ext.liuyingyong.cn/hbuilder/download?pluginId=7188",
+            "provider": [
+                "aliyun"
+            ],
+            "nocache": true,
+            "license": true,
+            "imageUrl": "https://img-cdn-aliyun.dcloud.net.cn/hbuilderx/project-icon/860e05be-a181-4ed7-9498-106dcb25218e.png",
+            "imageResources": "https://ext.liuyingyong.cn/hbuilder/plugin-info?pluginId=7188",
+            "author": "monkeyFree",
+            "qrcodeUrl": "https://img-cdn-aliyun.dcloud.net.cn/hbuilderx/project-icon/5e425dc2-abc6-436a-8d63-2ba1b36a3d2c.png"
+        },
+        {
+            "id": "wallpaper-xingchaobizhi",
+            "name": "星潮壁纸",
+            "description": "头像、套图、刘海、动态壁纸制作下载，<a href=\"https://ext.dcloud.net.cn/plugin?id=5819\">详情</a>",
+            "file": "https://ext.liuyingyong.cn/hbuilder/download?pluginId=5819",
+            "provider": [
+                "aliyun",
+                "tcb",
+                "alipay"
+            ],
+            "nocache": true,
+            "license": true,
+            "imageResources": "https://ext.liuyingyong.cn/hbuilder/plugin-info?pluginId=5819",
+            "author": "306***@qq.com",
+            "qrcodeUrl": "https://img-cdn-aliyun.dcloud.net.cn/hbuilderx/project-icon/wallpaper-xingchaobizhi.png"
+        },
+        {
+            "id": "monkey-free-ai-image",
+            "name": "趣味AI照片转换",
+            "description": "集成大量照片转换功能的网赚项目，<a href=\"https://ext.dcloud.net.cn/plugin?id=6967\">详情</a>",
+            "file": "https://ext.liuyingyong.cn/hbuilder/download?pluginId=6967",
+            "provider": [
+                "aliyun"
+            ],
+            "nocache": true,
+            "license": true,
+            "imageUrl": "https://img-cdn-aliyun.dcloud.net.cn/hbuilderx/show.png",
+            "imageResources": "https://ext.liuyingyong.cn/hbuilder/plugin-info?pluginId=6967",
+            "author": "monkeyFree",
+            "qrcodeUrl": "https://img-cdn-aliyun.dcloud.net.cn/hbuilderx/25675853-2257-452A-BBEA-C4282E379695.png",
+            "vueVersion": [
+                "2"
+            ]
+        },
+        {
+            "id": "nb-wasterTool",
+            "name": "智能垃圾分类",
+            "description": "AI图片识别垃圾分类环保主题项目，<a href=\"https://ext.dcloud.net.cn/plugin?id=6711\">详情</a>",
+            "file": "https://ext.liuyingyong.cn/hbuilder/download?pluginId=6711",
+            "provider": [
+                "aliyun",
+                "tcb",
+                "alipay"
+            ],
+            "nocache": true,
+            "license": true,
+            "imageResources": "https://ext.liuyingyong.cn/hbuilder/plugin-info?pluginId=6711",
+            "author": "242***@qq.com",
+            "qrcodeUrl": "https://img-cdn-aliyun.dcloud.net.cn/hbuilderx/project-icon/nb-wasterTool-new.png"
+        },
+        {
             "id": "helang-idiom-uniCloud",
             "name": "看图猜成语游戏",
             "description": "已集成激励视频变现，<a href=\"https://ext.dcloud.net.cn/plugin?id=5045\">详情</a>",
             "file": "https://ext.liuyingyong.cn/hbuilder/download?pluginId=5045",
             "provider": [
                 "aliyun",
-                "tcb"
+                "tcb",
+                "alipay"
             ],
             "nocache": true,
             "imageResources": "https://ext.liuyingyong.cn/hbuilder/plugin-info?pluginId=5045",
@@ -251,42 +372,13 @@
             "file": "https://ext.liuyingyong.cn/hbuilder/download?pluginId=6472",
             "provider": [
                 "aliyun",
-                "tcb"
+                "tcb",
+                "alipay"
             ],
             "nocache": true,
             "imageResources": "https://ext.liuyingyong.cn/hbuilder/plugin-info?pluginId=6472",
             "author": "国宾",
             "qrcodeUrl": "https://img-cdn-aliyun.dcloud.net.cn/hbuilderx/project-icon/guobin-manghe.png"
-        },
-        {
-            "id": "wallpaper-xingchaobizhi",
-            "name": "星潮壁纸",
-            "description": "头像、套图、刘海、动态壁纸制作下载，<a href=\"https://ext.dcloud.net.cn/plugin?id=5819\">详情</a>",
-            "file": "https://ext.liuyingyong.cn/hbuilder/download?pluginId=5819",
-            "provider": [
-                "aliyun",
-                "tcb"
-            ],
-            "nocache": true,
-            "license": true,
-            "imageResources": "https://ext.liuyingyong.cn/hbuilder/plugin-info?pluginId=5819",
-            "author": "306***@qq.com",
-            "qrcodeUrl": "https://img-cdn-aliyun.dcloud.net.cn/hbuilderx/project-icon/wallpaper-xingchaobizhi.png"
-        },
-        {
-            "id": "nb-wasterTool",
-            "name": "智能垃圾分类",
-            "description": "AI图片识别垃圾分类环保主题项目，<a href=\"https://ext.dcloud.net.cn/plugin?id=6711\">详情</a>",
-            "file": "https://ext.liuyingyong.cn/hbuilder/download?pluginId=6711",
-            "provider": [
-                "aliyun",
-                "tcb"
-            ],
-            "nocache": true,
-            "license": true,
-            "imageResources": "https://ext.liuyingyong.cn/hbuilder/plugin-info?pluginId=6711",
-            "author": "242***@qq.com",
-            "qrcodeUrl": "https://img-cdn-aliyun.dcloud.net.cn/hbuilderx/project-icon/nb-wasterTool-new.png"
         },
         {
             "id": "cloud-th-uni",
@@ -295,7 +387,8 @@
             "file": "https://ext.liuyingyong.cn/hbuilder/download?pluginId=4813",
             "provider": [
                 "aliyun",
-                "tcb"
+                "tcb",
+                "alipay"
             ],
             "nocache": true,
             "imageResources": "https://ext.liuyingyong.cn/hbuilder/plugin-info?pluginId=4813",
@@ -314,7 +407,7 @@
             "id": "hello-quickapp",
             "name": "Hello QuickApp",
             "description": "快应用示例模板",
-            "file": "https://update.liuyingyong.cn/hbuilderx/alpha/project-template/project-template.1.0.1.2021122415/project/quickapp/hello-quickapp.zip",
+            "file": "https://update.liuyingyong.cn/hbuilderx/alpha/project-template/project-template.1.1.0.2024043010/project/quickapp/hello-quickapp.zip",
             "npmName": "hbuilderx-project-template-quickapp-hello-quickapp",
             "npmVersion": "0.0.1-2019102117"
         }
@@ -324,17 +417,27 @@
             "id": "HBuilderX-Extension",
             "name": "插件扩展开发",
             "description": "开发HBuilderX插件的简单示例",
-            "file": "https://update.liuyingyong.cn/hbuilderx/alpha/project-template/project-template.1.0.1.2021122415/project/extension/HelloForHBuilderXExtension.zip",
+            "file": "https://update.liuyingyong.cn/hbuilderx/alpha/project-template/project-template.1.1.0.2024043010/project/extension/HelloForHBuilderXExtension.zip",
             "validate-regex": "^[a-zA-Z][a-zA-Z0-9_-]*[a-zA-Z0-9]$",
             "validate-error-msg": "插件名称不合法，仅支持英文字母和数字",
             "npmName": "hbuilderx-project-template-extension-hbuilderx-extension",
             "npmVersion": "0.0.1-2021012210"
         },
         {
+            "id": "extension-i18n",
+            "name": "插件扩展国际化",
+            "description": "插件开发国际化简单示例",
+            "file": "https://update.liuyingyong.cn/hbuilderx/alpha/project-template/project-template.1.1.0.2024043010/project/extension/extension-i18n.zip",
+            "validate-regex": "^[a-zA-Z][a-zA-Z0-9_-]*[a-zA-Z0-9]$",
+            "validate-error-msg": "插件名称不合法，仅支持英文字母和数字",
+            "npmName": "hbuilderx-project-template-extension-extension-i18n",
+            "npmVersion": "0.0.1-2022091417"
+        },
+        {
             "id": "snippet",
             "name": "snippet",
             "description": "代码块插件",
-            "file": "https://update.liuyingyong.cn/hbuilderx/alpha/project-template/project-template.1.0.1.2021122415/project/extension/snippet.zip",
+            "file": "https://update.liuyingyong.cn/hbuilderx/alpha/project-template/project-template.1.1.0.2024043010/project/extension/snippet.zip",
             "validate-regex": "^[a-zA-Z][a-zA-Z0-9_-]*[a-zA-Z0-9]$",
             "validate-error-msg": "插件名称不合法，仅支持英文字母和数字",
             "npmName": "hbuilderx-project-template-extension-snippet",
@@ -344,7 +447,7 @@
             "id": "QuickPick",
             "name": "QuickPick",
             "description": "演示插件API showQuickPick的基本操作",
-            "file": "https://update.liuyingyong.cn/hbuilderx/alpha/project-template/project-template.1.0.1.2021122415/project/extension/QuickPick.zip",
+            "file": "https://update.liuyingyong.cn/hbuilderx/alpha/project-template/project-template.1.1.0.2024043010/project/extension/QuickPick.zip",
             "validate-regex": "^[a-zA-Z][a-zA-Z0-9_-]*[a-zA-Z0-9]$",
             "validate-error-msg": "插件名称不合法，仅支持英文字母和数字",
             "npmName": "hbuilderx-project-template-extension-quickpick",
@@ -354,7 +457,7 @@
             "id": "webviewdialog",
             "name": "webviewdialog",
             "description": "演示插件API WebViewDialog的基本操作",
-            "file": "https://update.liuyingyong.cn/hbuilderx/alpha/project-template/project-template.1.0.1.2021122415/project/extension/webviewdialog.zip",
+            "file": "https://update.liuyingyong.cn/hbuilderx/alpha/project-template/project-template.1.1.0.2024043010/project/extension/webviewdialog.zip",
             "validate-regex": "^[a-zA-Z][a-zA-Z0-9_-]*[a-zA-Z0-9]$",
             "validate-error-msg": "插件名称不合法，仅支持英文字母和数字",
             "npmName": "hbuilderx-project-template-extension-webviewdialog",
@@ -373,19 +476,19 @@
             "id": "simple",
             "name": "基本HTML项目",
             "description": "包含index.html和css、js、img目录",
-            "file": "https://update.liuyingyong.cn/hbuilderx/alpha/project-template/project-template.1.0.1.2021122415/project/web/simple.zip"
+            "file": "https://update.liuyingyong.cn/hbuilderx/alpha/project-template/project-template.1.1.0.2024043010/project/web/simple.zip"
         },
         {
             "id": "html_vue",
             "name": "vue项目(普通模式)",
             "description": "在html中引用vue.js (v3.2.8)",
-            "file": "https://update.liuyingyong.cn/hbuilderx/alpha/project-template/project-template.1.0.1.2021122415/project/web/html_vue.zip"
+            "file": "https://update.liuyingyong.cn/hbuilderx/alpha/project-template/project-template.1.1.0.2024043010/project/web/html_vue.zip"
         },
         {
             "id": "vue3-cli",
             "name": "vue3项目(3.2.8)",
             "description": "vue3-cli默认项目（包含vite）",
-            "file": "https://update.liuyingyong.cn/hbuilderx/alpha/project-template/project-template.1.0.1.2021122415/project/web/vue3_cli_default.zip",
+            "file": "https://update.liuyingyong.cn/hbuilderx/alpha/project-template/project-template.1.1.0.2024043010/project/web/vue3_cli_default.zip",
             "npmName": "hbuilderx-project-template-web-vue3-cli",
             "npmVersion": "0.0.1-2021090312",
             "install": true,
@@ -395,10 +498,34 @@
             "id": "hello-vue",
             "name": "vue项目(2.6.10)",
             "description": "vue-cli默认项目（仅包含babel）",
-            "file": "https://update.liuyingyong.cn/hbuilderx/alpha/project-template/project-template.1.0.1.2021122415/project/web/vue_cli_default.zip",
+            "file": "https://update.liuyingyong.cn/hbuilderx/alpha/project-template/project-template.1.1.0.2024043010/project/web/vue_cli_default.zip",
             "npmName": "hbuilderx-project-template-web-hello-vue",
             "npmVersion": "0.0.1-2019102117",
             "imageUrl": "https://img-cdn-aliyun.dcloud.net.cn/hbuilderx/project-vue2.png"
+        },
+        {
+            "id": "express-template",
+            "name": "Express项目",
+            "description": "Node.js Express开发框架默认项目",
+            "file": "https://update.liuyingyong.cn/hbuilderx/alpha/project-template/project-template.1.1.0.2024043010/project/web/express-template.zip",
+            "npmName": "hbuilderx-project-template-web-express-template",
+            "npmVersion": "0.0.1-2022120915"
+        },
+        {
+            "id": "node-template",
+            "name": "Node项目",
+            "description": "Node默认项目",
+            "file": "https://update.liuyingyong.cn/hbuilderx/alpha/project-template/project-template.1.1.0.2024043010/project/web/node-template.zip",
+            "npmName": "hbuilderx-project-template-web-node-template",
+            "npmVersion": "0.0.1-2022120915"
+        },
+        {
+            "id": "node-ts-template",
+            "name": "Node ts项目",
+            "description": "Node ts默认项目",
+            "file": "https://update.liuyingyong.cn/hbuilderx/alpha/project-template/project-template.1.1.0.2024043010/project/web/node-ts-template.zip",
+            "npmName": "hbuilderx-project-template-web-node-ts-template",
+            "npmVersion": "0.0.1-2022120915"
         }
     ],
     "app": [
@@ -412,7 +539,7 @@
             "id": "mui",
             "name": "mui项目",
             "description": "已包含mui的js、css、字体资源的项目模板",
-            "file": "https://update.liuyingyong.cn/hbuilderx/alpha/project-template/project-template.1.0.1.2021122415/project/app/mui.zip",
+            "file": "https://update.liuyingyong.cn/hbuilderx/alpha/project-template/project-template.1.1.0.2024043010/project/app/mui.zip",
             "npmName": "hbuilderx-project-template-app-mui",
             "npmVersion": "0.0.1-2021092618"
         },
@@ -420,7 +547,7 @@
             "id": "mui-login-setting",
             "name": "mui登录模板",
             "description": "带登录和设置的MUI项目模板",
-            "file": "https://update.liuyingyong.cn/hbuilderx/alpha/project-template/project-template.1.0.1.2021122415/project/app/mui-login-setting.zip",
+            "file": "https://update.liuyingyong.cn/hbuilderx/alpha/project-template/project-template.1.1.0.2024043010/project/app/mui-login-setting.zip",
             "npmName": "hbuilderx-project-template-app-mui-login-setting",
             "npmVersion": "0.0.1-2021092618",
             "imageUrl": "https://img-cdn-aliyun.dcloud.net.cn/hbuilderx/5app_mui_login.jpeg"
@@ -429,7 +556,7 @@
             "id": "nativeTab",
             "name": "底部选项卡模板",
             "description": "原生选项卡示例，含tab中部凸起半圆示例",
-            "file": "https://update.liuyingyong.cn/hbuilderx/alpha/project-template/project-template.1.0.1.2021122415/project/app/nativeTab.zip",
+            "file": "https://update.liuyingyong.cn/hbuilderx/alpha/project-template/project-template.1.1.0.2024043010/project/app/nativeTab.zip",
             "npmName": "hbuilderx-project-template-app-nativetab",
             "npmVersion": "0.0.1-2021092618",
             "imageUrl": "https://img-cdn-aliyun.dcloud.net.cn/hbuilderx/5app_bottom_tab.jpeg"
@@ -438,16 +565,16 @@
             "id": "helloh5plus",
             "name": "Hello H5+",
             "description": "HTML5Plus规范的演示，包含摄像头等各种底层能力的调用",
-            "file": "https://update.liuyingyong.cn/hbuilderx/alpha/project-template/project-template.1.0.1.2021122415/project/app/helloh5plus.zip",
+            "file": "https://update.liuyingyong.cn/hbuilderx/alpha/project-template/project-template.1.1.0.2024043010/project/app/helloh5plus.zip",
             "npmName": "hbuilderx-project-template-app-helloh5plus",
-            "npmVersion": "0.0.1-2020031913",
+            "npmVersion": "0.0.1-2023122614",
             "imageUrl": "https://img-cdn-aliyun.dcloud.net.cn/hbuilderx/5app_hello.jpeg"
         },
         {
             "id": "hellomui",
             "name": "Hello mui",
             "description": "mui前端框架各种UI控件（如按钮）的展示",
-            "file": "https://update.liuyingyong.cn/hbuilderx/alpha/project-template/project-template.1.0.1.2021122415/project/app/hellomui.zip",
+            "file": "https://update.liuyingyong.cn/hbuilderx/alpha/project-template/project-template.1.1.0.2024043010/project/app/hellomui.zip",
             "npmName": "hbuilderx-project-template-app-hellomui",
             "npmVersion": "0.0.1-2021092618",
             "imageUrl": "https://img-cdn-aliyun.dcloud.net.cn/hbuilderx/5app_hello_mui.jpeg"
@@ -464,7 +591,7 @@
             "id": "__W2A__hello.wap2app.dcloud.io",
             "name": "Hello wap2app",
             "description": "Wap2App基本功能演示",
-            "file": "https://update.liuyingyong.cn/hbuilderx/alpha/project-template/project-template.1.0.1.2021122415/project/wap2app/hellowap2app.zip",
+            "file": "https://update.liuyingyong.cn/hbuilderx/alpha/project-template/project-template.1.1.0.2024043010/project/wap2app/hellowap2app.zip",
             "npmName": "hbuilderx-project-template-wap2app-hellowap2app",
             "npmVersion": "0.0.1-2021040116",
             "imageUrl": "https://img-cdn-aliyun.dcloud.net.cn/hbuilderx/wap2app_hello.jpeg"
@@ -478,6 +605,6 @@
             "file": "default.zip"
         }
     ],
-    "version": "1.0.1.2021122415",
+    "version": "1.1.0.2024043010",
     "source": "https://update.liuyingyong.cn/hbuilderx/template/project/config.json"
 }

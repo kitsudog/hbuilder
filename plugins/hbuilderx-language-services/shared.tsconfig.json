@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "target": "es2019",
+        "lib": [
+            "es2019"
+        ],
+        "module": "commonjs",
+        "strict": true,
+        "sourceMap": true,
+        "skipLibCheck": true,
+        "alwaysStrict": true,
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "noImplicitReturns": true,
+        "resolveJsonModule": true
+    }
+}

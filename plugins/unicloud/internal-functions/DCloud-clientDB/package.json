@@ -1,0 +1,11 @@
+{
+  "name": "DCloud-clientDB",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "DCloud",
+  "extensions": {
+    "uni-cloud-redis": {}
+  },
+  "license": "SEE LICENSE IN uni-curd/license.md"
+}

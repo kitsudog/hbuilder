@@ -1,0 +1,9 @@
+{
+	"menubar.run.browser.title": "Browser",
+	"command.extension.uni-app:h5-openVueDevtools": "Automatically open Vue &Devtools on running",
+	"launhcer.uni-app.h5-Built.label": "Run Built-in Browser",
+	"launhcer.uni-app.h5-Built.terminateLabel": "Stop Built-in Browser",
+	"launhcer.uni-app.h5-Chrome.label": "Run Chrome(&C)",
+	"launhcer.uni-app.h5-Chrome.terminateLabel": "Stop Chrome",
+	"launhcer.uni-app.h5-Chrome-page.label": "Run Chrome - the Page"
+}

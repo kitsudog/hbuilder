@@ -1,0 +1,4 @@
+{
+    "indexservice.onRequest.rebuild.pathMismatch.error": "Project path mismatch! Path: [{0}]",
+    "indexservice.onRequest.rebuild.doRebuild.error": "Index rebuild failed! Error: [{0}]"
+}

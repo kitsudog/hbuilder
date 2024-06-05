@@ -1,0 +1,708 @@
+{
+  "name": "radio",
+  "type": "UniRadioElement",
+  "description": {
+    "value": "单选项。在1组radio-group中只能选中1个",
+    "kind": "markdown"
+  },
+  "attributes": [
+    {
+      "name": "disabled",
+      "description": {
+        "value": "是否禁用",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "mp": {
+          "weixin": {
+            "hostVer": "√",
+            "uniVer": "√",
+            "unixVer": "x"
+          },
+          "alipay": {
+            "hostVer": "√",
+            "uniVer": "√",
+            "unixVer": "x"
+          },
+          "baidu": {
+            "hostVer": "√",
+            "uniVer": "√",
+            "unixVer": "x"
+          },
+          "toutiao": {
+            "hostVer": "√",
+            "uniVer": "√",
+            "unixVer": "x"
+          },
+          "lark": {
+            "hostVer": "√",
+            "uniVer": "√",
+            "unixVer": "x"
+          },
+          "qq": {
+            "hostVer": "√",
+            "uniVer": "√",
+            "unixVer": "x"
+          },
+          "kuaishou": {
+            "hostVer": "√",
+            "uniVer": "√",
+            "unixVer": "x"
+          },
+          "jd": {
+            "hostVer": "√",
+            "uniVer": "√",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "boolean",
+      "defaultValue": false
+    },
+    {
+      "name": "value",
+      "description": {
+        "value": "<radio/> 标识。当该radio 选中时，radio-group的 change 事件会携带radio的value",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "mp": {
+          "weixin": {
+            "hostVer": "√",
+            "uniVer": "√",
+            "unixVer": "x"
+          },
+          "alipay": {
+            "hostVer": "√",
+            "uniVer": "√",
+            "unixVer": "x"
+          },
+          "baidu": {
+            "hostVer": "√",
+            "uniVer": "√",
+            "unixVer": "x"
+          },
+          "toutiao": {
+            "hostVer": "√",
+            "uniVer": "√",
+            "unixVer": "x"
+          },
+          "lark": {
+            "hostVer": "√",
+            "uniVer": "√",
+            "unixVer": "x"
+          },
+          "qq": {
+            "hostVer": "√",
+            "uniVer": "√",
+            "unixVer": "x"
+          },
+          "kuaishou": {
+            "hostVer": "√",
+            "uniVer": "√",
+            "unixVer": "x"
+          },
+          "jd": {
+            "hostVer": "√",
+            "uniVer": "√",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "string"
+    },
+    {
+      "name": "checked",
+      "description": {
+        "value": "<radio/> 当前是否选中",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "mp": {
+          "weixin": {
+            "hostVer": "√",
+            "uniVer": "√",
+            "unixVer": "x"
+          },
+          "alipay": {
+            "hostVer": "√",
+            "uniVer": "√",
+            "unixVer": "x"
+          },
+          "baidu": {
+            "hostVer": "√",
+            "uniVer": "√",
+            "unixVer": "x"
+          },
+          "toutiao": {
+            "hostVer": "√",
+            "uniVer": "√",
+            "unixVer": "x"
+          },
+          "lark": {
+            "hostVer": "√",
+            "uniVer": "√",
+            "unixVer": "x"
+          },
+          "qq": {
+            "hostVer": "√",
+            "uniVer": "√",
+            "unixVer": "x"
+          },
+          "kuaishou": {
+            "hostVer": "√",
+            "uniVer": "√",
+            "unixVer": "x"
+          },
+          "jd": {
+            "hostVer": "√",
+            "uniVer": "√",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "boolean",
+      "defaultValue": false
+    },
+    {
+      "name": "color",
+      "description": {
+        "value": "radio的颜色",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "mp": {
+          "weixin": {
+            "hostVer": "√",
+            "uniVer": "√",
+            "unixVer": "x"
+          },
+          "alipay": {
+            "hostVer": "√",
+            "uniVer": "√",
+            "unixVer": "x"
+          },
+          "baidu": {
+            "hostVer": "√",
+            "uniVer": "√",
+            "unixVer": "x"
+          },
+          "toutiao": {
+            "hostVer": "√",
+            "uniVer": "√",
+            "unixVer": "x"
+          },
+          "lark": {
+            "hostVer": "√",
+            "uniVer": "√",
+            "unixVer": "x"
+          },
+          "qq": {
+            "hostVer": "√",
+            "uniVer": "√",
+            "unixVer": "x"
+          },
+          "kuaishou": {
+            "hostVer": "√",
+            "uniVer": "√",
+            "unixVer": "x"
+          },
+          "jd": {
+            "hostVer": "√",
+            "uniVer": "√",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "string",
+      "defaultValue": "#007AFF",
+      "valueSet": "string.ColorString"
+    },
+    {
+      "name": "backgroundColor",
+      "description": {
+        "value": "radio默认的背景颜色",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "3.99+",
+            "unixVer": "3.9"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "3.99+",
+            "unixVer": "4.11"
+          }
+        },
+        "mp": {
+          "weixin": {
+            "hostVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "alipay": {
+            "hostVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "baidu": {
+            "hostVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "toutiao": {
+            "hostVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "lark": {
+            "hostVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "qq": {
+            "hostVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "kuaishou": {
+            "hostVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "jd": {
+            "hostVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+          "uniVer": "3.99+",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "string",
+      "defaultValue": "#ffffff",
+      "valueSet": "string.ColorString"
+    },
+    {
+      "name": "borderColor",
+      "description": {
+        "value": "radio默认的边框颜色",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "3.99+",
+            "unixVer": "3.9"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "3.99+",
+            "unixVer": "4.11"
+          }
+        },
+        "mp": {
+          "weixin": {
+            "hostVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "alipay": {
+            "hostVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "baidu": {
+            "hostVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "toutiao": {
+            "hostVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "lark": {
+            "hostVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "qq": {
+            "hostVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "kuaishou": {
+            "hostVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "jd": {
+            "hostVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+          "uniVer": "3.99+",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "string",
+      "defaultValue": "#d1d1d1",
+      "valueSet": "string.ColorString"
+    },
+    {
+      "name": "activeBackgroundColor",
+      "description": {
+        "value": "radio选中时的背景颜色，优先级大于color属性",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "3.99+",
+            "unixVer": "3.9"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "3.99+",
+            "unixVer": "4.11"
+          }
+        },
+        "mp": {
+          "weixin": {
+            "hostVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "alipay": {
+            "hostVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "baidu": {
+            "hostVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "toutiao": {
+            "hostVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "lark": {
+            "hostVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "qq": {
+            "hostVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "kuaishou": {
+            "hostVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "jd": {
+            "hostVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+          "uniVer": "3.99+",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "string",
+      "defaultValue": "#007AFF",
+      "valueSet": "string.ColorString"
+    },
+    {
+      "name": "activeBorderColor",
+      "description": {
+        "value": "radio选中时的边框颜色",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "3.99+",
+            "unixVer": "3.9"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "3.99+",
+            "unixVer": "4.11"
+          }
+        },
+        "mp": {
+          "weixin": {
+            "hostVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "alipay": {
+            "hostVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "baidu": {
+            "hostVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "toutiao": {
+            "hostVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "lark": {
+            "hostVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "qq": {
+            "hostVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "kuaishou": {
+            "hostVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "jd": {
+            "hostVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+          "uniVer": "3.99+",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "string",
+      "defaultValue": "",
+      "valueSet": "string.ColorString"
+    },
+    {
+      "name": "iconColor",
+      "description": {
+        "value": "radio的图标颜色",
+        "kind": "markdown"
+      },
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "3.99+",
+            "unixVer": "3.9"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "3.99+",
+            "unixVer": "4.11"
+          }
+        },
+        "mp": {
+          "weixin": {
+            "hostVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "alipay": {
+            "hostVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "baidu": {
+            "hostVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "toutiao": {
+            "hostVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "lark": {
+            "hostVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "qq": {
+            "hostVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "kuaishou": {
+            "hostVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          },
+          "jd": {
+            "hostVer": "x",
+            "uniVer": "x",
+            "unixVer": "x"
+          }
+        },
+        "web": {
+          "uniVer": "3.99+",
+          "unixVer": "4.0"
+        }
+      },
+      "type": "string",
+      "defaultValue": "#ffffff",
+      "valueSet": "string.ColorString"
+    }
+  ],
+  "references": [
+    {
+      "url": "https://uniapp.dcloud.io/component/radio",
+      "name": "参见uni-app相关文档"
+    },
+    {
+      "url": "https://doc.dcloud.net.cn/uni-app-x/component/radio-group.html",
+      "name": "参见uni-app x相关文档"
+    }
+  ],
+  "uniPlatform": {
+    "app": {
+      "android": {
+        "osVer": "5.0",
+        "uniVer": "√",
+        "unixVer": "3.9"
+      },
+      "ios": {
+        "osVer": "12.0",
+        "uniVer": "√",
+        "unixVer": "4.11"
+      }
+    },
+    "mp": {
+      "weixin": {
+        "hostVer": "√",
+        "uniVer": "√",
+        "unixVer": "x"
+      },
+      "alipay": {
+        "hostVer": "√",
+        "uniVer": "√",
+        "unixVer": "x"
+      },
+      "baidu": {
+        "hostVer": "√",
+        "uniVer": "√",
+        "unixVer": "x"
+      },
+      "toutiao": {
+        "hostVer": "√",
+        "uniVer": "√",
+        "unixVer": "x"
+      },
+      "lark": {
+        "hostVer": "√",
+        "uniVer": "√",
+        "unixVer": "x"
+      },
+      "qq": {
+        "hostVer": "√",
+        "uniVer": "√",
+        "unixVer": "x"
+      },
+      "kuaishou": {
+        "hostVer": "√",
+        "uniVer": "√",
+        "unixVer": "x"
+      },
+      "jd": {
+        "hostVer": "√",
+        "uniVer": "√",
+        "unixVer": "x"
+      }
+    },
+    "web": {
+      "uniVer": "√",
+      "unixVer": "4.0"
+    }
+  },
+  "hasGeneralAttrs": true,
+  "hasGeneralEvents": true
+}

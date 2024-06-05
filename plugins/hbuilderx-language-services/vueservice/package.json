@@ -1,0 +1,20 @@
+{
+    "name": "vueservice",
+    "version": "1.0.0",
+    "description": "",
+    "main": "./out/index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "contributes": {
+        "indexProcessors": [
+            {
+                "language": "vue",
+                "url": "./out/index/vueIndexProcessor.js"
+            }
+        ]
+    }
+}

@@ -1,0 +1,1 @@
+const _BNG="!".charCodeAt(0),_MIN="-".charCodeAt(0),_LAN="<".charCodeAt(0),_RAN=">".charCodeAt(0),_FSL="/".charCodeAt(0),_EQS="=".charCodeAt(0),_DQO='"'.charCodeAt(0),_SQO="'".charCodeAt(0),_NWL="\n".charCodeAt(0),_CAR="\r".charCodeAt(0),_LFD="\f".charCodeAt(0),_WSP=" ".charCodeAt(0),_TAB="\t".charCodeAt(0),_LCR="{".charCodeAt(0),_RCR="}".charCodeAt(0);

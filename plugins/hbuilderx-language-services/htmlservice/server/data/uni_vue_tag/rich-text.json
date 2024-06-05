@@ -1,0 +1,113 @@
+{
+  "name": "rich-text",
+  "type": "UniRichTextElement",
+  "description": {
+    "value": "富文本。可渲染文字样式、图片、超链接。支持部分HTML标签",
+    "kind": "markdown"
+  },
+  "attributes": [{
+      "name": "nodes",
+      "description": {
+        "value": "节点列表 | HTML String",
+        "kind": "markdown"
+      },
+      "type": "array | string",
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      }
+    },
+    {
+      "name": "selectable",
+      "description": {
+        "value": "文本是否可选",
+        "kind": "markdown"
+      },
+      "type": "boolean",
+      "defaultValue": false,
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "x",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "12.0",
+            "uniVer": "x",
+            "unixVer": "4.11"
+          }
+        },
+        "web": {
+          "uniVer": "√",
+          "unixVer": "4.0"
+        }
+      }
+    },
+    {
+      "name": "[event]itemclick",
+      "description": {
+        "value": "拦截点击事件（只支持 a、img标签），返回用户自定义数据或img标签的src属性或a标签的href属性。event.detail={ ref | src | href }",
+        "kind": "markdown"
+      },
+      "type": "(event: UniRichTextItemClickEvent) => void",
+      "uniPlatform": {
+        "app": {
+          "android": {
+            "osVer": "5.0",
+            "uniVer": "√",
+            "unixVer": "3.9+"
+          },
+          "ios": {
+            "osVer": "9.0",
+            "uniVer": "√",
+            "unixVer": "4.11"
+          }
+        }
+      }
+    }
+  ],
+  "references": [{
+      "url": "https://uniapp.dcloud.io/component/rich-text",
+      "name": "参见uni-app相关文档"
+    },
+    {
+      "url": "https://doc.dcloud.net.cn/uni-app-x/component/rich-text.html",
+      "name": "参见uni-app x相关文档"
+    }
+  ],
+  "uniPlatform": {
+    "app": {
+      "android": {
+        "osVer": "5.0",
+        "uniVer": "√",
+        "unixVer": "3.9+"
+      },
+      "ios": {
+        "osVer": "12.0",
+        "uniVer": "√",
+        "unixVer": "4.11"
+      }
+    },
+    "web": {
+      "uniVer": "√",
+      "unixVer": "4.0"
+    }
+  },
+  "hasGeneralAttrs": true,
+  "hasGeneralEvents": true
+}

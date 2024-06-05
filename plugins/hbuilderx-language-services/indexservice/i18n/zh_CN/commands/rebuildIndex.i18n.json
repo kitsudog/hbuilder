@@ -1,0 +1,8 @@
+{
+    "indexservice.command.rebuild.missParameter.error": "构建索引失败: 未获取到项目参数",
+    "indexservice.command.rebuild.notWorkspaceFolder.error": "构建索引失败: 未获取到路径",
+    "indexservice.command.rebuild.notProjectUri.error": "构建索引失败: 无效的项目",
+    "indexservice.command.rebuild.processing.info": "正在构建项目[{0}]索引...",
+    "indexservice.command.rebuild.success.info": "项目[{0}]构建索引完成",
+    "indexservice.command.rebuild.failure.error": "项目[{0}]构建索引失败"
+}

@@ -1,0 +1,19 @@
+{
+    "method_signature_is_incompatible": "method signature is incompatible.",
+    "direct_declaration_of_object_literal_type_is_not_supported": "direct declaration of Object Literal Type is not supported.",
+    "union_types_other_than_null_are_not_supported": "union types other than null are not supported.",
+    "empty_elements_are_not_supported_in_arrays": "empty elements are not supported in arrays.",
+    "utsjsonobject_type_can_not_convert_to_type_0": "Convert type 'UTSJSONObject' to type '{0}' faild.",
+    "only_identical_literal_union_types_are_supported": "only identical literal union types are supported.",
+    "type_0_cannot_be_assigned_to_type_1": "type '{0}' cannot be assigned to type '{1}'.",
+    "named_type_assigned_to_named_type_must_be_same": "named type assigned to named type must be same.",
+    "return_type_0_can_not_assign_to_return_type_1": "return type '{0}' can not assign to return type '{1}'.",
+    "expected_0_parameters_type_but_got_1_parameters_type": "expected function with {0} parameters type , but got function with {1} parameters type.",
+    "paramter_type_0_can_not_assign_to_paramter_type_1": "paramter type '{0}' can not assign to paramter type '{1}'",
+    "convert_0_to_native_platform_type": "Convert to native platform type using '{0}'.",
+    "convert_0_to_number_type": "Convert to 'number' type using '{0}'.",
+    "signature_0_cannot_assign_to_signature_1": "signature '{0}' cannot assign to signature '{1}'.",
+    "the_parameter_list_of_signature_0_is_not_compatible_with_the_parameter_list_of_signature_1": "The parameter list of signature '{0}' is not compatible with the parameter list of signature '{1}'.",
+    "target_select_auto_fix": "Syntax Completion and Type Check Seletion...",
+    "try_to_use_swift_devlopment_environment_outside_uts_ios_plugin": "It appears you may be attempting to access the native iOS development environment, please conduct this operation within the iOS platform section of the UTS plugin."
+}

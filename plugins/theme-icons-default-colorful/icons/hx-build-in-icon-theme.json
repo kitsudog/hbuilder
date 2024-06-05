@@ -252,6 +252,32 @@
 		"_file_jql_light":{
 			"fontCharacter": "\\E91F",
 			"fontColor": "#C1A766"
+		},
+        "_lang_uts": {
+            "iconPath": "./uts.svg",
+            "fontCharacter": "\\E920",
+            "fontColor": "#0f9762"
+		},
+		"_lang_uts_light": {
+            "iconPath": "./uts_light.svg",
+            "fontCharacter": "\\E920",
+            "fontColor": "#52BC8b"
+		},
+        "_project_uniappx": {
+            "iconPath": "./uniappx.svg",
+			"fontColor": "#73e7b0"
+		},
+		"_project_uniappx_light": {
+            "iconPath": "./uniappx_light.svg",
+			"fontColor": "#52BC8b"
+		},
+        "_lang_uvue": {
+            "iconPath": "./uvue.svg",
+			"fontColor": "#73e7b0"
+		},
+		"_lang_uvue_light": {
+            "iconPath": "./uvue_light.svg",
+			"fontColor": "#52BC8b"
 		}
 	},
 	"file": "_file",
@@ -282,7 +308,9 @@
 		"docx": "_file_word",
 		"xls": "_file_excel",
 		"xlsx": "_file_excel",
-		"jql":"_file_jql"
+		"jql":"_file_jql",
+        "uts": "_lang_uts",
+        "uvue": "_lang_uvue"
 	},
 	"fileNames": {
 		"manifest.json": "_file_manifest"
@@ -313,6 +341,7 @@
 		"scss": "_lang_scss",
 		"stylus": "_lang_stylus",
 		"typescript": "_lang_typescript",
+        "uts": "_lang_uts",
 		"xml": "_lang_xml"
 	},
 	"light": {
@@ -344,7 +373,9 @@
 			"docx": "_file_word_light",
 			"xls": "_file_excel_light",
 			"xlsx": "_file_excel_light",
-			"jql":"_file_jql_light"
+			"jql":"_file_jql_light",
+            "uts": "_lang_uts_light",
+            "uvue": "_lang_uvue_light"
 		},
 		"fileNames": {
 			"manifest.json": "_file_manifest_light"
@@ -375,6 +406,7 @@
 			"scss": "_lang_scss_light",
 			"stylus": "_lang_stylus_light",
 			"typescript": "_lang_typescript_light",
+            "uts": "_lang_uts_light",
 			"xml": "_lang_xml_light"
 		}
 	}

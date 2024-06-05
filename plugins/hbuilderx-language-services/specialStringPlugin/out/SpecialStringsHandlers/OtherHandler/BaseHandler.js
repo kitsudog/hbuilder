@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.BaseHandler=void 0;class BaseHandler{doCompleteResolve(e,s,r,n,o){return e}async doHoverAsync(e,s,r,n){}async doDefinitionAsync(e,s,r,n,o){return o}async doReferenceAsync(e,s,r,n){return[]}}exports.BaseHandler=BaseHandler;

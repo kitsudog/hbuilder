@@ -1,0 +1,9 @@
+{
+	"menubar.run.browser.title": "运行到浏览器(&B)",
+	"command.extension.uni-app:h5-openVueDevtools": "运行时自动打开Vue DevTool",
+	"launhcer.uni-app.h5-Built.label": "运行到内置浏览器(&P)",
+	"launhcer.uni-app.h5-Built.terminateLabel": "停止内置浏览器运行",
+	"launhcer.uni-app.h5-Chrome.label": "运行到Chrome(&C)",
+	"launhcer.uni-app.h5-Chrome.terminateLabel": "停止Chrome运行",
+	"launhcer.uni-app.h5-Chrome-page.label": "运行到Chrome - 指定页面"
+}

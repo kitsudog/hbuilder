@@ -1,0 +1,19 @@
+{
+    "extends": "./tsconfig.base.json",
+    "compilerOptions": {
+        "outDir": "./out",
+        "rootDir": "src"
+    },
+    "include": ["src"],
+    "references": [
+        {
+            "path": "./vscode-json-languageservice/tsconfig.json"
+        },
+        {
+            "path": "./vscode-html-languageservice/tsconfig.json"
+        },
+        {
+            "path": "./vscode-css-languageservice/tsconfig.json"
+        }
+    ]
+}

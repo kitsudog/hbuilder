@@ -6,6 +6,23 @@ if (matchSymbol) {
     console.error(`编译失败：HBuilderX 安装目录不能包括 ${matchSymbol[0]} 等特殊字符`)
     process.exit(0)
 }
+
+const crypto = require('crypto');
+
+/**
+ * The MD4 algorithm is not available anymore in Node.js 17+ (because of library SSL 3).
+ * In that case, silently replace MD4 by the MD5 algorithm.
+ */
+try {
+    crypto.createHash('md4');
+} catch (e) {
+    // console.warn('Crypto "MD4" is not supported anymore by this Node.js version');
+    const origCreateHash = crypto.createHash;
+    crypto.createHash = (alg, opts) => {
+        return origCreateHash(alg === 'md4' ? 'md5' : alg, opts);
+    };
+}
+
 const fs = require('fs')
 const path = require('path')
 
@@ -38,7 +55,8 @@ const service = new Service(process.env.VUE_CLI_CONTEXT || process.cwd())
 const args = {
     watch: process.env.NODE_ENV === 'development',
     minimize: process.env.UNI_MINIMIZE === 'true',
-    clean: false
+    clean: false,
+    sourcemap: true,
 }
 if (argv['auto-port']) {
     args['auto-port'] = argv['auto-port']
@@ -47,14 +65,8 @@ if (argv['auto-host']) {
     args['auto-host'] = argv['auto-host']
 }
 const platform = process.env.UNI_SUB_PLATFORM || process.env.UNI_PLATFORM
-function wait(ms) {
-    return new Promise(resolve =>setTimeout(()=>resolve(), ms));
-};
 service.run((process.env.NODE_ENV === 'development' && platform === 'h5') ? 'uni-serve' : 'uni-build',
     args).catch(err => {
-    if (err.message.includes('@dcloudio/uni-mp-lark/dist/uni.mp.esm.js')) {
-        err = new Error('Vue3 项目暂不支持飞书小程序')
-    }
     error(err)
     process.exit(1)
 })

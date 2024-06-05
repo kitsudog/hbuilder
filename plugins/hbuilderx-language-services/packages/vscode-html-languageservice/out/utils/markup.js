@@ -1,0 +1,1 @@
+"use strict";function normalizeMarkupContent(e){if(e)return"string"==typeof e?{kind:"markdown",value:e}:{kind:"markdown",value:e.value}}Object.defineProperty(exports,"__esModule",{value:!0}),exports.normalizeMarkupContent=void 0,exports.normalizeMarkupContent=normalizeMarkupContent;

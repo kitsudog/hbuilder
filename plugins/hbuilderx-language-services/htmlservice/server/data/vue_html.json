@@ -1,0 +1,607 @@
+{
+  "tags": [
+    {
+      "name": "slot",
+      "description": {
+        "kind": "markdown",
+        "value": "<slot> 元素作为组件模板之中的内容分发插槽。<slot> 元素自身将被替换。\n\t\t\t\t\n\t\t\t"
+      },
+      "attributes": [
+        {
+          "name": "name",
+          "description": {
+            "kind": "markdown",
+            "value": "用于命名插槽。\n\t\t\t\n\t\t\t"
+          },
+          "type": "string"
+        }
+      ],
+      "references": [
+        {
+          "url": "https://v2.cn.vuejs.org/v2/api/#slot",
+          "name": "Reference"
+        }
+      ],
+      "type": "string"
+    },
+    {
+      "name": "template",
+      "attributes": [
+        {
+          "name": "lang",
+          "values": [
+            {
+              "name": "html",
+              "description": "html"
+            },
+            {
+              "name": "pug",
+              "description": "pug"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "script",
+      "attributes": [
+        {
+          "name": "lang",
+          "values": [
+            {
+              "name": "ts",
+              "description": "typescript"
+            },
+            {
+              "name": "uts",
+              "description": "uts"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "style",
+      "attributes": [
+        {
+          "name": "lang",
+          "values": [
+            {
+              "name": "scss"
+            },
+            {
+              "name": "less"
+            },
+            {
+              "name": "stylus"
+            }
+          ]
+        },
+        {
+          "name": "scoped"
+        }
+      ]
+    },
+    {
+      "name": "keep-alive",
+      "description": {
+        "kind": "markdown",
+        "value": "<keep-alive> 包裹动态组件时，会缓存不活动的组件实例，而不是销毁它们。和 <transition> 相似，<keep-alive> 是一个抽象组件：它自身不会渲染一个 DOM 元素，也不会出现在父组件链中。\n\t\t\t\t\n\t\t\t"
+      },
+      "attributes": [
+        {
+          "name": "include",
+          "description": {
+            "kind": "markdown",
+            "value": "字符串或正则表达式。只有名称匹配的组件会被缓存。\n\t\t\t\n\t\t\t"
+          },
+          "type": "string"
+        },
+        {
+          "name": "exclude",
+          "description": {
+            "kind": "markdown",
+            "value": "字符串或正则表达式。任何名称匹配的组件都不会被缓存。\n\t\t\t\n\t\t\t"
+          },
+          "type": "string"
+        },
+        {
+          "name": "max",
+          "description": {
+            "kind": "markdown",
+            "value": "最多可以缓存多少组件实例。\n\t\t\t\n\t\t\t"
+          },
+          "type": "string"
+        }
+      ],
+      "references": [
+        {
+          "url": "https://v2.cn.vuejs.org/v2/api/#keep-alive",
+          "name": "Reference"
+        }
+      ],
+      "type": "string"
+    },
+    {
+      "name": "component",
+      "description": {
+        "kind": "markdown",
+        "value": "渲染一个“元组件”为动态组件。依 is 的值，来决定哪个组件被渲染。"
+      },
+      "attributes": [
+        {
+          "name": "is"
+        },
+        {
+          "name": "inline-template",
+          "valueSet": "b"
+        }
+      ],
+      "references": [
+        {
+          "url": "https://v2.cn.vuejs.org/v2/api/#component",
+          "name": "Reference"
+        }
+      ],
+      "type": "string"
+    },
+    {
+      "name": "transition",
+      "description": {
+        "kind": "markdown",
+        "value": "<transition> 元素作为单个元素/组件的过渡效果。<transition> 只会把过渡效果应用到其包裹的内容上，而不会额外渲染 DOM 元素，也不会出现在检测过的组件层级中。\n\t\t\t\t\n\t\t\t"
+      },
+      "attributes": [
+        {
+          "name": "name",
+          "description": {
+            "kind": "markdown",
+            "value": "用于自动生成 CSS 过渡类名。例如：name: 'fade' 将自动拓展为.fade-enter，.fade-enter-active等。默认类名为 \"v\"\n\t\t\t\n\t\t\t"
+          },
+          "type": "string"
+        },
+        {
+          "name": "appear",
+          "description": {
+            "kind": "markdown",
+            "value": "是否在初始渲染时使用过渡。默认为 false。\n\t\t\t\n\t\t\t"
+          },
+          "valueSet": "b",
+          "type": "boolean"
+        },
+        {
+          "name": "css",
+          "description": {
+            "kind": "markdown",
+            "value": "是否使用 CSS 过渡类。默认为 true。如果设置为 false，将只通过组件事件触发注册的 JavaScript 钩子。\n\t\t\t\n\t\t\t"
+          },
+          "valueSet": "b",
+          "type": "boolean"
+        },
+        {
+          "name": "type",
+          "description": {
+            "kind": "markdown",
+            "value": "指定过渡事件类型，侦听过渡何时结束。有效值为 \"transition\" 和 \"animation\"。默认 Vue.js 将自动检测出持续时间长的为过渡事件类型。\n\t\t\t\n\t\t\t"
+          },
+          "values": [
+            {
+              "name": "transition"
+            },
+            {
+              "name": "animation"
+            }
+          ],
+          "type": "string"
+        },
+        {
+          "name": "mode",
+          "description": {
+            "kind": "markdown",
+            "value": "控制离开/进入的过渡时间序列。有效的模式有 \"out-in\" 和 \"in-out\"；默认同时生效。\n\t\t\t\n\t\t\t"
+          },
+          "values": [
+            {
+              "name": "out-in"
+            },
+            {
+              "name": "in-out"
+            }
+          ],
+          "type": "string"
+        },
+        {
+          "name": "duration",
+          "description": {
+            "kind": "markdown",
+            "value": "指定过渡的持续时间。默认情况下，Vue 会等待过渡所在根元素的第一个 transitionend 或 animationend 事件。\n\t\t\t\n\t\t\t"
+          },
+          "type": "string"
+        },
+        {
+          "name": "enter-class"
+        },
+        {
+          "name": "leave-class"
+        },
+        {
+          "name": "appear-class"
+        },
+        {
+          "name": "enter-to-class"
+        },
+        {
+          "name": "leave-to-class"
+        },
+        {
+          "name": "appear-to-class"
+        },
+        {
+          "name": "enter-active-class"
+        },
+        {
+          "name": "leave-active-class"
+        },
+        {
+          "name": "appear-active-class"
+        },
+        {
+          "name": "[event]before-enter"
+        },
+        {
+          "name": "[event]before-leave"
+        },
+        {
+          "name": "[event]before-appear"
+        },
+        {
+          "name": "[event]enter"
+        },
+        {
+          "name": "[event]leave"
+        },
+        {
+          "name": "[event]appear"
+        },
+        {
+          "name": "[event]after-enter"
+        },
+        {
+          "name": "[event]after-leave"
+        },
+        {
+          "name": "[event]after-appear"
+        },
+        {
+          "name": "[event]enter-cancelled"
+        },
+        {
+          "name": "[event]leave-cancelled",
+          "description": {
+            "kind": "markdown",
+            "value": "v-show only"
+          },
+          "type": "string"
+        },
+        {
+          "name": "[event]appear-cancelled"
+        }
+      ],
+      "references": [
+        {
+          "url": "https://v2.cn.vuejs.org/v2/api/#transition",
+          "name": "Reference"
+        }
+      ],
+      "type": "string"
+    },
+    {
+      "name": "transition-group",
+      "description": {
+        "kind": "markdown",
+        "value": "<transition-group> 元素作为多个元素/组件的过渡效果。<transition-group> 渲染一个真实的 DOM 元素。默认渲染 <span>，可以通过 tag 属性配置哪个元素应该被渲染。\n\t\t\t\t\n\t\t\t"
+      },
+      "attributes": [
+        {
+          "name": "tag",
+          "description": {
+            "kind": "markdown",
+            "value": "默认为 span。\n\t\t\t\n\t\t\t"
+          },
+          "type": "string"
+        },
+        {
+          "name": "move-class",
+          "description": {
+            "kind": "markdown",
+            "value": "覆盖移动过渡期间应用的 CSS 类。\n\t\t\t\n\t\t\t"
+          },
+          "type": "string"
+        },
+        {
+          "name": "name",
+          "description": {
+            "kind": "markdown",
+            "value": "用于自动生成 CSS 过渡类名。例如：name: 'fade' 将自动拓展为.fade-enter，.fade-enter-active等。默认类名为 \"v\"\n\t\t\t\n\t\t\t"
+          },
+          "type": "string"
+        },
+        {
+          "name": "appear",
+          "description": {
+            "kind": "markdown",
+            "value": "是否在初始渲染时使用过渡。默认为 false。\n\t\t\t\n\t\t\t"
+          },
+          "valueSet": "b",
+          "type": "boolean"
+        },
+        {
+          "name": "css",
+          "description": {
+            "kind": "markdown",
+            "value": "是否使用 CSS 过渡类。默认为 true。如果设置为 false，将只通过组件事件触发注册的 JavaScript 钩子。\n\t\t\t\n\t\t\t"
+          },
+          "valueSet": "b",
+          "type": "boolean"
+        },
+        {
+          "name": "type",
+          "description": {
+            "kind": "markdown",
+            "value": "指定过渡事件类型，侦听过渡何时结束。有效值为 \"transition\" 和 \"animation\"。默认 Vue.js 将自动检测出持续时间长的为过渡事件类型。\n\t\t\t\n\t\t\t"
+          },
+          "values": [
+            {
+              "name": "transition"
+            },
+            {
+              "name": "animation"
+            }
+          ],
+          "type": "string"
+        },
+        {
+          "name": "mode"
+        },
+        {
+          "name": "duration",
+          "description": {
+            "kind": "markdown",
+            "value": "指定过渡的持续时间。默认情况下，Vue 会等待过渡所在根元素的第一个 transitionend 或 animationend 事件。\n\t\t\t\n\t\t\t"
+          },
+          "type": "string"
+        },
+        {
+          "name": "enter-class"
+        },
+        {
+          "name": "leave-class"
+        },
+        {
+          "name": "appear-class"
+        },
+        {
+          "name": "enter-to-class"
+        },
+        {
+          "name": "leave-to-class"
+        },
+        {
+          "name": "appear-to-class"
+        },
+        {
+          "name": "enter-active-class"
+        },
+        {
+          "name": "leave-active-class"
+        },
+        {
+          "name": "appear-active-class"
+        },
+        {
+          "name": "[event]before-enter"
+        },
+        {
+          "name": "[event]before-leave"
+        },
+        {
+          "name": "[event]before-appear"
+        },
+        {
+          "name": "[event]enter"
+        },
+        {
+          "name": "[event]leave"
+        },
+        {
+          "name": "[event]appear"
+        },
+        {
+          "name": "[event]after-enter"
+        },
+        {
+          "name": "[event]after-leave"
+        },
+        {
+          "name": "[event]after-appear"
+        },
+        {
+          "name": "[event]enter-cancelled"
+        },
+        {
+          "name": "[event]leave-cancelled",
+          "description": {
+            "kind": "markdown",
+            "value": "v-show only"
+          },
+          "type": "string"
+        },
+        {
+          "name": "[event]appear-cancelled"
+        }
+      ],
+      "references": [
+        {
+          "url": "https://v2.cn.vuejs.org/v2/api/#transition-group",
+          "name": "Reference"
+        }
+      ],
+      "type": "string"
+    }
+  ],
+  "globalAttributes": [
+    {
+      "name": "v-text",
+      "description": {
+        "kind": "markdown",
+        "value": "更新元素的 textContent。如果要更新部分的 textContent ，需要使用 {{ Mustache }} 插值。\n\t\t\t\t\t<br />\n\t\t\t\t\t从 2.4.0 开始，v-on 同样支持不带参数绑定一个事件/监听器键值对的对象。注意当使用对象语法时，是不支持任何修饰器的。\n\t\t\t\t\t<br />\n\t\t\t\t\t<b>参考：</b>\n\t\t\t\t\t<br />\n\t\t\t\t\t<a href=\"https://v2.cn.vuejs.org/v2/api/#v-text\">https://v2.cn.vuejs.org/v2/api/#v-text</a>\n\t\t\t\t\n\t\t\t"
+      },
+      "type": "string"
+    },
+    {
+      "name": "v-html",
+      "description": {
+        "kind": "markdown",
+        "value": "更新元素的 innerHTML 。注意：内容按普通 HTML 插入 - 不会作为 Vue 模板进行编译 。如果试图使用 v-html 组合模板，可以重新考虑是否通过使用组件来替代。\n\t\t\t\t\t<br />\n\t\t\t\t\t<b>参考：</b>\n\t\t\t\t\t<br />\n\t\t\t\t\t<a href=\"https://v2.cn.vuejs.org/v2/api/#v-html\">https://v2.cn.vuejs.org/v2/api/#v-html</a>\n\t\t\t\t\n\t\t\t"
+      },
+      "type": "string"
+    },
+    {
+      "name": "v-show",
+      "description": {
+        "kind": "markdown",
+        "value": "根据表达式之真假值，切换元素的 display CSS 属性。\n\t\t\t\t\t当条件变化时该指令触发过渡效果。\n\t\t\t\t\t<br />\n                \t<b>参考：</b>\n                \t<br />\n                \t<a href=\"https://v2.cn.vuejs.org/v2/api/#v-show\">https://v2.cn.vuejs.org/v2/api/#v-show</a>\n\t\t\t\t\n\t\t\t"
+      },
+      "type": "string"
+    },
+    {
+      "name": "v-if",
+      "description": {
+        "kind": "markdown",
+        "value": "根据表达式的值的真假条件渲染元素。在切换时元素及它的数据绑定 / 组件被销毁并重建。如果元素是 `<template>` ，将提出它的内容作为条件块。\n\t\t\t\t\t当条件变化时该指令触发过渡效果。\n\t\t\t\t\t<br />\n                \t<b>参考：</b>\n                \t<br />\n                \t<a href=\"https://v2.cn.vuejs.org/v2/api/#v-if\">https://v2.cn.vuejs.org/v2/api/#v-if</a>\n\t\t\t\t\n\t\t\t"
+      },
+      "type": "string"
+    },
+    {
+      "name": "v-else",
+      "description": {
+        "kind": "markdown",
+        "value": "不需要表达式，前一兄弟元素必须有 v-if 或 v-else-if。\n\t\t\t\t\t<br />\n                    <b>参考：</b>\n                    <br />\n                    <a href=\"https://v2.cn.vuejs.org/v2/api/#v-else\">https://v2.cn.vuejs.org/v2/api/#v-else</a>\n\t\t\t\t\n\t\t\t"
+      },
+      "valueSet": "v",
+      "type": "string"
+    },
+    {
+      "name": "v-else-if",
+      "description": {
+        "kind": "markdown",
+        "value": "前一兄弟元素必须有 v-if 或 v-else-if。\n\t\t\t\t\t<br />\n                    <b>参考：</b>\n                    <br />\n                    <a href=\"https://v2.cn.vuejs.org/v2/api/#v-else-if\">https://v2.cn.vuejs.org/v2/api/#v-else-if</a>\n\t\t\t\t\n\t\t\t"
+      },
+      "type": "string"
+    },
+    {
+      "name": "v-for",
+      "description": {
+        "kind": "markdown",
+        "value": "基于源数据多次渲染元素或模板块。\n\t\t\t\t\t<br />\n\t\t\t\t\t<b>参考：</b>\n\t\t\t\t\t<br />\n\t\t\t\t\t<a href=\"https://cn.vuejs.org/v2/guide/list.html\">列表渲染</a>\n\t\t\t\t\t<br />\n\t\t\t\t\t<b>参考：</b>\n\t\t\t\t\t<br />\n\t\t\t\t\t<a href=\"https://v2.cn.vuejs.org/v2/api/#v-for\">https://v2.cn.vuejs.org/v2/api/#v-for</a>\n\t\t\t\t\n\t\t\t"
+      },
+      "type": "string"
+    },
+    {
+      "name": "v-on",
+      "description": {
+        "kind": "markdown",
+        "value": "绑定事件监听器。事件类型由参数指定。表达式可以是一个方法的名字或一个内联语句，如果没有修饰符也可以省略。\n\t\t\t\t\t\t\t<br />\n\t\t\t\t\t\t\t用在普通元素上时，只能监听原生 DOM 事件。用在自定义元素组件上时，也可以监听子组件触发的自定义事件。\n\t\t\t\t\t\t\t<br />\n\t\t\t\t\t\t\t在监听原生 DOM 事件时，方法以事件为唯一的参数。如果使用内联语句，语句可以访问一个 $event 属性：v-on:click=\"handle('ok', $event)\"。\n\t\t\t\t\t\t\t<br />\n\t\t\t\t\t\t\t从 2.4.0 开始，v-on 同样支持不带参数绑定一个事件/监听器键值对的对象。注意当使用对象语法时，是不支持任何修饰器的。\n\t\t\t\t\t\t\t<br />\n\t\t\t\t\t\t\t<b>参考：</b>\n\t\t\t\t\t\t\t<br />\n\t\t\t\t\t\t\t<a href=\"https://v2.cn.vuejs.org/v2/api/#v-on\">https://v2.cn.vuejs.org/v2/api/#v-on</a>\n\t\t\t\t\t\t\n\t\t\t\t\t"
+      },
+      "type": "string"
+    },
+    {
+      "name": "v-bind",
+      "description": {
+        "kind": "markdown",
+        "value": "动态地绑定一个或多个特性，或一个组件 prop 到表达式。\n\t\t\t\t\t\t\t<br />\n\t\t\t\t\t\t\t在绑定 class 或 style 特性时，支持其它类型的值，如数组或对象。可以通过下面的教程链接查看详情。\n\t\t\t\t\t\t\t<br />\n\t\t\t\t\t\t\t在绑定 prop 时，prop 必须在子组件中声明。可以用修饰符指定不同的绑定类型。\n\t\t\t\t\t\t\t<br />\n\t\t\t\t\t\t\t没有参数时，可以绑定到一个包含键值对的对象。注意此时 class 和 style 绑定不支持数组和对象。\n\t\t\t\t\t\t\t<br />\n                    \t\t<b>参考：</b>\n                    \t\t<br />\n                    \t\t<a href=\"https://v2.cn.vuejs.org/v2/api/#v-bind\">https://v2.cn.vuejs.org/v2/api/#v-bind</a>\n\t\t\t\t\t\t\n\t\t\t\t\t"
+      },
+      "type": "string"
+    },
+    {
+      "name": "v-model",
+      "description": {
+        "kind": "markdown",
+        "value": "在表单控件或者组件上创建双向绑定。细节请看下面的教程链接。\n\t\t\t\t\t\t\t<br />\n\t\t\t\t\t\t\t<b>参考：</b>\n\t\t\t\t\t\t\t<br />\n                    \t\t<a href=\"https://v2.cn.vuejs.org/v2/api/#v-model\">https://v2.cn.vuejs.org/v2/api/#v-model</a>\n\t\t\t\t\t\t\t<br />\n\t\t\t\t\t\t\t<b>参考：</b>\n\t\t\t\t\t\t\t<br />\n\t\t\t\t\t\t\t<a href=\"https://cn.vuejs.org/v2/guide/forms.html\">表单控件绑定</a>\n\t\t\t\t\t\t\t<br />\n\t\t\t\t\t\t\t<b>参考：</b>\n\t\t\t\t\t\t\t<br />\n\t\t\t\t\t\t\t<a href=\"https://cn.vuejs.org/v2/guide/components.html#%E4%BD%BF%E7%94%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BA%8B%E4%BB%B6%E7%9A%84%E8%A1%A8%E5%8D%95%E8%BE%93%E5%85%A5%E7%BB%84%E4%BB%B6\">组件 - 在输入组件上使用自定义事件</a>\n\t\t\t\t\t\t\n\t\t\t\t\t"
+      },
+      "type": "string"
+    },
+    {
+      "name": "v-slot",
+      "description": {
+        "kind": "markdown",
+        "value": "提供具名插槽或需要接收 prop 的插槽。\n\t\t\t\t\t\t\t<br />\n                    \t\t<b>参考：</b>\n                    \t\t<br />\n                    \t\t<a href=\"https://v2.cn.vuejs.org/v2/api/#v-slot\">https://v2.cn.vuejs.org/v2/api/#v-slot</a>\n\t\t\t\t\t\t]\n\t\t\t\t\t"
+      },
+      "type": "string"
+    },
+    {
+      "name": "v-pre",
+      "description": {
+        "kind": "markdown",
+        "value": "跳过这个元素和它的子元素的编译过程。可以用来显示原始 Mustache 标签。跳过大量没有指令的节点会加快编译。\n\t\t\t\t\t\t    <br />\n                    \t\t<b>参考：</b>\n                    \t\t<br />\n                    \t\t<a href=\"https://v2.cn.vuejs.org/v2/api/#v-pre\">https://v2.cn.vuejs.org/v2/api/#v-pre</a>\n\t\t\t\t\t\t\n\t\t\t\t\t"
+      },
+      "valueSet": "v",
+      "type": "string"
+    },
+    {
+      "name": "v-cloak",
+      "description": {
+        "kind": "markdown",
+        "value": "这个指令保持在元素上直到关联实例结束编译。和 CSS 规则如 [v-cloak] { display: none } 一起用时，这个指令可以隐藏未编译的 Mustache 标签直到实例准备完毕。\n\t\t\t\t\t\t    <br />\n                    \t\t<b>参考：</b>\n                    \t\t<br />\n                    \t\t<a href=\"https://v2.cn.vuejs.org/v2/api/#v-cloak\">https://v2.cn.vuejs.org/v2/api/#v-cloak</a>\n\t\t\t\t\t\t\n\t\t\t\t\t"
+      },
+      "valueSet": "v",
+      "type": "string"
+    },
+    {
+      "name": "v-once",
+      "description": {
+        "kind": "markdown",
+        "value": "只渲染元素和组件一次。随后的重新渲染，元素/组件及其所有的子节点将被视为静态内容并跳过。这可以用于优化更新性能。\n\t\t\t\t\t\t\t<br />\n\t\t\t\t\t\t\t<b>参考：</b>\n\t\t\t\t\t\t\t<br />\n\t\t\t\t\t\t\t<a href=\"https://v2.cn.vuejs.org/v2/api/#v-once\">https://v2.cn.vuejs.org/v2/api/#v-once</a>\n\t\t\t\t\t\t\n\t\t\t\t\t"
+      },
+      "valueSet": "v",
+      "type": "string"
+    },
+    {
+      "name": "key",
+      "description": {
+        "kind": "markdown",
+        "value": "主要用做 Vue 的虚拟 DOM 算法的提示，以在比对新旧节点组时辨识 VNodes。如果不使用 key，Vue 会使用一种算法来最小化元素的移动并且尽可能尝试就地修改/复用相同类型元素。而使用 key 时，它会基于 key 的顺序变化重新排列元素，并且那些使用了已经不存在的 key 的元素将会被移除/销毁。\n<br /><b>参考：</b><br /><a href=\"https://v2.cn.vuejs.org/v2/api/#ref\">https://v2.cn.vuejs.org/v2/api/#key</a>"
+      },
+      "type": "string"
+    },
+    {
+      "name": "ref",
+      "description": {
+        "kind": "markdown",
+        "value": "ref 被用来给元素或子组件注册引用信息。引用信息将会被注册在父组件的 $refs 对象上。如果在普通的 DOM 元素上使用，引用指向的就是那个 DOM 元素；如果用在子组件上，引用就指向组件实例;\n<br /><b>参考：</b><br /><a href=\"https://v2.cn.vuejs.org/v2/api/#ref\">https://v2.cn.vuejs.org/v2/api/#ref</a>"
+      },
+      "type": "string"
+    },
+    {
+      "name": "is",
+      "description": {
+        "kind": "markdown",
+        "value": "使用动态组件。\n<br /><b>参考：</b><br /><a href=\"https://v2.cn.vuejs.org/v2/api/#is\">https://v2.cn.vuejs.org/v2/api/#is</a>"
+      },
+      "type": "string"
+    }
+  ],
+  "valueSets": [
+    {
+      "name": "b",
+      "values": [
+        {
+          "name": "true"
+        },
+        {
+          "name": "false"
+        }
+      ]
+    }
+  ]
+}

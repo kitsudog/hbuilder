@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0});const baseHandler_1=require("./baseHandler");class DBFieldOrderByHandler extends baseHandler_1.UniBaseHandler{async doCompleteAsync(e,r,d,s,a){return[]}}exports.default=DBFieldOrderByHandler;
